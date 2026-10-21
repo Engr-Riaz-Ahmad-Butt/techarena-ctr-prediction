@@ -35,3 +35,7 @@ Run `python prepare_times.py` then `python timing_experiment.py` after the prece
 ## V4
 
 Run `python relations_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.742770 / 0.724951**. Directed click-pair counts, lift and latent relationships.
+
+## V5
+
+Run `python warm_context_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.758172 / 0.747077**. Warm-up history pairs and smoothed user/item contextual rates.
