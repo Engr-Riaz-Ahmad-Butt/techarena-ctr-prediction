@@ -72,3 +72,7 @@ The checker verifies the header, all evaluation IDs, duplicates, finite probabil
 The published source has portable path changes relative to the completed local experiments. All Python files passed syntax compilation, and the portable checker validated the existing V8 output: 529,390 rows, zero missing IDs, duplicates or invalid probabilities. Full training was not repeated for this repository packaging step. Dependency pins record the local experiment versions; a clean dependency installation has not been retested.
 
 Commits organize previously completed experiments into separate reviewable stages; their timestamps reflect repository preparation. Historical scores are retained in results JSON files, including rejected experiments. Do not load pickle model caches from untrusted sources.
+
+## Additional experiment: stacked-day training
+
+The optional stack_experiment.py trains on multiple chronological blocks with statistics computed before each block. It requires the V6 pipeline and is included as experimental source only; no completed validation result is recorded here. It does not replace the selected V8 submission.
