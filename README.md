@@ -31,3 +31,7 @@ Run `python improve.py` after the preceding required stages. Local January 26 / 
 ## V3
 
 Run `python prepare_times.py` then `python timing_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.731246 / 0.716220**. Rejected: improvement did not transfer to both dates. This stage also produces base statistics caches used downstream.
+
+## V4
+
+Run `python relations_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.742770 / 0.724951**. Directed click-pair counts, lift and latent relationships.
