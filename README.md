@@ -39,3 +39,7 @@ Run `python relations_experiment.py` after the preceding required stages. Local 
 ## V5
 
 Run `python warm_context_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.758172 / 0.747077**. Warm-up history pairs and smoothed user/item contextual rates.
+
+## V6
+
+Run `python preference_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.800327 / 0.786659**. Richer item factors and exposure-adjusted user profiles.
