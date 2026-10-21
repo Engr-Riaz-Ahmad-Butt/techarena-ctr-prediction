@@ -91,3 +91,14 @@ Run `stack_final.py` after the stacked validation experiment, then `blend_select
 The log-odds ensemble weights are stack 0.45, V6 0.27, choice 0.18 and V7 0.10, followed by a 50% event-normalized-odds adjustment. Settings were selected from 37 configurations on January 26 and frozen for January 25. Approximate paired event-cluster gain intervals are recorded, but do not account for repeated model selection on these validation dates. These are local results; the official leaderboard score is unknown. The 529,390-row output passed the independent submission checker. Previous files are preserved.
 
 A further 64-dimensional choice model was trained for six passes at learning rate 0.03 and regularization 0.02. Blend weights 0.05, 0.10, 0.20 and 0.30 failed to improve the January 26 score, so it was rejected before confirmation-date testing and final fitting. Source: choice64_experiment.py; result: results/validation_choice64.json. The log-odds ensemble remains selected.
+
+## V11 experimental candidate
+
+`weighted_experiment.py` compares a bounded grid of log-odds ensemble weights on January 26, then applies the selected weights unchanged on January 25. Weights (stack, V6, choice, V7): 0.45, 0.15, 0.20, 0.20. Output: **artifacts/submission_v11.csv**. V10 is an identical versioned copy of submission_nonlinear.csv; preserve it for comparison.
+
+| Validation | V10 | V11 |
+|---|---:|---:|
+| January 26 | 0.810104863 | 0.810155847 |
+| January 25 | 0.797186395 | 0.797285247 |
+
+This is a very small gain. The approximate paired January 26 improvement interval includes zero; repeated selection on reused windows adds further uncertainty. V11 is an experimental alternative, not a proven leaderboard improvement or a reason to discard V10. The event sharpness/propensity adjustment in event_propensity_experiment.py was also tested and rejected because it did not beat V10. Results for both experiments are recorded separately.
