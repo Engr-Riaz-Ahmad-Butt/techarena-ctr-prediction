@@ -75,4 +75,17 @@ Commits organize previously completed experiments into separate reviewable stage
 
 ## Additional experiment: stacked-day training
 
-The optional stack_experiment.py trains on multiple chronological blocks with statistics computed before each block. It requires the V6 pipeline and is included as experimental source only; no completed validation result is recorded here. It does not replace the selected V8 submission.
+The optional stack_experiment.py trains on multiple chronological blocks with statistics computed before each block. It requires the V6 pipeline. Completed results are now recorded in results/validation_stack.json. The standalone model failed the two-date gate, but proved useful in a blend.
+
+
+## Latest selected candidate
+
+Run `stack_final.py` after the stacked validation experiment, then `blend_select.py`, `competition_experiment.py` and `nonlinear_experiment.py` in order. The latest selected file is **artifacts/submission_nonlinear.csv**. These stages require the V6, V7 and V8 outputs described above.
+
+| Candidate | January 26 AUC | January 25 AUC |
+|---|---:|---:|
+| Three-way blend | 0.809385 | 0.795750 |
+| Competition adjustment | 0.809829 | 0.796671 |
+| Log-odds ensemble | 0.810105 | 0.797186 |
+
+The log-odds ensemble weights are stack 0.45, V6 0.27, choice 0.18 and V7 0.10, followed by a 50% event-normalized-odds adjustment. Settings were selected from 37 configurations on January 26 and frozen for January 25. Approximate paired event-cluster gain intervals are recorded, but do not account for repeated model selection on these validation dates. These are local results; the official leaderboard score is unknown. The 529,390-row output passed the independent submission checker. Previous files are preserved.

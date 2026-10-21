@@ -1,0 +1,34 @@
+[
+  {
+    "day": 6,
+    "baseline_auc": 0.8098286106069565,
+    "candidate_auc": 0.810104863410634,
+    "improvement": 0.0002762528036774903,
+    "approximate_paired_95pct_interval": [
+      0.0001095529294494255,
+      0.0004429526779055551
+    ],
+    "settings": [
+      "logit",
+      1.0,
+      1.0,
+      0.5
+    ]
+  },
+  {
+    "day": 5,
+    "baseline_auc": 0.7966711678626769,
+    "candidate_auc": 0.7971863952708331,
+    "improvement": 0.000515227408156238,
+    "approximate_paired_95pct_interval": [
+      0.0002841719779379618,
+      0.0007462828383745143
+    ],
+    "settings": [
+      "logit",
+      1.0,
+      1.0,
+      0.5
+    ]
+  }
+]
