@@ -1,0 +1,18 @@
+[
+  {
+    "validation_day": 6,
+    "rows": 351380,
+    "old_auc": 0.7029687553715671,
+    "new_auc": 0.7311774088254995,
+    "improvement": 0.02820865345393242,
+    "iterations": 448
+  },
+  {
+    "validation_day": 5,
+    "rows": 352300,
+    "old_auc": 0.6890328431168089,
+    "new_auc": 0.7163253575594134,
+    "improvement": 0.0272925144426045,
+    "iterations": 448
+  }
+]

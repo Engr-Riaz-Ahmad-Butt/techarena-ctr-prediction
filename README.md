@@ -23,3 +23,7 @@ The scripts are competition experiments and assume the original dataset sizes an
 V1 uses smoothed click rates and history similarities from sparse SVD embeddings. Local January 26 ROC AUC: **0.702969**. Higher AUC is better. Validation is each user's first event on the selected date; features and classifier fitting use preceding dates. Early stopping uses this validation window, so this is not an untouched final test.
 
 Historical metrics are recorded in `results/`. Runtime metrics are written to `artifacts/`. Dataset files and trained models are not distributed.
+
+## V2
+
+Run `python improve.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.731177 / 0.716325**. 64-dimensional factors, recency and candidate-relative features. User-reported official public score: 0.741028.
