@@ -1,0 +1,22 @@
+[
+  {
+    "validation_day": 6,
+    "fit_rows": 2937590,
+    "rows": 351380,
+    "v6_auc": 0.8003265778810233,
+    "stack_auc": 0.804943465493738,
+    "improvement": 0.004616887612714615,
+    "half_blend_with_v6_auc": 0.8074910924994645,
+    "iterations": 967
+  },
+  {
+    "validation_day": 5,
+    "fit_rows": 2934030,
+    "rows": 352300,
+    "v6_auc": 0.7866591474752135,
+    "stack_auc": 0.7796304106950329,
+    "improvement": -0.007028736780180567,
+    "half_blend_with_v6_auc": 0.7927392290908908,
+    "iterations": 967
+  }
+]
