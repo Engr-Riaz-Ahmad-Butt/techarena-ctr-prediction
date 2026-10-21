@@ -1,0 +1,16 @@
+[
+  {
+    "validation_day": 6,
+    "v8_auc": 0.8051778816692848,
+    "combined_auc": 0.8051996644013046,
+    "improvement": 2.1782732019803852e-05,
+    "v7_weight": 0.25
+  },
+  {
+    "validation_day": 5,
+    "v8_auc": 0.7942606754324852,
+    "combined_auc": 0.79384253520524,
+    "improvement": -0.00041814022724528943,
+    "v7_weight": 0.25
+  }
+]

@@ -55,3 +55,20 @@ Run `python ridge_experiment.py` after the preceding required stages. Local Janu
 ## V8
 
 Run `python choice_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.805178 / 0.794261**. Blend 25% supervised event-choice model with 75% V6; four training epochs. Current selected submission: artifacts/submission_v8.csv.
+
+## Reproduction and submission checks
+
+Run the stages above in order; the MF experiment is optional. Run V7 before `select_ensemble.py`; V8 itself depends on V6, not V7. The V7/V8 combination was rejected because it reduced AUC on January 25. Repeated use of these overlapping temporal windows can overfit model selection. The latest local scores are not official leaderboard scores, and 0.82 has not been achieved in the recorded results.
+
+```powershell
+python select_ensemble.py
+python check_submission.py artifacts/submission_v8.csv
+```
+
+The checker verifies the header, all evaluation IDs, duplicates, finite probabilities, range and expected row count, and writes a checksum report beside the CSV. Run Python normally, without `-O`, because validation uses assertions. Upload the resulting CSV through the competition website; these scripts do not upload automatically.
+
+## Verification and provenance
+
+The published source has portable path changes relative to the completed local experiments. All Python files passed syntax compilation, and the portable checker validated the existing V8 output: 529,390 rows, zero missing IDs, duplicates or invalid probabilities. Full training was not repeated for this repository packaging step. Dependency pins record the local experiment versions; a clean dependency installation has not been retested.
+
+Commits organize previously completed experiments into separate reviewable stages; their timestamps reflect repository preparation. Historical scores are retained in results JSON files, including rejected experiments. Do not load pickle model caches from untrusted sources.
