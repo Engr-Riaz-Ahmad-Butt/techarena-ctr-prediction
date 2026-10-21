@@ -43,3 +43,7 @@ Run `python warm_context_experiment.py` after the preceding required stages. Loc
 ## V6
 
 Run `python preference_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.800327 / 0.786659**. Richer item factors and exposure-adjusted user profiles.
+
+## MF experiment (optional)
+
+Run `python factorization_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.800555 / 0.786745**. Factorization features failed to beat the matched control on both dates. This optional branch is not needed for V8.
