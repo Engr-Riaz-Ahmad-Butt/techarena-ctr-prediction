@@ -27,3 +27,7 @@ Historical metrics are recorded in `results/`. Runtime metrics are written to `a
 ## V2
 
 Run `python improve.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.731177 / 0.716325**. 64-dimensional factors, recency and candidate-relative features. User-reported official public score: 0.741028.
+
+## V3
+
+Run `python prepare_times.py` then `python timing_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.731246 / 0.716220**. Rejected: improvement did not transfer to both dates. This stage also produces base statistics caches used downstream.
