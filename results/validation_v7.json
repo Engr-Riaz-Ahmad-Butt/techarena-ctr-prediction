@@ -1,0 +1,22 @@
+[
+  {
+    "validation_day": 6,
+    "rows": 351380,
+    "v6_auc": 0.8003265778810233,
+    "new_model_auc": 0.7922534167756851,
+    "v7_blend_auc": 0.8017557115084814,
+    "improvement": 0.0014291336274580013,
+    "new_model_weight": 0.25,
+    "iterations": 650
+  },
+  {
+    "validation_day": 5,
+    "rows": 352300,
+    "v6_auc": 0.7866591474752135,
+    "new_model_auc": 0.7811663532719807,
+    "v7_blend_auc": 0.7885641477999861,
+    "improvement": 0.0019050003247725877,
+    "new_model_weight": 0.25,
+    "iterations": 650
+  }
+]

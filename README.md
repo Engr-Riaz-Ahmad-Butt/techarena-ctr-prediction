@@ -47,3 +47,7 @@ Run `python preference_experiment.py` after the preceding required stages. Local
 ## MF experiment (optional)
 
 Run `python factorization_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.800555 / 0.786745**. Factorization features failed to beat the matched control on both dates. This optional branch is not needed for V8.
+
+## V7
+
+Run `python ridge_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.801756 / 0.788564**. Blend 25% ridge-feature model with 75% V6.
