@@ -1,0 +1,22 @@
+[
+  {
+    "validation_day": 6,
+    "rows": 351380,
+    "v6_auc": 0.8003265778810233,
+    "choice_auc": 0.7784451152617071,
+    "v8_auc": 0.8051778816692848,
+    "improvement": 0.004851303788261485,
+    "choice_weight": 0.25,
+    "epochs": 4
+  },
+  {
+    "validation_day": 5,
+    "rows": 352300,
+    "v6_auc": 0.7866591474752135,
+    "choice_auc": 0.7725103054198353,
+    "v8_auc": 0.7942606754324852,
+    "improvement": 0.007601527957271759,
+    "choice_weight": 0.25,
+    "epochs": 4
+  }
+]

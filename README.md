@@ -51,3 +51,7 @@ Run `python factorization_experiment.py` after the preceding required stages. Lo
 ## V7
 
 Run `python ridge_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.801756 / 0.788564**. Blend 25% ridge-feature model with 75% V6.
+
+## V8
+
+Run `python choice_experiment.py` after the preceding required stages. Local January 26 / January 25 ROC AUC: **0.805178 / 0.794261**. Blend 25% supervised event-choice model with 75% V6; four training epochs. Current selected submission: artifacts/submission_v8.csv.
