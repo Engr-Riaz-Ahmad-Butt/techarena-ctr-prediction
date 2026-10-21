@@ -1,0 +1,18 @@
+[
+  {
+    "day": 6,
+    "baseline_auc": 0.8093851242812169,
+    "candidate_auc": 0.8098286106069565,
+    "improvement": 0.0004434863257396504,
+    "ridge_weight": 0.1,
+    "competition_strength": 0.5
+  },
+  {
+    "day": 5,
+    "baseline_auc": 0.795749653612112,
+    "candidate_auc": 0.7966711678626769,
+    "improvement": 0.0009215142505648588,
+    "ridge_weight": 0.1,
+    "competition_strength": 0.5
+  }
+]
