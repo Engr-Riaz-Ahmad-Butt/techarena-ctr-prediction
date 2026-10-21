@@ -1,0 +1,6 @@
+{
+  "validation_rows": 351380,
+  "baseline_auc": 0.5408110849618983,
+  "model_auc": 0.7029687553715671,
+  "iterations": 248
+}
