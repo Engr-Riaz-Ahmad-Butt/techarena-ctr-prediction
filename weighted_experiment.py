@@ -26,10 +26,17 @@ for day in [6,5]:
     se=float(np.sqrt(np.sum((influence(y,pred)-influence(y,base))**2)))
     report=dict(day=day,v10_auc=old,v11_auc=auc,improvement=delta,weights=selected,approximate_paired_95pct_interval=[delta-1.96*se,delta+1.96*se])
     reports.append(report);print(report,flush=True)
-    np.savez_compressed(ROOT/f'predictions_weighted_day{day}.npz',y=y,pred=pred)
+    reference=np.load(ROOT/f'predictions_v6_day{day}.npz')
+    assert np.array_equal(reference['y'],y)
+    np.savez_compressed(ROOT/f'predictions_weighted_day{day}.npz',
+                        y=y,pred=pred,events=reference['events'])
 (ROOT/'validation_v11.json').write_text(json.dumps(reports,indent=2))
 if not all(r['improvement']>0 for r in reports):
     print('Rejected; V10 remains selected.',flush=True);sys.exit(0)
+for day in [6,5]:
+    verified=np.load(ROOT/f'predictions_weighted_day{day}.npz')
+    np.savez_compressed(ROOT/f'predictions_v11_day{day}.npz',
+                        y=verified['y'],pred=verified['pred'],events=verified['events'])
 ids=None;parts=[]
 for name in ['stack','v6','v8','v7']:
     with (ROOT/f'submission_{name}.csv').open(newline='') as f:rows=list(csv.DictReader(f))

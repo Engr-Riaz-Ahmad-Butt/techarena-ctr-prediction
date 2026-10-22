@@ -1,0 +1,28 @@
+{
+  "recipe": {
+    "stack": 0.45,
+    "v6": 0.15,
+    "choice": 0.2,
+    "v7": 0.2,
+    "mode": "logit",
+    "competition_strength": 0.5
+  },
+  "validation": {
+    "6": {
+      "legacy_alias_auc": 0.810104863410634,
+      "legacy_exactly_v10": false,
+      "actual_v11_auc": 0.8101558472169009,
+      "archive": "predictions_rejected_event_propensity_day6.npz",
+      "corrected_alias": "predictions_v11_day6.npz"
+    },
+    "5": {
+      "legacy_alias_auc": 0.7971863952708331,
+      "legacy_exactly_v10": false,
+      "actual_v11_auc": 0.7972852469770625,
+      "archive": "predictions_rejected_event_propensity_day5.npz",
+      "corrected_alias": "predictions_v11_day5.npz"
+    }
+  },
+  "submission_v11_max_recipe_difference": 5.000000413701855e-11,
+  "submission_sha256": "0bf06c9673d3fa4b36aac4f5f2e3de8bb80c33540883e0aeea9dcf9ea019873e"
+}

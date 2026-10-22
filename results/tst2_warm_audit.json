@@ -1,0 +1,30 @@
+[
+  {
+    "day": 4,
+    "users": 50143,
+    "warm_pairs": 567256,
+    "exact_duplicate_triples": 5,
+    "timestamp_checks": "PASS"
+  },
+  {
+    "day": 5,
+    "users": 51535,
+    "warm_pairs": 572852,
+    "exact_duplicate_triples": 5,
+    "timestamp_checks": "PASS"
+  },
+  {
+    "day": 6,
+    "users": 52408,
+    "warm_pairs": 575920,
+    "exact_duplicate_triples": 5,
+    "timestamp_checks": "PASS"
+  },
+  {
+    "day": 7,
+    "users": 53003,
+    "warm_pairs": 577684,
+    "exact_duplicate_triples": 5,
+    "timestamp_checks": "PASS"
+  }
+]

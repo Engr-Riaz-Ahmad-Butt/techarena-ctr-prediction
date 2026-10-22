@@ -1,0 +1,48 @@
+{
+  "raw_evaluation_alignment": "PASS",
+  "rows": 529390,
+  "events": 52939,
+  "candidates": {
+    "submission_v11.csv": {
+      "sha256": "0bf06c9673d3fa4b36aac4f5f2e3de8bb80c33540883e0aeea9dcf9ea019873e",
+      "min": 0.0003359563269,
+      "max": 0.8212041508,
+      "mean": 0.052427023925688314,
+      "events_probability_sum_above_one": 9
+    },
+    "submission_v12.csv": {
+      "sha256": "a49d5efc3059ef97c07fe12130541d5286cb2f9f243a33252ae40bc02630474f",
+      "min": 5.19466e-05,
+      "max": 0.9999886662,
+      "mean": 0.5000009444832932,
+      "events_probability_sum_above_one": 52939
+    },
+    "submission_v13.csv": {
+      "sha256": "4bbd4e43d7817efda1273065b5e4074dbb2a4b4805df1485316523e790a78f28",
+      "min": 0.003534410301,
+      "max": 0.8526757505,
+      "mean": 0.06379480273515148,
+      "events_probability_sum_above_one": 3381
+    },
+    "submission_rank_v1_v11.csv": {
+      "sha256": "a49d5efc3059ef97c07fe12130541d5286cb2f9f243a33252ae40bc02630474f",
+      "min": 5.19466e-05,
+      "max": 0.9999886662,
+      "mean": 0.5000009444832932,
+      "events_probability_sum_above_one": 52939
+    },
+    "submission_v1stack.csv": {
+      "sha256": "4bbd4e43d7817efda1273065b5e4074dbb2a4b4805df1485316523e790a78f28",
+      "min": 0.003534410301,
+      "max": 0.8526757505,
+      "mean": 0.06379480273515148,
+      "events_probability_sum_above_one": 3381
+    }
+  },
+  "validation": {
+    "v11_day6": 0.810104863410634,
+    "v1stack_day6": 0.7209282214317333,
+    "v1_day6": 0.70296875414341,
+    "v11_day5": 0.7971863952708331
+  }
+}
