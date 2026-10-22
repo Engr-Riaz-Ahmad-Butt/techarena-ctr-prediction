@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "events": 100,
+  "rows": 1000,
+  "source_latent_vectors_exact": true,
+  "aligned_product_max_error": 8.940696716308594e-08,
+  "zero_theta_warm_probability_max_error": 1.1920928955078125e-07,
+  "chronology_targets_extra_fields_metadata": "PASS",
+  "validation_target_permutation_identity": true
+}

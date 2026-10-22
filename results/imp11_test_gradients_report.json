@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "coefficients_checked": 515,
+  "includes_no_click_target": true,
+  "independent_manual_loss_error": 0.0,
+  "manual_prediction_max_error": 2.7755575615628914e-17,
+  "finite_difference_gradient_max_error": 5.179354722884e-10,
+  "zero_coefficients_offset_identity_max_error": 2.7755575615628914e-17,
+  "zero_offset_uniform_probability": "1/11",
+  "float32_finite_probabilities": true,
+  "adam_first_step_max_error": 1.3877787807814457e-17,
+  "gradient_norm_cap_checked": true
+}
