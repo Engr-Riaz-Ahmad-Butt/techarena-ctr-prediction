@@ -1,0 +1,13 @@
+{
+  "baseline": "imp17_tree",
+  "sha256": {
+    "6": "026a68263ef67c503b667092be8e588f678efee68cfe51e6cc3218e7ad8d4b88",
+    "5": "0c97bf549c575f2067bb326c95ef08943220875b7ea8a4822944d7e22dc1e487"
+  },
+  "accepted_auc": {
+    "6": 0.8208642034117659,
+    "5": 0.8135598284060226
+  },
+  "independent_audit_sha256": "098a2087546cd9f22494cc3df94c9eefd09d1a3738e019b885fa8081e243ff18",
+  "note": "Frozen after both-date independent PASS, before first NCE fit. Same full first-event cohorts; goal remains local AUC0.83."
+}
