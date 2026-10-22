@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "imp20_tree.py": "bd1c882a1511a15e292ab8692950c06f3427baaf4caf80735ebac754b4aeb5e4",
+    "imp10_leafwise.py": "18ba28653b7ce241f04889e6c9dcce0132f3358c7629ef601e6ca9d183045bbb"
+  },
+  "valid_baseline_load": true,
+  "either_day_member_mutation_rejected": [
+    6,
+    5
+  ],
+  "audit_hash_mutation_rejected": true,
+  "unsuccessful_or_unconfirmed_audit_rejected": true,
+  "changed_manifest_rejected_before_confirmation_setup": true,
+  "only_parameter_change": {
+    "num_leaves": [
+      31,
+      63
+    ]
+  },
+  "test_scope": "AST baseline loader and first fit guard only; no imports or training."
+}

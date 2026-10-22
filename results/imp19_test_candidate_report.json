@@ -1,0 +1,91 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "trees": 735,
+      "features": 354,
+      "raw_auc": 0.8211703927511421,
+      "raw_weighted_auc": 0.8128868579978304,
+      "replay_rows": 1000,
+      "saved_model_replay_max_error": 0.0,
+      "manual_new32": {
+        "events": 100,
+        "cold_dense_profiles": 2,
+        "empty_histories": 0,
+        "product_max_error": 0.0,
+        "cosine_sum_error": 1.2212453270876722e-15
+      },
+      "accepted_incumbent_metrics_verified": true,
+      "recorded_trials_independently_recomputed": 5,
+      "weight": 0.5,
+      "recipe_max_error": 0.0,
+      "auc": {
+        "baseline": 0.8208642034117659,
+        "candidate": 0.8215282579633503,
+        "delta": 0.0006640545515843588,
+        "conditional_paired_event_95pct_interval": [
+          0.0004656561436814069,
+          0.0008624529594873107
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8124896418417158,
+        "candidate": 0.8132294572906558,
+        "delta": 0.0007398154489399733,
+        "conditional_paired_event_95pct_interval": [
+          0.0005117634453041119,
+          0.0009678674525758347
+        ]
+      }
+    }
+  ],
+  "causal_als_checkpoints": [
+    {
+      "cut": 3,
+      "checkpoint": "imp17_als_cut3.npz",
+      "cutoff": 1737590400,
+      "iteration": 6,
+      "prefix_exposures_and_global_ctr_exact": true,
+      "rotation_anchor_cut": 2,
+      "rotation_orthogonality_error": 1.9984014443252818e-15,
+      "procrustes_objective_error": 3.637978807091713e-11
+    },
+    {
+      "cut": 4,
+      "checkpoint": "imp17_als_cut4.npz",
+      "cutoff": 1737676800,
+      "iteration": 6,
+      "prefix_exposures_and_global_ctr_exact": true,
+      "rotation_anchor_cut": 2,
+      "rotation_orthogonality_error": 1.9984014443252818e-15,
+      "procrustes_objective_error": 7.275957614183426e-12
+    },
+    {
+      "cut": 5,
+      "checkpoint": "imp15_model_day5.npz",
+      "cutoff": 1737763200,
+      "iteration": 6,
+      "prefix_exposures_and_global_ctr_exact": true,
+      "rotation_anchor_cut": 2,
+      "rotation_orthogonality_error": 1.9984014443252818e-15,
+      "procrustes_objective_error": 7.275957614183426e-12
+    },
+    {
+      "cut": 6,
+      "checkpoint": "imp15_model_day6.npz",
+      "cutoff": 1737849600,
+      "iteration": 6,
+      "prefix_exposures_and_global_ctr_exact": true,
+      "rotation_anchor_cut": 2,
+      "rotation_orthogonality_error": 1.4432899320127035e-15,
+      "procrustes_objective_error": 1.4551915228366852e-11
+    }
+  ],
+  "both_dates_improved": false,
+  "day6_conditional_gate_passed": true,
+  "acceptance_gates_passed": false,
+  "ranking_scores_only": true,
+  "note": "Conditional intervals exclude reused-validation model/iteration/blend selection uncertainty."
+}
