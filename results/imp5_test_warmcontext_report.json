@@ -1,0 +1,79 @@
+{
+  "reports": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "mix": 0.5,
+      "recipe_max_error": 0.0,
+      "aligned_features": {
+        "exact_full_prefix_count_replay": true,
+        "warm_records": 575915,
+        "labelled_records": 370313,
+        "sampled_events": 100,
+        "sampled_warmcontext_max_error": 0.0,
+        "aligned_features": {
+          "orthogonality_error": 8.802830981652457e-16,
+          "procrustes_objective_error": 7.275957614183426e-12,
+          "sampled_feature_max_error": 0.0,
+          "cosine_sum_max_error": 1.1920928955078125e-07
+        }
+      },
+      "auc": {
+        "baseline": 0.8179481062613656,
+        "candidate": 0.8180674151802085,
+        "delta": 0.00011930891884293082,
+        "conditional_paired_event_95pct_interval": [
+          1.849439357877362e-05,
+          0.00022012344410708804
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8096116512719267,
+        "candidate": 0.809727935171866,
+        "delta": 0.00011628389993934007,
+        "conditional_paired_event_95pct_interval": [
+          2.0059340332086113e-06,
+          0.00023056186584547155
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "rows": 352300,
+      "mix": 0.5,
+      "recipe_max_error": 0.0,
+      "aligned_features": {
+        "exact_full_prefix_count_replay": true,
+        "warm_records": 572847,
+        "labelled_records": 308499,
+        "sampled_events": 100,
+        "sampled_warmcontext_max_error": 0.0,
+        "aligned_features": {
+          "orthogonality_error": 1.3322676295501878e-15,
+          "procrustes_objective_error": 1.4551915228366852e-11,
+          "sampled_feature_max_error": 0.0,
+          "cosine_sum_max_error": 1.7881393432617188e-07
+        }
+      },
+      "auc": {
+        "baseline": 0.8106447159499837,
+        "candidate": 0.8107281114951901,
+        "delta": 8.339554520642167e-05,
+        "conditional_paired_event_95pct_interval": [
+          -3.362103894943304e-05,
+          0.0002004121293622764
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.803552133929863,
+        "candidate": 0.8036361006592077,
+        "delta": 8.396672934463112e-05,
+        "conditional_paired_event_95pct_interval": [
+          -4.588214933896984e-05,
+          0.00021381560802823208
+        ]
+      }
+    }
+  ],
+  "note": "Conditional event intervals exclude reused-validation selection uncertainty."
+}

@@ -46,6 +46,8 @@ def fit(day,baseline_prefix,chosen=None):
     wu,wi,wh,wb,wt=sequence_data(day);del a;gc.collect()
     pop=np.bincount(wi,minlength=ni)+1;pop_bias=np.log(pop/pop.mean()).astype(np.float32)
     ps,acc=init32(start+max(day-2,2)*DAY,16)
+    ps=[np.ascontiguousarray(p) for p in ps]
+    acc=[np.ascontiguousarray(p) for p in acc]
     ps.extend([np.zeros((ni,4),np.float32),np.zeros((ni,2),np.float32)])
     acc.extend([np.full_like(ps[-2],.1),np.full_like(ps[-1],.1)])
     _,val=split(day);vu,vi,vh,_=event_data(val,hist)
