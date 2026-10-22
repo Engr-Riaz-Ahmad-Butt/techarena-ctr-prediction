@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "rejection_record_verified": true,
+  "unique_grid_entries": 9,
+  "eligible_settings": 0,
+  "confirmation_not_run": true,
+  "candidate_not_saved_or_promoted": true,
+  "frozen_baseline_hashes_and_metrics": {
+    "6": {
+      "auc": 0.8208642034117659,
+      "reweighted": 0.8124896418417158
+    },
+    "5": {
+      "auc": 0.8135598284060226,
+      "reweighted": 0.806559859990065
+    }
+  },
+  "core_sha256": "b1a461eb04a68542713c9d17f0d9245aadaea4ce9fcc86327caa10bfcf1fe98c",
+  "best_logged_trial": {
+    "epoch": 2,
+    "weight": 0.05,
+    "auc": 0.8207666301455846,
+    "reweighted": 0.8123968368933067
+  },
+  "limitation": "Rejected trial raw predictions/states were not saved; their scores are log records, not independently recomputed."
+}
