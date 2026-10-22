@@ -35,3 +35,9 @@ python imp5_test_aligned.py --tag timecontext
 Select a variant using January26 weighted AUC among independently confirmed candidates. Only then run `imp5_finalize.py --tag <selected> --version 19`, followed by `imp5_test_final.py --tag <selected> --version 19`. Generated CSVs, models and arrays are excluded from Git. V18 is preserved. No official submission is performed by these scripts.
 
 See [the aligned plan](aligned-factor-plan.md) for the original protocol. Metric reports are stored in `results/`; experiment artifacts are stored outside Git.
+
+## Completed V19 file
+
+The aligned final refit produced `submission_v19.csv` with529390rows. Independent final checks passed: unique IDs and exact order against verified V18, finite probabilities, exact frozen ensemble replay, exact V18 reconstruction,599trees/depth7/LR0.08/258features, and exact saved-model raw prediction replay on10000evaluationrows. V18 was preserved unchanged. SHA256: `b7b50b2d93e470f5917ad86a2683466fafae7fd270fd5fff90d362f1d5a9d1ac`.
+
+Official V19 AUC and rank are unknown until competition submission. Local AUC remains0.817948106 /0.810644716; the local0.82 target has not been reached.

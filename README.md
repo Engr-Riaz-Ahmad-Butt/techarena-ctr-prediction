@@ -1,6 +1,6 @@
 # TechArena CTR Prediction
 
-Latest verified local model: **V18**, AUC **0.816800** on January 26 and **0.808297** on January 25. The requested 0.82 threshold has not been reached. Its user-confirmed official competition score is **0.809189** (rank 16 in the supplied leaderboard screenshot). V17 was not uploaded. See [V18 decomposition](docs/v18-decomposition.md) for validation and reproduction. Datasets, model weights and submission CSVs are excluded from Git.
+Latest verified local candidate: **V19**, AUC **0.817948** on January 26 and **0.810645** on January 25. Its official score is unknown; the latest user-confirmed official score is **V18: 0.809189** (rank 16 in the supplied screenshot). The local 0.82 target remains unmet. See [aligned and timestamp experiments](docs/aligned-and-time-context-experiments.md). Datasets, model weights and submission CSVs are excluded from Git.
 
 Click-through probability prediction for the TechArena challenge. Each event contains ten candidates and at most one click. Models combine user histories, collaborative features and CatBoost. Author: Riaz Ahmad Butt.
 
