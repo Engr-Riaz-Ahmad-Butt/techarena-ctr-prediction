@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "version": "4.6.0",
+  "rows": 2048,
+  "features": 12,
+  "trees": 5,
+  "tiny_smoke_threads": 1,
+  "production_plan_threads": 8,
+  "predictions_finite_and_bounded": true,
+  "deterministic_repeated_fit_max_error": 0.0,
+  "native_reload_max_error": 0.0
+}
