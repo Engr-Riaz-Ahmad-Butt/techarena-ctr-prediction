@@ -1,0 +1,7 @@
+# Rank calibration of existing complementary experts
+
+Declared before any imp16 score. Pending independent ALS acceptance, freeze the imp15_als baseline (.8192865564479013/.8122068563512375 provisional) and test one additional rank-calibrated member among fixed leafwise raw, warm-context CatBoost raw, dense bilinear raw, V6 probability, V7 probability. All models were fitted before their validation cutoff. No new training, feature construction or label-dependent normalization.
+
+Full-population average percentile ranks = rankdata(method=average)/(n+1). Candidate=(1-weight)*rank(baseline)+weight*rank(member), weights .05/.1/.2/.3, five fixed members, twenty settings. January26 ordinary global AUC selects only among settings improving both ordinary and history-weighted AUC; require positive conditional paired intervals before January25. Freeze member/weight on January25 and require both-date gain plus independent full row/recipe/score audit before acceptance. This tests score-scale diversity separately from ALS factor fitting. Reused validation selection uncertainty remains. Ranking-only experiment; no CSV or calibrated probability claim. Local.83 remains the goal. Do not run until ALS has passed independent both-date audit.
+
+ALS baseline freeze confirmed before imp16 scoring: independent report imp15_test_candidate_report.json PASS with both_dates_improved=true and ranking_scores_only=true. Independent imp16 source/protocol review passed.
