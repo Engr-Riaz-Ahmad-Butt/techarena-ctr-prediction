@@ -1,0 +1,34 @@
+{
+  "reports": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "mix": 0.5,
+      "recipe_max_error": 0.0,
+      "aligned_features": {
+        "sampled_events": 100,
+        "sampled_feature_max_error": 0.0,
+        "history_timestamps_strictly_before_event": true
+      },
+      "auc": {
+        "baseline": 0.8168002939057617,
+        "candidate": 0.8169265372729072,
+        "delta": 0.00012624336714550655,
+        "conditional_paired_event_95pct_interval": [
+          2.0672141258378646e-05,
+          0.00023181459303263445
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8085400876641403,
+        "candidate": 0.8086624533229068,
+        "delta": 0.00012236565876644345,
+        "conditional_paired_event_95pct_interval": [
+          8.299241983470042e-07,
+          0.0002439013933345399
+        ]
+      }
+    }
+  ],
+  "note": "Intervals exclude repeated selection and distribution uncertainty."
+}

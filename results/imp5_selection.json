@@ -1,0 +1,9 @@
+{
+  "selected_variant": "aligned",
+  "selection_metric": "January26 history-weighted AUC",
+  "aligned": 0.8096116512719267,
+  "timecontext": 0.8086624533229068,
+  "context_confirmation": "Skipped: below frozen incumbent selection floor",
+  "official_score": null,
+  "baseline_official_auc": 0.809189
+}

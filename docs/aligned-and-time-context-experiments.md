@@ -19,7 +19,9 @@ Independent replay verifies both dates, exact blend reconstruction, event/label 
 
 A second hypothesis adds32 timestamp/activity features to V18's226features: elapsed click ages, activity span, time-bucket/day-type history composition, and four H-factor history profiles conditioned on recency or matching time of day. All histories must precede their event, and all checkpoint labels must precede their training block. A10000-row smoke check passed; bucket extraction was checked against every encoded training and evaluation event.
 
-The original compute-saving gate would have skipped this arm because the aligned ordinary gain exceeded0.001. The scope was explicitly expanded after aligned day6 and before any timestamp-context AUC, because the competition gap remains substantial. This deviation is recorded in [the timestamp plan](time-context-plan.md). If the aligned candidate confirms independently, the timestamp variant must beat its frozen day6 weighted AUC0.809611651 before a confirmation fit. No timestamp result has yet been used to change this floor or model settings.
+The original compute-saving gate would have skipped this arm because the aligned ordinary gain exceeded0.001. The scope was explicitly expanded after aligned day6 and before any timestamp-context AUC, because the competition gap remains substantial. This deviation is recorded in [the timestamp plan](time-context-plan.md). If the aligned candidate confirms independently, the timestamp variant must beat its frozen day6 weighted AUC0.809611651 before a confirmation fit. The timestamp result did not change this floor or any model settings.
+
+The timestamp arm selected50% replacement on January26: ordinary AUC **0.816926537**, weighted AUC **0.808662453**. This is a small gain over V18, but below the aligned selection floor **0.809611651**. Its independent recipe and100 sampled-event feature replays were exact. The confirmation and final fits were skipped. The selected final variant is **aligned**; its official score remains unknown until submission.
 
 ## Reproduction after V18
 

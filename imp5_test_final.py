@@ -67,11 +67,24 @@ if __name__ == '__main__':
     assert model.tree_count_ == 599 and params['depth'] == 7
     assert abs(params['learning_rate'] - .08) < 1e-7
     assert len(model.feature_names_) == 258
+    # Replay complete events to preserve cached candidate grouping and row order.
+    sampled_events = np.linspace(0, 52939 - 1, 1000, dtype=int)
+    sampled_rows = (sampled_events[:, None] * 10 + np.arange(10)).ravel()
+    matrices = [np.load(ROOT / 'features' / name, mmap_mode='r') for name in
+                ['stack_eval_c7.npy', 'imp3_wf_eval.npy', 'imp4_decompose_eval.npy',
+                 f'imp5_{args.tag}_eval.npy']]
+    assert [matrix.shape for matrix in matrices] == [(529390, 190), (529390, 4),
+                                                     (529390, 32), (529390, 32)]
+    sampled_features = np.column_stack([matrix[sampled_rows] for matrix in matrices])
+    replay_raw = model.predict_proba(sampled_features)[:, 1]
+    raw_replay_error = float(np.max(np.abs(replay_raw - raw[sampled_rows])))
+    assert raw_replay_error < 1e-12, raw_replay_error
     result = dict(candidate=path.name, rows=len(ids), unique_ids=len(set(ids)),
                   ids_match_verified_v18=True, probabilities_valid=True,
                   frozen_recipe_max_error=error, v18_replay_max_error=baseline_error,
                   trees=model.tree_count_, depth=params['depth'], learning_rate=params['learning_rate'],
                   features=len(model.feature_names_), variant=args.tag,
+                  raw_model_replay_rows=len(sampled_rows), raw_model_replay_max_error=raw_replay_error,
                   sha256=hashlib.sha256(path.read_bytes()).hexdigest(), official_score=None,
                   status='PASS')
     (ROOT / f'imp5_{args.tag}_final_independent_checks.json').write_text(json.dumps(result, indent=2))
