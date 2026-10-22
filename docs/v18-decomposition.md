@@ -11,7 +11,7 @@ Every training block uses a warm-factor checkpoint fitted strictly before its da
 
 January 26 selected complete component replacement from the predeclared 0%, 50%, 100% grid using history-weighted AUC. That choice and all classifier settings were frozen for January 25. Independent replay produced exactly the saved predictions on both dates. All four paired event-level conditional improvement intervals are positive. These dates have been reused for model development; the intervals exclude repeated-selection bias and evaluation distribution uncertainty.
 
-The requested 0.82 threshold has not been reached locally. The official competition score is unknown. The user confirmed V17 has not been uploaded. The latest directly confirmed official score remains V11 at 0.801.
+The requested 0.82 threshold has not been reached locally. The user confirmed on 2026-10-22 that submission_v18.csv received official AUC **0.809189**, rank16 in the supplied screenshot. V17 was not uploaded. This supersedes the previous directly confirmed V11 score of0.801; the local and official validation populations differ.
 
 After reproducing V17 and its causal caches:
 
