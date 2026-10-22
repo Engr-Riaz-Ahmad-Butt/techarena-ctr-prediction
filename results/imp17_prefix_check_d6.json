@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "checkpoints": [
+    {
+      "cut": 3,
+      "checkpoint": "imp17_als_cut3.npz",
+      "cutoff": 1737590400,
+      "iteration": 6,
+      "prefix_exposures_and_global_ctr_exact": true
+    },
+    {
+      "cut": 4,
+      "checkpoint": "imp17_als_cut4.npz",
+      "cutoff": 1737676800,
+      "iteration": 6,
+      "prefix_exposures_and_global_ctr_exact": true
+    }
+  ]
+}
