@@ -1,0 +1,44 @@
+[
+  {
+    "day": 6,
+    "epoch": 6,
+    "weight": 0.1,
+    "auc": 0.8189548747277751,
+    "reweighted": 0.8106160278606849,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.8072197813226204,
+    "baseline_prefix": "imp10_leafwise",
+    "delta": 0.00013032439695792597,
+    "delta_reweighted": 0.00016846257979463708,
+    "paired_interval": [
+      1.419846948929804e-05,
+      0.0002464503244265539
+    ],
+    "weighted_paired_interval": [
+      4.167362308189407e-05,
+      0.0002952515365073801
+    ]
+  },
+  {
+    "day": 5,
+    "epoch": 6,
+    "weight": 0.1,
+    "auc": 0.8116192058777973,
+    "reweighted": 0.8045084422704716,
+    "baseline_auc": 0.8111871567756577,
+    "baseline_reweighted": 0.8040558292494203,
+    "raw_auc": 0.7998183395659257,
+    "baseline_prefix": "imp10_leafwise",
+    "delta": 0.0004320491021396755,
+    "delta_reweighted": 0.00045261302105126244,
+    "paired_interval": [
+      0.00029761318939673117,
+      0.0005664850148826199
+    ],
+    "weighted_paired_interval": [
+      0.00030994477539655446,
+      0.0005952812667059705
+    ]
+  }
+]

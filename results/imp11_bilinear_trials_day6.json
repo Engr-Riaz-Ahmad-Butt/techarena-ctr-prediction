@@ -1,0 +1,134 @@
+[
+  {
+    "day": 6,
+    "epoch": 2,
+    "weight": 0.1,
+    "auc": 0.8189527564295813,
+    "reweighted": 0.8106140268117977,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.8072777409933788,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 2,
+    "weight": 0.25,
+    "auc": 0.8185534589258753,
+    "reweighted": 0.8102602910375001,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.8072777409933788,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 2,
+    "weight": 0.5,
+    "auc": 0.8165394829951,
+    "reweighted": 0.8082456530291566,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.8072777409933788,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 4,
+    "weight": 0.1,
+    "auc": 0.8189487549570613,
+    "reweighted": 0.8106095793065476,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.807217576985194,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 4,
+    "weight": 0.25,
+    "auc": 0.8185448421751744,
+    "reweighted": 0.8102502758745683,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.807217576985194,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 4,
+    "weight": 0.5,
+    "auc": 0.8165190366345424,
+    "reweighted": 0.8082217053842964,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.807217576985194,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 6,
+    "weight": 0.1,
+    "auc": 0.8189548747277751,
+    "reweighted": 0.8106160278606849,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.8072197813226204,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 6,
+    "weight": 0.25,
+    "auc": 0.8185517300899665,
+    "reweighted": 0.8102583040207614,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.8072197813226204,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 6,
+    "weight": 0.5,
+    "auc": 0.8165197272682576,
+    "reweighted": 0.8082254137424991,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.8072197813226204,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 8,
+    "weight": 0.1,
+    "auc": 0.8189417184352518,
+    "reweighted": 0.8106012777151965,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.8072355351675571,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 8,
+    "weight": 0.25,
+    "auc": 0.8185202032954262,
+    "reweighted": 0.8102218784189738,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.8072355351675571,
+    "baseline_prefix": "imp10_leafwise"
+  },
+  {
+    "day": 6,
+    "epoch": 8,
+    "weight": 0.5,
+    "auc": 0.8164642978059609,
+    "reweighted": 0.8081583307559571,
+    "baseline_auc": 0.8188245503308171,
+    "baseline_reweighted": 0.8104475652808902,
+    "raw_auc": 0.8072355351675571,
+    "baseline_prefix": "imp10_leafwise"
+  }
+]

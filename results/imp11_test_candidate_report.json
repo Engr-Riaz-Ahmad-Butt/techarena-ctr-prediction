@@ -1,0 +1,65 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "epoch": 6,
+      "step": 1722,
+      "weight": 0.1,
+      "full_raw_model_replay_max_error": 0.0,
+      "recipe_max_error": 0.0,
+      "independent_causal_pack_events": 100,
+      "causal_pack_vectors_exact": true,
+      "auc": {
+        "baseline": 0.8188245503308171,
+        "candidate": 0.8189548747277751,
+        "delta": 0.00013032439695792597,
+        "conditional_paired_event_95pct_interval": [
+          1.4198469489298053e-05,
+          0.00024645032442655387
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8104475652808902,
+        "candidate": 0.8106160278606849,
+        "delta": 0.00016846257979463708,
+        "conditional_paired_event_95pct_interval": [
+          4.167362308189407e-05,
+          0.0002952515365073801
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "rows": 352300,
+      "epoch": 6,
+      "step": 1722,
+      "weight": 0.1,
+      "full_raw_model_replay_max_error": 0.0,
+      "recipe_max_error": 0.0,
+      "independent_causal_pack_events": 100,
+      "causal_pack_vectors_exact": true,
+      "auc": {
+        "baseline": 0.8111871567756577,
+        "candidate": 0.8116192058777973,
+        "delta": 0.0004320491021396755,
+        "conditional_paired_event_95pct_interval": [
+          0.0002976131893967312,
+          0.0005664850148826198
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8040558292494203,
+        "candidate": 0.8045084422704716,
+        "delta": 0.00045261302105126244,
+        "conditional_paired_event_95pct_interval": [
+          0.0003099447753965544,
+          0.0005952812667059705
+        ]
+      }
+    }
+  ],
+  "both_dates_improved": true,
+  "note": "Intervals exclude reused-validation epoch/blend/model selection uncertainty."
+}

@@ -1,0 +1,13 @@
+[
+  {
+    "day": 5,
+    "epoch": 6,
+    "weight": 0.1,
+    "auc": 0.8116192058777973,
+    "reweighted": 0.8045084422704716,
+    "baseline_auc": 0.8111871567756577,
+    "baseline_reweighted": 0.8040558292494203,
+    "raw_auc": 0.7998183395659257,
+    "baseline_prefix": "imp10_leafwise"
+  }
+]
