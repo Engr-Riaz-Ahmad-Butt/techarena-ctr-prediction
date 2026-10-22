@@ -1,5 +1,7 @@
 # TechArena CTR Prediction
 
+Latest verified local candidate: **V17**, AUC **0.816135** on January 26 and **0.807375** on January 25. Its official competition score is unknown. Earlier sections record the experiment sequence; current results and reproduction order are in [V15–V17 experiments](docs/v15-v17-experiments.md). Datasets, model weights and submission CSVs are excluded from Git.
+
 Click-through probability prediction for the TechArena challenge. Each event contains ten candidates and at most one click. Models combine user histories, collaborative features and CatBoost. Author: Riaz Ahmad Butt.
 
 ## Setup
