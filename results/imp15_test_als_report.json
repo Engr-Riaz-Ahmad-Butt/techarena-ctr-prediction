@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "user_dense_lstsq_max_error": 2.220446049250313e-16,
+  "item_dense_lstsq_max_error": 8.326672684688674e-17,
+  "empty_zero_background_row_prior_and_zero_latent": true,
+  "empty_nonzero_background_row_dense_match": true,
+  "nonzero_global_other_bias_prior": true,
+  "uniform_user_and_item_terms_verified": true,
+  "input_gram_rhs_not_mutated": true,
+  "objective_before": 2.405652308998042,
+  "objective_after_user": 1.4572041265088505,
+  "objective_after_item": 0.9197461175890762,
+  "numba_threads": 4,
+  "blas_threads": 1
+}
