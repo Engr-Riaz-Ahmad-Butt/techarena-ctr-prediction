@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "cold_dense_foldin_max_error": 9.71445146547012e-17,
+  "duplicate_removal_prediction_max_error": 0.0,
+  "known_users_not_refitted": true,
+  "empty_history_global_item_fallback": true,
+  "future_history_rejected": true,
+  "source_model_arrays_unmodified": true
+}

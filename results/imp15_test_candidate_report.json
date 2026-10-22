@@ -1,0 +1,73 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "iteration": 6,
+      "weight": 0.05,
+      "prefix_global_ctr": 0.06288503633211236,
+      "prefix_exposures_exact": true,
+      "known_events": 34543,
+      "full_known_raw_replay_max_error": 0.0,
+      "cold_events": 595,
+      "cold_dense_checked": 100,
+      "cold_dense_raw_replay_max_error": 2.7755575615628914e-16,
+      "rank_recipe_max_error": 0.0,
+      "auc": {
+        "baseline": 0.8189548747277751,
+        "candidate": 0.8192865564479013,
+        "delta": 0.000331681720126209,
+        "conditional_paired_event_95pct_interval": [
+          0.00022480405430690663,
+          0.0004385593859455114
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8106160278606849,
+        "candidate": 0.8109911605395299,
+        "delta": 0.000375132678845036,
+        "conditional_paired_event_95pct_interval": [
+          0.00025739711551420554,
+          0.0004928682421758664
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "rows": 352300,
+      "iteration": 6,
+      "weight": 0.05,
+      "prefix_global_ctr": 0.06290506096814975,
+      "prefix_exposures_exact": true,
+      "known_events": 34357,
+      "full_known_raw_replay_max_error": 0.0,
+      "cold_events": 873,
+      "cold_dense_checked": 100,
+      "cold_dense_raw_replay_max_error": 1.3877787807814457e-16,
+      "rank_recipe_max_error": 0.0,
+      "auc": {
+        "baseline": 0.8116192058777973,
+        "candidate": 0.8122068563512375,
+        "delta": 0.0005876504734401156,
+        "conditional_paired_event_95pct_interval": [
+          0.0004777588809976337,
+          0.0006975420658825974
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8045084422704716,
+        "candidate": 0.8051576458558081,
+        "delta": 0.0006492035853364886,
+        "conditional_paired_event_95pct_interval": [
+          0.0005317295884787596,
+          0.0007666775821942175
+        ]
+      }
+    }
+  ],
+  "both_dates_improved": true,
+  "ranking_scores_only": true,
+  "official_score": null,
+  "note": "Uniform unknown alternatives are a modeling assumption. Intervals exclude reused-validation selection uncertainty."
+}

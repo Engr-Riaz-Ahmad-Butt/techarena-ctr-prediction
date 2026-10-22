@@ -1,0 +1,92 @@
+[
+  {
+    "day": 6,
+    "iteration": 2,
+    "weight": 0.05,
+    "auc": 0.8190823152752368,
+    "reweighted": 0.8108166504311076,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.7633656455589468
+  },
+  {
+    "day": 6,
+    "iteration": 2,
+    "weight": 0.1,
+    "auc": 0.8188851235200323,
+    "reweighted": 0.8106906564875085,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.7633656455589468
+  },
+  {
+    "day": 6,
+    "iteration": 2,
+    "weight": 0.2,
+    "auc": 0.8175595259982753,
+    "reweighted": 0.8094874687033978,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.7633656455589468
+  },
+  {
+    "day": 6,
+    "iteration": 4,
+    "weight": 0.05,
+    "auc": 0.819217025080292,
+    "reweighted": 0.810934804233914,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.7618215452305495
+  },
+  {
+    "day": 6,
+    "iteration": 4,
+    "weight": 0.1,
+    "auc": 0.8191358652476783,
+    "reweighted": 0.8109077379126756,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.7618215452305495
+  },
+  {
+    "day": 6,
+    "iteration": 4,
+    "weight": 0.2,
+    "auc": 0.8179838966717509,
+    "reweighted": 0.8098393986650629,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.7618215452305495
+  },
+  {
+    "day": 6,
+    "iteration": 6,
+    "weight": 0.05,
+    "auc": 0.8192865564479013,
+    "reweighted": 0.8109911605395299,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.7611342871737934
+  },
+  {
+    "day": 6,
+    "iteration": 6,
+    "weight": 0.1,
+    "auc": 0.8192657233542974,
+    "reweighted": 0.8110110200062828,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.7611342871737934
+  },
+  {
+    "day": 6,
+    "iteration": 6,
+    "weight": 0.2,
+    "auc": 0.8182038848662566,
+    "reweighted": 0.8100028629268534,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.7611342871737934
+  }
+]
