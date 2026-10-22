@@ -1,0 +1,48 @@
+{
+  "reports": [
+    {
+      "day": 6,
+      "path": "imp2_warm1.0_d16_pc1_day6.npz",
+      "rows": 351380,
+      "baseline_auc": 0.8101558472169009,
+      "candidate_auc": 0.813889862585539,
+      "delta": 0.003734015368638044,
+      "recipe_max_difference": 0.0,
+      "paired_event_95pct_interval": [
+        0.003234087016007573,
+        0.004233943721268515
+      ],
+      "history_weighted_baseline_auc": 0.8022342576696111,
+      "history_weighted_candidate_auc": 0.8058371122178267,
+      "history_weighted_delta": 0.0036028545482156282,
+      "weighted_paired_event_95pct_interval": [
+        0.003058021763397833,
+        0.0041476873330334235
+      ],
+      "note": "Interval conditional on recipe and reweighting; excludes repeated-selection bias and evaluation-distribution uncertainty."
+    },
+    {
+      "day": 5,
+      "path": "imp2_warm1.0_d16_pc1_day5.npz",
+      "rows": 352300,
+      "baseline_auc": 0.7972852469770625,
+      "candidate_auc": 0.8047283764726916,
+      "delta": 0.007443129495629086,
+      "recipe_max_difference": 0.0,
+      "paired_event_95pct_interval": [
+        0.0068088098525212375,
+        0.008077449138736934
+      ],
+      "history_weighted_baseline_auc": 0.7906055693278453,
+      "history_weighted_candidate_auc": 0.7978562728739904,
+      "history_weighted_delta": 0.007250703546145099,
+      "weighted_paired_event_95pct_interval": [
+        0.006586514883639712,
+        0.007914892208650486
+      ],
+      "note": "Interval conditional on recipe and reweighting; excludes repeated-selection bias and evaluation-distribution uncertainty."
+    }
+  ],
+  "improves_both": true,
+  "target_reached_both": false
+}

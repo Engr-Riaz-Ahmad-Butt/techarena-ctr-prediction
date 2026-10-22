@@ -1,0 +1,14 @@
+{
+  "day": 6,
+  "auxiliary_weight": 1.0,
+  "dimension": 16,
+  "pop_correct": true,
+  "epoch": 10,
+  "weight": 0.2,
+  "auc": 0.813889862585539,
+  "raw_auc": 0.8015461682448543,
+  "baseline_auc": 0.8101558472169009,
+  "warm_pairs": 575915,
+  "history_weighted_auc": 0.8058371122178267,
+  "selection_score": 0.8058371122178267
+}

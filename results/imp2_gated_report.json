@@ -1,0 +1,22 @@
+[
+  {
+    "day": 6,
+    "gate": "history_length<=4",
+    "weight": 0.05,
+    "rows_gated": 25550,
+    "baseline_auc": 0.8101558472169009,
+    "auc": 0.8101819332751806,
+    "baseline_history_weighted_auc": 0.8022342576696111,
+    "history_weighted_auc": 0.8022822961430561
+  },
+  {
+    "day": 5,
+    "gate": "history_length<=4",
+    "weight": 0.05,
+    "rows_gated": 28460,
+    "baseline_auc": 0.7972852469770625,
+    "auc": 0.7973030843511533,
+    "baseline_history_weighted_auc": 0.7906055693278453,
+    "history_weighted_auc": 0.7906340696449871
+  }
+]

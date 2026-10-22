@@ -1,0 +1,25 @@
+[
+  {
+    "day": 6,
+    "auxiliary_weight": 0.15,
+    "epoch": 5,
+    "weight": 0.05,
+    "auc": 0.8101386700742668,
+    "raw_auc": 0.7814701741750281,
+    "baseline_auc": 0.8101558472169009,
+    "warm_pairs": 575915
+  },
+  {
+    "day": 5,
+    "auxiliary_weight": 0.15,
+    "dimension": 32,
+    "epoch": 5,
+    "weight": 0.05,
+    "auc": 0.7979056455794757,
+    "raw_auc": 0.7761926460026577,
+    "baseline_auc": 0.7972852469770625,
+    "warm_pairs": 572847,
+    "history_weighted_auc": 0.7912399056304793,
+    "selection_score": 0.7979056455794757
+  }
+]

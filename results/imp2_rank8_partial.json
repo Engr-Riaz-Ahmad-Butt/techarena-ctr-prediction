@@ -1,0 +1,14 @@
+{
+  "status": "stopped_early_below_accepted_rank16",
+  "day": 6,
+  "dimension": 8,
+  "auxiliary_weight": 1.0,
+  "pop_correct": true,
+  "epoch": 6,
+  "weight": 0.05,
+  "auc": 0.8104772951127197,
+  "history_weighted_auc": 0.8025773885329915,
+  "accepted_rank16_auc": 0.813889862585539,
+  "accepted_rank16_history_weighted_auc": 0.8058371122178267,
+  "confirmation_run": false
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "day": 6,
+    "sample_events": 200,
+    "factor_dimension": 16,
+    "raw_checkpoint_max_difference": 0.0
+  },
+  {
+    "day": 5,
+    "sample_events": 200,
+    "factor_dimension": 16,
+    "raw_checkpoint_max_difference": 0.0
+  }
+]

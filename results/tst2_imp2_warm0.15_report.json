@@ -1,0 +1,34 @@
+{
+  "reports": [
+    {
+      "day": 6,
+      "path": "imp2_warm0.15_day6.npz",
+      "rows": 351380,
+      "baseline_auc": 0.8101558472169009,
+      "candidate_auc": 0.8101386700742668,
+      "delta": -1.717714263416159e-05,
+      "recipe_max_difference": 0.0,
+      "paired_event_95pct_interval": [
+        -0.00013710154450377655,
+        0.00010274725923545337
+      ],
+      "note": "Interval conditional on recipe; excludes repeated-selection bias."
+    },
+    {
+      "day": 5,
+      "path": "imp2_warm0.15_day5.npz",
+      "rows": 352300,
+      "baseline_auc": 0.7972852469770625,
+      "candidate_auc": 0.7979056455794757,
+      "delta": 0.0006203986024132524,
+      "recipe_max_difference": 0.0,
+      "paired_event_95pct_interval": [
+        0.00048303358584053733,
+        0.0007577636189859675
+      ],
+      "note": "Interval conditional on recipe; excludes repeated-selection bias."
+    }
+  ],
+  "improves_both": false,
+  "target_reached_both": false
+}

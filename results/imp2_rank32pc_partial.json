@@ -1,0 +1,17 @@
+{
+  "status": "stopped_early_below_accepted_rank16",
+  "day": 6,
+  "dimension": 32,
+  "auxiliary_weight": 1.0,
+  "pop_correct": true,
+  "epoch": 5,
+  "weight": 0.1,
+  "auc": 0.8112704435160089,
+  "history_weighted_auc": 0.8033780802620532,
+  "raw_auc": 0.7940539887990026,
+  "raw_peak_epoch": 3,
+  "raw_peak_auc": 0.7956173505892123,
+  "accepted_rank16_auc": 0.813889862585539,
+  "accepted_rank16_history_weighted_auc": 0.8058371122178267,
+  "confirmation_run": false
+}

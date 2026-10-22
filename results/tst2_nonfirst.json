@@ -1,0 +1,15 @@
+{
+  "checkpoint": "imp2_model_warm1.0_d16_pc1_day6.npz",
+  "rows": 100000,
+  "events": 10000,
+  "eligible_events": 62813,
+  "weight": 0.2,
+  "sampling": "Deterministic evenly spaced eligible event indices; no labels inspected for sampling.",
+  "baseline": "V6 validation checkpoint, selected on Jan26 first events; trained before Jan26",
+  "auc": {
+    "v6": 0.8163105257834237,
+    "warm_raw": 0.8191979788059355,
+    "warm_frozen_blend": 0.8258625211247728
+  },
+  "caution": "Independent diagnostic on non-first events; not a match to official event distribution or full V11."
+}
