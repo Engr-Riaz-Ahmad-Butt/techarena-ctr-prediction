@@ -35,12 +35,14 @@ def prepare(day):
 def augmented(factors):return np.column_stack([np.ones(len(factors)),factors])
 
 
-def score(rows,U,V,bu,bi,g,exposures):
+def score(rows,U,V,bu,bi,g,exposures,return_profile=False,histories=None,history_times=None):
     e=rows[::10];users=e[:,0];items=rows[:,1].reshape(-1,10)
     u=U[users].copy();bias=bu[users].copy();cold=exposures[users]==0
     if cold.any():
-        selected=e[cold];h=np.asarray(hist[selected[:,6]])
-        stamps=np.asarray(np.load(ROOT/'train_times.npy',mmap_mode='r')[selected[:,6]])
+        if histories is None:histories=hist
+        if history_times is None:history_times=np.load(ROOT/'train_times.npy',mmap_mode='r')
+        selected=e[cold];h=np.asarray(histories[selected[:,6]])
+        stamps=np.asarray(history_times[selected[:,6]])
         assert np.all((stamps<selected[:,2,None])|(h<0))
         valid=h>=0;local=np.repeat(np.arange(len(h)),20)[valid.ravel()]
         target_items=h.ravel()[valid.ravel()]
@@ -52,6 +54,7 @@ def score(rows,U,V,bu,bi,g,exposures):
         count=np.bincount(local,minlength=len(h))
         cb,cu=solve_rows(w.indptr,w.indices,w.data,t.data,V,bi,gram,rhs,9.*count/ni,g,np.zeros(len(h)))
         u[cold]=cu;bias[cold]=cb
+    if return_profile:return u,bias
     return (g+bias[:,None]+bi[items]+np.einsum('ed,ecd->ec',u,V[items])).ravel()
 
 

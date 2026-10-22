@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "score_regressions": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "default_raw_max_error": 0.0,
+      "optional_profile_raw_max_error": 0.0
+    },
+    {
+      "day": 5,
+      "rows": 352300,
+      "default_raw_max_error": 0.0,
+      "optional_profile_raw_max_error": 0.0
+    }
+  ],
+  "manual_feature_events": 100,
+  "scalar32_manual_max_error": 0.0,
+  "first290_columns_unchanged": true,
+  "sampled_cold_events": 3,
+  "sampled_empty_histories": 1,
+  "source_cutoff_chronology": true
+}
