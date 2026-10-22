@@ -1,0 +1,50 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "imp18_nce_core.py": "bb6173278653fe5d239aeaf0639b7416b6124cc45167c9bb55d634afbb0d9d3e",
+    "imp18_nce.py": "565af500bf4be032701c3fbddf338231c8b34834e8e99627d6636e3c889e1ed0"
+  },
+  "finite_difference_tests": [
+    {
+      "mode": "real",
+      "clicked": true,
+      "finite_difference_max_error": 5.387661428102319e-10,
+      "independent_aggregated_gradient_max_error": 1.1102230246251565e-16,
+      "loss_error": 8.881784197001252e-16
+    },
+    {
+      "mode": "real",
+      "clicked": false,
+      "finite_difference_max_error": 4.3797854232252575e-10,
+      "independent_aggregated_gradient_max_error": 5.551115123125783e-17,
+      "loss_error": 0.0
+    },
+    {
+      "mode": "warm",
+      "clicked": true,
+      "finite_difference_max_error": 5.251731549638095e-10,
+      "independent_aggregated_gradient_max_error": 5.551115123125783e-17,
+      "loss_error": 8.881784197001252e-16
+    }
+  ],
+  "float32_snapshot_updates": [
+    {
+      "mode": "real",
+      "snapshot_adagrad_parameter_max_error": 7.450580596923828e-09,
+      "snapshot_adagrad_accumulator_max_error": 1.1920928955078125e-07,
+      "parameter_isolation": true
+    },
+    {
+      "mode": "warm",
+      "snapshot_adagrad_parameter_max_error": 0.0,
+      "snapshot_adagrad_accumulator_max_error": 1.4901161193847656e-08,
+      "parameter_isolation": true
+    }
+  ],
+  "repeated_candidate_history_and_positive_noise_collisions": true,
+  "stable_extreme_bernoulli": true,
+  "predict_logit_max_error": 0.0,
+  "real_warm_parameter_isolation": true,
+  "no_heavy_fit": true,
+  "core_sha256": "bb6173278653fe5d239aeaf0639b7416b6124cc45167c9bb55d634afbb0d9d3e"
+}
