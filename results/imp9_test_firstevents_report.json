@@ -1,0 +1,49 @@
+{
+  "status": "PASS",
+  "repeated_unsorted_empty_users": "PASS",
+  "training": [
+    {
+      "day": 2,
+      "original_rows": 980970,
+      "first_event_rows": 351120,
+      "unique_users": 35112,
+      "timestamp_minimum_verified": true,
+      "complete_candidate_groups": true
+    },
+    {
+      "day": 3,
+      "original_rows": 977170,
+      "first_event_rows": 349120,
+      "unique_users": 34912,
+      "timestamp_minimum_verified": true,
+      "complete_candidate_groups": true
+    },
+    {
+      "day": 4,
+      "original_rows": 975890,
+      "first_event_rows": 350400,
+      "unique_users": 35040,
+      "timestamp_minimum_verified": true,
+      "complete_candidate_groups": true
+    },
+    {
+      "day": 5,
+      "original_rows": 984530,
+      "first_event_rows": 352300,
+      "unique_users": 35230,
+      "timestamp_minimum_verified": true,
+      "complete_candidate_groups": true
+    }
+  ],
+  "baseline_recipe": [
+    {
+      "day": 6,
+      "mix0_baseline_max_error": 0.0
+    },
+    {
+      "day": 5,
+      "mix0_baseline_max_error": 0.0
+    }
+  ],
+  "validation_cohort_unchanged": true
+}
