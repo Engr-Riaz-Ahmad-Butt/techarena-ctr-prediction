@@ -1,0 +1,12 @@
+{
+  "version": "V18",
+  "file": "submission_v18.csv",
+  "sha256": "4cdc62cfe359d02c85ce1ccebbdc4c9799d8b8b3d7448012ea55993f17b46452",
+  "rows": 529390,
+  "local_auc_january26": 0.8168002939057617,
+  "local_auc_january25": 0.8082967729281301,
+  "target_auc": 0.82,
+  "target_reached": false,
+  "official_score": null,
+  "independent_checks": "PASS"
+}

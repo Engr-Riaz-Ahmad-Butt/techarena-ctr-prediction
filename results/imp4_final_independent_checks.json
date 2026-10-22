@@ -1,0 +1,15 @@
+{
+  "candidate": "submission_v18_candidate.csv",
+  "rows": 529390,
+  "unique_ids": 529390,
+  "ids_match_verified_v17": true,
+  "probabilities_valid": true,
+  "frozen_recipe_max_error": 0.0,
+  "v17_replay_max_error": 4.9999976381442934e-11,
+  "trees": 599,
+  "depth": 7,
+  "learning_rate": 0.07999999821,
+  "sha256": "4cdc62cfe359d02c85ce1ccebbdc4c9799d8b8b3d7448012ea55993f17b46452",
+  "official_score": null,
+  "status": "PASS"
+}
