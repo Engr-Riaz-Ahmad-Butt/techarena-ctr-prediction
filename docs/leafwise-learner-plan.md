@@ -1,0 +1,5 @@
+# Leaf-wise boosted CTR learner
+
+Frozen before fitting: baseline imp5_warmcontext. Same290causal cached features and fullall-event trainingblocks3/4/5; sameunchangedJan26firsteventsvalidation. New LightGBM4.6.0 binarylogloss learner: num_leaves31,learning_rate.04,min_data_in_leaf200,feature_fraction.9,bagging_fraction.8,bagging_freq1,lambda_l2=2,max_bin127,force_col_wise,deterministic,8threads,seed42. Up to1600rounds withordinaryglobalAUConJan26for120roundearlystopping. Saveactualselectedtreecount andfreezeonJan25trainingblocks2/3/4. Noextraoptimizationtrial.
+
+Afterfitting, average originalbestprobability andnewrawprobability atnewmemberweight.1,.25,.5,.75,1. SelectmaxordinaryglobalAUC amongstsettingsimprovingbothordinaryandhistoryweightedAUC; nofirst-event/nonfirstcohortchanges. RequirepositiveJan26conditionalpairedintervals,freezeweight/treesforJan25andrequirebothdategains. Independentfeature/model/predictionreplaybeforepromotion. Reusedvalidationselectionuncertaintyremains. Targetlocal.83unchanged; donotclaimachievementonunverifiedgain. NoexistingCSVoverwritten.
