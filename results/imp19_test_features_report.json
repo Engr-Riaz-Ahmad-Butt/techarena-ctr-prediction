@@ -1,0 +1,26 @@
+{
+  "status": "PASS",
+  "source_sha256": {
+    "imp19_als_aligned.py": "cdcfd772c77a13973f55b371ebb02cdb50a65d71a6c23ace192bd1afc74c0103",
+    "imp19_tree.py": "51b5dfd50d5a3272c9b1feed7ef4c5a1abcc524d4d6366368baebe75aed900be",
+    "imp17_als_features.py": "024ec23640cd6fc36f1ae9a26414ceb479f874ab5364115556481d5c90e014de",
+    "imp15_als.py": "8b3c67049e9daa3413010690ec3eb73e9698ce8a032176cdf9b7cc913b6e4e9f",
+    "imp15_als_core.py": "f52068b9ec18a7173fab7d99596d30e4656a7e258fb4365e38f877f8233c02e9"
+  },
+  "events": 100,
+  "rows": 1000,
+  "manual_product_max_error": 0.0,
+  "rotation_replay_max_error": 0.0,
+  "orthogonality_max_error": 1.4432899320127035e-15,
+  "procrustes_objective_error": 0.0,
+  "dot_invariance_max_error": 1.0547118733938987e-15,
+  "cosine_sum_max_error": 1.1518563880486e-15,
+  "cold_dense_profiles_tested": 3,
+  "empty_history_profiles_tested": 1,
+  "empty_history_sixteen_zeros": true,
+  "first322_columns_unchanged": true,
+  "negative_cut_rejected_before_load": true,
+  "earlier_rows_rejected_before_cache": true,
+  "source_cutoffs_and_strict_past_history": true,
+  "runner_review": "Accepted imp17 baseline, unchanged SETTINGS/rolling cohort/ordinary selection/frozen confirmation gates."
+}
