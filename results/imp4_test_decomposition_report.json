@@ -1,0 +1,53 @@
+{
+  "reports": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "mix": 1.0,
+      "recipe_max_error": 0.0,
+      "auc": {
+        "baseline": 0.816134690306832,
+        "candidate": 0.8168002939057617,
+        "delta": 0.0006656035989297537,
+        "conditional_paired_event_95pct_interval": [
+          0.00037410378762890056,
+          0.0009571034102306069
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8079826158739647,
+        "candidate": 0.8085400876641403,
+        "delta": 0.0005574717901756232,
+        "conditional_paired_event_95pct_interval": [
+          0.0002416995864126315,
+          0.0008732439939386149
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "rows": 352300,
+      "mix": 1.0,
+      "recipe_max_error": 0.0,
+      "auc": {
+        "baseline": 0.8073751845446917,
+        "candidate": 0.8082967729281301,
+        "delta": 0.0009215883834383654,
+        "conditional_paired_event_95pct_interval": [
+          0.000599962063640316,
+          0.0012432147032364147
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8003040006467101,
+        "candidate": 0.8011490616973821,
+        "delta": 0.0008450610506719469,
+        "conditional_paired_event_95pct_interval": [
+          0.0004968878729338314,
+          0.0011932342284100624
+        ]
+      }
+    }
+  ],
+  "note": "Intervals exclude repeated selection and distribution uncertainty."
+}
