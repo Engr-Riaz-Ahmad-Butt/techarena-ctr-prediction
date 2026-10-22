@@ -9,6 +9,7 @@ import numpy as np
 from sklearn.metrics import roc_auc_score
 from tst2_candidate import influence, weighted_influence
 TAG = 'aligned'
+BASE_PREFIX = 'imp4_decompose'
 
 
 def check_features(day, events):
@@ -56,7 +57,7 @@ def check_features(day, events):
 
 def audit(day, mix):
     d = np.load(ROOT / f'predictions_imp5_{TAG}_day{day}.npz')
-    b = np.load(ROOT / f'predictions_imp4_decompose_day{day}.npz')
+    b = np.load(ROOT / f'predictions_{BASE_PREFIX}_day{day}.npz')
     assert np.array_equal(d['events'], b['events'])
     assert np.array_equal(d['y'], b['y'])
     events = d['events'].reshape(-1, 10)
@@ -70,7 +71,7 @@ def audit(day, mix):
     eg = np.digitize((eh >= 0).sum(1), [0, 4, 9, 19], right=True)
     w = ((np.bincount(eg, minlength=5) / len(eg)) /
          (np.bincount(vg, minlength=5) / len(vg)))[vg]
-    old_member = np.load(ROOT / f'predictions_imp4_decompose_day{day}.npz')['raw']
+    old_member = np.load(ROOT / f'predictions_{BASE_PREFIX}_day{day}.npz')['raw']
     member = (1 - mix) * old_member + mix * d['raw']
     def logit(p):
         p = np.clip(p, 1e-8, 1 - 1e-8)
