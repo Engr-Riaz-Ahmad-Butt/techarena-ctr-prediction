@@ -1,0 +1,67 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "trees": 641,
+      "features": 290,
+      "raw_auc": 0.818099705069737,
+      "raw_weighted_auc": 0.8096481400174049,
+      "replay_rows": 1000,
+      "saved_model_replay_max_error": 0.0,
+      "weight": 0.5,
+      "recipe_max_error": 0.0,
+      "auc": {
+        "baseline": 0.8180674151802085,
+        "candidate": 0.8188245503308171,
+        "delta": 0.000757135150608601,
+        "conditional_paired_event_95pct_interval": [
+          0.0004939270042409238,
+          0.0010203432969762781
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.809727935171866,
+        "candidate": 0.8104475652808902,
+        "delta": 0.0007196301090242052,
+        "conditional_paired_event_95pct_interval": [
+          0.0004246028580439228,
+          0.0010146573600044876
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "rows": 352300,
+      "trees": 641,
+      "features": 290,
+      "raw_auc": 0.8098193749822135,
+      "raw_weighted_auc": 0.8026220971010039,
+      "replay_rows": 1000,
+      "saved_model_replay_max_error": 0.0,
+      "weight": 0.5,
+      "recipe_max_error": 0.0,
+      "auc": {
+        "baseline": 0.8107281114951901,
+        "candidate": 0.8111871567756577,
+        "delta": 0.00045904528046758486,
+        "conditional_paired_event_95pct_interval": [
+          0.00015444369340740857,
+          0.0007636468675277612
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8036361006592077,
+        "candidate": 0.8040558292494203,
+        "delta": 0.0004197285902126646,
+        "conditional_paired_event_95pct_interval": [
+          8.893707349962184e-05,
+          0.0007505201069257074
+        ]
+      }
+    }
+  ],
+  "both_dates_improved": true,
+  "note": "Conditional intervals exclude reused-validation model/iteration/blend selection uncertainty."
+}
