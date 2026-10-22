@@ -1,0 +1,31 @@
+{
+  "status": "PASS",
+  "production_dtype": "float64",
+  "gradient_max_error": 2.3452012554159296e-10,
+  "no_history_residual_exact_zero": true,
+  "objective_nonincrease": true,
+  "objective_before": -0.04869137084029557,
+  "objective_after": -0.15417559180116844,
+  "fixed_48h_weights": "PASS",
+  "real_scoring_preconditions": [
+    {
+      "day": 6,
+      "history_before_event": true,
+      "model_checkpoint": "imp2_model_warm1.0_d16_pc1_day6.npz",
+      "required_fitting_cutoff": 1737849600,
+      "events_with_mass_ge_1": 2,
+      "bernoulli_link_zero_residual_max_error": 1.1102230246251565e-16,
+      "maximum_base_event_mass": 1.0437619635060098
+    },
+    {
+      "day": 5,
+      "history_before_event": true,
+      "model_checkpoint": "imp2_model_warm1.0_d16_pc1_day5.npz",
+      "required_fitting_cutoff": 1737763200,
+      "events_with_mass_ge_1": 1,
+      "bernoulli_link_zero_residual_max_error": 1.1102230246251565e-16,
+      "maximum_base_event_mass": 1.0349979546880295
+    }
+  ],
+  "chronology_note": "Stored checkpoints lack cutoff metadata; named prefix recipe audited in source."
+}

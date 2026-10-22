@@ -1,6 +1,9 @@
 """Fixed-item, conditional clicked-history recency adaptation."""
 from imp4_decompose import *
-from numba import prange, set_num_threads
+from imp2_warm_choice import warm_data
+from numba import njit, prange, set_num_threads
+import math
+from threadpoolctl import threadpool_limits
 set_num_threads(8)
 
 
@@ -65,19 +68,18 @@ def run(day,chosen=None):
     background=np.ascontiguousarray(V[pool])
     sw,_=history_weights(events)
     old=float(roc_auc_score(y,base));oldw=float(roc_auc_score(y,base,sample_weight=sw))
-    grouped=base.reshape(-1,10);outside=1-grouped.sum(1,keepdims=True)
-    assert (outside>0).all()
-    base_logits=np.log(grouped)-np.log(outside)
+    assert ((base>0)&(base<1)).all()
+    base_logits=logit(base).reshape(-1,10)
     trials=[];best=None
     for penalty in ([chosen['penalty']] if chosen else [4.,16.,64.]):
-        residual,objectives=adapt(np.ascontiguousarray(anchor),h,times,a[:,2].copy(),V,background,penalty)
+        with threadpool_limits(limits=1):
+            residual,objectives=adapt(np.ascontiguousarray(anchor),h,times,a[:,2].copy(),V,background,penalty)
         assert np.isfinite(residual).all() and np.all(residual[(h>=0).sum(1)==0]==0)
         assert np.all(objectives[:,1]<=objectives[:,0]+1e-9)
         correction=np.einsum('ed,ecd->ec',residual,V[rows[:,1].reshape(-1,10)])
         for strength in ([chosen['strength']] if chosen else [.1,.25,.5]):
             logits=base_logits+strength*correction
-            maximum=np.maximum(0,logits.max(1,keepdims=True));exp=np.exp(logits-maximum)
-            pred=(exp/(np.exp(-maximum)+exp.sum(1,keepdims=True))).ravel()
+            pred=sigmoid(logits).ravel()
             auc=float(roc_auc_score(y,pred));weighted=float(roc_auc_score(y,pred,sample_weight=sw))
             result=dict(day=day,penalty=penalty,strength=strength,auc=auc,reweighted=weighted,base_auc=old,base_reweighted=oldw)
             trials.append(result);print(json.dumps(result),flush=True)
