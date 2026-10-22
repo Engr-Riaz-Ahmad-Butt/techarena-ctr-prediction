@@ -1,0 +1,7 @@
+# Compact CPU neural learner
+
+Frozen before fitting: independently verified imp11_bilinear baseline (Jan26 0.8189548747277751; Jan25 0.8116192058777973). Use the same 290 causal features, all-event training blocks3/4/5 and unchanged full first-event January26 validation. StandardScaler is fitted ONLY on training blocks with streaming partial_fit, then transform float32 and clip to [-8,8] identically during fitting and prediction. No per-validation normalization or label input.
+
+One fixed sklearn MLPClassifier: hidden64/32 ReLU, Adam LR.001, alpha.1, batch4096, seed42, no internal early stopping. Stream chunks65536 rows; shuffle chunk order with seed42 advancing across epochs, and retain optimizer state through partial_fit. Train8epochs, select among epochs2/4/6/8 and direct probability blends .1/.25/.5/.75/1 against frozen baseline by ordinary global AUC only when both ordinary/history-weighted AUC improve. Require positive conditional paired intervals on Jan26; freeze epoch/blend/scaler fitting protocol for January25 train blocks2/3/4. Four BLAS threads, no other heavy training in parallel.
+
+Save exact classifier/scaler/epoch/partial-fit call count/cutoff/training-row metadata together. Independent incremental-state, prediction reload, feature order, past-only scaler/data and full metrics tests before promotion. Existing CSVs preserved; local.83 remains the completion requirement. Reused-validation selection uncertainty remains.
