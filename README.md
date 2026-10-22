@@ -1,6 +1,8 @@
 # TechArena CTR Prediction
 
-Latest verified local candidate: **V19**, AUC **0.817948** on January 26 and **0.810645** on January 25. Its official score is unknown; the latest user-confirmed official score is **V18: 0.809189** (rank 16 in the supplied screenshot). The local 0.82 target remains unmet. See [aligned and timestamp experiments](docs/aligned-and-time-context-experiments.md). Datasets, model weights and submission CSVs are excluded from Git.
+Best independently verified local experiment: **warm click-context priors**, AUC **0.818067** on January 26 and **0.810728** on January 25. The latest fully checked submission file remains **V19** (local **0.817948 / 0.810645**); the newer experiment has not received a final evaluation refit or versioned CSV. The latest user-confirmed official score is **V18: 0.809189**. The active **local 0.83** goal remains unmet. Datasets, model weights and submission CSVs are excluded from Git.
+
+Recent experiments preserve the same first-event validation population. The contextual warm-sequence model, fixed-item recency adaptation, and first-event-only training failed to improve the current baseline. See the measured reports in `results/imp7_sequence_report.json`, `results/imp8_foldin_report.json`, and `results/imp9_firstevents_report.json`. LightGBM is being tested separately; its intermediate training metrics are not an accepted result.
 
 Click-through probability prediction for the TechArena challenge. Each event contains ten candidates and at most one click. Models combine user histories, collaborative features and CatBoost. Author: Riaz Ahmad Butt.
 
