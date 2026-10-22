@@ -1,0 +1,202 @@
+[
+  {
+    "day": 6,
+    "epoch": 2,
+    "weight": 0.1,
+    "auc": 0.8189800952081738,
+    "reweighted": 0.8106323327174134,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8088773349894001
+  },
+  {
+    "day": 6,
+    "epoch": 2,
+    "weight": 0.25,
+    "auc": 0.8185903767845423,
+    "reweighted": 0.8101988865960719,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8088773349894001
+  },
+  {
+    "day": 6,
+    "epoch": 2,
+    "weight": 0.5,
+    "auc": 0.8168382955448995,
+    "reweighted": 0.8083112905509308,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8088773349894001
+  },
+  {
+    "day": 6,
+    "epoch": 2,
+    "weight": 0.75,
+    "auc": 0.8136658102824977,
+    "reweighted": 0.8049465078979392,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8088773349894001
+  },
+  {
+    "day": 6,
+    "epoch": 2,
+    "weight": 1.0,
+    "auc": 0.8088773349894001,
+    "reweighted": 0.7999520364280935,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8088773349894001
+  },
+  {
+    "day": 6,
+    "epoch": 4,
+    "weight": 0.1,
+    "auc": 0.8191479482672972,
+    "reweighted": 0.810808157975568,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8152692235061612
+  },
+  {
+    "day": 6,
+    "epoch": 4,
+    "weight": 0.25,
+    "auc": 0.8191733649799195,
+    "reweighted": 0.8108189727261771,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8152692235061612
+  },
+  {
+    "day": 6,
+    "epoch": 4,
+    "weight": 0.5,
+    "auc": 0.8185791918207378,
+    "reweighted": 0.8101697683018849,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8152692235061612
+  },
+  {
+    "day": 6,
+    "epoch": 4,
+    "weight": 0.75,
+    "auc": 0.8172711078202176,
+    "reweighted": 0.8087751043039472,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8152692235061612
+  },
+  {
+    "day": 6,
+    "epoch": 4,
+    "weight": 1.0,
+    "auc": 0.8152692235061612,
+    "reweighted": 0.8066550070562207,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8152692235061612
+  },
+  {
+    "day": 6,
+    "epoch": 6,
+    "weight": 0.1,
+    "auc": 0.8191314594385257,
+    "reweighted": 0.8107915332676696,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8156799095748379
+  },
+  {
+    "day": 6,
+    "epoch": 6,
+    "weight": 0.25,
+    "auc": 0.8191827882204952,
+    "reweighted": 0.8108307848070567,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8156799095748379
+  },
+  {
+    "day": 6,
+    "epoch": 6,
+    "weight": 0.5,
+    "auc": 0.8187123626766287,
+    "reweighted": 0.8103148001432073,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8156799095748379
+  },
+  {
+    "day": 6,
+    "epoch": 6,
+    "weight": 0.75,
+    "auc": 0.8175544137940575,
+    "reweighted": 0.8090774850926821,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8156799095748379
+  },
+  {
+    "day": 6,
+    "epoch": 6,
+    "weight": 1.0,
+    "auc": 0.8156799095748379,
+    "reweighted": 0.8070970390842265,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8156799095748379
+  },
+  {
+    "day": 6,
+    "epoch": 8,
+    "weight": 0.1,
+    "auc": 0.8190098696953573,
+    "reweighted": 0.8106786631116009,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8148816815817267
+  },
+  {
+    "day": 6,
+    "epoch": 8,
+    "weight": 0.25,
+    "auc": 0.8188587875317687,
+    "reweighted": 0.810521961720867,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8148816815817267
+  },
+  {
+    "day": 6,
+    "epoch": 8,
+    "weight": 0.5,
+    "auc": 0.8180786193851419,
+    "reweighted": 0.8096965547648475,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8148816815817267
+  },
+  {
+    "day": 6,
+    "epoch": 8,
+    "weight": 0.75,
+    "auc": 0.8167323038071691,
+    "reweighted": 0.8082702226383301,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8148816815817267
+  },
+  {
+    "day": 6,
+    "epoch": 8,
+    "weight": 1.0,
+    "auc": 0.8148816815817267,
+    "reweighted": 0.8063143959493686,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8148816815817267
+  }
+]
