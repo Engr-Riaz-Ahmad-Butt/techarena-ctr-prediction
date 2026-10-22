@@ -4,6 +4,7 @@ from imp4_decompose import *
 TAG='aligned'
 WIDTH=258
 SELECTION_FLOOR=None
+BASELINE_NAME='V18'
 
 
 def norm(a):
@@ -99,7 +100,7 @@ def run_aligned():
         oldw=float(roc_auc_score(y,base,sample_weight=sw));neww=float(roc_auc_score(y,pred,sample_weight=sw))
         se=float(np.linalg.norm(influence(y,pred)-influence(y,base)))
         sew=float(np.linalg.norm(weighted_influence(y,pred,sw)-weighted_influence(y,base,sw)))
-        r=dict(day=day,baseline='V18',auc=new,base_auc=old,delta=new-old,
+        r=dict(day=day,baseline=BASELINE_NAME,auc=new,base_auc=old,delta=new-old,
                reweighted=neww,base_reweighted=oldw,delta_reweighted=neww-oldw,
                raw_auc=float(roc_auc_score(y,raw)),trees=TREES,mix=mix,
                paired_interval=[new-old-1.96*se,new-old+1.96*se],
