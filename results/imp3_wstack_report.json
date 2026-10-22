@@ -1,0 +1,24 @@
+{
+  "trees": 898,
+  "day6": {
+    "auc": 0.803499616632923,
+    "reweighted": 0.7955559520100524,
+    "stack_auc": 0.804943465493738,
+    "stack_reweighted": 0.7969588155919971,
+    "trees": 898,
+    "minutes": 14.1
+  },
+  "day5": {
+    "auc": 0.7786398343409973,
+    "reweighted": 0.771897655690592,
+    "stack_auc": 0.7796304106950329,
+    "stack_reweighted": 0.7731189743002099,
+    "trees": 898,
+    "minutes": 16.0
+  },
+  "final": {
+    "trees": 898,
+    "minutes": 17.5,
+    "submission": "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\ctr_work\\submission_imp3_wstack_raw.csv"
+  }
+}
