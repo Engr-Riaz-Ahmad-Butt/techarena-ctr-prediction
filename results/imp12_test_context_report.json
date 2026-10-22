@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "coefficients_checked": 4635,
+  "manual_loss_max_error": 0.0,
+  "finite_difference_gradient_max_error": 2.992936280754588e-10,
+  "unused_groups_ridge_only": true,
+  "shared_only_identity": true,
+  "zero_theta_offset_identity": true,
+  "float32_valid": true,
+  "real_context_events": 100,
+  "timestamp_context_mapping": true,
+  "prediction_target_permutation_identity": true,
+  "jan25_weekend_deviations_global_fallback": true
+}
