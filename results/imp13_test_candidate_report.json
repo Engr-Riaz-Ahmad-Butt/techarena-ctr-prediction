@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "epoch": 6,
+      "weight": 0.25,
+      "training_rows": 2937590,
+      "partial_fit_calls": 270,
+      "adam_steps": 4308,
+      "replay_rows": 1000,
+      "saved_model_replay_max_error": 8.940696716308594e-08,
+      "recipe_max_error": 0.0,
+      "auc": {
+        "baseline": 0.8189548747277751,
+        "candidate": 0.8191827882204952,
+        "delta": 0.00022791349272011097,
+        "conditional_paired_event_95pct_interval": [
+          6.10874800283068e-05,
+          0.00039473950541191514
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8106160278606849,
+        "candidate": 0.8108307848070567,
+        "delta": 0.00021475694637185239,
+        "conditional_paired_event_95pct_interval": [
+          2.5420950358336363e-05,
+          0.0004040929423853684
+        ]
+      },
+      "independent_training_only_scaler": {
+        "mean_max_error": 3.552713678800501e-15,
+        "variance_max_error": 1.5432100042289676e-13
+      }
+    },
+    {
+      "day": 5,
+      "rows": 352300,
+      "epoch": 6,
+      "weight": 0.25,
+      "training_rows": 2934030,
+      "partial_fit_calls": 270,
+      "adam_steps": 4302,
+      "replay_rows": 1000,
+      "saved_model_replay_max_error": 5.960464477539063e-08,
+      "recipe_max_error": 0.0,
+      "auc": {
+        "baseline": 0.8116192058777973,
+        "candidate": 0.8107396821975309,
+        "delta": -0.0008795236802664474,
+        "conditional_paired_event_95pct_interval": [
+          -0.001172641053878716,
+          -0.0005864063066541789
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8045084422704716,
+        "candidate": 0.803620979700741,
+        "delta": -0.0008874625697306016,
+        "conditional_paired_event_95pct_interval": [
+          -0.0011955002349823315,
+          -0.0005794249044788716
+        ]
+      },
+      "independent_training_only_scaler": {
+        "mean_max_error": 3.552713678800501e-15,
+        "variance_max_error": 2.8421709430404007e-13
+      }
+    }
+  ],
+  "both_dates_improved": false,
+  "note": "Conditional intervals exclude reused-validation epoch/learner/blend selection uncertainty."
+}

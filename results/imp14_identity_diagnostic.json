@@ -1,0 +1,14 @@
+[
+  {
+    "day": 6,
+    "raw_max_difference": 0.0,
+    "blend_max_difference": 0.0,
+    "daytype_first_layer_weight_norm": 0.829103946685791
+  },
+  {
+    "day": 5,
+    "raw_max_difference": 0.0,
+    "blend_max_difference": 0.0,
+    "daytype_first_layer_weight_norm": 0.0
+  }
+]

@@ -1,0 +1,48 @@
+[
+  {
+    "day": 6,
+    "epoch": 6,
+    "weight": 0.25,
+    "auc": 0.8191827882204952,
+    "reweighted": 0.8108307848070567,
+    "baseline_auc": 0.8189548747277751,
+    "baseline_reweighted": 0.8106160278606849,
+    "raw_auc": 0.8156799095748379,
+    "delta": 0.00022791349272011097,
+    "delta_reweighted": 0.00021475694637185239,
+    "paired_interval": [
+      6.108748002830682e-05,
+      0.0003947395054119151
+    ],
+    "weighted_paired_interval": [
+      2.542095035833631e-05,
+      0.00040409294238536846
+    ],
+    "masked_columns": [],
+    "frozen_model_sha256": "bc62448802c7f30157342e75003607f159a59548a46e5070b079993a1a6e55b9"
+  },
+  {
+    "day": 5,
+    "epoch": 6,
+    "weight": 0.25,
+    "auc": 0.8107396821975309,
+    "reweighted": 0.803620979700741,
+    "baseline_auc": 0.8116192058777973,
+    "baseline_reweighted": 0.8045084422704716,
+    "raw_auc": 0.7870193889099611,
+    "delta": -0.0008795236802664474,
+    "delta_reweighted": -0.0008874625697306016,
+    "paired_interval": [
+      -0.001172641053878716,
+      -0.0005864063066541789
+    ],
+    "weighted_paired_interval": [
+      -0.0011955002349823315,
+      -0.0005794249044788716
+    ],
+    "masked_columns": [
+      5
+    ],
+    "frozen_model_sha256": "353eabbc5cdeb3dc1fe70e2804477db5f956e952a4b7a45d5072af1aa1fc8ca7"
+  }
+]

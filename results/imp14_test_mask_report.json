@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "synthetic_training_rows": 32,
+  "validation_rows": 23,
+  "masked_columns": [
+    3,
+    7
+  ],
+  "constant_column_perturbation_invariant": true,
+  "training_only_scaler_unchanged": true,
+  "input_not_mutated": true,
+  "zero_mask_original_prediction_identity": true,
+  "labels_not_used": true,
+  "note": "Variance threshold uses training statistics only; experiment follows a diagnosed confirmation failure."
+}
