@@ -1,0 +1,182 @@
+[
+  {
+    "day": 6,
+    "member": "leafwise",
+    "weight": 0.05,
+    "auc": 0.8192826597098954,
+    "reweighted": 0.8109812300762507,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "leafwise",
+    "weight": 0.1,
+    "auc": 0.8192731342593508,
+    "reweighted": 0.810965462622384,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "leafwise",
+    "weight": 0.2,
+    "auc": 0.8192368484922408,
+    "reweighted": 0.8109159877373672,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "leafwise",
+    "weight": 0.3,
+    "auc": 0.8191761934258809,
+    "reweighted": 0.8108411707925669,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "warmcontext",
+    "weight": 0.05,
+    "auc": 0.8192673988336004,
+    "reweighted": 0.8109640816500683,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "warmcontext",
+    "weight": 0.1,
+    "auc": 0.8192390671581673,
+    "reweighted": 0.8109268572723614,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "warmcontext",
+    "weight": 0.2,
+    "auc": 0.8191543024113374,
+    "reweighted": 0.8108243926756552,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "warmcontext",
+    "weight": 0.3,
+    "auc": 0.8190337471858915,
+    "reweighted": 0.8106845608477871,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "bilinear",
+    "weight": 0.05,
+    "auc": 0.8192110608079223,
+    "reweighted": 0.8109264140141262,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "bilinear",
+    "weight": 0.1,
+    "auc": 0.8190748962506997,
+    "reweighted": 0.810797886424701,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "bilinear",
+    "weight": 0.2,
+    "auc": 0.8186305296091934,
+    "reweighted": 0.8103584308897485,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "bilinear",
+    "weight": 0.3,
+    "auc": 0.8179581252946304,
+    "reweighted": 0.8096765719273632,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "v6",
+    "weight": 0.05,
+    "auc": 0.8192644011066426,
+    "reweighted": 0.8109737812382783,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "v6",
+    "weight": 0.1,
+    "auc": 0.8191389246554185,
+    "reweighted": 0.8108540756349196,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "v6",
+    "weight": 0.2,
+    "auc": 0.8185840292589046,
+    "reweighted": 0.810310196464911,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "v6",
+    "weight": 0.3,
+    "auc": 0.8176312273831411,
+    "reweighted": 0.8093672535394045,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "v7",
+    "weight": 0.05,
+    "auc": 0.8192421932957803,
+    "reweighted": 0.8109453164662199,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "v7",
+    "weight": 0.1,
+    "auc": 0.819105786041055,
+    "reweighted": 0.810808367560299,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "v7",
+    "weight": 0.2,
+    "auc": 0.8185611877189428,
+    "reweighted": 0.810262329665291,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  },
+  {
+    "day": 6,
+    "member": "v7",
+    "weight": 0.3,
+    "auc": 0.8176571011066924,
+    "reweighted": 0.8093575555318684,
+    "baseline_auc": 0.8192865564479013,
+    "baseline_reweighted": 0.8109911605395299
+  }
+]
