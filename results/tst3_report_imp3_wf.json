@@ -1,0 +1,84 @@
+{
+  "name": "imp3_wf",
+  "baseline_npz": "predictions_imp3_reblend_day{day}.npz",
+  "baseline_csv": "submission_v15.csv",
+  "days": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "events_equal_v6": true,
+      "y_equal_v6": true,
+      "events_equal_v14": true,
+      "finite": true,
+      "in_unit_interval": true,
+      "pred_min": 0.000489422362975061,
+      "pred_max": 0.7803640268227503,
+      "pred_mean": 0.0541503186455382,
+      "auc": 0.8160714564515711,
+      "auc_reweighted": 0.807927807751074,
+      "v14_auc": 0.8150712830527,
+      "v14_auc_reweighted": 0.8068947410480272,
+      "fast_auc_check": 1.326938559031987e-12,
+      "delta_auc": 0.0010001733988710404,
+      "delta_reweighted": 0.0010330667030468144,
+      "spearman_vs_v14": 0.9940354291831855,
+      "bootstrap_95_reweighted_delta": [
+        0.0006133435484482891,
+        0.0014417419437901813
+      ],
+      "bootstrap_mean_reweighted_delta": 0.0010350552796956373,
+      "bootstrap_95_plain_delta": [
+        0.0006504027436316673,
+        0.0013444192833795496
+      ],
+      "bootstrap_mean_plain_delta": 0.0009966119920093114,
+      "bootstrap_resamples": 1000,
+      "bootstrap_seconds": 331.857017993927
+    },
+    {
+      "day": 5,
+      "rows": 352300,
+      "events_equal_v6": true,
+      "y_equal_v6": true,
+      "events_equal_v14": true,
+      "finite": true,
+      "in_unit_interval": true,
+      "pred_min": 0.000574838753658863,
+      "pred_max": 0.7694964886046716,
+      "pred_mean": 0.05337925392409488,
+      "auc": 0.807311312149688,
+      "auc_reweighted": 0.8002397863188108,
+      "v14_auc": 0.8058729683519432,
+      "v14_auc_reweighted": 0.7989143500966922,
+      "fast_auc_check": 1.6826540161218873e-12,
+      "delta_auc": 0.0014383437977447677,
+      "delta_reweighted": 0.001325436222118559,
+      "spearman_vs_v14": 0.991974202854047,
+      "bootstrap_95_reweighted_delta": [
+        0.0008866666317989297,
+        0.0017443820626281358
+      ],
+      "bootstrap_mean_reweighted_delta": 0.00132399090332932,
+      "bootstrap_95_plain_delta": [
+        0.001066135273612745,
+        0.001838821720653233
+      ],
+      "bootstrap_mean_plain_delta": 0.001439560719441227,
+      "bootstrap_resamples": 1000,
+      "bootstrap_seconds": 291.79623889923096
+    }
+  ],
+  "submission": {
+    "file": "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\ctr_work\\submission_v16_candidate.csv",
+    "check_submission_rc": 0,
+    "check_submission_tail": "{\n  \"file\": \"C:\\\\Users\\\\engrr\\\\Documents\\\\ChatGPT\\\\Task\\\\ctr_work\\\\submission_v16_candidate.csv\",\n  \"rows\": 529390,\n  \"missing\": 0,\n  \"unknown\": 0,\n  \"duplicates\": 0,\n  \"invalid_probabilities\": 0,\n  \"minimum\": 0.0004341643943,\n  \"maximum\": 0.8001718587,\n  \"mean\": 0.05364044810470306,\n  \"sha256\": \"efff14b00690edb3908c4ca297e542099860d8f0f92eb0eb05f2923965cd94b6\"\n}\n",
+    "row_order_equals_evaluation_csv": true,
+    "rows": 529390,
+    "spearman_vs_submission_v14": 0.9934525653124938,
+    "max_abs_diff_vs_v14": 0.19382125969999997,
+    "sha256": "efff14b00690edb3908c4ca297e542099860d8f0f92eb0eb05f2923965cd94b6"
+  },
+  "rule1_reweighted_improves_both": true,
+  "rule1_plain_not_worse_either": true,
+  "rule2_day6_interval_excludes_zero": true
+}

@@ -1,0 +1,12 @@
+{
+  "day6_max_diff": 2.220446049250313e-16,
+  "day6_v14_check": 0.14529747475980298,
+  "day6_v11_alias_check": 0.18162184344975368,
+  "day5_max_diff": 2.220446049250313e-16,
+  "day5_v14_check": 0.17613222129491451,
+  "day5_v11_alias_check": 0.22016527661864316,
+  "submission_recipe_max_diff": 4.999993474807951e-11,
+  "submission_recipe_max_diff_rounded10g": 0.0,
+  "submission_sha256": "efff14b00690edb3908c4ca297e542099860d8f0f92eb0eb05f2923965cd94b6",
+  "v15_sha256": "3bbddafb54479bd35288bb6dd81f9024fbbfc57e6dafd9b8575582c78249ddc2"
+}
