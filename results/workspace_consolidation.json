@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "files_preserved": 19460,
+  "bytes_preserved": 21966482423,
+  "critical_files_sha256_verified": {
+    "submission_v20.csv": "8f3bb5e49f96e49efc4d6416e9c593f27f118aef06c14e19b85ead45291c789b",
+    "submission_v20_candidate.csv": "8f3bb5e49f96e49efc4d6416e9c593f27f118aef06c14e19b85ead45291c789b",
+    "imp19_export_frozen.json": "0f1aa6a06808a3e80a75357185a645cafbd672d06af0ce791cda62836e23aec4",
+    "imp19_test_final_report.json": "2a6dba59351c86273b133df231dd122df1728cb5f37d6377f4e2db71a9b5b760",
+    "imp19_v20_promotion_report.json": "70fadf1651a273861c38f12ef95281cd90e11c162f9a682ef82ef1f7fbeb5ded",
+    "imp5_warmcontext_final.cbm": "f64f4103ebbac7b53ca739804900b532a96e3bc5b6f6b8d7274da0abd8760040",
+    "imp10_leafwise_final.txt": "34c92f40440a8e95759b7fb7b63806e5dc14f89d46e95a0633bb9949b8ac9bd2",
+    "imp11_bilinear_final_model.npz": "c78fc3ab040d1670ae3be82b9dd38166d7c899bae0effd579c629df1815bff6c",
+    "imp17_als_cut7.npz": "2947a52520d0eabb41d384ae479f5b63d45487d5c942b752d1be5d4dffaf4b15",
+    "imp17_tree_final.txt": "ca06a2d4b8651bdbd4a62dd4da8f8ddc5204195ac6bfb73bc83df72583a16a39",
+    "imp19_tree_final.txt": "eb93099729138213ca71c23544cf8b72b4c0c562e5eb03ba0b7c62ab6aad6268"
+  },
+  "old_folder_removed": true,
+  "new_artifact_folder": "techarena-ctr-prediction/artifacts"
+}
