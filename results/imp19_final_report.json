@@ -1,0 +1,17 @@
+{
+  "candidate": "submission_v20_candidate.csv",
+  "rows": 529390,
+  "experiment": "imp19_tree",
+  "local_auc": 0.8215282579633503,
+  "confirmation_auc": 0.814599936313616,
+  "sha256": "8f3bb5e49f96e49efc4d6416e9c593f27f118aef06c14e19b85ead45291c789b",
+  "export_manifest_sha256": "0f1aa6a06808a3e80a75357185a645cafbd672d06af0ce791cda62836e23aec4",
+  "official_score": null,
+  "ranking_scores_only": true,
+  "final_training_days": [
+    4,
+    5,
+    6
+  ],
+  "cutoff": 1737936000
+}

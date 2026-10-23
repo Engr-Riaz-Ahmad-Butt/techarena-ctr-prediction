@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "rows": 529390,
+  "unique_ids": 529390,
+  "ids_exact_against_verified_v19": true,
+  "ids_exact_against_original_evaluation": true,
+  "original_evaluation_csv": "C:\\Users\\engrr\\Downloads\\Task\\evaluation\\evaluation.csv",
+  "recipe_stage_errors": {
+    "v19": 0.0,
+    "warmcontext": 0.0,
+    "leafwise": 0.0,
+    "bilinear": 0.0,
+    "imp15_als": 0.0,
+    "imp17_tree": 0.0,
+    "imp19_tree": 0.0,
+    "csv": 0.0
+  },
+  "models": [
+    {
+      "prefix": "imp5_warmcontext",
+      "features": 290,
+      "trees": 599,
+      "replay_rows": 1000,
+      "max_error": 0.0
+    },
+    {
+      "prefix": "imp10_leafwise",
+      "features": 290,
+      "trees": 641,
+      "replay_rows": 1000,
+      "max_error": 0.0
+    },
+    {
+      "prefix": "imp17_tree",
+      "features": 322,
+      "trees": 1063,
+      "replay_rows": 1000,
+      "max_error": 0.0
+    },
+    {
+      "prefix": "imp19_tree",
+      "features": 354,
+      "trees": 735,
+      "replay_rows": 1000,
+      "max_error": 0.0
+    }
+  ],
+  "bilinear_sample_max_error": 2.9802322387695312e-08,
+  "als": {
+    "known_rows": 514860,
+    "known_max_error": 0.0,
+    "cold_events": 100,
+    "cold_max_error": 1.942890293094024e-16
+  },
+  "sha256": "8f3bb5e49f96e49efc4d6416e9c593f27f118aef06c14e19b85ead45291c789b",
+  "local_auc": 0.8215282579633503,
+  "confirmation_auc": 0.814599936313616,
+  "official_score": null,
+  "export_manifest_sha256": "0f1aa6a06808a3e80a75357185a645cafbd672d06af0ce791cda62836e23aec4"
+}

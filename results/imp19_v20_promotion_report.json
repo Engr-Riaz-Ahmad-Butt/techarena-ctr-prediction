@@ -1,0 +1,9 @@
+{
+  "file": "submission_v20.csv",
+  "rows": 529390,
+  "sha256": "8f3bb5e49f96e49efc4d6416e9c593f27f118aef06c14e19b85ead45291c789b",
+  "local_auc": 0.8215282579633503,
+  "confirmation_auc": 0.814599936313616,
+  "official_score": null,
+  "independent_final_audit": "PASS"
+}
