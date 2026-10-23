@@ -39,9 +39,58 @@
           0.0009678674525758347
         ]
       }
+    },
+    {
+      "day": 5,
+      "rows": 352300,
+      "trees": 735,
+      "features": 354,
+      "raw_auc": 0.8142890790492137,
+      "raw_weighted_auc": 0.8071383064401381,
+      "replay_rows": 1000,
+      "saved_model_replay_max_error": 0.0,
+      "manual_new32": {
+        "events": 100,
+        "cold_dense_profiles": 3,
+        "empty_histories": 1,
+        "product_max_error": 0.0,
+        "cosine_sum_error": 1.27675647831893e-15
+      },
+      "accepted_incumbent_metrics_verified": true,
+      "recorded_trials_independently_recomputed": 1,
+      "weight": 0.5,
+      "recipe_max_error": 0.0,
+      "auc": {
+        "baseline": 0.8135598284060226,
+        "candidate": 0.814599936313616,
+        "delta": 0.0010401079075934572,
+        "conditional_paired_event_95pct_interval": [
+          0.0008039132359879593,
+          0.001276302579198955
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.806559859990065,
+        "candidate": 0.8075593904662249,
+        "delta": 0.000999530476159971,
+        "conditional_paired_event_95pct_interval": [
+          0.000733478484277163,
+          0.001265582468042779
+        ]
+      }
     }
   ],
   "causal_als_checkpoints": [
+    {
+      "cut": 2,
+      "checkpoint": "imp17_als_cut2.npz",
+      "cutoff": 1737504000,
+      "iteration": 6,
+      "prefix_exposures_and_global_ctr_exact": true,
+      "rotation_anchor_cut": 2,
+      "rotation_orthogonality_error": 1.3322676295501878e-15,
+      "procrustes_objective_error": 1.4551915228366852e-11
+    },
     {
       "cut": 3,
       "checkpoint": "imp17_als_cut3.npz",
@@ -83,9 +132,9 @@
       "procrustes_objective_error": 1.4551915228366852e-11
     }
   ],
-  "both_dates_improved": false,
+  "both_dates_improved": true,
   "day6_conditional_gate_passed": true,
-  "acceptance_gates_passed": false,
+  "acceptance_gates_passed": true,
   "ranking_scores_only": true,
   "note": "Conditional intervals exclude reused-validation model/iteration/blend selection uncertainty."
 }
