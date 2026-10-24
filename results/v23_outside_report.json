@@ -1,0 +1,31 @@
+{
+  "reports": [
+    {
+      "weight": 0.1,
+      "auc": 0.8246573670343789,
+      "day": 6,
+      "previous_auc": 0.8241639495695283,
+      "gain": 0.0004934174648505429,
+      "raw_auc": 0.7931443002207471,
+      "conditional_interval": [
+        0.0003192861624556501,
+        0.0006675487672454358
+      ]
+    },
+    {
+      "weight": 0.1,
+      "auc": 0.8173996189298754,
+      "day": 5,
+      "previous_auc": 0.8166261127941717,
+      "gain": 0.0007735061357037054,
+      "raw_auc": 0.7862783395311673,
+      "conditional_interval": [
+        0.0005924687593654374,
+        0.0009545435120419735
+      ]
+    }
+  ],
+  "both_date_conditional_gate": true,
+  "status": "candidate_pending_independent_audit",
+  "note": "Reused local validation, no official-score or CSV-readiness claim."
+}
