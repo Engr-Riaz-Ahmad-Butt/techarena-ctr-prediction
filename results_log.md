@@ -69,6 +69,12 @@ Same validation as the official setup: first event per user on later training da
 | V21-als-tune | Preference/ALS retune (dim, decay, seeds) vs V20 | 0.821528 → 0.821528 | 248s | no | trials=18 both_day_keeps=0 |
 | V21-als-tune | Preference/ALS retune (dim, decay, seeds) vs V20 | 0.821528 → 0.821528 | 198s | no | trials=18 both_day_keeps=0 |
 | V21-DIN-frz-als-d6 | Frozen-emb DIN init=als day6 | 0.821528 → 0.791159 | 6647s | YES | epoch=8 |
+| V21-DIN-frz-als-d5 | Frozen-emb DIN init=als day5 | 0.814600 → 0.782308 | 10209s | no | epoch=8 |
+| V21-fastDIN-d5 | Vectorized DIN + rank-16 adapter day5 | 0.816311 → 0.816543 | 138s | YES | raw=0.786063 w=0.2 |
+| V21-fastDIN | 1-epoch vectorized DIN + rank-16 adapter, 20% rank blend | 0.823729 → 0.823944 | 0s | YES | day5 0.816543; submission_v21.csv only |
+| V21-fastseeds-d6 | 3 seeds fast DIN; best=fast1_rankmean wf=0.25 wo=0.0 | 0.823944 → 0.824265 | 600s | YES | n_members=6 |
+| V21-fastseeds-d5 | Confirm frozen recipe fast1_rankmean wf=0.25 wo=0.0 | 0.816543 → 0.816542 | 182s | no |  |
+| V21-fastseeds-final | 3-seed fast DIN rank-mean, w=0.2 -> submission_v21.csv | 0.823944 → 0.824164 | 210s | YES | day5=0.816626 |
 
 Leakage audits on each member: stats/co-occur cutoffs before the fit window; history timestamps strictly before the event. No step gained >0.01 (all deltas were 0 vs V20), so no extra leakage deep-dive was required.
 
