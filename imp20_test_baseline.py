@@ -74,7 +74,7 @@ if __name__=='__main__':
         if filename=='imp20_tree.py':ns['BASE_SETTINGS']=dict(ns['SETTINGS']);before=dict(ns['SETTINGS'])
         exec(compile(source,filename,'exec'),ns)
     changes={k:[before.get(k),ns['SETTINGS'].get(k)] for k in set(before)|set(ns['SETTINGS']) if before.get(k)!=ns['SETTINGS'].get(k)}
-    assert changes=={'num_leaves':[31,63]}
+    assert changes=={'num_leaves':[31,63], 'num_threads':[8,4]}
     assert HASHES=={name:hashlib.sha256((ROOT/name).read_bytes()).hexdigest() for name in FILES}
     result=dict(status='PASS',source_sha256=HASHES,valid_baseline_load=True,
                 either_day_member_mutation_rejected=mutated_days,audit_hash_mutation_rejected=True,

@@ -4,7 +4,7 @@ from imp17_tree import combined as previous_combined, setup as previous_setup
 from imp19_als_aligned import interactions
 from imp10_leafwise import lgb,SETTINGS as BASE_SETTINGS
 import hashlib
-SETTINGS=dict(BASE_SETTINGS,num_leaves=63)
+SETTINGS=dict(BASE_SETTINGS,num_leaves=63,num_threads=4)
 from scipy.stats import rankdata
 
 _base_combined=previous_combined
