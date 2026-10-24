@@ -1,0 +1,77 @@
+{
+  "target_local_auc": 0.84,
+  "promoted": false,
+  "experiments": {
+    "v22_quick_report.json": {
+      "selected": {
+        "temperature": 1.0,
+        "weight": 0.22,
+        "auc": 0.8239708975909873
+      },
+      "reports": [
+        {
+          "day": 6,
+          "previous_auc": 0.823943660408285,
+          "auc": 0.8239708975909873,
+          "gain": 2.7237182702255502e-05,
+          "conditional_paired_interval": [
+            -1.2018574883121473e-05,
+            6.649294028763248e-05
+          ]
+        },
+        {
+          "day": 5,
+          "previous_auc": 0.8165425972922004,
+          "auc": 0.8165210299212227,
+          "gain": -2.1567370977693123e-05,
+          "conditional_paired_interval": [
+            -6.134230739637415e-05,
+            1.82075654409879e-05
+          ]
+        }
+      ],
+      "both_date_conditional_gate": false,
+      "status": "not_promoted",
+      "note": "Exploratory reused validation; intervals exclude selection uncertainty. No official-score or CSV-readiness claim."
+    },
+    "v22_low_lr_report.json": {
+      "reports": [
+        {
+          "day": 6,
+          "mixture": 0.25,
+          "auc": 0.8239746483829828,
+          "previous_auc": 0.8239436671631495,
+          "gain": 3.098121983335922e-05,
+          "conditional_interval": [
+            -3.051848274425895e-05,
+            9.248092241097739e-05
+          ]
+        }
+      ],
+      "both_date_conditional_gate": false,
+      "status": "not_promoted"
+    },
+    "v22_diversity_report.json": {
+      "reports": [
+        {
+          "day": 6,
+          "prefix": "v21_sequence_raw",
+          "weight": 0.005,
+          "auc": 0.8239455529302522,
+          "previous_auc": 0.8239436671631495,
+          "gain": 1.885767102693947e-06,
+          "conditional_interval": [
+            -1.5668667637416573e-05,
+            1.9440201842804467e-05
+          ]
+        }
+      ],
+      "both_date_conditional_gate": false,
+      "status": "not_promoted",
+      "note": "Exploratory reused validation; no submission generated."
+    }
+  },
+  "reference_primary_local_auc": 0.8239436671631495,
+  "reference_secondary_local_auc": 0.8165425964775535,
+  "validation_note": "Saved local scores on reused validation cohorts; not an untouched holdout or official competition score."
+}
