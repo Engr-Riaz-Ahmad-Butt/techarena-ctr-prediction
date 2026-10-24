@@ -22,7 +22,7 @@ def settings():
                  any(isinstance(t, ast.Name) and t.id == 'SETTINGS' for t in n.targets)]
     ns = {}
     exec(compile(tree, 'imp10_leafwise.py', 'exec'), ns)
-    return dict(ns['SETTINGS'], num_leaves=63)
+    return dict(ns['SETTINGS'], num_leaves=63, num_threads=4)
 
 
 def load_frozen_baseline():
@@ -237,7 +237,7 @@ def check(day, selected):
 
 
 if __name__ == '__main__':
-    capacity_prefit=json.loads((ROOT/'imp20_test_baseline_report.json').read_text())
+    capacity_prefit=json.loads((ROOT/'imp20_portable_test_baseline_report.json').read_text())
     assert capacity_prefit['status']=='PASS'
     for name,digest in capacity_prefit['source_sha256'].items():
         assert hashlib.sha256((SOURCE_ROOT/name).read_bytes()).hexdigest()==digest
