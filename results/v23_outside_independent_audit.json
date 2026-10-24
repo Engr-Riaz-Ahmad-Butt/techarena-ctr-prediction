@@ -1,0 +1,59 @@
+{
+  "status": "PASS_BOTH_DATES",
+  "accepted": true,
+  "manifest_hashes_unchanged": true,
+  "reports": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "weight": 0.1,
+      "checkpoint_replay_rows": 1000,
+      "checkpoint_max_error": 2.9802322387695312e-08,
+      "auc": {
+        "baseline": 0.8241639495695283,
+        "candidate": 0.8246573670343789,
+        "delta": 0.0004934174648505429,
+        "conditional_interval": [
+          0.0003192861624556501,
+          0.0006675487672454358
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8158379090749859,
+        "candidate": 0.8163481517309981,
+        "delta": 0.0005102426560121831,
+        "conditional_interval": [
+          0.00031666275986545777,
+          0.0007038225521589084
+        ]
+      }
+    },
+    {
+      "day": 5,
+      "rows": 352300,
+      "weight": 0.1,
+      "checkpoint_replay_rows": 1000,
+      "checkpoint_max_error": 5.960464477539063e-08,
+      "auc": {
+        "baseline": 0.8166261127941717,
+        "candidate": 0.8173996189298754,
+        "delta": 0.0007735061357037054,
+        "conditional_interval": [
+          0.0005924687593654374,
+          0.0009545435120419735
+        ]
+      },
+      "weighted_auc": {
+        "baseline": 0.8094765754437969,
+        "candidate": 0.8102284461842195,
+        "delta": 0.0007518707404225999,
+        "conditional_interval": [
+          0.0005541018595290602,
+          0.0009496396213161397
+        ]
+      }
+    }
+  ],
+  "note": "Exploratory reused local validation; conditional event intervals exclude epoch/blend/architecture selection uncertainty. No official score or CSV-readiness claim.",
+  "frozen_weight": 0.1
+}

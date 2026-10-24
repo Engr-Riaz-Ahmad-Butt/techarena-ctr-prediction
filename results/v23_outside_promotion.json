@@ -1,0 +1,17 @@
+{
+  "version": "V23",
+  "status": "verified_local_improvement",
+  "primary_local_auc": 0.8246573670343789,
+  "secondary_local_auc": 0.8173996189298754,
+  "recipe": "0.9 * rank(previous V21 multi-seed blend) + 0.1 * rank(outside-choice model)",
+  "artifact_sha256": {
+    "v23_outside_day6.npz": "e03fcf4e5df5e3ea5546b56457ea6dec14d3f1bbce26af7341d548c9de38267a",
+    "v23_outside_day6.pt": "958b963a07e40429add2559a8e9f6305f2a702fd967ea694c39266b6f2d95367",
+    "v23_outside_day5.npz": "57c201d896aed7f499d96dd5e112828ad1200d40a21d1fbeda19e2a2fa5c94bc",
+    "v23_outside_day5.pt": "9832048988ebf5929981a51237e9b532acd9f4a846a45ec48a033a0583b71087"
+  },
+  "audit_sha256": "6b59157fce97cc47bf74a8a5b4b6f1496c8ceae3dfc0d7bdfb5ae459c3f9de9d",
+  "evaluation_csv_ready": false,
+  "official_score": null,
+  "note": "Reused local validation; not an untouched test. Source hashes describe the working files, including pre-existing uncommitted V21 changes."
+}
