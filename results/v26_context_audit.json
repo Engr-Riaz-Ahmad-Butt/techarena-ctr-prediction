@@ -1,0 +1,24 @@
+{
+  "accepted": false,
+  "reports": [
+    {
+      "auc": 0.8246220218991985,
+      "baseline_auc": 0.8246573670343789,
+      "gain": -3.534513518033133e-05,
+      "conditional_interval": [
+        -7.053649231548415e-05,
+        -1.5377804517852659e-07
+      ],
+      "weighted_gain": -2.9160165934571936e-05,
+      "weighted_interval": [
+        -6.829670996626739e-05,
+        9.97637809712351e-06
+      ],
+      "day": 6,
+      "replay_max_error": 5.960464477539063e-08
+    }
+  ],
+  "unchanged_hashes": true,
+  "evaluation_csv_ready": false,
+  "note": "Exploratory reused local validation; not official score. Conditional intervals exclude repeated selection."
+}

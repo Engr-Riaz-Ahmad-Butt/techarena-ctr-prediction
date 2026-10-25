@@ -1,0 +1,12 @@
+{
+  "day": 6,
+  "baseline": 0.8246573670343789,
+  "tree_bag_v23": 0.8246691817698871,
+  "gain": 1.1814735508264285e-05,
+  "conditional_interval": [
+    -3.783338910715209e-05,
+    6.146286012368067e-05
+  ],
+  "decision": "Stopped remaining seed bagging after primary gain failed conditional interval gate; existing checkpoints preserved.",
+  "note": "Compared two-seed tree mean inside V23 recipe; day5 not complete."
+}
