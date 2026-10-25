@@ -1,0 +1,89 @@
+{
+  "selected": {
+    "neural_weight": 0.2,
+    "outside_weight": 0.1,
+    "auc": 0.8246373473902068
+  },
+  "trials": [
+    {
+      "neural_weight": 0.1,
+      "outside_weight": 0.05,
+      "auc": 0.8240047293636109
+    },
+    {
+      "neural_weight": 0.1,
+      "outside_weight": 0.1,
+      "auc": 0.8244376478062931
+    },
+    {
+      "neural_weight": 0.1,
+      "outside_weight": 0.15,
+      "auc": 0.8246043917030307
+    },
+    {
+      "neural_weight": 0.1,
+      "outside_weight": 0.2,
+      "auc": 0.8245052207408338
+    },
+    {
+      "neural_weight": 0.2,
+      "outside_weight": 0.05,
+      "auc": 0.8245364565985869
+    },
+    {
+      "neural_weight": 0.2,
+      "outside_weight": 0.1,
+      "auc": 0.8246373473902068
+    },
+    {
+      "neural_weight": 0.2,
+      "outside_weight": 0.15,
+      "auc": 0.8244648787799785
+    },
+    {
+      "neural_weight": 0.2,
+      "outside_weight": 0.2,
+      "auc": 0.8240220312324288
+    },
+    {
+      "neural_weight": 0.3,
+      "outside_weight": 0.05,
+      "auc": 0.8241661748538575
+    },
+    {
+      "neural_weight": 0.3,
+      "outside_weight": 0.1,
+      "auc": 0.8239226102720171
+    },
+    {
+      "neural_weight": 0.3,
+      "outside_weight": 0.15,
+      "auc": 0.823401865764298
+    },
+    {
+      "neural_weight": 0.3,
+      "outside_weight": 0.2,
+      "auc": 0.8226034432447374
+    }
+  ],
+  "reports": [
+    {
+      "auc": 0.8246373473902068,
+      "baseline_auc": 0.8246573670343789,
+      "gain": -2.0019644172086792e-05,
+      "conditional_interval": [
+        -6.112581774973729e-05,
+        2.1086529405563713e-05
+      ],
+      "weighted_gain": -3.601677891851285e-05,
+      "weighted_interval": [
+        -8.284413424082434e-05,
+        1.081057640379864e-05
+      ],
+      "day": 6
+    }
+  ],
+  "accepted": false,
+  "note": "Repeatedly reused local validation. No official-score claim.",
+  "evaluation_csv_ready": false
+}
