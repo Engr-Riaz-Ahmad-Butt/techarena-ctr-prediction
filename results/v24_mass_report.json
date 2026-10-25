@@ -1,0 +1,52 @@
+{
+  "trials": [
+    {
+      "alpha": -0.5,
+      "auc": 0.7975837807350242
+    },
+    {
+      "alpha": -0.25,
+      "auc": 0.8148245657914056
+    },
+    {
+      "alpha": -0.1,
+      "auc": 0.8225421965477767
+    },
+    {
+      "alpha": 0.1,
+      "auc": 0.8240016225353578
+    },
+    {
+      "alpha": 0.25,
+      "auc": 0.8208534404564113
+    },
+    {
+      "alpha": 0.5,
+      "auc": 0.8130370775993383
+    }
+  ],
+  "selected": {
+    "alpha": 0.1,
+    "auc": 0.8240016225353578
+  },
+  "reports": [
+    {
+      "auc": 0.8240016225353578,
+      "baseline_auc": 0.8246573670343789,
+      "gain": -0.0006557444990210604,
+      "conditional_interval": [
+        -0.0008269091992056594,
+        -0.00048457979883646135
+      ],
+      "weighted_gain": -0.0005744545860320027,
+      "weighted_interval": [
+        -0.0007718737050005357,
+        -0.0003770354670634698
+      ],
+      "day": 6
+    }
+  ],
+  "accepted": false,
+  "note": "Reused local validation; intervals exclude model-selection uncertainty.",
+  "evaluation_csv_ready": false
+}

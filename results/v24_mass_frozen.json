@@ -1,0 +1,15 @@
+{
+  "alphas": [
+    -0.5,
+    -0.25,
+    -0.1,
+    0.1,
+    0.25,
+    0.5
+  ],
+  "inputs": {
+    "v23_outside_day6.npz": "e03fcf4e5df5e3ea5546b56457ea6dec14d3f1bbce26af7341d548c9de38267a",
+    "v23_outside_day5.npz": "57c201d896aed7f499d96dd5e112828ad1200d40a21d1fbeda19e2a2fa5c94bc"
+  },
+  "note": "Reused local validation; intervals exclude model-selection uncertainty."
+}
