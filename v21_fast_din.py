@@ -143,13 +143,19 @@ def blend_auc(y, base, raw):
     return max(rows, key=lambda r: r[1]), rows
 
 
-def train(day: int, epochs: int, rank: int, batch: int):
+def train(day: int, epochs: int, rank: int, batch: int, fit_days: int = 3, tag: str = ""):
     t0 = time.time()
-    prefix = f"v21_fastdin_day{day}"
+    prefix = f"v21_fastdin{tag}_day{day}"
     if any(ROOT.glob(f"{prefix}*")):
         raise FileExistsError(prefix)
     val, y, events, base = load_v20(day)
-    fit = fit_rows(day)
+    if fit_days == 3:
+        fit = fit_rows(day)
+    else:
+        from v21_din import train as _train
+
+        lo = max(START, START + (day - fit_days) * DAY)
+        fit = np.asarray(_train[(_train[:, 2] >= lo) & (_train[:, 2] < START + day * DAY)])
     print(f"packing fit={len(fit)} val={len(val)}", flush=True)
     td = pack_events(fit, hist, htimes)
     vd = pack_events(val, hist, htimes)
@@ -238,12 +244,14 @@ def main():
     ap.add_argument("--rank", type=int, default=16)
     ap.add_argument("--batch", type=int, default=512)
     ap.add_argument("--threads", type=int, default=12)
+    ap.add_argument("--fit-days", type=int, default=3)
+    ap.add_argument("--tag", default="")
     args = ap.parse_args()
     torch.set_num_threads(args.threads)
     if args.check:
         check_parity()
         return
-    train(args.day, args.epochs, args.rank, args.batch)
+    train(args.day, args.epochs, args.rank, args.batch, args.fit_days, args.tag)
 
 
 if __name__ == "__main__":

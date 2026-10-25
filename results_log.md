@@ -75,6 +75,11 @@ Same validation as the official setup: first event per user on later training da
 | V21-fastseeds-d6 | 3 seeds fast DIN; best=fast1_rankmean wf=0.25 wo=0.0 | 0.823944 → 0.824265 | 600s | YES | n_members=6 |
 | V21-fastseeds-d5 | Confirm frozen recipe fast1_rankmean wf=0.25 wo=0.0 | 0.816543 → 0.816542 | 182s | no |  |
 | V21-fastseeds-final | 3-seed fast DIN rank-mean, w=0.2 -> submission_v21.csv | 0.823944 → 0.824164 | 210s | YES | day5=0.816626 |
+| V21-fastDIN-d6 | Vectorized DIN + rank-16 adapter day6 | 0.823729 → 0.823633 | 267s | no | raw=0.791555 w=0.2 |
+| imp20-capacity63 | LightGBM 63 leaves on 354 V20 features, day6 (536 trees) | 0.821528 → 0.821587 | 732s | no | raw 0.820937; interval includes 0; no day5 run |
+| V21-eventstack | Row-level LGB stacker V20+DIN+event/user features, cross-day | 0.824171 → 0.824286 | 35s | no | day5 delta 0; has-click AUC stuck ~0.63 |
+| V21-stale-weights | Blend weight per user-staleness bucket (fit day6) | 0.824164 → 0.824226 | 12s | no | day5 -0.00017; DIN weaker than tree in every bucket |
+| V21-fastDIN-w6 | Fast DIN with 6-day fit window | 0.823944 → 0.823633 | 267s | no | raw 0.7916 < 0.7953; older data hurts |
 
 Leakage audits on each member: stats/co-occur cutoffs before the fit window; history timestamps strictly before the event. No step gained >0.01 (all deltas were 0 vs V20), so no extra leakage deep-dive was required.
 
