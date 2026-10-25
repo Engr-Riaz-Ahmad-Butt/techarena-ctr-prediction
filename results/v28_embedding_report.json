@@ -1,0 +1,19 @@
+{
+  "reports": [
+    {
+      "weight": 0.1,
+      "auc": 0.8244733847236104,
+      "day": 6,
+      "previous_auc": 0.8246573670343789,
+      "gain": -0.00018398231076843796,
+      "raw_auc": 0.7822479937439922,
+      "conditional_interval": [
+        -0.00028043055030223523,
+        -8.75340712346407e-05
+      ]
+    }
+  ],
+  "both_date_conditional_gate": false,
+  "status": "not_promoted",
+  "note": "Reused local validation, no official-score or CSV-readiness claim."
+}
