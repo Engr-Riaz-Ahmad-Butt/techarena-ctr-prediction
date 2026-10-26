@@ -1,0 +1,26 @@
+{
+  "reports": [
+    {
+      "auc": 0.8249559619274357,
+      "baseline_auc": 0.824957808393509,
+      "gain": -1.8464660732631089e-06,
+      "conditional_interval": [
+        -9.604475233550614e-05,
+        9.235182018897992e-05
+      ],
+      "weighted_gain": 9.950015754434105e-06,
+      "weighted_interval": [
+        -7.849892332036514e-05,
+        9.839895482923335e-05
+      ],
+      "day": 6,
+      "weighted_auc": 0.8166714379007967,
+      "baseline_weighted_auc": 0.8166614878850422
+    }
+  ],
+  "accepted": false,
+  "official_auc": null,
+  "csv_ready": false,
+  "target_history_adjusted_auc": 0.82,
+  "note": "Reused validation dates, conditional intervals exclude repeated-selection uncertainty. No official-score guarantee."
+}

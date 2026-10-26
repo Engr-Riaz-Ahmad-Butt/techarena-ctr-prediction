@@ -1,0 +1,20 @@
+{
+  "dim": 64,
+  "iterations": 6,
+  "latent_regularization": 4.0,
+  "bias_regularization": 20.0,
+  "initialization": "V39 ALS32 plus 32 Gaussian columns at .25 scale",
+  "seed": 4501,
+  "weight": 0.05,
+  "recipe": "rank(rank(V39)+.05*(rank(ALS64)-rank(ALS32)))",
+  "threads": 4,
+  "blas_threads": 1,
+  "promotion": "Positive ordinary gain and positive lower history-adjusted interval on both dates; no weight search",
+  "inputs": {
+    "v39_regularized_als32_day6.npz": "2400b49037148c89aa8dea9c55467b77e6288e97192c622ac787f5646826b753",
+    "v39_regularized_als32_day6_checkpoint.npz": "1de09855283ce64b759b21de383e8dc983e53441ba9158ddf98f4993a17d0ccd",
+    "v39_regularized_als32_day5.npz": "04b72eee47a1af31679cf1f7972b82b31e2e35b1c7ae0cfcfaad506c7e76c460",
+    "v39_regularized_als32_day5_checkpoint.npz": "ef23e4021d7ee8217c86eddd6ff0ca8f6e6cf15e39f9bfe17a5a2217ba24912e"
+  },
+  "source_sha256": "1ac3a072566dd8c3e3da0ad73ce12861df0f1e3ac2fa52676858c32e85e32521"
+}
