@@ -1,6 +1,8 @@
 {
   "user_preference": "Improve locally before recommending another competition upload",
   "minimum_primary_local_auc": 0.82,
+  "active_requested_score": 0.834786,
+  "requested_score_verification": "Official leaderboard result is required to establish an official-score target; local diagnostics remain separate",
   "primary_metric": "evaluation_history_adjusted_auc",
   "primary_validation_day": 6,
   "secondary_requirement": "Confirm gain on day5 with unchanged cohort and recipe",

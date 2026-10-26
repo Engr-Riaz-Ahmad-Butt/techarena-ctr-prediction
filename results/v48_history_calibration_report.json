@@ -1,0 +1,50 @@
+{
+  "reports": [
+    {
+      "auc": 0.8176195825463818,
+      "baseline_auc": 0.8175247395375743,
+      "gain": 9.484300880746588e-05,
+      "conditional_interval": [
+        8.982041799132192e-06,
+        0.00018070397581579958
+      ],
+      "weighted_gain": 0.00012030426874420908,
+      "weighted_interval": [
+        6.7183034384632115e-06,
+        0.00023389023404995493
+      ],
+      "day": 5,
+      "evaluation_users": 17615,
+      "calibrator_fit_users": 17615,
+      "weighted_auc": 0.8109907092074259,
+      "baseline_weighted_auc": 0.8108704049386817,
+      "calibrator_iterations": 322,
+      "elapsed_s": 30.31299999996554
+    },
+    {
+      "auc": 0.8250648201839995,
+      "baseline_auc": 0.824957808393509,
+      "gain": 0.0001070117904905521,
+      "conditional_interval": [
+        4.627347365352208e-05,
+        0.0001677501073275821
+      ],
+      "weighted_gain": 0.00015351934795715394,
+      "weighted_interval": [
+        6.320824388262192e-05,
+        0.00024383045203168596
+      ],
+      "day": 6,
+      "evaluation_users": 35138,
+      "calibrator_fit_users": 17615,
+      "weighted_auc": 0.8168150072329994,
+      "baseline_weighted_auc": 0.8166614878850422,
+      "calibrator_iterations": 322,
+      "elapsed_s": 41.32799999997951
+    }
+  ],
+  "accepted": true,
+  "official_auc": null,
+  "csv_ready": false,
+  "note": "Calibrator trained only on partition of prior-date OOF labels. Reused dates; no official-score claim. Day5 subset score cannot be directly compared with full-day5 headline."
+}

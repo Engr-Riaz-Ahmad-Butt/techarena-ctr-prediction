@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 5,
+      "replay_max_error": 2.7755575615628914e-17,
+      "user_partition_verified": true,
+      "events": 17615,
+      "ordinary_auc": 0.8176195825463818,
+      "history_adjusted_auc": 0.8109907092074259,
+      "history_adjusted_gain": 0.00012030426874420908,
+      "bootstrap_replicates": 1000,
+      "bootstrap_seed": 4806,
+      "paired_event_percentile_interval": [
+        2.562138180337015e-06,
+        0.00023398940633199416
+      ],
+      "passes": true
+    },
+    {
+      "day": 6,
+      "replay_max_error": 0.0,
+      "user_partition_verified": false,
+      "events": 35138,
+      "ordinary_auc": 0.8250648201839995,
+      "history_adjusted_auc": 0.8168150072329994,
+      "history_adjusted_gain": 0.00015351934795715394,
+      "bootstrap_replicates": 1000,
+      "bootstrap_seed": 4807,
+      "paired_event_percentile_interval": [
+        5.7593534527886074e-05,
+        0.00023943237495724354
+      ],
+      "passes": true
+    }
+  ],
+  "promotable": true,
+  "csv_ready": false,
+  "official_auc": null,
+  "note": "Conditional on fixed calibrator and repeatedly reused parent holdouts; bootstrap does not remove selection uncertainty or calendar distribution shift."
+}

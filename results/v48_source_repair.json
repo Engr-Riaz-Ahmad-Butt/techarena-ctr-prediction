@@ -1,0 +1,5 @@
+{
+  "original_source_sha256": "51bcf84a4ed517c564f40369100dc82f9eb873d4e1f67c3abffe6245cb8feb62",
+  "repaired_source_sha256": "4b7d3d6f9c08f3c61351b2bd4a80a207a06a45e174e869edc5b82104fcd5d0a1",
+  "change": "Correct event-to-candidate row indexing; initial assertion stopped before model fitting. No settings or partition changed."
+}

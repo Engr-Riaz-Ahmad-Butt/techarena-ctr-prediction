@@ -1,0 +1,21 @@
+{
+  "version": "V48",
+  "stage": "conditional_calibration_local_audit_passed_not_exported",
+  "primary_history_adjusted_auc": 0.8168150072329994,
+  "primary_ordinary_auc": 0.8250648201839995,
+  "baseline_version": "V39",
+  "baseline_primary_history_adjusted_auc": 0.8166614878850422,
+  "primary_adjusted_gain_bootstrap_interval": [0.000057593534527886074, 0.00023943237495724354],
+  "bootstrap_replicates_per_split": 1000,
+  "confirmation": "Other half of day5 users; same-date user holdout, not a second future temporal fold",
+  "confirmation_history_adjusted_auc": 0.8109907092074259,
+  "requested_score": 0.834786,
+  "target_achieved": false,
+  "minimum_before_upload_recommendation": 0.82,
+  "csv_ready": false,
+  "latest_exported_version": "V39",
+  "confirmed_official_version": "V35",
+  "confirmed_official_auc": 0.816623,
+  "training_running": false,
+  "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed."
+}
