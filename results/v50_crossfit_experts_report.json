@@ -1,0 +1,45 @@
+{
+  "reports": [
+    {
+      "auc": 0.8179616247242963,
+      "baseline_auc": 0.8176714755819893,
+      "gain": 0.00029014914230707234,
+      "conditional_interval": [
+        0.0002039773246898148,
+        0.0003763209599243299
+      ],
+      "weighted_gain": 0.0002628045517538702,
+      "weighted_interval": [
+        0.0001394716275049878,
+        0.00038613747600275256
+      ],
+      "day": 5,
+      "protocol": "full-day5 user crossfit, not a temporal fold",
+      "weighted_auc": 0.8107894041732309,
+      "baseline_weighted_auc": 0.810526599621477
+    },
+    {
+      "auc": 0.8252452243953163,
+      "baseline_auc": 0.8250648201839995,
+      "gain": 0.00018040421131682027,
+      "conditional_interval": [
+        0.00011373161160544057,
+        0.0002470768110282
+      ],
+      "weighted_gain": 0.0001791451824757484,
+      "weighted_interval": [
+        8.605967054040568e-05,
+        0.0002722306944110911
+      ],
+      "day": 6,
+      "protocol": "future date; all calibration fitting labels on day5",
+      "weighted_auc": 0.8169941524154751,
+      "baseline_weighted_auc": 0.8168150072329994,
+      "elapsed_s": 171.89100000006147
+    }
+  ],
+  "accepted": true,
+  "csv_ready": false,
+  "official_auc": null,
+  "note": "Day5 OOF by user, day6 temporal confirmation. Repeatedly reused dates and model settings derived after V49; uncertainty includes selection limitations."
+}

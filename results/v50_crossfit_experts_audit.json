@@ -1,0 +1,41 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 5,
+      "protocol": "user crossfit",
+      "saved_logistic_replay_max_error": 0.0,
+      "events": 35230,
+      "ordinary_auc": 0.8179616247242963,
+      "history_adjusted_auc": 0.8107894041732309,
+      "history_adjusted_gain": 0.0002628045517538702,
+      "bootstrap_replicates": 1000,
+      "seed": 5006,
+      "paired_event_interval": [
+        0.00013641276216456443,
+        0.00038044370467572305
+      ],
+      "passes": true
+    },
+    {
+      "day": 6,
+      "protocol": "future temporal date",
+      "saved_logistic_replay_max_error": 0.0,
+      "events": 35138,
+      "ordinary_auc": 0.8252452243953163,
+      "history_adjusted_auc": 0.8169941524154751,
+      "history_adjusted_gain": 0.0001791451824757484,
+      "bootstrap_replicates": 1000,
+      "seed": 5007,
+      "paired_event_interval": [
+        8.640359564277556e-05,
+        0.0002764579648579318
+      ],
+      "passes": true
+    }
+  ],
+  "promotable": true,
+  "official_auc": null,
+  "csv_ready": false,
+  "note": "Fixed-model bootstrap excludes calibrator-fitting and repeated-selection uncertainty. Day5 is user-OOF, not a strictly future temporal fold; weekday target mismatch remains."
+}
