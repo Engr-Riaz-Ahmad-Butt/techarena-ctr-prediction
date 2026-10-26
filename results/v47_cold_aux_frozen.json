@@ -1,0 +1,23 @@
+{
+  "dim": 32,
+  "extra_iterations": 6,
+  "latent_regularization": 4.0,
+  "bias_regularization": 20.0,
+  "weight": 0.05,
+  "auxiliary_weight": 1.0,
+  "background_per_aux_click": 9.0,
+  "threads": 4,
+  "arms": [
+    "control",
+    "cold_aux"
+  ],
+  "auxiliary_source": "Only supplied histories of users with no training exposure; timestamps strictly before fitting cutoff; labels excluded",
+  "selection": "Fixed recipe; treatment must improve baseline and control; then unchanged confirmation day5",
+  "inputs": {
+    "v39_regularized_als32_day6.npz": "2400b49037148c89aa8dea9c55467b77e6288e97192c622ac787f5646826b753",
+    "v39_regularized_als32_day6_checkpoint.npz": "1de09855283ce64b759b21de383e8dc983e53441ba9158ddf98f4993a17d0ccd",
+    "v39_regularized_als32_day5.npz": "04b72eee47a1af31679cf1f7972b82b31e2e35b1c7ae0cfcfaad506c7e76c460",
+    "v39_regularized_als32_day5_checkpoint.npz": "ef23e4021d7ee8217c86eddd6ff0ca8f6e6cf15e39f9bfe17a5a2217ba24912e"
+  },
+  "source_sha256": "13e0f9ca8507e0db01fb041d0ba462263a592ef31c436c49b43e21fbcd58c412"
+}

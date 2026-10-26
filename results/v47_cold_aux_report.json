@@ -1,0 +1,66 @@
+{
+  "reports": [
+    {
+      "day": 6,
+      "coverage": {
+        "day": 6,
+        "cold_validation_users": 595,
+        "auxiliary_clicks": 1764,
+        "auxiliary_users": 503,
+        "all_auxiliary_before_cutoff": true,
+        "auxiliary_last_timestamp": 1737331140
+      },
+      "arms": {
+        "control": {
+          "auc": 0.8249934310239786,
+          "baseline_auc": 0.824957808393509,
+          "gain": 3.5622630469633876e-05,
+          "conditional_interval": [
+            -9.242430925489862e-06,
+            8.048769186475761e-05
+          ],
+          "weighted_gain": 3.2751758215043836e-05,
+          "weighted_interval": [
+            -9.78666410163818e-06,
+            7.529018053172585e-05
+          ],
+          "weighted_auc": 0.8166942396432573
+        },
+        "cold_aux": {
+          "auc": 0.8249940503563469,
+          "baseline_auc": 0.824957808393509,
+          "gain": 3.624196283791292e-05,
+          "conditional_interval": [
+            -8.723141120224228e-06,
+            8.120706679605008e-05
+          ],
+          "weighted_gain": 3.3704789321076234e-05,
+          "weighted_interval": [
+            -8.989182928775085e-06,
+            7.639876157092756e-05
+          ],
+          "weighted_auc": 0.8166951926743633
+        }
+      },
+      "treatment_vs_control": {
+        "auc": 0.8249940503563469,
+        "baseline_auc": 0.8249934310239786,
+        "gain": 6.193323682790464e-07,
+        "conditional_interval": [
+          -2.7579795785666374e-06,
+          3.996644315124731e-06
+        ],
+        "weighted_gain": 9.530311060323982e-07,
+        "weighted_interval": [
+          -2.8317032130218734e-06,
+          4.737765425086669e-06
+        ]
+      },
+      "baseline_weighted_auc": 0.8166614878850422
+    }
+  ],
+  "accepted": false,
+  "official_auc": null,
+  "csv_ready": false,
+  "note": "Transductive use of supplied unlabeled history, never evaluation clicked labels. Reused local validation; official score unknown."
+}

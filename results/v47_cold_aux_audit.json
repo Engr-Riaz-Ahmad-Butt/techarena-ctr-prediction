@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 6,
+      "arm": "control",
+      "sample_raw_max_error": 0.0,
+      "recipe_and_weighted_auc": true
+    },
+    {
+      "day": 6,
+      "arm": "cold_aux",
+      "sample_raw_max_error": 0.0,
+      "recipe_and_weighted_auc": true
+    }
+  ],
+  "rejection_verified": true,
+  "scope": "Saved-model and metric replay; no official-score or target-achievement claim."
+}

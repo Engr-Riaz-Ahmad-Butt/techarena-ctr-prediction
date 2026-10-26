@@ -1,0 +1,33 @@
+{
+  "reports": [
+    {
+      "auc": 0.8246824951300661,
+      "baseline_auc": 0.824957808393509,
+      "gain": -0.0002753132634428779,
+      "conditional_interval": [
+        -0.00032597718542456706,
+        -0.0002246493414611887
+      ],
+      "weighted_gain": -0.0002521846783916093,
+      "weighted_interval": [
+        -0.00030290002151255946,
+        -0.00020146933527065915
+      ],
+      "epoch": 1,
+      "weight": 0.1,
+      "weighted_auc": 0.8164093032066506,
+      "day": 6,
+      "fit_last": 1737849540,
+      "cutoff": 1737849600,
+      "training_kind_counts": [
+        490420,
+        98453
+      ],
+      "baseline_weighted_auc": 0.8166614878850422
+    }
+  ],
+  "accepted": false,
+  "official_auc": null,
+  "csv_ready": false,
+  "note": "Repeatedly reused holdouts. Settings selected on day6, frozen before day5. Local AUC is not official AUC."
+}

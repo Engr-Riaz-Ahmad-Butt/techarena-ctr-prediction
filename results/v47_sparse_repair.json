@@ -1,0 +1,5 @@
+{
+  "original_source_sha256": "13e0f9ca8507e0db01fb041d0ba462263a592ef31c436c49b43e21fbcd58c412",
+  "repaired_source_sha256": "b0e20e07fcc24b851ef5259e7e5d959fde9b6fa5ac2a8163c7de7112140657d0",
+  "change": "Restore explicit zero target support after sparse addition; reuse completed matched-control checkpoint. No model settings changed."
+}
