@@ -1,0 +1,26 @@
+{
+  "reports": [
+    {
+      "auc": 0.8178179307885916,
+      "baseline_auc": 0.8176195825463818,
+      "gain": 0.0001983482422097671,
+      "conditional_interval": [
+        8.431024987325585e-05,
+        0.00031238623454627834
+      ],
+      "weighted_gain": 0.00013713606254051047,
+      "weighted_interval": [
+        -3.1800358616657136e-05,
+        0.00030607248369767805
+      ],
+      "day": 5,
+      "weighted_auc": 0.8111278452699664,
+      "baseline_weighted_auc": 0.8109907092074259,
+      "elapsed_s": 42.70400000002701
+    }
+  ],
+  "accepted": false,
+  "official_auc": null,
+  "csv_ready": false,
+  "note": "Same reused V48 partition and dates. Day5 user holdout is not a second temporal fold. No model or blend settings selected on these validation labels."
+}
