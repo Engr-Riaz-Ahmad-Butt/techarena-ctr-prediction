@@ -1,0 +1,30 @@
+{
+  "reports": [
+    {
+      "auc": 0.8247404148857166,
+      "baseline_auc": 0.8248468883339812,
+      "gain": -0.00010647344826464344,
+      "conditional_interval": [
+        -0.0002186485262962384,
+        5.701629766951511e-06
+      ],
+      "weighted_gain": -8.791563509791267e-05,
+      "weighted_interval": [
+        -0.00020625169467991146,
+        3.0420424484086116e-05
+      ],
+      "day": 6,
+      "mode": "replace_component",
+      "weight": 0.05,
+      "weighted_auc": 0.816432321026642,
+      "baseline_weighted_auc": 0.8165202366617399,
+      "raw_auc": 0.7207298985437758,
+      "old_raw_auc": 0.7611342871737934,
+      "cutoff": 1737849600,
+      "elapsed_s": 62.98499999998603
+    }
+  ],
+  "accepted": false,
+  "evaluation_csv_ready": false,
+  "note": "Reused local dates; intervals conditional on settings and history weighting, excluding selection uncertainty. Official V35 score is 0.816623. Local history weighting is an imperfect proxy, not an official forecast."
+}
