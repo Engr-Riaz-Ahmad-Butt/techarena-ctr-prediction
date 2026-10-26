@@ -1,0 +1,37 @@
+{
+  "observed_official_auc": 0.816623,
+  "uploaded_filename": "submission (1).csv.zip",
+  "local_version_for_uploaded_file": "V35",
+  "metrics": [
+    {
+      "version": "V35",
+      "day": 6,
+      "ordinary_auc": 0.8247733498306827,
+      "evaluation_history_weighted_auc": 0.8164521432603704
+    },
+    {
+      "version": "V35",
+      "day": 5,
+      "ordinary_auc": 0.817450278022715,
+      "evaluation_history_weighted_auc": 0.8102817094801487
+    },
+    {
+      "version": "V36",
+      "day": 6,
+      "ordinary_auc": 0.8248468883339812,
+      "evaluation_history_weighted_auc": 0.8165202366617399
+    },
+    {
+      "version": "V36",
+      "day": 5,
+      "ordinary_auc": 0.8174848008600935,
+      "evaluation_history_weighted_auc": 0.8103148382234412
+    }
+  ],
+  "note": "Weighting matches history length only and is an imperfect proxy, not an official-score prediction. Export manifests also disclose reuse of an older frozen-ALS parent; this audit does not assign causal blame to that mismatch.",
+  "version_confirmed_by_user": true,
+  "observed_leaderboard_top_team": "free lunch",
+  "observed_leaderboard_top_auc": 0.832869,
+  "gap_to_observed_leader": 0.016246,
+  "screenshot_context": "User-provided screenshot; not independently fetched live leaderboard."
+}

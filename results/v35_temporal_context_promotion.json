@@ -16,8 +16,9 @@
   },
   "audit_sha256": "be0c2418ee35a63e66b56660f7569784160a499dec7a2b33d8e3d63803f2ade6",
   "evaluation_csv_ready": true,
-  "official_score": null,
+  "official_score": 0.816623,
   "note": "Both reused local dates pass ordinary and history-weighted conditional gain checks; intervals exclude repeated model selection. No untouched-holdout or official-score claim.",
   "submission_filename": "submission_v35.csv",
-  "submission_sha256": "ceb22c8e1fd911aec57d50e6ce6038401a9356100f742b747c5c7f4d48360881"
+  "submission_sha256": "ceb22c8e1fd911aec57d50e6ce6038401a9356100f742b747c5c7f4d48360881",
+  "official_version_mapping": "User confirmed V35 for scored screenshot."
 }
