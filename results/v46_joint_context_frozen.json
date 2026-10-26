@@ -1,0 +1,27 @@
+{
+  "epochs": [
+    1,
+    3,
+    6
+  ],
+  "weights": [
+    0.1,
+    0.2,
+    0.4
+  ],
+  "seed": 4601,
+  "threads": 4,
+  "embedding_lr": 0.0005,
+  "context_lr": 0.003,
+  "anchor_penalty": 0.01,
+  "context_penalty": 0.001,
+  "item_context_penalty": 0.01,
+  "initialization": "same-cutoff warm16, fine tune on fitting labels only",
+  "inputs": {
+    "imp2_model_warm1.0_d16_pc1_day6.npz": "ecf9a81e6b0042cf8e0d15f8263dbae9c50a83923acb473b3d39c481de08a76c",
+    "imp2_model_warm1.0_d16_pc1_day5.npz": "527c1c0ac8bd3af01a31dc572873c2eaee6d09b8819e7b820649ca8e7bfa8859",
+    "v39_regularized_als32_day6.npz": "2400b49037148c89aa8dea9c55467b77e6288e97192c622ac787f5646826b753",
+    "v39_regularized_als32_day5.npz": "04b72eee47a1af31679cf1f7972b82b31e2e35b1c7ae0cfcfaad506c7e76c460"
+  },
+  "source_sha256": "6f2d25723e1e4da37fc6f41a7194c8f7cb5b952971278cfa560d26e6c3d975e0"
+}

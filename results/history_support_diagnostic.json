@@ -1,0 +1,26 @@
+{
+  "training_history_clicks": 11679175,
+  "training_history_clicks_in_training_window": 5182855,
+  "training_history_max_timestamp": 1737935880,
+  "training_start": 1737331200,
+  "same_user_adjacent_pairs": 633821,
+  "pairs_with_changed_history": 397900,
+  "evaluation_history_clicks": 708389,
+  "evaluation_history_max_timestamp": 1737935940,
+  "evaluation_history_clicks_after_training_start": 363009,
+  "train_history_length_quantiles": [
+    0.0,
+    8.0,
+    20.0,
+    20.0,
+    20.0
+  ],
+  "evaluation_history_length_quantiles": [
+    0.0,
+    4.0,
+    15.0,
+    20.0,
+    20.0
+  ],
+  "scope": "Descriptive support only; no labels or model scores used"
+}

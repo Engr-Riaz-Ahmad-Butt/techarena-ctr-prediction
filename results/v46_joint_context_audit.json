@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 6,
+      "initialization_max_error": 1.696628867953187e-07,
+      "saved_replay_max_error": 0.0,
+      "recipe_and_metrics": true,
+      "fit_before_validation": true
+    }
+  ],
+  "source_and_inputs_unchanged": true,
+  "scope": "Model replay and metric validity; does not validate target achievement or eliminate repeated-selection uncertainty."
+}
