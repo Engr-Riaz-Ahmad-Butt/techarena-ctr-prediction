@@ -1,0 +1,24 @@
+{
+  "calibration_fit": "Random half of day5 users; all parent scores are causal OOF for day5",
+  "seed": 4801,
+  "knots": [
+    0,
+    0.2,
+    0.4,
+    0.6,
+    0.8,
+    1
+  ],
+  "degree": 3,
+  "C": 0.1,
+  "blend_weight": 0.25,
+  "solver": "lbfgs",
+  "max_iter": 500,
+  "tol": 1e-07,
+  "selection": "No hyperparameter search. Require ordinary gain and positive adjusted interval on held-out day5 users, then day6.",
+  "inputs": {
+    "v39_regularized_als32_day5.npz": "04b72eee47a1af31679cf1f7972b82b31e2e35b1c7ae0cfcfaad506c7e76c460",
+    "v39_regularized_als32_day6.npz": "2400b49037148c89aa8dea9c55467b77e6288e97192c622ac787f5646826b753"
+  },
+  "source_sha256": "51bcf84a4ed517c564f40369100dc82f9eb873d4e1f67c3abffe6245cb8feb62"
+}
