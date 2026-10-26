@@ -1,0 +1,26 @@
+{
+  "accepted": false,
+  "reports": [
+    {
+      "auc": 0.8247404148857166,
+      "baseline_auc": 0.8248468883339812,
+      "gain": -0.00010647344826464344,
+      "conditional_interval": [
+        -0.0002186485262962384,
+        5.701629766951511e-06
+      ],
+      "weighted_gain": -8.791563509791267e-05,
+      "weighted_interval": [
+        -0.00020625169467991146,
+        3.0420424484086116e-05
+      ],
+      "day": 6,
+      "weighted_auc": 0.816432321026642,
+      "baseline_weighted_auc": 0.8165202366617399,
+      "replay_max_error": 0.0
+    }
+  ],
+  "equation_max_error": 5.863365348801608e-16,
+  "unchanged_hashes": true,
+  "note": "Evaluation-history adjusted AUC is the selection metric. Reused local dates and conditional intervals; no official-score forecast."
+}
