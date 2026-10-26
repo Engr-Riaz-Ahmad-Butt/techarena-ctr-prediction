@@ -1,0 +1,23 @@
+{
+  "accepted": false,
+  "reports": [
+    {
+      "auc": 0.8246737771246296,
+      "baseline_auc": 0.8246573670343789,
+      "gain": 1.6410090250773557e-05,
+      "conditional_interval": [
+        -3.0004208176484636e-05,
+        6.282438867803174e-05
+      ],
+      "weighted_gain": 3.3235534994568994e-05,
+      "weighted_interval": [
+        -2.079437749918098e-05,
+        8.726544748831897e-05
+      ],
+      "day": 6,
+      "replay_max_error": 0.0,
+      "model_sha256": "72a6d06543dbeea40d09068d7eec751fabd2143f94f72f78e76fec5fdadc3cd9"
+    }
+  ],
+  "note": "Reused local dates; conditional intervals do not account for repeated selection. Existing causal feature caches reused. No official score or CSV-readiness claim."
+}
