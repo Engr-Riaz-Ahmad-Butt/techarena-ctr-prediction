@@ -1,0 +1,53 @@
+{
+  "reports": [
+    {
+      "auc": 0.824957808393509,
+      "baseline_auc": 0.8248468883339812,
+      "gain": 0.00011092005952773043,
+      "conditional_interval": [
+        1.6670591656330646e-05,
+        0.00020516952739913023
+      ],
+      "weighted_gain": 0.00014125122330232998,
+      "weighted_interval": [
+        4.273042650508813e-05,
+        0.00023977202009957182
+      ],
+      "day": 6,
+      "mode": "replace_component",
+      "weight": 0.05,
+      "weighted_auc": 0.8166614878850422,
+      "baseline_weighted_auc": 0.8165202366617399,
+      "raw_auc": 0.7407823043540812,
+      "old_raw_auc": 0.7611342871737934,
+      "cutoff": 1737849600,
+      "elapsed_s": 13.077999999979511
+    },
+    {
+      "auc": 0.8176714755819893,
+      "baseline_auc": 0.8174848008600935,
+      "gain": 0.00018667472189581868,
+      "conditional_interval": [
+        9.091885930670823e-05,
+        0.00028243058448492917
+      ],
+      "weighted_gain": 0.00021176139803580352,
+      "weighted_interval": [
+        0.00011380995808544724,
+        0.0003097128379861598
+      ],
+      "day": 5,
+      "mode": "replace_component",
+      "weight": 0.05,
+      "weighted_auc": 0.810526599621477,
+      "baseline_weighted_auc": 0.8103148382234412,
+      "raw_auc": 0.7375672425894824,
+      "old_raw_auc": 0.7577752969062316,
+      "cutoff": 1737763200,
+      "elapsed_s": 35.51500000001397
+    }
+  ],
+  "accepted": true,
+  "evaluation_csv_ready": false,
+  "note": "Reused local dates and conditional intervals. Official score unknown; see repair manifest for prediction-only repair."
+}

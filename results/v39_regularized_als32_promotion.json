@@ -1,0 +1,24 @@
+{
+  "version": "V39",
+  "status": "verified_local_improvement",
+  "baseline": "V36",
+  "primary_metric": "evaluation_history_weighted_auc",
+  "primary_adjusted_auc": 0.8166614878850422,
+  "secondary_adjusted_auc": 0.810526599621477,
+  "primary_ordinary_auc": 0.824957808393509,
+  "secondary_ordinary_auc": 0.8176714755819893,
+  "recipe": "rank(rank(V36) + 0.05 * (rank(regularized ALS32) - rank(original ALS16)))",
+  "artifact_sha256": {
+    "v39_regularized_als32_day6.npz": "2400b49037148c89aa8dea9c55467b77e6288e97192c622ac787f5646826b753",
+    "v39_regularized_als32_day6_checkpoint.npz": "1de09855283ce64b759b21de383e8dc983e53441ba9158ddf98f4993a17d0ccd",
+    "v39_regularized_als32_day5.npz": "04b72eee47a1af31679cf1f7972b82b31e2e35b1c7ae0cfcfaad506c7e76c460",
+    "v39_regularized_als32_day5_checkpoint.npz": "ef23e4021d7ee8217c86eddd6ff0ca8f6e6cf15e39f9bfe17a5a2217ba24912e"
+  },
+  "audit_sha256": "5a10867e1cf508aaf8e7c64a0fb8b34898ed093f516d68cd237bece7ed07d056",
+  "bootstrap_sha256": "a5b8583df18741b7a5dfa75a25b07b341f9d5bd6027f12a01a66458b85882000",
+  "evaluation_csv_ready": true,
+  "submission_filename": "submission_v39.csv",
+  "submission_sha256": "396fb0fead66e9fcd139e8092340fb70ffd6466d3ed959bc8eba27f931d0c44e",
+  "official_score": null,
+  "note": "Local ordinary AUC is optimistic relative to evaluation history mix. Selection uses history-adjusted AUC and an exact 1000-resample paired event bootstrap; repeated-selection uncertainty remains. No official forecast or 0.83-achievement claim."
+}
