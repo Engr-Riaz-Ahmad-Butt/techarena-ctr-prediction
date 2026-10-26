@@ -1,0 +1,26 @@
+{
+  "dim": 32,
+  "iterations": 6,
+  "latent_regularization": 1.0,
+  "bias_regularization": 20.0,
+  "threads": 4,
+  "weight_grid": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "modes": [
+    "replace_component",
+    "blend"
+  ],
+  "selection_metric": "evaluation_history_weighted_auc",
+  "inputs": {
+    "preference_stats_1737849600.pkl": "242f53883ae3e6186dfce80103e783ec7fa8c243ad8f1346a323cc536b277310",
+    "preference_stats_1737763200.pkl": "5f619a9a0b5f578328c5acd4f887df08886f38442ed8251b27e297a2ad84df76",
+    "v36_recent_context_day6.npz": "62f8fdd01aa1a7fab063d644b8431abc87f758f6b6cc0f8abfd5809f2a189667",
+    "v36_recent_context_day5.npz": "a9f31448db9b279114600ecbcd0a19e514cf565371c6e0f1745f21b97ef8cf54",
+    "imp15_als_day6.npz": "dfcaec2796e84204d16219400202af2053e9aff521c967b6eb851c176a9c9597",
+    "imp15_als_day5.npz": "a92366fff5e9dcaa497391336b5e1742fed1ba44ca49c570442792e21e8af7f8"
+  },
+  "source_sha256": "2c8443f21a7734e31630ee6351bc6578ac8616ab18898b0634b75985d3aebf76"
+}
