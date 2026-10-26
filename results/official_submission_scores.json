@@ -1,0 +1,19 @@
+{
+  "confirmed_submissions": [
+    {
+      "version": "V18",
+      "official_auc": 0.809189
+    },
+    {
+      "version": "V35",
+      "official_auc": 0.816623,
+      "uploaded_filename": "submission (1).csv.zip",
+      "local_csv_sha256": "ceb22c8e1fd911aec57d50e6ce6038401a9356100f742b747c5c7f4d48360881",
+      "mapping": "User confirmed V35; uploaded archive bytes were not inspected."
+    }
+  ],
+  "unconfirmed_submission_versions": [
+    "V36"
+  ],
+  "note": "Official AUC is the competition result. Ordinary and history-adjusted local AUC are diagnostic metrics, not official-score guarantees."
+}
