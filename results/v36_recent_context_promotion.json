@@ -1,0 +1,22 @@
+{
+  "version": "V36",
+  "status": "verified_local_improvement",
+  "baseline": "V35",
+  "primary_local_auc": 0.8248468883339812,
+  "secondary_local_auc": 0.8174848008600935,
+  "recipe": "rank(rank(V23) + 0.1 * (rank(time-and-recent-context probabilities) - rank(frozen-factor probabilities)))",
+  "recent_half_life_days": 2,
+  "epochs": 3,
+  "artifact_sha256": {
+    "v36_recent_context_day6.pt": "fa99607561edb11877a65bd6552a868745fab277867f69698a06486ca5421b73",
+    "v36_recent_context_day6.npz": "62f8fdd01aa1a7fab063d644b8431abc87f758f6b6cc0f8abfd5809f2a189667",
+    "v36_recent_context_day5.pt": "2571bc63549e57f123708654cb666a86e62634f0d619dea7bcea1efc6ccb228f",
+    "v36_recent_context_day5.npz": "a9f31448db9b279114600ecbcd0a19e514cf565371c6e0f1745f21b97ef8cf54"
+  },
+  "audit_sha256": "dc1fc834e8450d156f1af1c60dd656a9dd6279d1474a80d93162abdaa64985c0",
+  "evaluation_csv_ready": true,
+  "submission_filename": "submission_v36.csv",
+  "submission_sha256": "4426e97db7a1728608c007dcbc8f170386aa0559bc99830a5879aef2314f90f0",
+  "official_score": null,
+  "note": "Both reused local dates pass ordinary and history-weighted conditional gain checks. Intervals exclude repeated selection; official score remains unknown."
+}
