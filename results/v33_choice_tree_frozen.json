@@ -1,0 +1,26 @@
+{
+  "params": {
+    "objective": "custom_event_choice",
+    "metric": "None",
+    "num_leaves": 31,
+    "learning_rate": 0.05,
+    "min_data_in_leaf": 100,
+    "max_bin": 63,
+    "feature_fraction": 0.9,
+    "lambda_l2": 5.0,
+    "num_threads": 4,
+    "seed": 3301,
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "trees": 500,
+  "events_per_day": 20000,
+  "sparse_budget_per_day": 10000,
+  "blend_grid": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "note": "Existing causal feature caches; selection on reused Jan26 then fixed Jan25. No official-score claim."
+}
