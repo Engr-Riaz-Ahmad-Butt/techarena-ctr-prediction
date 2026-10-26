@@ -1,0 +1,21 @@
+{
+  "output": "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\submission_v36.csv",
+  "rows": 529390,
+  "csv_sha256": "4426e97db7a1728608c007dcbc8f170386aa0559bc99830a5879aef2314f90f0",
+  "rowids_sha256": "207c8ed166b4c42efa31cd6aa0a8fe9adad523c435e19b6d06b8557ba89fc058",
+  "local_primary": 0.8248468883339812,
+  "local_secondary": 0.8174848008600935,
+  "official_auc": null,
+  "artifact_sha256": {
+    "v35_outside_final.pt": "c44ef6204f9ca29fc85b4a42a8c59d4e19d361c4176a985546318c66fb12087e",
+    "v35_outside_eval.npy": "c8946e6f7809a0c0a8f01df3c72c25afa9bb4012c07434514c5497cd9fc943f0",
+    "v36_context_final.pt": "ed8ef0fa01e612c4b81f7f69be120f216fff5a2ac9f270d67af5107b19bc55ec",
+    "v36_context_eval.npy": "6eccb3b1d938aea192dbb4362bfbc2da5594489f42b39667e5e6bb1c8e0e2bbb",
+    "v36_context_old_eval.npy": "81fcd963aeab4dc229df64100e0ead57b5824572934551d5305e49edd93b8fda",
+    "v36_final_pred.npy": "f99e5ab223d884aaf70afd5d6769bbbaeb649d191630b0869b1713255999b132"
+  },
+  "training_last_timestamp": 1737935940,
+  "cutoff": 1737936000,
+  "evaluation_first_timestamp": 1737936000,
+  "note": "V36 recent-interest component refit before evaluation cutoff. Verified existing V35/V21 final backbone reused with its previously documented parent-checkpoint provenance; local AUC is not an official-score forecast."
+}
