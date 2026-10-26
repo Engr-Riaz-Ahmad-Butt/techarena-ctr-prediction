@@ -1,0 +1,16 @@
+{
+  "day": 6,
+  "replicates": 1000,
+  "seed": 3901,
+  "events": 35138,
+  "metric": "evaluation_history_weighted_auc",
+  "observed_gain": 0.00014125122330232998,
+  "paired_event_percentile_interval": [
+    4.884987040486288e-05,
+    0.000236430165223217
+  ],
+  "passes": true,
+  "candidate_sha256": "2400b49037148c89aa8dea9c55467b77e6288e97192c622ac787f5646826b753",
+  "baseline_sha256": "62f8fdd01aa1a7fab063d644b8431abc87f758f6b6cc0f8abfd5809f2a189667",
+  "note": "Exact multinomial event resampling with fixed history weights. Conditional on chosen recipe; does not correct repeated selection or evaluation-distribution mismatch."
+}

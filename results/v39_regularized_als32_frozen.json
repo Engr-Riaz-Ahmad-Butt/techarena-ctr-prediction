@@ -1,0 +1,29 @@
+{
+  "initialization": "expanded_converged_ALS16",
+  "seed": 3801,
+  "new_dimension_scale": 0.25,
+  "dim": 32,
+  "iterations": 6,
+  "latent_regularization": 4.0,
+  "bias_regularization": 20.0,
+  "threads": 4,
+  "weight_grid": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "modes": [
+    "replace_component",
+    "blend"
+  ],
+  "selection_metric": "evaluation_history_weighted_auc",
+  "inputs": {
+    "imp15_model_day6.npz": "76fd51e2e2dcf0bc0956eada0844a2c220e651d85266ca6b90255f10c4a5a6d7",
+    "imp15_model_day5.npz": "7e78260e0a71f9dcdc304ba8875dd4ed12c911dde6553b2d8aa73d53f9f36db4",
+    "v36_recent_context_day6.npz": "62f8fdd01aa1a7fab063d644b8431abc87f758f6b6cc0f8abfd5809f2a189667",
+    "v36_recent_context_day5.npz": "a9f31448db9b279114600ecbcd0a19e514cf565371c6e0f1745f21b97ef8cf54",
+    "imp15_als_day6.npz": "dfcaec2796e84204d16219400202af2053e9aff521c967b6eb851c176a9c9597",
+    "imp15_als_day5.npz": "a92366fff5e9dcaa497391336b5e1742fed1ba44ca49c570442792e21e8af7f8"
+  },
+  "source_sha256": "4a21e6139b97a9effe40294272a08b97a85dfe77410de1fcfaf6908fb709dde6"
+}

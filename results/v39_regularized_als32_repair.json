@@ -1,0 +1,6 @@
+{
+  "original_source_sha256": "4a21e6139b97a9effe40294272a08b97a85dfe77410de1fcfaf6908fb709dde6",
+  "repaired_source_sha256": "8743f04129921103ca791ab083e7d653667e2ede74fcf71a91096651dffb58ed",
+  "checkpoint_sha256": "1de09855283ce64b759b21de383e8dc983e53441ba9158ddf98f4993a17d0ccd",
+  "reason": "Repair undefined ROOT alias in cold-user prediction; resume fully trained checkpoint without changing training settings."
+}
