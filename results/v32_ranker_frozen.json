@@ -1,0 +1,31 @@
+{
+  "params": {
+    "objective": "lambdarank",
+    "metric": "ndcg",
+    "ndcg_eval_at": [
+      1,
+      3
+    ],
+    "num_leaves": 31,
+    "learning_rate": 0.05,
+    "min_data_in_leaf": 100,
+    "max_bin": 63,
+    "feature_fraction": 0.9,
+    "lambda_l2": 5.0,
+    "num_threads": 4,
+    "seed": 3201,
+    "verbosity": -1,
+    "deterministic": true,
+    "force_col_wise": true,
+    "lambdarank_truncation_level": 10
+  },
+  "trees": 350,
+  "events_per_day": 10000,
+  "sparse_budget_per_day": 5000,
+  "blend_grid": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "note": "Existing causal feature caches; selection on reused Jan26 then fixed Jan25. No official-score claim."
+}

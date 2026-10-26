@@ -1,0 +1,25 @@
+{
+  "reports": [
+    {
+      "auc": 0.8246737771246296,
+      "baseline_auc": 0.8246573670343789,
+      "gain": 1.6410090250773557e-05,
+      "conditional_interval": [
+        -3.0004208176484615e-05,
+        6.282438867803173e-05
+      ],
+      "weighted_gain": 3.3235534994568994e-05,
+      "weighted_interval": [
+        -2.079437749918098e-05,
+        8.726544748831897e-05
+      ],
+      "day": 6,
+      "weight": 0.05,
+      "raw_auc": 0.811970599542897,
+      "elapsed_s": 155.375
+    }
+  ],
+  "accepted": false,
+  "evaluation_csv_ready": false,
+  "note": "Existing causal feature caches; selection on reused Jan26 then fixed Jan25. No official-score claim."
+}
