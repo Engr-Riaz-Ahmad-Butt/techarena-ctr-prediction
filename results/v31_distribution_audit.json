@@ -1,0 +1,40 @@
+{
+  "accepted": false,
+  "reports": [
+    {
+      "auc": 0.8247128881990772,
+      "baseline_auc": 0.8246573670343789,
+      "gain": 5.552116469831336e-05,
+      "conditional_interval": [
+        1.0225728879577162e-05,
+        0.00010081660051704957
+      ],
+      "weighted_gain": 6.598078354791426e-05,
+      "weighted_interval": [
+        1.4445517084281902e-05,
+        0.00011751605001154661
+      ],
+      "day": 6,
+      "replay_max_error": 5.960464477539063e-08
+    },
+    {
+      "auc": 0.8174390975362685,
+      "baseline_auc": 0.8173996189298754,
+      "gain": 3.947860639308409e-05,
+      "conditional_interval": [
+        -2.6996538062980507e-06,
+        8.165686659246624e-05
+      ],
+      "weighted_gain": 4.5355222242804416e-05,
+      "weighted_interval": [
+        -7.589771956088501e-07,
+        9.146942168121768e-05
+      ],
+      "day": 5,
+      "replay_max_error": 2.9802322387695312e-08
+    }
+  ],
+  "unchanged_hashes": true,
+  "evaluation_csv_ready": false,
+  "note": "Exploratory reused local validation; not official score. Conditional intervals exclude repeated selection."
+}

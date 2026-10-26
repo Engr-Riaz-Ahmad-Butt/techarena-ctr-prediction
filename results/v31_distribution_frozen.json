@@ -1,0 +1,29 @@
+{
+  "epochs": 1,
+  "lr": 0.0003,
+  "seed": 42,
+  "batch": 512,
+  "threads": 4,
+  "input_sha256": {
+    "v21_fastdin_day6.pt": "c3badefaf498875092155174fdb4066795467fa17eb18c797815c278f2e3d2c8",
+    "v21_fastdin_day5.pt": "fff4821d19ccebe4102fe1d12965ce6108da9fe46382e8f74ff4385c4214521b",
+    "v23_outside_day6.npz": "e03fcf4e5df5e3ea5546b56457ea6dec14d3f1bbce26af7341d548c9de38267a",
+    "v23_outside_day5.npz": "57c201d896aed7f499d96dd5e112828ad1200d40a21d1fbeda19e2a2fa5c94bc",
+    "evaluation.npy": "1277c37bb1234feef1990c593444520b3659c5a6de618695037155656ea510df",
+    "evaluation_hist.npy": "3dbeec00ffe2db7932f1840f4d1612472ea2ffbc82c6927d849e5723ee7d8d2f",
+    "evaluation_times.npy": "7fed704dd0fb2507f83819ea3434455145d151de0a78184904f9f6f2e8823546",
+    "imp19_tree_day6.npz": "e48b9fba13f591267e34b9b09828e080c650ead295e61cdb2e5417f388281a1a",
+    "imp19_tree_day5.npz": "25ade92cae814d462a3ceac6a3203857a4196567a4b8a0c56e4293fc4bdab252",
+    "v21_fastseeds_day6_s0_ep1_raw.npz": "91e27641e34545e024dd5e65474987db20837d33c90d4b30d2c79a201631ab94",
+    "v21_fastseeds_day6_s1_ep1_raw.npz": "ba4f8967aacb57b4a91efb4ae2c344967ba95268356315928341abc969b780dd",
+    "v21_fastseeds_day6_s2_ep1_raw.npz": "c31360eb95e9cfb583e4f67160eaef59b7959e36799e09dab17a98767cd67914",
+    "v21_fastseeds_day5_s0_ep1_raw.npz": "78ac1785cdd797be4ca0bdd7a4a003889843bb0c8b758eaba6e211b778a29164",
+    "v21_fastseeds_day5_s1_ep1_raw.npz": "68b481e3ef91a4eb62303443a8acbf462cd8e18aba5d46774d7f679ef7595edd",
+    "v21_fastseeds_day5_s2_ep1_raw.npz": "90a533cee00124d5183f1efd486cc3da19b5be94dd27f9e1300f007b8cb3d084"
+  },
+  "source_sha256": {
+    "v31_distribution.py": "bd31412daf0a8656b3702d0f3f0216ede402225297601160661f3590229302d7",
+    "v21_din.py": "bc44412de4c141e93a3adee9dcd68ac156b9c0e3e27c2225bf95fd5b90043dce",
+    "v21_fast_din.py": "511d2eb0e02898f235fdefedde834b39c9ccbc59417bda4984482004affbf0a0"
+  }
+}

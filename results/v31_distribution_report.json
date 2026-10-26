@@ -1,0 +1,31 @@
+{
+  "reports": [
+    {
+      "weight": 0.1,
+      "auc": 0.8247128881990772,
+      "day": 6,
+      "previous_auc": 0.8246573670343789,
+      "gain": 5.552116469831336e-05,
+      "raw_auc": 0.7944961365016585,
+      "conditional_interval": [
+        1.0225728879577162e-05,
+        0.00010081660051704957
+      ]
+    },
+    {
+      "weight": 0.1,
+      "auc": 0.8174390975362685,
+      "day": 5,
+      "previous_auc": 0.8173996189298754,
+      "gain": 3.947860639308409e-05,
+      "raw_auc": 0.7871188243107381,
+      "conditional_interval": [
+        -2.6996538062980507e-06,
+        8.165686659246624e-05
+      ]
+    }
+  ],
+  "both_date_conditional_gate": false,
+  "status": "not_promoted",
+  "note": "Reused local validation, no official-score or CSV-readiness claim."
+}
