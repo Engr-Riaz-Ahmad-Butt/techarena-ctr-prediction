@@ -1,0 +1,23 @@
+{
+  "accepted": false,
+  "reports": [
+    {
+      "auc": 0.8244901872783079,
+      "baseline_auc": 0.8246573670343789,
+      "gain": -0.00016717975607094537,
+      "conditional_interval": [
+        -0.00019202119458716228,
+        -0.00014233831755472846
+      ],
+      "weighted_gain": -0.00015562937894453288,
+      "weighted_interval": [
+        -0.00018050081970040865,
+        -0.00013075793818865712
+      ],
+      "day": 6,
+      "replay_max_error": 0.0
+    }
+  ],
+  "hashes_unchanged": true,
+  "note": "Reused local validation. Intervals exclude model-selection uncertainty. No official score or export claim."
+}
