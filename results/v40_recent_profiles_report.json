@@ -1,0 +1,26 @@
+{
+  "reports": [
+    {
+      "auc": 0.8248497122766997,
+      "baseline_auc": 0.824957808393509,
+      "gain": -0.00010809611680928644,
+      "conditional_interval": [
+        -0.00013232343587249573,
+        -8.386879774607714e-05
+      ],
+      "weighted_gain": -9.686622917381982e-05,
+      "weighted_interval": [
+        -0.0001198410988217536,
+        -7.389135952588603e-05
+      ],
+      "day": 6,
+      "weight": 0.05,
+      "weighted_auc": 0.8165646216558684,
+      "baseline_weighted_auc": 0.8166614878850422,
+      "elapsed_s": 40.375
+    }
+  ],
+  "accepted": false,
+  "evaluation_csv_ready": false,
+  "note": "Recent observations are deliberately reweighted relative to frozen anchors, including known-user histories. Reused local dates; conditional intervals exclude selection uncertainty. Official V35 0.816623; no newer official score confirmed."
+}

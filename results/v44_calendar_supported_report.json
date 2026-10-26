@@ -1,0 +1,36 @@
+{
+  "reports": [
+    {
+      "auc": 0.8248316305280792,
+      "baseline_auc": 0.824957808393509,
+      "gain": -0.00012617786542978848,
+      "conditional_interval": [
+        -0.00018741499221439854,
+        -6.494073864517841e-05
+      ],
+      "weighted_gain": -0.0001264684247388459,
+      "weighted_interval": [
+        -0.0001874382626277021,
+        -6.549858684998971e-05
+      ],
+      "day": 6,
+      "weighted_auc": 0.8165350194603034,
+      "baseline_weighted_auc": 0.8166614878850422,
+      "kind_norms": [
+        1.237652063369751,
+        1.0022956132888794
+      ],
+      "training_kind_counts": [
+        195306,
+        98453
+      ],
+      "factor_cutoff": 1737590400,
+      "fit_last": 1737849540,
+      "validation_first": 1737849600
+    }
+  ],
+  "accepted": false,
+  "official_auc": null,
+  "evaluation_csv_ready": false,
+  "note": "Reused weekend validation dates. Calendar support is improved at final fit, but official gain unproven."
+}

@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "removed_post_cutoff_history_entries": 0,
+  "all_histories_before_cutoff": true,
+  "ordinary_auc": {
+    "linear": 0.7327519221224073,
+    "neural": 0.7523212898056364
+  },
+  "joint_adjusted_auc": {
+    "linear": 0.7337607713760614,
+    "neural": 0.7535782954841213
+  },
+  "common_support_target_mass": 1.0,
+  "scope": "Expert components only, not full-ensemble or official scores",
+  "supersedes": "V42 original allowed post-cutoff history for delayed first events; use these frozen-history results instead."
+}

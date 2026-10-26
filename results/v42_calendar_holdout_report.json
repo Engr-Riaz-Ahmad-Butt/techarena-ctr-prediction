@@ -1,0 +1,52 @@
+{
+  "scope": "Expert-component comparison only; no full-ensemble or official-score claim.",
+  "events": 47928,
+  "cutoff": 1737676800,
+  "heldout_last_timestamp": 1737935940,
+  "heldout_weekday_share": 0.7310966449674512,
+  "evaluation_weekday_share": 0.9719866261168515,
+  "common_support_target_mass": 1.0,
+  "joint_source_shares": [
+    0.0048823234852278415,
+    0.006634952428642964,
+    0.05902603905858788,
+    0.06397095643465198,
+    0.1193248205641796,
+    0.08821565681856118,
+    0.20739442497078953,
+    0.07955683525287932,
+    0.3404690368886663,
+    0.030524954097813386
+  ],
+  "joint_target_shares": [
+    0.010294867677893425,
+    0.002266759855682956,
+    0.10867224541453371,
+    0.013392772813993464,
+    0.19190011144902624,
+    0.00901037042633975,
+    0.2693099605205992,
+    0.003079015470636015,
+    0.3918094410547989,
+    0.00026445531649634484
+  ],
+  "ordinary_auc": {
+    "linear": 0.7327519221224073,
+    "neural": 0.7523212898056364
+  },
+  "joint_adjusted_auc": {
+    "linear": 0.7337607713760614,
+    "neural": 0.7535782954841213
+  },
+  "joint_adjusted_gain": 0.019817524108059814,
+  "conditional_interval": [
+    0.018451392174172063,
+    0.021183656041947566
+  ],
+  "ordinary_gain": 0.019569367683229144,
+  "ordinary_interval": [
+    0.018423751959093536,
+    0.020714983407364752
+  ],
+  "note": "New cutoff for this expert comparison. Calendar/history weighting does not fix all covariate shifts; follow-up recipe choices would reuse this holdout. Component AUC must not be presented as full-model or official AUC."
+}

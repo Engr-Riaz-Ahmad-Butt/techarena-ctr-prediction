@@ -1,0 +1,7 @@
+{
+  "fresh_component_ordinary_gain": -0.0007207311494508151,
+  "fresh_component_joint_adjusted_gain": -5.181696591649576e-05,
+  "seen_predictions_unchanged": true,
+  "model_replay_max_error": 0.0,
+  "scope": "Fresh fold component check, not full ensemble improvement estimate"
+}
