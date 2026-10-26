@@ -1,0 +1,20 @@
+{
+  "input_sha256": {
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\submission_v36.csv": "4426e97db7a1728608c007dcbc8f170386aa0559bc99830a5879aef2314f90f0",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v36_final_pred.npy": "f99e5ab223d884aaf70afd5d6769bbbaeb649d191630b0869b1713255999b132",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\imp17_als_cut7.npz": "2947a52520d0eabb41d384ae479f5b63d45487d5c942b752d1be5d4dffaf4b15",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\imp15_als_final_raw.npy": "21a87b6edd4428e38cf973c62366b6ff4325ac24915992a0d068a032fc0b7254"
+  },
+  "dim": 32,
+  "iterations": 6,
+  "latent_regularization": 4.0,
+  "bias_regularization": 20.0,
+  "new_dimension_scale": 0.25,
+  "seed": 3808,
+  "cutoff": 1737936000,
+  "mode": "replace_component",
+  "weight": 0.05,
+  "local_adjusted_auc": 0.8166614878850422,
+  "local_ordinary_auc": 0.824957808393509,
+  "note": "Local history-adjusted AUC is a diagnostic proxy, not an official-score forecast. Reuses the verified V36 final backbone, including its recorded earlier-parent provenance."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "rows": 529390,
+  "unique_rowids": 529390,
+  "csv_sha256": "396fb0fead66e9fcd139e8092340fb70ffd6466d3ed959bc8eba27f931d0c44e",
+  "maximum_csv_rounding_error": 5.551115123125783e-16,
+  "replay_max_error": 0.0,
+  "local_adjusted_auc": 0.8166614878850422,
+  "local_ordinary_auc": 0.824957808393509,
+  "official_auc": null,
+  "note": "Local history-adjusted AUC is a diagnostic proxy, not an official-score forecast. Reuses the verified V36 final backbone, including its recorded earlier-parent provenance."
+}

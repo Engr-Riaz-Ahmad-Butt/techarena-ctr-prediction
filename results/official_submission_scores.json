@@ -13,7 +13,8 @@
     }
   ],
   "unconfirmed_submission_versions": [
-    "V36"
+    "V36",
+    "V39"
   ],
   "note": "Official AUC is the competition result. Ordinary and history-adjusted local AUC are diagnostic metrics, not official-score guarantees."
 }
