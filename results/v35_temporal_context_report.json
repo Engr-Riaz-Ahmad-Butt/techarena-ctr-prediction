@@ -1,0 +1,51 @@
+{
+  "reports": [
+    {
+      "auc": 0.8247733498306827,
+      "baseline_auc": 0.8246573670343789,
+      "gain": 0.00011598279630387065,
+      "conditional_interval": [
+        3.5057476647188895e-05,
+        0.0001969081159605524
+      ],
+      "weighted_gain": 0.00010399152937234923,
+      "weighted_interval": [
+        2.1554289582661267e-05,
+        0.00018642876916203721
+      ],
+      "day": 6,
+      "weight": 0.1,
+      "raw_auc": 0.7767291467554756,
+      "old_raw_auc": 0.7770706227561046,
+      "first_training_timestamp": 1737676800,
+      "factor_cutoff": 1737676800,
+      "last_training_timestamp": 1737849540,
+      "cutoff": 1737849600
+    },
+    {
+      "auc": 0.817450278022715,
+      "baseline_auc": 0.8173996189298754,
+      "gain": 5.06590928395223e-05,
+      "conditional_interval": [
+        1.9062021045471763e-05,
+        8.225616463357284e-05
+      ],
+      "weighted_gain": 5.326329592914014e-05,
+      "weighted_interval": [
+        2.1519487868463796e-05,
+        8.50071039898165e-05
+      ],
+      "day": 5,
+      "weight": 0.1,
+      "raw_auc": 0.7660989360086121,
+      "old_raw_auc": 0.7654795637934828,
+      "first_training_timestamp": 1737590400,
+      "factor_cutoff": 1737590400,
+      "last_training_timestamp": 1737763140,
+      "cutoff": 1737763200
+    }
+  ],
+  "accepted": true,
+  "evaluation_csv_ready": false,
+  "note": "Reused local validation; confidence intervals exclude selection uncertainty."
+}
