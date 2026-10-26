@@ -1,0 +1,27 @@
+{
+  "reports": [
+    {
+      "auc": 0.8244901872783079,
+      "baseline_auc": 0.8246573670343789,
+      "gain": -0.00016717975607094537,
+      "conditional_interval": [
+        -0.00019202119458716226,
+        -0.0001423383175547285
+      ],
+      "weighted_gain": -0.00015562937894453288,
+      "weighted_interval": [
+        -0.00018050081970040865,
+        -0.00013075793818865712
+      ],
+      "day": 6,
+      "weight": 0.05,
+      "raw_auc": 0.7932205275012444,
+      "old_raw_auc": 0.8015461684495472,
+      "last_training_timestamp": 1737849540,
+      "cutoff": 1737849600
+    }
+  ],
+  "accepted": false,
+  "evaluation_csv_ready": false,
+  "note": "Reused local validation; confidence intervals exclude selection uncertainty."
+}
