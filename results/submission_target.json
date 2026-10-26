@@ -1,0 +1,12 @@
+{
+  "user_preference": "Improve locally before recommending another competition upload",
+  "minimum_primary_local_auc": 0.82,
+  "primary_metric": "evaluation_history_adjusted_auc",
+  "primary_validation_day": 6,
+  "secondary_requirement": "Confirm gain on day5 with unchanged cohort and recipe",
+  "official_score_is_separate": true,
+  "confirmed_official_version": "V35",
+  "confirmed_official_auc": 0.816623,
+  "user_confirmed_not_uploaded": ["V36", "V39"],
+  "target_is_not_a_score_guarantee": true
+}
