@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "rows": 529390,
+  "unique_rowids": 529390,
+  "csv_sha256": "ceb22c8e1fd911aec57d50e6ce6038401a9356100f742b747c5c7f4d48360881",
+  "maximum_csv_rounding_error": 5.551115123125783e-16,
+  "outside_replay_error": 1.4901161193847656e-08,
+  "context_replay_error": 0.0,
+  "official_auc": null,
+  "local_reference_auc": 0.8247733498306827,
+  "note": "Existing final V20/V21 artifacts reused. V21 final seeds use the earlier day6 frozen-ALS parent, as in their original finalizer; full parent retraining was not done here. Correct mean-of-ranks recipe is used without an extra rank of the seed mean. Local results are not an official-score forecast."
+}

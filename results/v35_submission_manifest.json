@@ -1,0 +1,21 @@
+{
+  "rows": 529390,
+  "output": "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\submission_v35.csv",
+  "csv_sha256": "ceb22c8e1fd911aec57d50e6ce6038401a9356100f742b747c5c7f4d48360881",
+  "rowids_sha256": "207c8ed166b4c42efa31cd6aa0a8fe9adad523c435e19b6d06b8557ba89fc058",
+  "local_primary": 0.8247733498306827,
+  "local_secondary": 0.817450278022715,
+  "official_auc": null,
+  "cutoff": 1737936000,
+  "training_last_timestamp": 1737935940,
+  "evaluation_first_timestamp": 1737936000,
+  "artifact_sha256": {
+    "v35_outside_final.pt": "c44ef6204f9ca29fc85b4a42a8c59d4e19d361c4176a985546318c66fb12087e",
+    "v35_context_final.pt": "d34a63f68e6d56eb7d0100f6a4238f41d917364002b7c6d915883ef79d2f5428",
+    "v35_outside_eval.npy": "c8946e6f7809a0c0a8f01df3c72c25afa9bb4012c07434514c5497cd9fc943f0",
+    "v35_context_eval.npy": "fdcbb8032ddba85d14135945d868ee1bad189131c378d24d097167efcc310d75",
+    "v35_context_old_eval.npy": "81fcd963aeab4dc229df64100e0ead57b5824572934551d5305e49edd93b8fda",
+    "v35_final_pred.npy": "db7cbfdcf6f021bb827236a59506b20f978e22771d0990517926455385ea203b"
+  },
+  "note": "Existing final V20/V21 artifacts reused. V21 final seeds use the earlier day6 frozen-ALS parent, as in their original finalizer; full parent retraining was not done here. Correct mean-of-ranks recipe is used without an extra rank of the seed mean. Local results are not an official-score forecast."
+}
