@@ -1,0 +1,21 @@
+{
+  "version": "V35",
+  "status": "verified_local_improvement",
+  "baseline": "V23",
+  "primary_local_auc": 0.8247733498306827,
+  "secondary_local_auc": 0.817450278022715,
+  "recipe": "rank(rank(V23) + 0.1 * (rank(time-context probabilities) - rank(frozen-factor probabilities)))",
+  "factor_cutoff_days_before_validation": 2,
+  "training_window_days": 2,
+  "epochs": 3,
+  "artifact_sha256": {
+    "v35_temporal_context_day6.pt": "a779c2b9a35b6fe4f3f56a46e6174580df7de6945fc0710dc1f4c2f812e4827e",
+    "v35_temporal_context_day6.npz": "f986ff76ff974e2ced27898e31ff7db6fc16ac8f5850f9003db938b459b87cf7",
+    "v35_temporal_context_day5.pt": "fae43aeb525df3fefe51a24a2a76ffdfeab284219a37fa46ae625e97e6b6d2ee",
+    "v35_temporal_context_day5.npz": "36f11f13206da1c55b850f80305613efeff7ab2f134cc17d0c51966c526cd17f"
+  },
+  "audit_sha256": "be0c2418ee35a63e66b56660f7569784160a499dec7a2b33d8e3d63803f2ade6",
+  "evaluation_csv_ready": false,
+  "official_score": null,
+  "note": "Both reused local dates pass ordinary and history-weighted conditional gain checks; intervals exclude repeated model selection. No untouched-holdout or official-score claim."
+}

@@ -1,0 +1,19 @@
+{
+  "epochs": 3,
+  "lr": 0.003,
+  "regularization": 0.001,
+  "seed": 3401,
+  "threads": 4,
+  "weights": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "inputs": {
+    "imp3_model_warm16_cut4.npz": "6b484114d5f57c4444ca4cbde590bf2f506e504652e1bfdb95e6ab6cbe3c087b",
+    "imp3_model_warm16_cut3.npz": "9a5cc2c6fc1a02da704de10460a5f60225e8af7425c4c3680709437cb9a51a63",
+    "v23_outside_day6.npz": "e03fcf4e5df5e3ea5546b56457ea6dec14d3f1bbce26af7341d548c9de38267a",
+    "v23_outside_day5.npz": "57c201d896aed7f499d96dd5e112828ad1200d40a21d1fbeda19e2a2fa5c94bc"
+  },
+  "source_sha256": "7a9a24cffbb6e8dc202961b73bc5f0a8f56affe2575efba17214e9a0aefc8e60"
+}
