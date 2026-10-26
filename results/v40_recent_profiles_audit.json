@@ -1,0 +1,25 @@
+{
+  "accepted": false,
+  "reports": [
+    {
+      "auc": 0.8248497122766997,
+      "baseline_auc": 0.824957808393509,
+      "gain": -0.00010809611680928644,
+      "conditional_interval": [
+        -0.00013232343587249573,
+        -8.386879774607714e-05
+      ],
+      "weighted_gain": -9.686622917381982e-05,
+      "weighted_interval": [
+        -0.0001198410988217536,
+        -7.389135952588603e-05
+      ],
+      "day": 6,
+      "weighted_auc": 0.8165646216558684,
+      "replay_max_error": 0.0,
+      "equations_max_error": 3.3306690738754696e-16
+    }
+  ],
+  "hashes_unchanged": true,
+  "note": "Conditional on selected recipe and history weights; repeated-validation uncertainty remains. No official score prediction."
+}

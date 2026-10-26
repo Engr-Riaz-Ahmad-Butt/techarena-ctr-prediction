@@ -1,0 +1,29 @@
+{
+  "accepted": false,
+  "reports": [
+    {
+      "auc": 0.8249318465155655,
+      "baseline_auc": 0.824957808393509,
+      "gain": -2.5961877943458944e-05,
+      "conditional_interval": [
+        -6.864351736046834e-05,
+        1.6719761473550448e-05
+      ],
+      "weighted_gain": -2.8730589633929604e-05,
+      "weighted_interval": [
+        -7.462420285368813e-05,
+        1.7163023585828926e-05
+      ],
+      "day": 6,
+      "weight": 0.05,
+      "weighted_auc": 0.8166327572954083,
+      "baseline_weighted_auc": 0.8166614878850422,
+      "first_training_timestamp": 1737676800,
+      "last_training_timestamp": 1737849540,
+      "factor_cutoff": 1737676800,
+      "validation_cutoff": 1737849600
+    }
+  ],
+  "evaluation_csv_ready": false,
+  "note": "Reused local dates; conditional history-weighted evidence, not an official-score forecast."
+}
