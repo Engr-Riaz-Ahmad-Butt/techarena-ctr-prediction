@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "rows": 529390,
+  "unique_rowids": 529390,
+  "csv_sha256": "4426e97db7a1728608c007dcbc8f170386aa0559bc99830a5879aef2314f90f0",
+  "maximum_csv_rounding_error": 5.551115123125783e-16,
+  "outside_replay_error": 1.4901161193847656e-08,
+  "context_replay_error": 0.0,
+  "official_auc": null,
+  "local_reference_auc": 0.8248468883339812,
+  "note": "V36 recent-interest component refit before evaluation cutoff. Verified existing V35/V21 final backbone reused with its previously documented parent-checkpoint provenance; local AUC is not an official-score forecast."
+}
