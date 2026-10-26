@@ -1,0 +1,26 @@
+[
+  {
+    "day": 3,
+    "events": 20000,
+    "sparse_events": 10307,
+    "features_sha256": "da2d9acb61b112adfee93c92bf5af3341d260053807d40abf296e191ef294f3e",
+    "event_ids_sha256": "d28cc860534174efc60bb69692af03752afe874dca51641a0c31d1165efa06cf",
+    "last_timestamp": 1737676740
+  },
+  {
+    "day": 4,
+    "events": 20000,
+    "sparse_events": 10188,
+    "features_sha256": "01aa87d5877cc829c9be924c1d6d847e311bc181818b78bddc47fe5052f126b9",
+    "event_ids_sha256": "78bf31759cdb2ad552e3c92771bffdf32e0bad16d240c467109299eccc503309",
+    "last_timestamp": 1737763140
+  },
+  {
+    "day": 5,
+    "events": 20000,
+    "sparse_events": 10117,
+    "features_sha256": "db7d3a0bfa1dd4f3ea57144e157c4e1889ad26906e37c9a29c93435a27990261",
+    "event_ids_sha256": "47678190ea5607493c90ef9efbd06135eda018e1b08878873f01af000185bfd8",
+    "last_timestamp": 1737849540
+  }
+]
