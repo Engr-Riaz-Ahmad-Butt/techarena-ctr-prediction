@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "sampled_events": 65,
+  "heldout_labels_changed": 247048,
+  "heldout_label_change_max_feature_effect": 0.0,
+  "prior_label_change_max_feature_effect": 0.1445355368623037,
+  "user_event_count_oracle": true,
+  "scope": "Counterfactual arrays only; source data files were not modified. Shows new features exclude held-out labels and respond to prior labels."
+}

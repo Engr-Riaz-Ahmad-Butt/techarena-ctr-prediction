@@ -1,0 +1,45 @@
+{
+  "reports": [
+    {
+      "auc": 0.8180913840683512,
+      "baseline_auc": 0.8179616247242963,
+      "gain": 0.00012975934405490275,
+      "conditional_interval": [
+        9.125211055730276e-05,
+        0.00016826657755250274
+      ],
+      "weighted_gain": 0.00012198115042483249,
+      "weighted_interval": [
+        7.973576820930835e-05,
+        0.00016422653264035664
+      ],
+      "day": 5,
+      "protocol": "full-day5 user crossfit",
+      "weighted_auc": 0.8109113853236557,
+      "baseline_weighted_auc": 0.8107894041732309
+    },
+    {
+      "auc": 0.8254233318844953,
+      "baseline_auc": 0.8252452243953163,
+      "gain": 0.00017810748917901353,
+      "conditional_interval": [
+        0.00014227863807699323,
+        0.00021393634028103384
+      ],
+      "weighted_gain": 0.00017489381955348993,
+      "weighted_interval": [
+        0.00013489655781936404,
+        0.0002148910812876158
+      ],
+      "day": 6,
+      "protocol": "future date; fit labels day5 only",
+      "weighted_auc": 0.8171690462350286,
+      "baseline_weighted_auc": 0.8169941524154751,
+      "elapsed_s": 198.81199999991804
+    }
+  ],
+  "accepted": true,
+  "csv_ready": false,
+  "official_auc": null,
+  "note": "Day5 user-crossfit is not a future temporal fold. Day6 is future. Repeatedly reused dates; confidence intervals exclude fitting/selection uncertainty."
+}
