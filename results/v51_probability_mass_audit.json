@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 5,
+      "predictor_replay_max_error": 0.0,
+      "partition_and_recipe": true,
+      "metrics": true
+    },
+    {
+      "day": 6,
+      "predictor_replay_max_error": 0.0,
+      "partition_and_recipe": true,
+      "metrics": true
+    }
+  ],
+  "experiment_accepted": false,
+  "official_auc": null,
+  "note": "Replay validates implementation and reported metrics; it does not establish target attainment or remove reuse/selection uncertainty."
+}
