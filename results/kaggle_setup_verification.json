@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "archive_bytes": 5734785809,
+  "verified_members": 56,
+  "all_member_sha256_and_crc": true,
+  "notebook_code_compiles": true,
+  "scope": "Local artifact/integration verification; Kaggle account and GPU execution not tested",
+  "archive_filename": "techarena_kaggle_data.zip",
+  "archive_sha256": "3399bb38ff261401aace4717408e7b13359ec706436180ad25b68bbe27e6654e",
+  "notebook_filename": "TechArena_CTR_Kaggle.ipynb",
+  "notebook_sha256": "9c3272f5c3901d80e2a7a0eecf3ef174d2e8d0b0f61a888ea6ce18f7c62bfc23",
+  "synthetic_cpu_integration": "PASS"
+}
