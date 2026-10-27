@@ -1,0 +1,137 @@
+{
+  "metrics": {
+    "auc": 0.8254460453549567,
+    "baseline_auc": 0.8254233318844953,
+    "gain": 2.2713470461344087e-05,
+    "conditional_interval": [
+      -4.703637788472652e-05,
+      9.24633188074147e-05
+    ],
+    "weighted_gain": 3.081816075944932e-05,
+    "weighted_interval": [
+      -4.8894887357506345e-05,
+      0.00011053120887640499
+    ],
+    "arm": "slate",
+    "epoch": 4,
+    "weight": 0.1,
+    "weighted_auc": 0.8171998643957881,
+    "equivariance_error": 2.384185791015625e-07,
+    "day": 6,
+    "fit_last": 1737849540,
+    "cutoff": 1737849600,
+    "baseline_weighted_auc": 0.8171690462350286
+  },
+  "vs_matched_control": {
+    "auc": 0.8254460453549567,
+    "baseline_auc": 0.8254548744403862,
+    "gain": -8.829085429540307e-06,
+    "conditional_interval": [
+      -2.7334646147327527e-05,
+      9.676475288246914e-06
+    ],
+    "weighted_gain": -9.35673345170418e-06,
+    "weighted_interval": [
+      -3.256787653412484e-05,
+      1.3854409630716476e-05
+    ]
+  },
+  "trials": [
+    {
+      "arm": "control",
+      "epoch": 1,
+      "weight": 0.1,
+      "auc": 0.8254270746934693,
+      "weighted_auc": 0.817179820020027,
+      "equivariance_error": 0.0
+    },
+    {
+      "arm": "control",
+      "epoch": 1,
+      "weight": 0.25,
+      "auc": 0.825242855757753,
+      "weighted_auc": 0.8170095181200226,
+      "equivariance_error": 0.0
+    },
+    {
+      "arm": "control",
+      "epoch": 2,
+      "weight": 0.1,
+      "auc": 0.8254510072463832,
+      "weighted_auc": 0.8172006001164686,
+      "equivariance_error": 0.0
+    },
+    {
+      "arm": "control",
+      "epoch": 2,
+      "weight": 0.25,
+      "auc": 0.8252472589741295,
+      "weighted_auc": 0.8170019275272483,
+      "equivariance_error": 0.0
+    },
+    {
+      "arm": "control",
+      "epoch": 4,
+      "weight": 0.1,
+      "auc": 0.8254548744403862,
+      "weighted_auc": 0.8172092211292398,
+      "equivariance_error": 0.0
+    },
+    {
+      "arm": "control",
+      "epoch": 4,
+      "weight": 0.25,
+      "auc": 0.8252128784881749,
+      "weighted_auc": 0.8169746844845106,
+      "equivariance_error": 0.0
+    },
+    {
+      "arm": "slate",
+      "epoch": 1,
+      "weight": 0.1,
+      "auc": 0.8254096242176341,
+      "weighted_auc": 0.8171609141897401,
+      "equivariance_error": 2.384185791015625e-07
+    },
+    {
+      "arm": "slate",
+      "epoch": 1,
+      "weight": 0.25,
+      "auc": 0.8251448212503238,
+      "weighted_auc": 0.8169032688362672,
+      "equivariance_error": 2.384185791015625e-07
+    },
+    {
+      "arm": "slate",
+      "epoch": 2,
+      "weight": 0.1,
+      "auc": 0.8254347680064409,
+      "weighted_auc": 0.8171851109914205,
+      "equivariance_error": 2.384185791015625e-07
+    },
+    {
+      "arm": "slate",
+      "epoch": 2,
+      "weight": 0.25,
+      "auc": 0.8251507209079803,
+      "weighted_auc": 0.8169024626633739,
+      "equivariance_error": 2.384185791015625e-07
+    },
+    {
+      "arm": "slate",
+      "epoch": 4,
+      "weight": 0.1,
+      "auc": 0.8254460453549567,
+      "weighted_auc": 0.8171998643957881,
+      "equivariance_error": 2.384185791015625e-07
+    },
+    {
+      "arm": "slate",
+      "epoch": 4,
+      "weight": 0.25,
+      "auc": 0.8251605926988466,
+      "weighted_auc": 0.8169184817656157,
+      "equivariance_error": 2.384185791015625e-07
+    }
+  ]
+}

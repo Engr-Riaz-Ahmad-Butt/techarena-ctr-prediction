@@ -1,0 +1,32 @@
+{
+  "status": "PASS",
+  "audits": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "history_adjusted_auc": 0.8171998643957881,
+      "arms": [
+        {
+          "arm": "control",
+          "raw_replay_error": 0.0,
+          "context_replay_error": 0.0,
+          "numpy_forward_logit_error": 2.980232238769531e-07,
+          "candidate_permutation_error": 0.0,
+          "checkpoint_sha256": "c93c9ff75e4c5197f5390db51212076694c575fd0a12f062a32fcaa9e1825215"
+        },
+        {
+          "arm": "slate",
+          "raw_replay_error": 0.0,
+          "context_replay_error": 0.0,
+          "numpy_forward_logit_error": 3.8743019104003906e-07,
+          "candidate_permutation_error": 2.384185791015625e-07,
+          "checkpoint_sha256": "01d2417650d4ef1066719f9cccf3c4aab88650288b375ca87b4f06bd73518c60"
+        }
+      ]
+    }
+  ],
+  "accepted": false,
+  "csv_ready": false,
+  "official_auc": null,
+  "note": "Verifies implementation and scores; reused validation dates and conditional selection uncertainty remain."
+}
