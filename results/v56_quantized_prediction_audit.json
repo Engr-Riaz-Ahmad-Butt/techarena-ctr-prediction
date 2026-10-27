@@ -1,0 +1,9 @@
+{
+  "status": "LIMITED",
+  "direct_quantized_categorical_prediction": "Installed library raises an internal error on this API path",
+  "error": "catboost/private/libs/algo/features_data_helpers.h:118: Internal CatBoost Error (contact developers for assistance): Should be IDynamicBlockIteratorPtr<TCatValue>",
+  "serialization_probe_rows": 4096,
+  "serialization_training_raw_prediction_max_error": 0.0,
+  "probe_category_importance": 93.06203169250396,
+  "scope": "Probe verifies save/reload categorical training on independent toy data. It does not replace full real-data per-object quantized-vs-raw equivalence, which remains unavailable. Full saved-model raw inference is checked separately."
+}

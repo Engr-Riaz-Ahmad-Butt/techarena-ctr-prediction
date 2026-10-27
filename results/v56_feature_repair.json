@@ -1,0 +1,5 @@
+{
+  "original_source_sha256": "9185296cd3d6e26e61191d73a1cb84e8cb8d98cdde89d6ff3670879aa504c83d",
+  "repaired_source_sha256": "85760f5c74981dab8ccd684713c8e07ba0f9ee59c3180f7e90ef276c8044af3f",
+  "change": "Use the generic decomposition function and preserve warm probability replay; remove day-name cache assumption. No model settings, sample, cohort or selection changes."
+}

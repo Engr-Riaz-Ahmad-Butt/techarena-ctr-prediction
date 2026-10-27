@@ -1,0 +1,103 @@
+"""Frozen weekday first-future-event benchmark: numeric vs categorical predictors.
+
+Uses a private artifact namespace so feature helpers cannot rewrite old caches.
+Both complete classifiers use identical sampled fitting rows, weights and fixed
+CatBoost settings. This is not the V53 ensemble or an official score forecast.
+"""
+import os,json,hashlib,time,gc,sys,shutil
+from pathlib import Path
+BASE=Path(__file__).resolve().parent
+CANONICAL=BASE/'artifacts'
+R=CANONICAL/'v56_weekday'
+R.mkdir(exist_ok=True)
+os.environ['CTR_ARTIFACT_DIR']=str(R)
+import numpy as np
+import pandas as pd
+from catboost import CatBoostClassifier,Pool
+from sklearn.metrics import roc_auc_score
+from threadpoolctl import threadpool_limits
+
+PARAMS=dict(iterations=600,depth=7,learning_rate=.06,loss_function='Logloss',thread_count=4,random_seed=5601,allow_writing_files=False,l2_leaf_reg=10.,random_strength=0.,bootstrap_type='No',boosting_type='Plain',max_ctr_complexity=1,border_count=63,ctr_leaf_count_limit=100000)
+PREFIXES=['stack','imp3_wf','imp4_decompose','imp5_aligned','imp6_context','imp17_als','imp19_als_aligned']
+def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+def link_inputs():
+ names=['train.npy','train_hist.npy','train_times.npy','evaluation.npy','evaluation_hist.npy','evaluation_times.npy','ids.json']
+ for cut in [2,3,4]:names.extend([f'imp3_model_warm16_cut{cut}.npz',f'imp17_als_cut{cut}.npz',f'imp6_context_counts_cut{cut}.npz'])
+ names.extend([f'{prefix}_1737676800.pkl' for prefix in ['stats','warm_stats','preference_stats']])
+ pairs=[(CANONICAL/name,R/name) for name in names]
+ (R/'features').mkdir(exist_ok=True)
+ for day in [2,3]:
+  for prefix in PREFIXES:
+   name=f'stack_day{day}_c{day}.npy' if prefix=='stack' else f'{prefix}_day{day}.npy';pairs.append((CANONICAL/'features'/name,R/'features'/name))
+ for source,dest in pairs:
+  assert source.exists(),str(source)
+ needed=sum(s.stat().st_size for s,d in pairs if not d.exists());assert shutil.disk_usage(R).free>needed+3_000_000_000,'Insufficient space for isolated cache copies and outputs'
+ for source,dest in pairs:
+  if not dest.exists():shutil.copyfile(source,dest)
+  assert sha(source)==sha(dest)
+ print(json.dumps(dict(stage='isolated_input_copies_ready',files=len(pairs),copied_bytes=needed)),flush=True)
+ return pairs
+def cached(day,rows,indices):
+ pieces=[]
+ for prefix in PREFIXES:
+  name=f'stack_day{day}_c{day}.npy' if prefix=='stack' else f'{prefix}_day{day}.npy';a=np.load(R/'features'/name,mmap_mode='r');assert len(a)==len(rows);pieces.append(np.asarray(a[indices],dtype=np.float32))
+ x=np.column_stack(pieces);assert x.shape==(len(indices),354) and np.isfinite(x).all();assert np.array_equal(x[:,4],rows[indices,3]) and np.array_equal(x[:,5],rows[indices,4]);return x
+def frame(x,rows,categorical):
+ f=pd.DataFrame(x,columns=[f'x{i}' for i in range(x.shape[1])],copy=False)
+ cats=[]
+ if categorical:
+  for name,values in [('user',rows[:,0]),('item',rows[:,1]),('user_bucket',rows[:,0]*4+rows[:,3]),('item_bucket',rows[:,1]*4+rows[:,3])]:f[name]=values.astype(str);cats.append(name)
+ return f,cats
+def main():
+ started=time.monotonic();pairs=link_inputs()
+ # Import feature implementation only after setting its private cache root.
+ import stack_experiment as stack
+ import imp3_warmfeat as warm
+ import imp4_decompose as decomposition
+ import imp19_tree as aligned
+ from tst2_candidate import influence,weighted_influence
+ t=np.load(R/'train.npy',mmap_mode='r');h=np.load(R/'train_hist.npy',mmap_mode='r');ht=np.load(R/'train_times.npy',mmap_mode='r');e=np.load(R/'evaluation.npy',mmap_mode='r');eh=np.load(R/'evaluation_hist.npy',mmap_mode='r');start=int(t[:,2].min());cut=start+4*86400
+ sources={}
+ for mod in list(sys.modules.values()):
+  filename=getattr(mod,'__file__',None)
+  if filename:
+   p=Path(filename).resolve()
+   if p.parent==BASE and p.suffix=='.py':sources[p.name]=sha(p)
+ frozen=dict(params=PARAMS,fit_days=[2,3],cutoff_day=4,holdout='First event per user at/after day4 through training end day7',negative_sampling_probability=.2,sampling_seed=5601,fit_weights='Inverse probability, normalized to mean1',validation_metric='Joint history-bin and day-type importance-weighted AUC',categorical=['opaque user ID','opaque item ID','user x bucket','item x bucket'],no_validation_tuning=True,scope='Two standalone complete classifiers, not V53 ensemble or official score',input_hashes={str(s.relative_to(CANONICAL)):sha(s) for s,d in pairs},sources=sources)
+ manifest=R/'v56_frozen.json'
+ if manifest.exists():assert json.loads(manifest.read_text())==frozen,'Cannot resume changed settings or inputs'
+ else:manifest.open('x').write(json.dumps(frozen,indent=2))
+ future=np.asarray(t[t[:,2]>=cut]);_,ix=np.unique(future[::10,0],return_index=True);rows=future[(ix[:,None]*10+np.arange(10)).ravel()];del future
+ assert len(np.unique(rows[::10,0]))==len(rows)//10
+ history=h[rows[::10,6]];valid=history>=0;assert np.all((ht[rows[::10,6]]<cut)|~valid)
+ labels=rows[:,5].copy();masked=rows.copy();masked[:,5]=-1
+ holdout=dict(events=len(rows)//10,weekday_share=float((rows[::10,4]==0).mean()),evaluation_weekday_share=float((e[::10,4]==0).mean()),history_before_cutoff=True,event_ids_sha256=hashlib.sha256(rows[:,6].tobytes()).hexdigest())
+ print(json.dumps(dict(stage='holdout',**holdout)),flush=True)
+ xp=R/'v56_future_features.npy'
+ with threadpool_limits(limits=1):
+  if not xp.exists():
+   name='v56_future_cut4';base=stack.block(name,masked,h,4);w=warm.score(masked,h,4);d=decomposition.build(name,masked,h,4);extra=aligned.combined(name,masked,h,4);xv=np.column_stack([base,w,d,extra]).astype('float32');assert xv.shape==(len(rows),354) and np.isfinite(xv).all();np.save(xp,xv);del base,w,d,extra,xv;gc.collect()
+ rng=np.random.default_rng(5601);fitting=[]
+ for day in [2,3]:
+  a=np.asarray(t[(t[:,2]>=start+day*86400)&(t[:,2]<start+(day+1)*86400)]);keep=(a[:,5]==1)|(rng.random(len(a))<.2);indices=np.flatnonzero(keep);fitting.append((day,a,indices));print(json.dumps(dict(stage='sample',day=day,rows=len(indices))),flush=True)
+ total=sum(len(ix) for d,a,ix in fitting);fit_path=R/'v56_fit_features.npy';x=np.lib.format.open_memmap(fit_path,mode='w+',dtype='float32',shape=(total,354));ys=[];metas=[];weights=[];off=0
+ for day,a,ix in fitting:
+  part=cached(day,a,ix);x[off:off+len(ix)]=part;ys.append(a[ix,5]);metas.append(a[ix]);weights.append(np.where(a[ix,5]>0,1.,5.));off+=len(ix);del part
+ x.flush();y=np.concatenate(ys);meta=np.concatenate(metas);weight=np.concatenate(weights);weight/=weight.mean();assert meta[:,2].max()<cut;del fitting,ys,metas,weights;gc.collect()
+ xv=np.load(xp,mmap_mode='r');predictions={}
+ for name,cat in [('numeric',False),('categorical',True)]:
+  model_path=R/f'v56_{name}.cbm'
+  if model_path.exists():model=CatBoostClassifier();model.load_model(str(model_path));assert model.tree_count_==600
+  else:
+   f,cats=frame(x,meta,cat);pool=Pool(f,label=y,weight=weight,cat_features=cats);model=CatBoostClassifier(**PARAMS);model.fit(pool,verbose=100);model.save_model(str(model_path));del pool,f;gc.collect()
+  out=[]
+  for off in range(0,len(rows),32768):
+   f,cats=frame(xv[off:off+32768],masked[off:off+32768],cat);out.append(model.predict_proba(Pool(f,cat_features=cats),thread_count=4)[:,1])
+  predictions[name]=np.concatenate(out);np.save(R/f'v56_{name}_pred.npy',predictions[name]);del model;gc.collect();print(json.dumps(dict(stage='model_complete',model=name,elapsed_s=time.monotonic()-started)),flush=True)
+ vg=np.digitize((h[rows[:,6]]>=0).sum(1),[0,4,9,19],right=True)*2+rows[:,4];eg=np.digitize((eh[e[::10,6]]>=0).sum(1),[0,4,9,19],right=True)*2+e[::10,4];source=np.bincount(vg,minlength=10)/len(vg);target=np.bincount(eg,minlength=10)/len(eg);assert target[source==0].sum()==0;sw=np.divide(target,source,out=np.zeros(10),where=source>0)[vg]
+ a,b=predictions['numeric'],predictions['categorical'];gain=float(roc_auc_score(labels,b,sample_weight=sw)-roc_auc_score(labels,a,sample_weight=sw));se=float(np.linalg.norm(weighted_influence(labels,b,sw)-weighted_influence(labels,a,sw)))
+ np.savez_compressed(R/'v56_predictions.npz',y=labels,events=rows[:,6],baseline=a,pred=b,weights=sw)
+ for source_path,dest in pairs:assert sha(source_path)==frozen['input_hashes'][str(source_path.relative_to(CANONICAL))]
+ report=dict(scope=frozen['scope'],holdout=holdout,fit_rows=len(y),fit_last_timestamp=int(meta[:,2].max()),cutoff=cut,ordinary_auc={name:float(roc_auc_score(labels,p)) for name,p in predictions.items()},joint_adjusted_auc={name:float(roc_auc_score(labels,p,sample_weight=sw)) for name,p in predictions.items()},joint_adjusted_gain=gain,conditional_interval=[gain-1.96*se,gain+1.96*se],provisional_gain=bool(gain-1.96*se>0),original_inputs_unchanged=True,masked_holdout_labels_for_features=True,source_shares=source.tolist(),target_shares=target.tolist(),official_auc=None,note='New complete-classifier comparison on the previously used V42 weekday cohort, not an untouched holdout. Different training size/cohort from V53; absolute AUC is not comparable. Importance-weighted proxy only; no target-achievement claim.')
+ (R/'v56_report.json').write_text(json.dumps(report,indent=2));print(json.dumps(report),flush=True)
+if __name__=='__main__':main()
