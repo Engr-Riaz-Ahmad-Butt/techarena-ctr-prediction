@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "predictor_replay_max_error": 0.0,
+  "probability_sum_and_partition": true,
+  "rejection_verified": true,
+  "gradient_check": {
+    "choice_gradient_max_error": 4.1811921980272615e-11
+  }
+}

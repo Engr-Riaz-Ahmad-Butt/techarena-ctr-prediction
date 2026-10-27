@@ -1,0 +1,28 @@
+{
+  "reports": [
+    {
+      "auc": 0.8181388855895686,
+      "baseline_auc": 0.8180913840683512,
+      "gain": 4.7501521217352405e-05,
+      "conditional_interval": [
+        -1.9606256907022743e-05,
+        0.00011460929934172755
+      ],
+      "weighted_gain": 6.928421138774343e-05,
+      "weighted_interval": [
+        -3.1977766748372756e-05,
+        0.00017054618952385962
+      ],
+      "day": 5,
+      "weighted_auc": 0.8109806695350434,
+      "baseline_weighted_auc": 0.8109113853236557
+    }
+  ],
+  "gradient_check": {
+    "choice_gradient_max_error": 4.1811921980272615e-11
+  },
+  "accepted": false,
+  "csv_ready": false,
+  "official_auc": null,
+  "note": "Day5 user-OOF, day6 future. Reused dates and fixed-model uncertainty; no official-score forecast."
+}
