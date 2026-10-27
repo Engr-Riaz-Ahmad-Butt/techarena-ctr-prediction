@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "legacy_padding_bug_reproduced": true,
+  "legacy_corrupted_history_lengths": [
+    1,
+    2,
+    4,
+    7,
+    10,
+    15
+  ],
+  "corrected_all_test_histories_preserved": true,
+  "empty_history_requires_output_mask": true,
+  "evaluation_fraction_with_nonempty_short_history": 0.5953644760951283,
+  "legacy_source_sha256": "453c18612f886b287a412e5ef5ff64c8ee5131aa5c0909747fdfcd4fc503ecf4",
+  "corrected_source_sha256": "b37f2ca554d6d8ce1556b23d83a3b22b2996f488a08eff5c873e7cc49d1c1bce",
+  "scope": "Packing correctness only, not a trained-model score. Historical GRU results remain recorded but do not validate a correctly packed sequence encoder."
+}
