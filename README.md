@@ -6,7 +6,9 @@ Current audited local candidate: **V53**, history-adjusted AUC **0.817169** on t
 
 Last user-confirmed **official score: V35 = 0.816623**. The user confirms V36 and V39 have not been uploaded. **V39** is the latest exported and verified CSV (`submission_v39.csv` in the local project root). V53 has not been exported. The requested score **0.834786** remains unmet; another upload is not recommended before local adjusted AUC reaches the user's minimum **0.82**. This threshold does not guarantee an official score.
 
-The later V56 identity-feature variant was rejected on a separate weekday benchmark; see [comparison and audits](results/v56_weekday_summary.md). A legacy rejected GRU's padding bug was also reproduced and a corrected packing helper verified. The corrected recurrent model has not yet been trained, so no score improvement is claimed for that fix.
+The later V56 identity-feature variant was rejected on a separate weekday benchmark; see [comparison and audits](results/v56_weekday_summary.md). A legacy rejected GRU's padding bug was reproduced and corrected. The corrected V57 recurrent residual was trained and independently replayed; adjusted AUC 0.817158 did not improve V53, so it was rejected. See [sequence experiment](results/v57_sequence_summary.md).
+
+Matched [candidate-set](results/v58_slate_summary.md) and [pairwise-ranking](results/v59_pairwise_summary.md) residual experiments also failed their frozen promotion gates. Their selected point estimates were around 0.817200 adjusted AUC, with gain intervals containing zero. They do not replace V53, reach 0.82, or establish an official improvement.
 
 ## Historical V20 baseline notes
 
