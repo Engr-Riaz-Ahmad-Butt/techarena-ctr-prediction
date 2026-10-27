@@ -14,7 +14,7 @@
   "confirmation_history_adjusted_auc": 0.8109113853236557,
   "confirmation_baseline_version": "V50",
   "confirmation_baseline_history_adjusted_auc": 0.8107894041732309,
-  "requested_score": 0.834786,
+  "requested_score": 0.83,
   "target_achieved": false,
   "minimum_before_upload_recommendation": 0.82,
   "csv_ready": false,
@@ -23,6 +23,34 @@
   "confirmed_official_auc": 0.816623,
   "training_running": false,
   "last_completed_experiment": {
+    "version": "Kaggle ctr-neural-002-aux64",
+    "scope": "Same main day6 cohort; 64-dimensional joint embeddings with warm auxiliary clicks",
+    "promoted": false,
+    "eligible_for_review": false,
+    "primary_history_adjusted_auc": 0.8149403388523853,
+    "primary_ordinary_auc": 0.8229931805683433,
+    "saved_checkpoint_replay": "PASS",
+    "reason": "Gate failed; substantial validation deterioration after overfitting.",
+    "report": "results/kaggle_neural_002_observed.json"
+  },
+  "next_modeling_action": "Run prepared regularized neural notebook on Kaggle once browser access is restored or user runs it; compare both dates before promotion. Target 0.83 unmet.",
+  "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
+  "prior_requested_score": 0.834786,
+  "neural_followup": {
+    "completed": [
+      "ctr-neural-001",
+      "ctr-neural-002-aux64"
+    ],
+    "promoted": false,
+    "best_recent_candidate_still": "ctr-main-003-interactions",
+    "last_neural_adjusted_auc": 0.8149403388523853,
+    "next_experiment": "ctr-neural-003-regularized",
+    "next_experiment_status": "prepared_not_started",
+    "training_running": false,
+    "browser_action_blocker": "Automatic approval review failed because browser tool usage limit was reached; no workaround attempted.",
+    "source_notebook": "kaggle/TechArena_CTR_Neural_Regularized.ipynb"
+  },
+  "best_recent_candidate": {
     "version": "Kaggle ctr-main-003-interactions",
     "scope": "Same main day6/date5 validation as frozen V53; fixed 10% rank blend",
     "promoted": false,
@@ -34,7 +62,5 @@
     "minimum_upload_threshold_met": false,
     "report": "results/kaggle_main_003_observed.json",
     "saved_checkpoint_replay": "PASS, exact raw and blended predictions on both dates"
-  },
-  "next_modeling_action": "Review Kaggle interaction candidate and improve underlying user/item preference signal; both date gates pass but main adjusted AUC remains below 0.82. No competition CSV recommendation.",
-  "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed."
+  }
 }

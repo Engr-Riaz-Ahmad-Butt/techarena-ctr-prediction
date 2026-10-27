@@ -1,0 +1,26 @@
+{
+  "source": "Kaggle visible notebook output",
+  "promoted": false,
+  "report": {
+    "ordinary_auc": 0.8229931805683433,
+    "baseline_ordinary_auc": 0.8254233318844955,
+    "history_adjusted_auc": 0.8149403388523853,
+    "baseline_history_adjusted_auc": 0.8171690462350284,
+    "ordinary_gain": -0.002430151316152207,
+    "adjusted_gain": -0.002228707382643136,
+    "adjusted_gain_interval": [
+      -0.002588387791564963,
+      -0.0018690269737213086
+    ],
+    "positive_gate": false,
+    "day": 6,
+    "raw_auc": 0.6746618179578381,
+    "initial_raw_auc": 0.7777203179669874,
+    "initial_replay_error": 2.980232238769531e-7,
+    "model_sha256": "6778c431285d055e33c57b5dc097a2deaf1b76035cae5bf129df9405ec8d204f",
+    "official_auc": null,
+    "csv_ready": false,
+    "saved_checkpoint_replay": "PASS"
+  },
+  "diagnosis": "Overfitting: final event training loss 0.01459, raw validation AUC declined to 0.674662."
+}

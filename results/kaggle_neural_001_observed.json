@@ -1,0 +1,25 @@
+{
+  "source": "Kaggle visible notebook output",
+  "promoted": false,
+  "report": {
+    "ordinary_auc": 0.8253478591701169,
+    "baseline_ordinary_auc": 0.8254233318844955,
+    "history_adjusted_auc": 0.8171415703710364,
+    "baseline_history_adjusted_auc": 0.8171690462350284,
+    "ordinary_gain": -0.00007547271437857717,
+    "adjusted_gain": -0.000027475863991988092,
+    "adjusted_gain_interval": [
+      -0.00013103974127310345,
+      0.00007608801328912725
+    ],
+    "positive_gate": false,
+    "day": 6,
+    "raw_auc": 0.7911178062297908,
+    "initial_raw_auc": 0.777720318308142,
+    "initial_replay_error": 2.980232238769531e-7,
+    "model_sha256": "3313ae412c2d4bbee56dc6ebcf449db05ec35acf037c2df96b125d3c719f3c8d",
+    "csv_ready": false,
+    "official_auc": null,
+    "saved_checkpoint_replay": "PASS"
+  }
+}
