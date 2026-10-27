@@ -1,0 +1,25 @@
+{
+  "reports": [
+    {
+      "auc": 0.8180701367178547,
+      "baseline_auc": 0.8180913840683512,
+      "gain": -2.124735049657822e-05,
+      "conditional_interval": [
+        -4.31282396951991e-05,
+        6.335387020426523e-07
+      ],
+      "weighted_gain": -3.19656153870973e-05,
+      "weighted_interval": [
+        -6.120722511607564e-05,
+        -2.7240056581189654e-06
+      ],
+      "day": 5,
+      "weighted_auc": 0.8108794197082686,
+      "baseline_weighted_auc": 0.8109113853236557
+    }
+  ],
+  "accepted": false,
+  "official_auc": null,
+  "csv_ready": false,
+  "note": "Parent and residual share each fitting user fold. No held-out labels fit either. Day5 user-OOF, day6 future; reused dates and selection uncertainty remain."
+}
