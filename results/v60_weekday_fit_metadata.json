@@ -1,0 +1,8 @@
+{
+  "rows": 1958140,
+  "positive_rows": 123166,
+  "first_timestamp": 1737504000,
+  "last_timestamp": 1737676740,
+  "label_sha256": "6ee014802ab0de21ec456c302cab898a0110f6b8cbab7c2f8e36daaa3c45908b",
+  "row_metadata_sha256": "ab1f85c45fd2c8e31b76cd376096ecf56a75a4a1f472f4b7ed4109536955faa0"
+}

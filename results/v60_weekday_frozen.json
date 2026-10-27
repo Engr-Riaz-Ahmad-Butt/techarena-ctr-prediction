@@ -1,0 +1,68 @@
+{
+  "scope": "New complete weekday three-member ensemble, not V53 backbone or official forecast",
+  "params": {
+    "objective": "binary:logistic",
+    "tree_method": "hist",
+    "device": "cpu",
+    "max_bin": 63,
+    "max_depth": 6,
+    "eta": 0.05,
+    "min_child_weight": 50,
+    "subsample": 0.8,
+    "colsample_bytree": 0.9,
+    "reg_lambda": 5.0,
+    "reg_alpha": 0.1,
+    "nthread": 4,
+    "seed": 6001,
+    "max_cached_hist_node": 32
+  },
+  "rounds": 700,
+  "batch_rows": 100000,
+  "train_days": [
+    2,
+    3
+  ],
+  "negative_sampling": false,
+  "cutoff_day": 4,
+  "holdout": "Each user first actual timestamp at/after cutoff4 through end day7",
+  "control_weights": {
+    "catboost_numeric": 0.9,
+    "context_neural": 0.1
+  },
+  "treatment_weights": {
+    "catboost_numeric": 0.7,
+    "xgboost": 0.2,
+    "context_neural": 0.1
+  },
+  "selection": "No tuning: fixed new expert and ensemble weights; require positive ordinary gain and positive joint adjusted lower interval before translating to main day6/day5 protocol. Weekday cohort was already used by V42/V56.",
+  "library_version": "3.4.1",
+  "inputs": {
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\train.npy": "20d0d37ae9ab7c682952e177d8d0499c8c98d965069fde7e5e21015ddfe9fb32",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\train_hist.npy": "695b624bd7635d9fdd46f64744c3f2baabfe5392dbb513f5783c9ae0b2ae78ae",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\train_times.npy": "a7d3d24eba2181c941b5a6d69625ad361d1db758dcfa2ce5e1df0b1e81bb07e2",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\evaluation.npy": "1277c37bb1234feef1990c593444520b3659c5a6de618695037155656ea510df",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\evaluation_hist.npy": "3dbeec00ffe2db7932f1840f4d1612472ea2ffbc82c6927d849e5723ee7d8d2f",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v42_calendar_holdout.npz": "3b9221f92d48f47486acea7b655d598d3431443ed5185d7d2fbe43832bf86640",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v42_calendar_holdout_report.json": "2d3772d0727a635209df19b6d7492817b534fcfc1e5ef162eea4cd53652262de",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\stack_day2_c2.npy": "b552b6f357164c2abb60f712ca7f73f2114d8e8a3f2866cb8f3644b6a247da7b",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp3_wf_day2.npy": "9864b38218ce224f5243d68e5c907f04aea9789c3c65608b949a63d638b48770",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp4_decompose_day2.npy": "0981b4f18348d715f7240dced5eb48d2b414f88d26e26ef4843d0bf7b3c79c53",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp5_aligned_day2.npy": "287a9e60ef1bce99961e8ff994bf5bdb0f9837fffe91f1566fb0f0ea47b67c2c",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp6_context_day2.npy": "ff58c69c1f3d094b0a1e3388295d2afde7080777e4bf48a2290e9c389e9eed4a",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp17_als_day2.npy": "851cdb3395089a48ddb08616bc4bea08f9406aff04818e9de1f196c5f40f7746",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp19_als_aligned_day2.npy": "605c7c78474625e638a38477e08e9c3724085d3b3b899d5a8b5533ff17a66f29",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\stack_day3_c3.npy": "f8e4e296570acbc6b4a4294b435d588f9c2af09dbd1de03d5f2ee335557a514f",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp3_wf_day3.npy": "f47ac7edcd87e94822948c212217c65e5bedb24d3f972442a53be57b0eda281a",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp4_decompose_day3.npy": "fca64b4e36843719cd509aa985164142bb4de023c04c56b3d686ef69ff4db1b5",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp5_aligned_day3.npy": "d184b57b163032a96c430877736a843bed02a0ee5d9da5e157d9303ba79b477c",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp6_context_day3.npy": "d8a7f13bec0c3f3bfaed761d68c35fa17ac1fd0be9dc44f1bee1af66458eccf7",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp17_als_day3.npy": "01384d526d3e88d4a963fe1150a099e935e24afa3bb123086420b70846d8bbc4",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\features\\imp19_als_aligned_day3.npy": "3efd4f464ac92082b31e3983f4d5dd672752d1d033f0888970de24f67b17c863",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v56_weekday\\v56_future_features.npy": "8ed31957349b17b00f489d9faebf15a88ec85e0609410efbd48a7db6ce02c366",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v56_weekday\\v56_predictions.npz": "c51c78dc9ca4d29a5a9a90982007263cac8184239e80fec20c5f7c3b13712a9a",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v56_weekday\\v56_numeric.cbm": "cd28d8e9867f8172e4a724b3499360a1df6b464f7f1a7ac5a050195a55e1bfce",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v56_weekday\\v56_audit.json": "9953926ef7975256fe40d2d4db7ab78b53b15d050000a3b5f80bddff317a96c6"
+  },
+  "source_sha256": "e60b921657f2eca4636dc0e182d530aafcaea7e9a680694827f9b294daa58a7c",
+  "storage": "In-memory QuantileDMatrix; feature mmap views closed after each batch; four-logical-CPU affinity"
+}

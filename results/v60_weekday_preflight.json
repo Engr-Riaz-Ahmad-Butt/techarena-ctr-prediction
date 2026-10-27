@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "version": "3.4.1",
+  "cpu_external_memory_api": true,
+  "cpu_in_memory_quantile_api": true,
+  "toy_auc": 0.9379315561624281,
+  "toy_storage_prediction_difference": 0.0,
+  "note": "Synthetic API/storage check, not real-data storage equivalence or competition model score."
+}
