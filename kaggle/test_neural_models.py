@@ -1,5 +1,10 @@
 """Regression checks for masking, candidate symmetry and auxiliary cutoff use."""
 import unittest
+import contextlib
+import io
+import json
+import tempfile
+from pathlib import Path
 
 import numpy as np
 import torch
@@ -64,6 +69,42 @@ class NeuralInvariants(unittest.TestCase):
         torch.manual_seed(12)
         model.train()
         self.assertFalse(torch.equal(expected,model(*self.inputs)))
+
+    def test_one_step_regularized_training_and_saved_checkpoint(self):
+        # Exercise the new sampled anchor loss and optimizer on synthetic data.
+        # These fixture scores have no relation to competition performance.
+        workspace=Path(__file__).resolve().parents[1]/"artifacts"
+        workspace.mkdir(exist_ok=True)
+        with tempfile.TemporaryDirectory(prefix="neural_smoke_",dir=workspace) as temporary:
+            root=Path(temporary).resolve()
+            self.assertTrue(root.is_relative_to(workspace.resolve()))
+            data=dict(users=np.arange(12)%4,
+                      items=np.tile(np.arange(10)%6,(12,1)),
+                      hist=np.tile(self.inputs[2].numpy(),(4,1)),gaps=np.zeros((12,20),dtype="float32"),
+                      bucket=np.arange(12)%4,kind=np.arange(12)%2,
+                      timestamp=np.r_[np.arange(8)*3600,np.full(4,6*86400)],
+                      target=np.array([0,10,1,10,2,10,3,10,0,10,2,10]))
+            indices=np.arange(8,12)
+            initial=base.predict(base.JointModel(self.f,self.c),data,indices,"cpu")
+            y=np.zeros((4,10),dtype="int8");y[0,0]=1;y[2,2]=1
+            np.savez(root/"factors6.npz",**self.f)
+            torch.save(self.c,root/"context6.pt")
+            np.save(root/"initial6.npy",initial)
+            np.savez(root/"val6.npz",indices=indices,y=y.ravel(),baseline=initial,weights=np.ones(40))
+            (root/"neural_manifest.json").write_text(json.dumps(dict(start=0)))
+            helpers=regularized.load_module("smoke_metrics",Path(__file__).with_name("runner.py"))
+            frozen=dict(regularized.RECIPE)
+            try:
+                regularized.RECIPE.update(epochs=1,batch_size=4)
+                with contextlib.redirect_stdout(io.StringIO()):
+                    report=regularized.fit(root,root/"output",6,data,dict(start=0),base,helpers,"cpu")
+            finally:
+                regularized.RECIPE.clear();regularized.RECIPE.update(frozen)
+            self.assertEqual(report["saved_checkpoint_replay"],"PASS")
+            saved=torch.load(root/"output"/"model.pt",weights_only=True)
+            self.assertFalse(torch.equal(saved["V.weight"][:,:3],torch.from_numpy(self.f["V"])))
+            metadata=json.loads((root/"output"/"recipe.json").read_text())
+            self.assertLess(metadata["last_fit_timestamp"],6*86400)
 
 
 if __name__=="__main__":

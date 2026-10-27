@@ -77,3 +77,9 @@ option, empty-history masking, nonzero embedding gradients, capacity expansion,
 exclusion of non-fitting events from auxiliary pairs, inference equivalence with
 dropout disabled and state-dictionary replay. Source and notebook cells compile.
 These checks establish implementation behavior, not a higher validation score.
+
+A sixth integration check also executes one synthetic epoch through the actual
+regularized fitting function: sampled anchor loss, auxiliary objective, gradient
+update, temporal exclusion, metrics, checkpoint writing, reload and exact prediction
+replay all pass. The six-epoch production recipe is restored after this isolated
+fixture test. No production GPU run or new competition score is implied.
