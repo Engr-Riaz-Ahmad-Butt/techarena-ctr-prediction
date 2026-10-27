@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "tests": 5,
+  "test_command": "python kaggle/test_neural_models.py",
+  "scope": "invariants, source/notebook compilation, exact upload-copy hash; not validation score success",
+  "regularized_gpu_run": "NOT_STARTED",
+  "source_sha256": {
+    "kaggle/build_neural_bundle.py": "fe7d6a0b5677ee8976593ef2faea6bad359873850683fbf5d54067e4646338a5",
+    "kaggle/neural_runner.py": "270ae4f7d3ee3d674c8b61b6bc17de3c402caff2262a80f989bd28175c1f4c74",
+    "kaggle/neural_aux_runner.py": "6e327251396af9c1e4d00a2a585d7eb14fe4cacac99fdc69d47616897f22030c",
+    "kaggle/neural_regularized_runner.py": "400833c9cb4b71536efe461871a596d1bb2259b70dfa4a82caccaefc34d51afe",
+    "kaggle/test_neural_models.py": "53c35e93d0a569c3948c3a93629fb69feb105e43e56cfa2b1d67702973d87a8f",
+    "kaggle\\TechArena_CTR_Neural.ipynb": "df70a73a271cb561bade08a202859df7b2a0406b0f2e1af3b334cce4b1824492",
+    "kaggle\\TechArena_CTR_Neural_Aux64.ipynb": "ec1ededc370973f0925b109d57f4d1a1253b69909e69278cd545c4c9a01bbfb4",
+    "kaggle\\TechArena_CTR_Neural_Regularized.ipynb": "8c5afb0f31db4cc6c56c2a0eba5ab73fca94eae6a20ebfccb4a6e9e50e921671"
+  }
+}
