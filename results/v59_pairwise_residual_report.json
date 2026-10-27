@@ -1,0 +1,148 @@
+{
+  "reports": [
+    {
+      "metrics": {
+        "auc": 0.8254457140254449,
+        "baseline_auc": 0.8254233318844953,
+        "gain": 2.2382140949517293e-05,
+        "conditional_interval": [
+          -4.386976766197229e-05,
+          8.863404956100687e-05
+        ],
+        "weighted_gain": 3.0499194035527033e-05,
+        "weighted_interval": [
+          -4.535059873991158e-05,
+          0.00010634898681096564
+        ],
+        "arm": "pairwise",
+        "epoch": 2,
+        "weight": 0.1,
+        "weighted_auc": 0.8171995454290641,
+        "day": 6,
+        "fit_last": 1737849540,
+        "cutoff": 1737849600,
+        "baseline_weighted_auc": 0.8171690462350286
+      },
+      "vs_matched_control": {
+        "auc": 0.8254457140254449,
+        "baseline_auc": 0.8254306913434097,
+        "gain": 1.5022682035126245e-05,
+        "conditional_interval": [
+          -6.180644832425102e-06,
+          3.622600890267759e-05
+        ],
+        "weighted_gain": 1.900301097113033e-05,
+        "weighted_interval": [
+          -4.116795102901459e-06,
+          4.212281704516212e-05
+        ]
+      },
+      "trials": [
+        {
+          "arm": "likelihood",
+          "epoch": 1,
+          "weight": 0.1,
+          "auc": 0.8253992356455233,
+          "weighted_auc": 0.8171484206273176
+        },
+        {
+          "arm": "likelihood",
+          "epoch": 1,
+          "weight": 0.25,
+          "auc": 0.8251918482071143,
+          "weighted_auc": 0.8169513649187352
+        },
+        {
+          "arm": "likelihood",
+          "epoch": 2,
+          "weight": 0.1,
+          "auc": 0.8254306913434097,
+          "weighted_auc": 0.817180542418093
+        },
+        {
+          "arm": "likelihood",
+          "epoch": 2,
+          "weight": 0.25,
+          "auc": 0.8251634971540904,
+          "weighted_auc": 0.8169193950258944
+        },
+        {
+          "arm": "likelihood",
+          "epoch": 4,
+          "weight": 0.1,
+          "auc": 0.8254334949533036,
+          "weighted_auc": 0.8171804133983489
+        },
+        {
+          "arm": "likelihood",
+          "epoch": 4,
+          "weight": 0.25,
+          "auc": 0.8251591816827207,
+          "weighted_auc": 0.8169029512655043
+        },
+        {
+          "arm": "pairwise",
+          "epoch": 1,
+          "weight": 0.1,
+          "auc": 0.8254260985814434,
+          "weighted_auc": 0.8171758751103158
+        },
+        {
+          "arm": "pairwise",
+          "epoch": 1,
+          "weight": 0.25,
+          "auc": 0.8252443429196236,
+          "weighted_auc": 0.8169961912760029
+        },
+        {
+          "arm": "pairwise",
+          "epoch": 2,
+          "weight": 0.1,
+          "auc": 0.8254457140254449,
+          "weighted_auc": 0.8171995454290641
+        },
+        {
+          "arm": "pairwise",
+          "epoch": 2,
+          "weight": 0.25,
+          "auc": 0.8251866694777165,
+          "weighted_auc": 0.8169435451635532
+        },
+        {
+          "arm": "pairwise",
+          "epoch": 4,
+          "weight": 0.1,
+          "auc": 0.8254334291786644,
+          "weighted_auc": 0.8171795579962269
+        },
+        {
+          "arm": "pairwise",
+          "epoch": 4,
+          "weight": 0.25,
+          "auc": 0.8251186782874287,
+          "weighted_auc": 0.816854184403295
+        }
+      ],
+      "importance_ratios": [
+        4.0,
+        3.6411852836608887,
+        2.5132014751434326,
+        1.5287189483642578,
+        0.5554122924804688
+      ],
+      "sampled_pair_counts": {
+        "likelihood": 0,
+        "pairwise": 3939008
+      }
+    }
+  ],
+  "gradient_check": {
+    "max_gradient_error": 2.81080714259474e-12,
+    "translation_gradient_sum": 1.3877787807814457e-17
+  },
+  "accepted": false,
+  "csv_ready": false,
+  "official_auc": null,
+  "target_achieved": false,
+  "training_running": false
+}

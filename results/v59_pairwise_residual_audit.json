@@ -1,0 +1,34 @@
+{
+  "status": "PASS",
+  "audits": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "history_adjusted_auc": 0.8171995454290641,
+      "arms": [
+        {
+          "arm": "likelihood",
+          "raw_replay_error": 0.0,
+          "context_replay_error": 0.0,
+          "numpy_forward_logit_error": 3.725290298461914e-07,
+          "checkpoint_sha256": "293a86436e30fad2cb9775cd602d5bf84b37a4a59d956716e3836071250c95c3"
+        },
+        {
+          "arm": "pairwise",
+          "raw_replay_error": 0.0,
+          "context_replay_error": 0.0,
+          "numpy_forward_logit_error": 3.8743019104003906e-07,
+          "checkpoint_sha256": "50360f2c629db66b806d3694690331f84f3ca34f17292c34b962bd70b96e19a9"
+        }
+      ]
+    }
+  ],
+  "gradient_check": {
+    "max_gradient_error": 2.81080714259474e-12,
+    "translation_gradient_sum": 1.3877787807814457e-17
+  },
+  "accepted": false,
+  "csv_ready": false,
+  "official_auc": null,
+  "note": "Saved-model/score checks do not remove validation reuse or model-selection uncertainty."
+}

@@ -23,17 +23,17 @@
   "confirmed_official_auc": 0.816623,
   "training_running": false,
   "last_completed_experiment": {
-    "version": "V57",
-    "scope": "Correctly packed no-click-aware GRU residual on unchanged main day6 cohort",
+    "version": "V59",
+    "scope": "Importance-weighted global pairwise residual versus matched weighted likelihood",
     "promoted": false,
-    "history_adjusted_auc": 0.8171577192448297,
-    "adjusted_difference": -1.1326990198901044e-05,
+    "history_adjusted_auc": 0.8171995454290641,
+    "adjusted_difference": 3.0499194035527033e-05,
     "adjusted_interval": [
-      -2.9259730795562264e-05,
-      6.605750397760177e-06
+      -4.535059873991158e-05,
+      0.00010634898681096564
     ],
     "saved_checkpoint_replay": "PASS"
   },
-  "next_modeling_action": "Reassess error sources before another experiment; corrected sequence residual did not improve V53",
+  "next_modeling_action": "Develop a causal full-ensemble weekday first-future-event benchmark; additional small residual changes have not produced supported gains. Main score threshold and objective remain unchanged.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed."
 }
