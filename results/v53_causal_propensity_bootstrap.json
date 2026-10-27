@@ -1,0 +1,32 @@
+{
+  "reports": [
+    {
+      "day": 5,
+      "events": 35230,
+      "replicates": 1000,
+      "seed": 5306,
+      "observed_gain": 0.00012198115042483249,
+      "paired_event_interval": [
+        8.08083356485495e-05,
+        0.00016318004015800913
+      ],
+      "passes": true,
+      "prediction_sha256": "fcaffa0388db515fb472d7b9d4dc7a117d306d2f9584d419118fa54ca8fcfbe9"
+    },
+    {
+      "day": 6,
+      "events": 35138,
+      "replicates": 1000,
+      "seed": 5307,
+      "observed_gain": 0.00017489381955348993,
+      "paired_event_interval": [
+        0.0001353958836392749,
+        0.00021418370183168834
+      ],
+      "passes": true,
+      "prediction_sha256": "77f21f5b06c14b6ee1875896ebe18ce7bdc7ce670671a2f7d2c3d813e10c9832"
+    }
+  ],
+  "passes": true,
+  "note": "Fixed-model event bootstrap; one user per event in these cohorts. Does not include fitting or repeated-selection uncertainty, nor calendar distribution shift."
+}
