@@ -62,5 +62,19 @@
     "minimum_upload_threshold_met": false,
     "report": "results/kaggle_main_003_observed.json",
     "saved_checkpoint_replay": "PASS, exact raw and blended predictions on both dates"
+  },
+  "existing_prediction_audit": {
+    "report": "results/saved_pair_trials_recheck.json",
+    "fitting_performed": false,
+    "existing_trials_checked": [
+      "V65",
+      "V66",
+      "V67"
+    ],
+    "highest_recomputed_adjusted_auc": 0.8172772695237863,
+    "highest_trial": "V65",
+    "promoted": false,
+    "saved_model_and_feature_replay": "not covered",
+    "goal_0_83_met": false
   }
 }
