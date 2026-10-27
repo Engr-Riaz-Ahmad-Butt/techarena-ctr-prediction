@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 6,
+      "arm_numpy_replay_max_error": {
+        "16": 8.747978319512129e-08,
+        "32": 1.2060516080270034e-07
+      },
+      "cutoff_and_recipes": true,
+      "metrics": true
+    }
+  ],
+  "rejection_verified": true,
+  "official_auc": null
+}
