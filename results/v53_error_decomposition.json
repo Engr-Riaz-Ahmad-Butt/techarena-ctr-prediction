@@ -1,0 +1,137 @@
+{
+  "reports": [
+    {
+      "day": 6,
+      "ordinary_auc": 0.8254233318844953,
+      "history_adjusted_auc": 0.8171690462350286,
+      "negative_source_decomposition": [
+        {
+          "name": "negative_in_clicked_event",
+          "negative_weight_share": 0.5991454800578319,
+          "auc_against_all_positives": 0.821024843050564,
+          "weighted_global_error_contribution": 0.10723215632889563
+        },
+        {
+          "name": "negative_in_no_click_event",
+          "negative_weight_share": 0.4008545199421681,
+          "auc_against_all_positives": 0.8114058999589002,
+          "weighted_global_error_contribution": 0.07559879743590027
+        }
+      ],
+      "history_groups": [
+        {
+          "group": 0,
+          "rows": 1980,
+          "target_share": 0.01256162753357638,
+          "local_share": 0.005634925152256816,
+          "auc": 0.5220634920635056,
+          "click_rate": 0.045454545454545456
+        },
+        {
+          "group": 1,
+          "rows": 23570,
+          "target_share": 0.12206501822852717,
+          "local_share": 0.06707837668620867,
+          "auc": 0.7472422535788011,
+          "click_rate": 0.058336868901145526
+        },
+        {
+          "group": 2,
+          "rows": 50890,
+          "target_share": 0.20091048187536598,
+          "local_share": 0.14482896010017646,
+          "auc": 0.7959816275783469,
+          "click_rate": 0.05967773629396738
+        },
+        {
+          "group": 3,
+          "rows": 95330,
+          "target_share": 0.2723889759912352,
+          "local_share": 0.2713017246286072,
+          "auc": 0.823238263131189,
+          "click_rate": 0.061554599811182206
+        },
+        {
+          "group": 4,
+          "rows": 179610,
+          "target_share": 0.39207389637129525,
+          "local_share": 0.5111560134327509,
+          "auc": 0.8423538489007995,
+          "click_rate": 0.06623239240576806
+        }
+      ],
+      "weighted_click_event_fraction": 0.6241654335821382,
+      "event_auc_using_mean_rank": 0.5580955371763567,
+      "event_auc_using_max_rank": 0.6246298652026466,
+      "conditional_within_event_pair_auc": 0.8053093049072373,
+      "conditional_top1": 0.3910757261786179
+    },
+    {
+      "day": 5,
+      "ordinary_auc": 0.8180913840683512,
+      "history_adjusted_auc": 0.8109113853236557,
+      "negative_source_decomposition": [
+        {
+          "name": "negative_in_clicked_event",
+          "negative_weight_share": 0.6007668876979364,
+          "auc_against_all_positives": 0.8149170753677544,
+          "weighted_global_error_contribution": 0.11119169259734593
+        },
+        {
+          "name": "negative_in_no_click_event",
+          "negative_weight_share": 0.3992331123020637,
+          "auc_against_all_positives": 0.8048836139133688,
+          "weighted_global_error_contribution": 0.07789692207849684
+        }
+      ],
+      "history_groups": [
+        {
+          "group": 0,
+          "rows": 1970,
+          "target_share": 0.01256162753357638,
+          "local_share": 0.005591825149020721,
+          "auc": 0.5141587432823589,
+          "click_rate": 0.0416243654822335
+        },
+        {
+          "group": 1,
+          "rows": 26490,
+          "target_share": 0.12206501822852717,
+          "local_share": 0.07519159806982685,
+          "auc": 0.7396778394703789,
+          "click_rate": 0.05873914684786712
+        },
+        {
+          "group": 2,
+          "rows": 54700,
+          "target_share": 0.20091048187536598,
+          "local_share": 0.15526539880783424,
+          "auc": 0.786460233853217,
+          "click_rate": 0.05992687385740402
+        },
+        {
+          "group": 3,
+          "rows": 96340,
+          "target_share": 0.2723889759912352,
+          "local_share": 0.27346011921657676,
+          "auc": 0.8181065187691333,
+          "click_rate": 0.06233132655179573
+        },
+        {
+          "group": 4,
+          "rows": 172800,
+          "target_share": 0.39207389637129525,
+          "local_share": 0.4904910587567414,
+          "auc": 0.8365581175973829,
+          "click_rate": 0.06596643518518519
+        }
+      ],
+      "weighted_click_event_fraction": 0.6257488539459661,
+      "event_auc_using_mean_rank": 0.5561731570388835,
+      "event_auc_using_max_rank": 0.6195096356751026,
+      "conditional_within_event_pair_auc": 0.799280259491246,
+      "conditional_top1": 0.3830077695154857
+    }
+  ],
+  "note": "Diagnostics use validation labels. Group AUCs and error shares are descriptive, not causal attribution, achievable score bounds, new candidates, or official forecasts."
+}
