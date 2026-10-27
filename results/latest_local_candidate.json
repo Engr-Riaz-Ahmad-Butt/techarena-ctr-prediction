@@ -23,18 +23,18 @@
   "confirmed_official_auc": 0.816623,
   "training_running": false,
   "last_completed_experiment": {
-    "version": "V60",
-    "scope": "New complete weekday three-member ensemble, not V53 backbone or official forecast",
+    "version": "Kaggle ctr-main-003-interactions",
+    "scope": "Same main day6/date5 validation as frozen V53; fixed 10% rank blend",
     "promoted": false,
-    "joint_adjusted_auc": 0.7981470970949093,
-    "joint_adjusted_gain": 0.000802900662621453,
-    "adjusted_interval": [
-      0.0006783939464563874,
-      0.0009274073787865185
-    ],
-    "eligible_for_main_protocol": true,
-    "saved_checkpoint_replay": "PASS"
+    "eligible_for_review": true,
+    "primary_history_adjusted_auc": 0.8172634369364146,
+    "primary_ordinary_auc": 0.8254950475978616,
+    "confirmation_history_adjusted_auc": 0.81104388145966,
+    "both_date_gates_passed": true,
+    "minimum_upload_threshold_met": false,
+    "report": "results/kaggle_main_003_observed.json",
+    "saved_checkpoint_replay": "PASS, exact raw and blended predictions on both dates"
   },
-  "next_modeling_action": "Run the prepared Kaggle main validation notebook to compare fixed full-data XGBoost with V53, followed by unchanged day5 confirmation only after positive gate.",
+  "next_modeling_action": "Review Kaggle interaction candidate and improve underlying user/item preference signal; both date gates pass but main adjusted AUC remains below 0.82. No competition CSV recommendation.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed."
 }
