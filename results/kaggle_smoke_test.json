@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic local CPU integration only; not Kaggle/GPU execution or competition score",
+  "checks": [
+    "both main validation days",
+    "file checksum rejection",
+    "data iterator across multiple training days",
+    "completed model replay without refitting",
+    "report and result archive creation",
+    "no CSV output or automatic promotion"
+  ]
+}

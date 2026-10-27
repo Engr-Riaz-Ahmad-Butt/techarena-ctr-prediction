@@ -21,27 +21,20 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": true,
+  "training_running": false,
   "last_completed_experiment": {
-    "version": "V59",
-    "scope": "Importance-weighted global pairwise residual versus matched weighted likelihood",
+    "version": "V60",
+    "scope": "New complete weekday three-member ensemble, not V53 backbone or official forecast",
     "promoted": false,
-    "history_adjusted_auc": 0.8171995454290641,
-    "adjusted_difference": 3.0499194035527033e-05,
+    "joint_adjusted_auc": 0.7981470970949093,
+    "joint_adjusted_gain": 0.000802900662621453,
     "adjusted_interval": [
-      -4.535059873991158e-05,
-      0.00010634898681096564
+      0.0006783939464563874,
+      0.0009274073787865185
     ],
+    "eligible_for_main_protocol": true,
     "saved_checkpoint_replay": "PASS"
   },
-  "next_modeling_action": "Develop a causal full-ensemble weekday first-future-event benchmark; additional small residual changes have not produced supported gains. Main score threshold and objective remain unchanged.",
-  "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
-  "running_experiment": {
-    "version": "V60",
-    "scope": "New full-data weekday three-member ensemble benchmark, not V53 backbone or main score",
-    "stage": "training fixed 700-tree XGBoost expert",
-    "known_live_exec_session": 96126,
-    "last_verified_utc": "2026-10-27T08:20:19.244971+00:00",
-    "note": "Revalidate session before inferring future liveness; score unavailable"
-  }
+  "next_modeling_action": "Run the prepared Kaggle main validation notebook to compare fixed full-data XGBoost with V53, followed by unchanged day5 confirmation only after positive gate.",
+  "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed."
 }
