@@ -1,0 +1,37 @@
+{
+  "epochs": [
+    2,
+    4,
+    6
+  ],
+  "weights": [
+    0.05,
+    0.1
+  ],
+  "arms": [
+    16,
+    32
+  ],
+  "lr": 0.015,
+  "regularization": 0.002,
+  "auxiliary_weight": 1.0,
+  "pop_correct": true,
+  "accumulator_reset": 0.1,
+  "extra_scale": 0.25,
+  "initialization_seed": 5201,
+  "batch_seed": 5211,
+  "blas_threads": 1,
+  "initialization": "Converged same-cutoff warm16 plus 16 small Gaussian columns; unseen-user extra columns zero",
+  "selection": "Expanded arm chosen on day6 adjusted AUC; require gain and positive adjusted interval against baseline and matched control; then unchanged day5",
+  "inputs": {
+    "imp2_model_warm1.0_d16_pc1_day6.npz": "ecf9a81e6b0042cf8e0d15f8263dbae9c50a83923acb473b3d39c481de08a76c",
+    "imp2_model_warm1.0_d16_pc1_day5.npz": "527c1c0ac8bd3af01a31dc572873c2eaee6d09b8819e7b820649ca8e7bfa8859",
+    "v50_crossfit_experts_day6.npz": "9bce840d68a62dfba87fe3d23948eb4e3e9c237c7279677d00d42ae18f8304e6",
+    "v50_crossfit_experts_day5.npz": "7fe63046276c060d24748d36949af783e2a22e2ed0bada3a82a8ac62ac576b1b"
+  },
+  "sources": {
+    "v52_choice_capacity.py": "89d7c80a65926598abd24c2652d6ea65da43b08f1870a2f6290d590d52968b65",
+    "imp2_warm_choice.py": "a8c8a72281c7569bd868902e93b9038c2babb7a7720a35aa427424f4a2fbff7c",
+    "choice64_core.py": "514ad92807c444e2803e0f90253f9b821b794fe0c0020362e581e9476f7d9a4f"
+  }
+}

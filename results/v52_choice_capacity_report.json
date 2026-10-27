@@ -1,0 +1,147 @@
+{
+  "reports": [
+    {
+      "metrics": {
+        "auc": 0.8252567269742108,
+        "baseline_auc": 0.8252452243953163,
+        "gain": 1.1502578894484472e-05,
+        "conditional_interval": [
+          -9.873053478118328e-06,
+          3.287821126708727e-05
+        ],
+        "weighted_gain": 1.0476381934854118e-05,
+        "weighted_interval": [
+          -1.180357184831028e-05,
+          3.275633571801851e-05
+        ],
+        "dim": 32,
+        "epoch": 2,
+        "weight": 0.1,
+        "weighted_auc": 0.81700462879741,
+        "ordinary_auc": 0.8252567269742108,
+        "raw_auc": 0.8003259082624422,
+        "day": 6,
+        "fit_last": 1737849540,
+        "cutoff": 1737849600,
+        "baseline_weighted_auc": 0.8169941524154751,
+        "initial_raw_auc": 0.8015461682448543
+      },
+      "vs_matched_control": {
+        "auc": 0.8252567269742108,
+        "baseline_auc": 0.8252508795814651,
+        "gain": 5.847392745672586e-06,
+        "conditional_interval": [
+          -4.505250374974488e-06,
+          1.620003586631966e-05
+        ],
+        "weighted_gain": 5.687511975716042e-06,
+        "weighted_interval": [
+          -5.613146185831312e-06,
+          1.6988170137263396e-05
+        ]
+      },
+      "trials": [
+        {
+          "dim": 16,
+          "epoch": 2,
+          "weight": 0.05,
+          "weighted_auc": 0.8169975225944914,
+          "ordinary_auc": 0.8252491884090429,
+          "raw_auc": 0.8003474292605228
+        },
+        {
+          "dim": 16,
+          "epoch": 2,
+          "weight": 0.1,
+          "weighted_auc": 0.8169989412854343,
+          "ordinary_auc": 0.8252508795814651,
+          "raw_auc": 0.8003474292605228
+        },
+        {
+          "dim": 16,
+          "epoch": 4,
+          "weight": 0.05,
+          "weighted_auc": 0.8169943073580456,
+          "ordinary_auc": 0.8252451857083656,
+          "raw_auc": 0.7994670198809568
+        },
+        {
+          "dim": 16,
+          "epoch": 4,
+          "weight": 0.1,
+          "weighted_auc": 0.8169895047806927,
+          "ordinary_auc": 0.8252398355828116,
+          "raw_auc": 0.7994670198809568
+        },
+        {
+          "dim": 16,
+          "epoch": 6,
+          "weight": 0.05,
+          "weighted_auc": 0.816989092113583,
+          "ordinary_auc": 0.8252394724576751,
+          "raw_auc": 0.7987004513915913
+        },
+        {
+          "dim": 16,
+          "epoch": 6,
+          "weight": 0.1,
+          "weighted_auc": 0.8169769081317022,
+          "ordinary_auc": 0.8252263347922022,
+          "raw_auc": 0.7987004513915913
+        },
+        {
+          "dim": 32,
+          "epoch": 2,
+          "weight": 0.05,
+          "weighted_auc": 0.817001065334146,
+          "ordinary_auc": 0.8252527229771456,
+          "raw_auc": 0.8003259082624422
+        },
+        {
+          "dim": 32,
+          "epoch": 2,
+          "weight": 0.1,
+          "weighted_auc": 0.81700462879741,
+          "ordinary_auc": 0.8252567269742108,
+          "raw_auc": 0.8003259082624422
+        },
+        {
+          "dim": 32,
+          "epoch": 4,
+          "weight": 0.05,
+          "weighted_auc": 0.8169985871134354,
+          "ordinary_auc": 0.8252494422964222,
+          "raw_auc": 0.799455528150784
+        },
+        {
+          "dim": 32,
+          "epoch": 4,
+          "weight": 0.1,
+          "weighted_auc": 0.8169976021721155,
+          "ordinary_auc": 0.8252477942459626,
+          "raw_auc": 0.799455528150784
+        },
+        {
+          "dim": 32,
+          "epoch": 6,
+          "weight": 0.05,
+          "weighted_auc": 0.8169946389219083,
+          "ordinary_auc": 0.8252449355054579,
+          "raw_auc": 0.7986733623382901
+        },
+        {
+          "dim": 32,
+          "epoch": 6,
+          "weight": 0.1,
+          "weighted_auc": 0.8169872844568806,
+          "ordinary_auc": 0.825236318481833,
+          "raw_auc": 0.7986733623382901
+        }
+      ]
+    }
+  ],
+  "accepted": false,
+  "csv_ready": false,
+  "official_auc": null,
+  "note": "Repeated validation dates and primary selection; conditional intervals exclude selection uncertainty. No official-score forecast."
+}
