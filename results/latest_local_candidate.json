@@ -21,7 +21,7 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": false,
+  "training_running": true,
   "last_completed_experiment": {
     "version": "V59",
     "scope": "Importance-weighted global pairwise residual versus matched weighted likelihood",
@@ -35,5 +35,13 @@
     "saved_checkpoint_replay": "PASS"
   },
   "next_modeling_action": "Develop a causal full-ensemble weekday first-future-event benchmark; additional small residual changes have not produced supported gains. Main score threshold and objective remain unchanged.",
-  "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed."
+  "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
+  "running_experiment": {
+    "version": "V60",
+    "scope": "New full-data weekday three-member ensemble benchmark, not V53 backbone or main score",
+    "stage": "training fixed 700-tree XGBoost expert",
+    "known_live_exec_session": 96126,
+    "last_verified_utc": "2026-10-27T08:20:19.244971+00:00",
+    "note": "Revalidate session before inferring future liveness; score unavailable"
+  }
 }

@@ -1,0 +1,6 @@
+{
+  "original_source_sha256": "f136d3c6d7b360e7937268ee48bca48f76a50fe46d79d1a2c2025250aa76a2b3",
+  "current_source_sha256": "e60b921657f2eca4636dc0e182d530aafcaea7e9a680694827f9b294daa58a7c",
+  "reason": "External-memory page fetching was slow; mapped feature views occupied working-set memory. Stop only verified PID37016, retain initial manifests, close maps per batch, use in-memory quantized matrix. Fixed inputs, fitting rows, labels, model params, rounds and ensemble weights unchanged. No real holdout score was computed or used.",
+  "real_data_storage_equivalence": "Not tested; initial external fit stopped before model completion. Synthetic check separately compares storage APIs."
+}

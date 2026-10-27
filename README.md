@@ -10,6 +10,8 @@ The later V56 identity-feature variant was rejected on a separate weekday benchm
 
 Matched [candidate-set](results/v58_slate_summary.md) and [pairwise-ranking](results/v59_pairwise_summary.md) residual experiments also failed their frozen promotion gates. Their selected point estimates were around 0.817200 adjusted AUC, with gain intervals containing zero. They do not replace V53, reach 0.82, or establish an official improvement.
 
+A [new full-data weekday ensemble experiment](results/v60_weekday_plan.md) is in progress. It tests a fixed XGBoost expert on all days2/3 fitting rows and a previously used first-future-event weekday cohort. It is a different complete predictor, not V53 replay; no V60 score or promotion is claimed while fitting is incomplete.
+
 ## Historical V20 baseline notes
 
 At V20, the tree learner with aligned exposure-ALS interactions achieved ordinary local AUC **0.821528 / 0.814600** on January 26 / January 25. Frozen settings were 735 trees and a 50% rank blend with the preceding ALS-feature ensemble. Independent feature, saved-model and full-recipe checks passed (`results/imp19_test_candidate_report.json`). These are historical metrics; current candidate and official results are listed above.

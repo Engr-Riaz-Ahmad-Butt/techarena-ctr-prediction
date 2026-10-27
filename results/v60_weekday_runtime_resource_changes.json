@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-10-27T08:18:49.110850+00:00",
+  "verified_process_id": 8656,
+  "original_verified_process_id_stopped": 37016,
+  "logical_cpu_count": 4,
+  "initial_mask": 15,
+  "later_mask": 85,
+  "selected_processors": [
+    0,
+    2,
+    4,
+    6
+  ],
+  "reason": "Measured core masks 3,12,48,192 show initial 4 logical CPUs share 2 physical P cores. Place 4 threads on 4 distinct P cores to reduce resource contention. No data or modeling parameter changed.",
+  "initial_memory_trim": {
+    "process_id": 37016,
+    "working_set_before_bytes": 2830987264,
+    "working_set_after_bytes": 221835264,
+    "api_returned_true": true
+  }
+}
