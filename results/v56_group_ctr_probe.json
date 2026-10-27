@@ -1,0 +1,6 @@
+{
+  "cpu_option_accepted": false,
+  "error": "catboost/private/libs/options/json_helper.h:185: Error: change of option ctr_history_unit is unimplemented for task type CPU and was not default in previous run",
+  "catboost_version": "1.2.10",
+  "scope": "Capability probe only on toy events, not a competition model or proof of group-safe statistics semantics"
+}

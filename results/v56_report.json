@@ -1,0 +1,56 @@
+{
+  "scope": "Two standalone complete classifiers, not V53 ensemble or official score",
+  "holdout": {
+    "events": 47928,
+    "weekday_share": 0.7310966449674512,
+    "evaluation_weekday_share": 0.9719866261168515,
+    "history_before_cutoff": true,
+    "event_ids_sha256": "37ee531d75adda94152fcb8de5304c43da3bde057dc99dc5719688f208e2bdc0"
+  },
+  "fit_rows": 491082,
+  "fit_last_timestamp": 1737676740,
+  "cutoff": 1737676800,
+  "ordinary_auc": {
+    "numeric": 0.7965551594159144,
+    "categorical": 0.7812535003561053
+  },
+  "joint_adjusted_auc": {
+    "numeric": 0.797213227675357,
+    "categorical": 0.7822626520922717
+  },
+  "joint_adjusted_gain": -0.014950575583085213,
+  "conditional_interval": [
+    -0.01593336844938817,
+    -0.013967782716782257
+  ],
+  "provisional_gain": false,
+  "original_inputs_unchanged": true,
+  "masked_holdout_labels_for_features": true,
+  "source_shares": [
+    0.0048823234852278415,
+    0.006634952428642964,
+    0.05902603905858788,
+    0.06397095643465198,
+    0.1193248205641796,
+    0.08821565681856118,
+    0.20739442497078953,
+    0.07955683525287932,
+    0.3404690368886663,
+    0.030524954097813386
+  ],
+  "target_shares": [
+    0.010294867677893425,
+    0.002266759855682956,
+    0.10867224541453371,
+    0.013392772813993464,
+    0.19190011144902624,
+    0.00901037042633975,
+    0.2693099605205992,
+    0.003079015470636015,
+    0.3918094410547989,
+    0.00026445531649634484
+  ],
+  "official_auc": null,
+  "memory_workflow": "80e6065d7c43aec53f2ca8fca3949377118bf8724cc65d06e986b02b3bdcee99",
+  "note": "Unchanged rows/features/learning settings. Quantized storage and 750mb CTR cache budget. Previously used V42 cohort, truncated three-day future horizon; standalone scores not comparable to V53. No official target achievement."
+}

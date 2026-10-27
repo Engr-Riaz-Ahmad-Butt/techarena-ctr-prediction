@@ -1,0 +1,36 @@
+{
+  "status": "PASS",
+  "models": {
+    "numeric": {
+      "full_saved_replay_max_error": 0.0,
+      "model_sha256": "cd28d8e9867f8172e4a724b3499360a1df6b464f7f1a7ac5a050195a55e1bfce",
+      "category_feature_importance": []
+    },
+    "categorical": {
+      "full_saved_replay_max_error": 0.0,
+      "model_sha256": "2871beb5438ca274fe9c288091fc2982d46e548d5f4cc95238348a755d7f529a",
+      "category_feature_importance": [
+        0.2981824738591934,
+        0.5557273380878103,
+        15.858541164451706,
+        0.0
+      ]
+    }
+  },
+  "split_first_future_event": true,
+  "cached_training_join_sampled_rows": 256,
+  "original_and_staged_inputs_unchanged": true,
+  "memory_workflow_verified": true,
+  "ordinary_gain": -0.01530165905980907,
+  "joint_adjusted_gain": -0.014950575583085213,
+  "replicates": 1000,
+  "seed": 5607,
+  "paired_event_interval": [
+    -0.015880025121119412,
+    -0.013982712711103129
+  ],
+  "supports_main_protocol_test": false,
+  "target_achieved": false,
+  "official_auc": null,
+  "note": "Separate weekday model comparison on previously used V42 cohort. Quantized categorical pool and runtime cache budget were required for RAM; logical values and scientific learning settings preserved. Truncated horizon and fixed-model/reuse uncertainty remain; absolute score not comparable to V53."
+}

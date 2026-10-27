@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "events": 47928,
+  "actual_minimum_timestamp_per_user": true,
+  "all_eligible_users_present": true,
+  "scope": "Verifies timestamp minima independently of source row/event-index ordering"
+}

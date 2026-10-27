@@ -6,6 +6,8 @@ Current audited local candidate: **V53**, history-adjusted AUC **0.817169** on t
 
 Last user-confirmed **official score: V35 = 0.816623**. The user confirms V36 and V39 have not been uploaded. **V39** is the latest exported and verified CSV (`submission_v39.csv` in the local project root). V53 has not been exported. The requested score **0.834786** remains unmet; another upload is not recommended before local adjusted AUC reaches the user's minimum **0.82**. This threshold does not guarantee an official score.
 
+The later V56 identity-feature variant was rejected on a separate weekday benchmark; see [comparison and audits](results/v56_weekday_summary.md). A legacy rejected GRU's padding bug was also reproduced and a corrected packing helper verified. The corrected recurrent model has not yet been trained, so no score improvement is claimed for that fix.
+
 ## Historical V20 baseline notes
 
 At V20, the tree learner with aligned exposure-ALS interactions achieved ordinary local AUC **0.821528 / 0.814600** on January 26 / January 25. Frozen settings were 735 trees and a 50% rank blend with the preceding ALS-feature ensemble. Independent feature, saved-model and full-recipe checks passed (`results/imp19_test_candidate_report.json`). These are historical metrics; current candidate and official results are listed above.

@@ -1,0 +1,33 @@
+{
+  "source_sha256": "89205d30c62d912b9ee002458b7ae3354c543456a57cfb736648b4389214c5a0",
+  "numeric_model_sha256": "cd28d8e9867f8172e4a724b3499360a1df6b464f7f1a7ac5a050195a55e1bfce",
+  "purpose": "Same frozen rows/features/learning settings; serialized quantized pool and 750mb cache budget; numeric control not refitted",
+  "staged": {
+    "rows": 491082,
+    "features": 354,
+    "logical_values_sha256": "2144f6c454754b5a43368691e68ef3909b7b8f589f8b4fec473b810bc74af894",
+    "same_logical_values": true,
+    "metadata_sha256": "eba12624d45f2a724817952b6939e899fec4a51b3c09a630bfbcc65cc46f232d"
+  },
+  "quantized": {
+    "rows": 491082,
+    "columns": 358,
+    "category_indices": [
+      354,
+      355,
+      356,
+      357
+    ],
+    "labels_and_weights_preserved": true,
+    "pool_sha256": "c4a328a692de66f91c68b1b3234483088067b2b5118976ca706aa8800eb7dc82",
+    "border_sha256": "50cc0f225b1ce1cec91577faf61b738cc704d814d62d07983605a4f36201ae16"
+  },
+  "trained": {
+    "trees": 600,
+    "model_sha256": "2871beb5438ca274fe9c288091fc2982d46e548d5f4cc95238348a755d7f529a",
+    "numeric_control_unchanged": true
+  },
+  "scored": {
+    "report_sha256": "41b5861ae524f95701f13f67c79757efe4f33c3cf94fb7182cbea01db2cf7656"
+  }
+}

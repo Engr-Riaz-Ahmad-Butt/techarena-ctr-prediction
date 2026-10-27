@@ -19,5 +19,13 @@
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
   "training_running": false,
+  "last_completed_experiment": {
+    "version": "V56",
+    "scope": "Separate weekday standalone-model comparison, not main V53 score",
+    "promoted": false,
+    "joint_adjusted_difference": -0.014950575583085213,
+    "bootstrap_interval": [-0.015880025121119412, -0.013982712711103129]
+  },
+  "next_modeling_action": "Test a no-click-aware sequence encoder using the regression-verified right-padded history helper; no corrected recurrent-model score yet",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed."
 }
