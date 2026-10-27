@@ -1,0 +1,40 @@
+{
+  "epochs": [
+    1,
+    2,
+    3
+  ],
+  "weights": [
+    0.05,
+    0.1
+  ],
+  "lr": 0.001,
+  "weight_decay": 0.0001,
+  "residual_penalty": 0.01,
+  "batch_size": 512,
+  "threads": 4,
+  "seed": 5701,
+  "gru_dim": 32,
+  "selection": "Day6 adjusted AUC, freeze best choice before day5 confirmation. Reused validation dates; intervals exclude selection uncertainty.",
+  "inputs": {
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\train.npy": "20d0d37ae9ab7c682952e177d8d0499c8c98d965069fde7e5e21015ddfe9fb32",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\train_hist.npy": "695b624bd7635d9fdd46f64744c3f2baabfe5392dbb513f5783c9ae0b2ae78ae",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\train_times.npy": "a7d3d24eba2181c941b5a6d69625ad361d1db758dcfa2ce5e1df0b1e81bb07e2",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\evaluation_hist.npy": "3dbeec00ffe2db7932f1840f4d1612472ea2ffbc82c6927d849e5723ee7d8d2f",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\imp3_model_warm16_cut4.npz": "6b484114d5f57c4444ca4cbde590bf2f506e504652e1bfdb95e6ab6cbe3c087b",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v36_recent_context_day6.pt": "fa99607561edb11877a65bd6552a868745fab277867f69698a06486ca5421b73",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v36_recent_context_day6.npz": "62f8fdd01aa1a7fab063d644b8431abc87f758f6b6cc0f8abfd5809f2a189667",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v53_causal_propensity_day6.npz": "77f21f5b06c14b6ee1875896ebe18ce7bdc7ce670671a2f7d2c3d813e10c9832",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\imp3_model_warm16_cut3.npz": "9a5cc2c6fc1a02da704de10460a5f60225e8af7425c4c3680709437cb9a51a63",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v36_recent_context_day5.pt": "2571bc63549e57f123708654cb666a86e62634f0d619dea7bcea1efc6ccb228f",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v36_recent_context_day5.npz": "a9f31448db9b279114600ecbcd0a19e514cf565371c6e0f1745f21b97ef8cf54",
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\artifacts\\v53_causal_propensity_day5.npz": "fcaffa0388db515fb472d7b9d4dc7a117d306d2f9584d419118fa54ca8fcfbe9"
+  },
+  "sources": {
+    "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\v57_sequence_residual.py": "087b44becf703b9aa10f92367d5a80c31dee7b4b7efe104bb600988f3c5795fc",
+    "history_sequence.py": "b37f2ca554d6d8ce1556b23d83a3b22b2996f488a08eff5c873e7cc49d1c1bce",
+    "v36_recent_context.py": "d0dd2d30930b4039737bd7e82e2a0f149fe5e03da52f00f40763e402f0f1adf2",
+    "v24_mass.py": "460a4141850b8780c87c968902a8029340ce50677c895952c7404412b16b3853",
+    "tst2_candidate.py": "f5985cb81be396926fe6dc2edf79fad5acf19d1bdc9cc830c65e4b7a92c1dd52"
+  }
+}

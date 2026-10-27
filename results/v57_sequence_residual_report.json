@@ -1,0 +1,29 @@
+{
+  "reports": [
+    {
+      "auc": 0.825408626135241,
+      "baseline_auc": 0.8254233318844953,
+      "gain": -1.4705749254328992e-05,
+      "conditional_interval": [
+        -3.1431873100817235e-05,
+        2.0203745921592468e-06
+      ],
+      "weighted_gain": -1.1326990198901044e-05,
+      "weighted_interval": [
+        -2.9259730795562264e-05,
+        6.605750397760177e-06
+      ],
+      "epoch": 3,
+      "weight": 0.05,
+      "weighted_auc": 0.8171577192448297,
+      "day": 6,
+      "baseline_weighted_auc": 0.8171690462350286,
+      "zero_residual_replay_error": 0.0
+    }
+  ],
+  "accepted": false,
+  "csv_ready": false,
+  "official_auc": null,
+  "target_achieved": false,
+  "training_running": false
+}

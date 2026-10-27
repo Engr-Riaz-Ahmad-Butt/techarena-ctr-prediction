@@ -1,0 +1,20 @@
+{
+  "status": "PASS",
+  "audits": [
+    {
+      "day": 6,
+      "rows": 351380,
+      "ordinary_auc": 0.825408626135241,
+      "history_adjusted_auc": 0.8171577192448297,
+      "raw_replay_error": 1.1920928955078125e-07,
+      "frozen_context_replay_error": 5.960464477539063e-08,
+      "empty_history_probability_difference": 0.0,
+      "checkpoint_sha256": "ca47add099590a66ccf10d3033cec96604ace24ea0253f16f1acef0779a87c08",
+      "latest_supplied_history_timestamp": 1737849540
+    }
+  ],
+  "accepted": false,
+  "official_auc": null,
+  "csv_ready": false,
+  "note": "Repeated validation use and selection uncertainty remain; no official score inferred."
+}
