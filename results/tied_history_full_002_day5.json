@@ -1,0 +1,161 @@
+{
+  "status": "completed_exploratory",
+  "recipe": {
+    "steps": 2000,
+    "batch_size": 1024,
+    "auxiliary_batch_size": 512,
+    "auxiliary_weight": 0.1,
+    "dimensions": 32,
+    "learning_rate": 0.01,
+    "sampled_vector_regularization": 0.002,
+    "global_weight_decay": 0,
+    "negatives": 9,
+    "context_limit": 100,
+    "seed": 7201,
+    "threads": 2,
+    "fixed_rank_blend_weight": 0.05
+  },
+  "day": 5,
+  "full_fit_events": 490420,
+  "auxiliary_clicks": 880465,
+  "losses": [
+    {
+      "step": 100,
+      "event_loss": 0.2310551106929779,
+      "auxiliary_loss": 0.3301245868206024,
+      "elapsed_seconds": 250.59399999980815
+    },
+    {
+      "step": 200,
+      "event_loss": 0.23062805831432343,
+      "auxiliary_loss": 0.3211424946784973,
+      "elapsed_seconds": 309.9849999998696
+    },
+    {
+      "step": 300,
+      "event_loss": 0.21336710453033447,
+      "auxiliary_loss": 0.30361610651016235,
+      "elapsed_seconds": 369.5779999999795
+    },
+    {
+      "step": 400,
+      "event_loss": 0.19133108854293823,
+      "auxiliary_loss": 0.28540489077568054,
+      "elapsed_seconds": 430.51599999982864
+    },
+    {
+      "step": 500,
+      "event_loss": 0.1877182126045227,
+      "auxiliary_loss": 0.26944833993911743,
+      "elapsed_seconds": 488.34399999980815
+    },
+    {
+      "step": 600,
+      "event_loss": 0.17425356805324554,
+      "auxiliary_loss": 0.2584753632545471,
+      "elapsed_seconds": 547.5159999998286
+    },
+    {
+      "step": 700,
+      "event_loss": 0.17087866365909576,
+      "auxiliary_loss": 0.257419228553772,
+      "elapsed_seconds": 606.0629999998491
+    },
+    {
+      "step": 800,
+      "event_loss": 0.15955814719200134,
+      "auxiliary_loss": 0.24945464730262756,
+      "elapsed_seconds": 659.2349999998696
+    },
+    {
+      "step": 900,
+      "event_loss": 0.1619299054145813,
+      "auxiliary_loss": 0.2415010631084442,
+      "elapsed_seconds": 722.2029999999795
+    },
+    {
+      "step": 1000,
+      "event_loss": 0.15589824318885803,
+      "auxiliary_loss": 0.23816588521003723,
+      "elapsed_seconds": 785.9529999999795
+    },
+    {
+      "step": 1100,
+      "event_loss": 0.152927428483963,
+      "auxiliary_loss": 0.2389974296092987,
+      "elapsed_seconds": 847.0
+    },
+    {
+      "step": 1200,
+      "event_loss": 0.14674438536167145,
+      "auxiliary_loss": 0.23182126879692078,
+      "elapsed_seconds": 910.7349999998696
+    },
+    {
+      "step": 1300,
+      "event_loss": 0.13988390564918518,
+      "auxiliary_loss": 0.23375782370567322,
+      "elapsed_seconds": 973.8439999998081
+    },
+    {
+      "step": 1400,
+      "event_loss": 0.13818557560443878,
+      "auxiliary_loss": 0.23361937701702118,
+      "elapsed_seconds": 1037.9689999998081
+    },
+    {
+      "step": 1500,
+      "event_loss": 0.13689959049224854,
+      "auxiliary_loss": 0.22871904075145721,
+      "elapsed_seconds": 1101.28199999989
+    },
+    {
+      "step": 1600,
+      "event_loss": 0.14776428043842316,
+      "auxiliary_loss": 0.2348305732011795,
+      "elapsed_seconds": 1146.4219999997877
+    },
+    {
+      "step": 1700,
+      "event_loss": 0.14278504252433777,
+      "auxiliary_loss": 0.23365333676338196,
+      "elapsed_seconds": 1173.7189999998081
+    },
+    {
+      "step": 1800,
+      "event_loss": 0.13170595467090607,
+      "auxiliary_loss": 0.2272157371044159,
+      "elapsed_seconds": 1198.5469999997877
+    },
+    {
+      "step": 1900,
+      "event_loss": 0.13337935507297516,
+      "auxiliary_loss": 0.2267829179763794,
+      "elapsed_seconds": 1221.4689999998081
+    },
+    {
+      "step": 2000,
+      "event_loss": 0.1308651566505432,
+      "auxiliary_loss": 0.22705554962158203,
+      "elapsed_seconds": 1246.125
+    }
+  ],
+  "baseline": {
+    "ordinary_auc": 0.8180913840683512,
+    "adjusted_auc": 0.8109113853236557
+  },
+  "standalone": {
+    "ordinary_auc": 0.7549769834399652,
+    "adjusted_auc": 0.7480141616956066
+  },
+  "blend": {
+    "ordinary_auc": 0.8185102940690876,
+    "adjusted_auc": 0.8113809780747044
+  },
+  "full_prediction_replay": "exact",
+  "promoted": false,
+  "target_achieved": false,
+  "official_auc": null,
+  "fresh_holdout": false,
+  "elapsed_seconds": 1248.8279999999795
+}

@@ -6,6 +6,7 @@ No validation early stopping, checkpoint selection, or competition CSV export.
 import argparse
 import hashlib
 import json
+import shutil
 import time
 from pathlib import Path
 import numpy as np
@@ -143,6 +144,9 @@ def main():
                     input_hashes={name: sha(args.artifacts/name) for name in
                                   ['train.npy', 'train_hist.npy', 'train_times.npy',
                                    f'v53_causal_propensity_day{args.day}.npz', 'evaluation_hist.npy']})
+    (args.output/'sources').mkdir()
+    for name in manifest['source_hashes']:
+        shutil.copy2(Path(__file__).with_name(name), args.output/'sources'/name)
     (args.output/'frozen.json').write_text(json.dumps(manifest, indent=2))
     fh, fi, fy, ah, targets, vh, vi, ref, weights, probability, n_items = prepare(
         args.artifacts, args.output, args.day)
