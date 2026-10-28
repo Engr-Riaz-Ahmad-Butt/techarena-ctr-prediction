@@ -1,0 +1,32 @@
+{
+  "recovery_reproduction": true,
+  "original_observed_report": "results/tied_history_gpu_bag_001_observed.json",
+  "reproduction_metrics_match_original": true,
+  "all_five_models_preserved": true,
+  "all_checkpoint_sha256_match_cloud": true,
+  "audit_bundle": {
+    "path": "artifacts/tied_history_gpu_bag_002_audit.zip",
+    "bytes": 17545524,
+    "sha256": "086e685c054f8496881ef924a57b037ee269139365337ad0e77351f97e6fc17c"
+  },
+  "model_bundle": {
+    "path": "artifacts/tied_history_gpu_bag_002_models.zip",
+    "bytes": 30719036,
+    "sha256": "c797a600e0c32fbd3fbab29a281cf2cbbca04e9f6b620a808f227a9b5f741e78"
+  },
+  "local_artifacts": "artifacts/tied_history_gpu_bag_002/",
+  "independent_audit": "results/tied_history_gpu_bag_002_audit.json",
+  "screenshot": "../kaggle-tied-history-bag-result.png",
+  "kaggle_version": 9,
+  "kaggle_save_mode": "Quick Save with visible outputs; Quick version complete observed; no claim of durable Kaggle model-file persistence",
+  "gpu_session": "Session stopped observed after local preservation",
+  "transfer_method": "Rendered notebook output chunks with per-part and complete-file SHA256 verification; normal browser downloads failed",
+  "training_runs_wall_seconds": [
+    125.63922523099995,
+    121.36910457699992
+  ],
+  "allocated_gpu_session_hours": null,
+  "compute_note": "One Tesla T4 device used; total allocated session hours not independently tallied",
+  "target_achieved": false,
+  "csv_created": false
+}
