@@ -1,0 +1,32 @@
+{
+  "recipe": {
+    "steps": 2000,
+    "batch_size": 1024,
+    "auxiliary_batch_size": 512,
+    "auxiliary_weight": 0.1,
+    "dimensions": 32,
+    "learning_rate": 0.01,
+    "sampled_vector_regularization": 0.002,
+    "global_weight_decay": 0,
+    "negatives": 9,
+    "context_limit": 100,
+    "seed": 7201,
+    "threads": 2,
+    "fixed_rank_blend_weight": 0.05
+  },
+  "day": 6,
+  "device": "cpu",
+  "exploratory": true,
+  "source_hashes": {
+    "tied_history_full.py": "4104cf2b7099237c59e6f6cdd88ef0ec29495e7aef99589ee4eef3270c3daabf",
+    "tied_history_model.py": "20313fa5f327ae3bf309ff00a5541fe34798a2f844a8e70bf03994ccca6a560c",
+    "causal_click_ledger.py": "b124812a1ede433b3e7bac0512da7f920dd9ae9ffa1c370b7c7aded2bf0253a3"
+  },
+  "input_hashes": {
+    "train.npy": "20d0d37ae9ab7c682952e177d8d0499c8c98d965069fde7e5e21015ddfe9fb32",
+    "train_hist.npy": "695b624bd7635d9fdd46f64744c3f2baabfe5392dbb513f5783c9ae0b2ae78ae",
+    "train_times.npy": "a7d3d24eba2181c941b5a6d69625ad361d1db758dcfa2ce5e1df0b1e81bb07e2",
+    "v53_causal_propensity_day6.npz": "77f21f5b06c14b6ee1875896ebe18ce7bdc7ce670671a2f7d2c3d813e10c9832",
+    "evaluation_hist.npy": "3dbeec00ffe2db7932f1840f4d1612472ea2ffbc82c6927d849e5723ee7d8d2f"
+  }
+}

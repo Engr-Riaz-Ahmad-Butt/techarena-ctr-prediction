@@ -1,0 +1,161 @@
+{
+  "status": "completed_exploratory",
+  "recipe": {
+    "steps": 2000,
+    "batch_size": 1024,
+    "auxiliary_batch_size": 512,
+    "auxiliary_weight": 0.1,
+    "dimensions": 32,
+    "learning_rate": 0.01,
+    "sampled_vector_regularization": 0.002,
+    "global_weight_decay": 0,
+    "negatives": 9,
+    "context_limit": 100,
+    "seed": 7201,
+    "threads": 2,
+    "fixed_rank_blend_weight": 0.05
+  },
+  "day": 6,
+  "full_fit_events": 588873,
+  "auxiliary_clicks": 945342,
+  "losses": [
+    {
+      "step": 100,
+      "event_loss": 0.23465338349342346,
+      "auxiliary_loss": 0.3304220736026764,
+      "elapsed_seconds": 126.9680000001099
+    },
+    {
+      "step": 200,
+      "event_loss": 0.2272438108921051,
+      "auxiliary_loss": 0.3205239772796631,
+      "elapsed_seconds": 154.26500000013039
+    },
+    {
+      "step": 300,
+      "event_loss": 0.21054622530937195,
+      "auxiliary_loss": 0.2994156777858734,
+      "elapsed_seconds": 181.78099999995902
+    },
+    {
+      "step": 400,
+      "event_loss": 0.190461665391922,
+      "auxiliary_loss": 0.2865535020828247,
+      "elapsed_seconds": 209.06199999991804
+    },
+    {
+      "step": 500,
+      "event_loss": 0.18223409354686737,
+      "auxiliary_loss": 0.27154260873794556,
+      "elapsed_seconds": 2256.9839999999385
+    },
+    {
+      "step": 600,
+      "event_loss": 0.17905719578266144,
+      "auxiliary_loss": 0.260763019323349,
+      "elapsed_seconds": 2283.5150000001304
+    },
+    {
+      "step": 700,
+      "event_loss": 0.16764740645885468,
+      "auxiliary_loss": 0.26630115509033203,
+      "elapsed_seconds": 2301.280999999959
+    },
+    {
+      "step": 800,
+      "event_loss": 0.16557097434997559,
+      "auxiliary_loss": 0.26130586862564087,
+      "elapsed_seconds": 2319.9220000000205
+    },
+    {
+      "step": 900,
+      "event_loss": 0.16329653561115265,
+      "auxiliary_loss": 0.2586706578731537,
+      "elapsed_seconds": 2344.186999999918
+    },
+    {
+      "step": 1000,
+      "event_loss": 0.16309642791748047,
+      "auxiliary_loss": 0.24668259918689728,
+      "elapsed_seconds": 2373.96800000011
+    },
+    {
+      "step": 1100,
+      "event_loss": 0.15910032391548157,
+      "auxiliary_loss": 0.24356341361999512,
+      "elapsed_seconds": 2404.4220000000205
+    },
+    {
+      "step": 1200,
+      "event_loss": 0.15918251872062683,
+      "auxiliary_loss": 0.24025540053844452,
+      "elapsed_seconds": 2432.655999999959
+    },
+    {
+      "step": 1300,
+      "event_loss": 0.15186405181884766,
+      "auxiliary_loss": 0.2430022954940796,
+      "elapsed_seconds": 2460.5150000001304
+    },
+    {
+      "step": 1400,
+      "event_loss": 0.15283998847007751,
+      "auxiliary_loss": 0.24176087975502014,
+      "elapsed_seconds": 2488.9220000000205
+    },
+    {
+      "step": 1500,
+      "event_loss": 0.15251092612743378,
+      "auxiliary_loss": 0.23444823920726776,
+      "elapsed_seconds": 2518.0150000001304
+    },
+    {
+      "step": 1600,
+      "event_loss": 0.15291568636894226,
+      "auxiliary_loss": 0.23119977116584778,
+      "elapsed_seconds": 2548.0779999999795
+    },
+    {
+      "step": 1700,
+      "event_loss": 0.14683470129966736,
+      "auxiliary_loss": 0.2272704392671585,
+      "elapsed_seconds": 2576.7970000000205
+    },
+    {
+      "step": 1800,
+      "event_loss": 0.15133686363697052,
+      "auxiliary_loss": 0.23738396167755127,
+      "elapsed_seconds": 2604.8589999999385
+    },
+    {
+      "step": 1900,
+      "event_loss": 0.14849916100502014,
+      "auxiliary_loss": 0.23216208815574646,
+      "elapsed_seconds": 2633.7029999999795
+    },
+    {
+      "step": 2000,
+      "event_loss": 0.14431717991828918,
+      "auxiliary_loss": 0.23101210594177246,
+      "elapsed_seconds": 2671.7650000001304
+    }
+  ],
+  "baseline": {
+    "ordinary_auc": 0.8254233318844953,
+    "adjusted_auc": 0.8171690462350286
+  },
+  "standalone": {
+    "ordinary_auc": 0.7661169667297807,
+    "adjusted_auc": 0.7568110851614909
+  },
+  "blend": {
+    "ordinary_auc": 0.8256605136652951,
+    "adjusted_auc": 0.8173907383647875
+  },
+  "full_prediction_replay": "exact",
+  "promoted": false,
+  "target_achieved": false,
+  "official_auc": null,
+  "fresh_holdout": false,
+  "elapsed_seconds": 2677.9529999999795
+}

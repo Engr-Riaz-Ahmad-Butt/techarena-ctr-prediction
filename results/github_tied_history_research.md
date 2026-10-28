@@ -70,3 +70,43 @@ candidate. No threshold crossing or official improvement is claimed.
 Next development step: implement exposure-sampled leave-one-click-out auxiliary
 training and normalize regularization over the actually sampled vectors, then
 use the full fitting prefix rather than enlarge the small-pilot tuning search.
+
+## Full-prefix auxiliary experiment 001
+
+Completed 2,000 fixed steps, seed 7201, with 588,873 fitting events and 945,342
+prefix-only auxiliary clicks. Auxiliary negatives follow fitting-item exposure
+counts. Item/candidate/history vectors share parameters. Sampled-vector L2
+replaces the failed global Adam weight decay. No validation early stopping or
+blend search. A frozen 5% rank blend produced:
+
+| Metric on the same reused day6 rows | V53 | Fixed blend |
+| --- | ---: | ---: |
+| Ordinary ROC AUC | 0.8254233318844953 | 0.8256605136652951 |
+| History-adjusted ROC AUC | 0.8171690462350286 | 0.8173907383647875 |
+
+Adjusted gain +0.0002216921 is below the required +0.0005, so no day5 fit,
+promotion, or submission. Standalone factor AUC is 0.7661169667 ordinary and
+0.7568110852 adjusted; its small complementary signal does not establish that
+the complete temporal out-of-fold tree pipeline has been tested.
+
+Independent audit passed input/source hashes, all-row NumPy equation replay
+(maximum probability error 2.206e-7), exact full blend/metric replay, and 24
+raw-array fitting-history context oracles. Auxiliary causality was not separately
+rebuilt from raw arrays by the independent audit; prefix construction and unit
+tests provide narrower supporting evidence. Full Torch checkpoint replay was
+exact for every validation row.
+
+Recorded wall time 2,677.95 seconds includes a discontinuity: elapsed time jumped
+from 209.06 seconds at step400 to 2,256.98 at step500. Cause is unverified; this
+must not be presented as measured CPU time or GPU usage. Recent 100-step blocks
+took roughly 20–30 seconds. Two CPU threads were used, no GPU was requested.
+
+Reports: `results/tied_history_full_001.json`, `_audit.json`, `_frozen.json`.
+The original executed runner is preserved as
+`results/source_snapshots/tied_history_full_001.py`. The current runner's day5
+cohort assertion was subsequently corrected to match V53's existing daily
+horizon; day6 behavior is unchanged and no day5 result is claimed.
+
+The 0.83 objective remains unachieved. A further development candidate would
+need temporal out-of-fold factor features for a tree learner, not tree fitting
+on in-sample factor predictions. The fresh-holdout promotion gate still applies.
