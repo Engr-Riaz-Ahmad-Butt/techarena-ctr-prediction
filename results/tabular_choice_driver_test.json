@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic CPU test; not production GPU score",
+  "checks": [
+    "candidate permutation symmetry",
+    "outside probability and mass",
+    "one full optimizer epoch",
+    "fitting-only normalization",
+    "saved checkpoint replay",
+    "held-out timestamp rejection"
+  ]
+}
