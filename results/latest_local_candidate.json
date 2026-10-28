@@ -23,16 +23,23 @@
   "confirmed_official_auc": 0.816623,
   "training_running": false,
   "last_completed_experiment": {
-    "version": "ctr-full-rank-001",
-    "primary_history_adjusted_auc": 0.8172449660208158,
-    "primary_ordinary_auc": 0.8254564872836735,
+    "version": "Kaggle tied-history-gpu-bag-002 recovery reproduction",
+    "scope": "Main day6 only; day5 skipped by predeclared primary gate; reused cohort",
+    "primary_history_adjusted_auc": 0.8174582055947577,
+    "primary_ordinary_auc": 0.8257031574656098,
+    "adjusted_gain_vs_v53": 0.0002891593597292852,
+    "adjusted_gain_vs_matched_gpu_control": 6.747011185592733e-05,
     "promoted": false,
     "eligible_for_review": false,
-    "saved_checkpoint_replay": "PASS, ranker and neural exact",
-    "reason": "Both baseline gain interval and single-model comparison fail. No day5 confirmation run.",
-    "report": "results/kaggle_full_rank_001_observed.json"
+    "minimum_effect_gate_passed": false,
+    "day5_run": false,
+    "local_model_files_preserved": true,
+    "independent_replay": "All five NumPy checkpoint replays pass below1e-6; exact probability mean and bag blend; saved AUCs recomputed",
+    "report": "results/tied_history_gpu_bag_002.json",
+    "audit": "results/tied_history_gpu_bag_002_audit.json",
+    "preservation": "results/tied_history_gpu_bag_002_preservation.json"
   },
-  "next_modeling_action": "Implement and integrate the tested bounded history-attention residual over frozen numeric neural003. Core invariants pass; production fitting is not implemented or running yet.",
+  "next_modeling_action": "No training is active. Five-seed averaging adds only a small complementary gain. Prefer causal per-day factor features plus pointwise trees on all prior-date fitting rows, not more lucky-seed or bare blend-weight sweeps. Preserve compact evidence and model bundles immediately and use a clean standalone notebook. Fresh labeled holdout remains required for promotion.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -55,14 +62,16 @@
     "version": "Kaggle ctr-tabular-choice-003-setwise",
     "scope": "Main day6 and unchanged day5, fixed 10% blend with V53",
     "promoted": false,
-    "eligible_for_review": true,
+    "eligible_for_review": false,
     "primary_history_adjusted_auc": 0.817295085401266,
     "primary_ordinary_auc": 0.8255597973402244,
     "confirmation_history_adjusted_auc": 0.8111621397001886,
     "both_date_gates_passed": true,
     "minimum_upload_threshold_met": false,
     "report": "results/kaggle_tabular_choice_003_observed.json",
-    "saved_checkpoint_replay": "PASS, exact on both dates"
+    "saved_checkpoint_replay": "PASS, exact on both dates",
+    "candidate_status": "exploratory_not_promoted",
+    "verification_scope": "Historical exact prediction replay and conditional two-date gains; not fresh holdout evidence or an accepted score improvement"
   },
   "existing_prediction_audit": {
     "report": "results/saved_pair_trials_recheck.json",
@@ -80,25 +89,94 @@
   },
   "current_training": null,
   "latest_verified_local_result": {
-    "version": "Kaggle ctr-tabular-choice-003-setwise",
-    "scope": "Main day6 and unchanged day5, fixed 10% blend with V53",
+    "version": "Kaggle tied-history-gpu-bag-002 recovery reproduction",
+    "scope": "Main day6 only; day5 skipped by predeclared primary gate; reused cohort",
+    "primary_history_adjusted_auc": 0.8174582055947577,
+    "primary_ordinary_auc": 0.8257031574656098,
+    "adjusted_gain_vs_v53": 0.0002891593597292852,
+    "adjusted_gain_vs_matched_gpu_control": 6.747011185592733e-05,
     "promoted": false,
-    "eligible_for_review": true,
-    "primary_history_adjusted_auc": 0.817295085401266,
-    "primary_ordinary_auc": 0.8255597973402244,
-    "confirmation_history_adjusted_auc": 0.8111621397001886,
-    "both_date_gates_passed": true,
-    "minimum_upload_threshold_met": false,
-    "report": "results/kaggle_tabular_choice_003_observed.json",
-    "saved_checkpoint_replay": "PASS, exact on both dates"
+    "eligible_for_review": false,
+    "minimum_effect_gate_passed": false,
+    "day5_run": false,
+    "local_model_files_preserved": true,
+    "independent_replay": "All five NumPy checkpoint replays pass below1e-6; exact probability mean and bag blend; saved AUCs recomputed",
+    "report": "results/tied_history_gpu_bag_002.json",
+    "audit": "results/tied_history_gpu_bag_002_audit.json",
+    "preservation": "results/tied_history_gpu_bag_002_preservation.json"
   },
   "kaggle_output_preservation": {
     "notebook": "riazahmadbutt/notebook8d08622ead",
-    "version": 6,
-    "title": "Numeric choice and fixed ensemble results",
+    "version": 9,
+    "title": "Fixed five-seed GPU audit",
     "mode": "Quick Save with output for this version",
     "status": "Quick version complete observed",
     "training_running": false,
-    "proof": "../kaggle-numeric-choice-result.png"
-  }
+    "visible_notebook_output_saved": true,
+    "local_binary_files_independently_verified": true,
+    "local_model_count": 5,
+    "kaggle_binary_persistence_verified": false,
+    "preservation_scope": "Models and prediction arrays preserved in local checksum-verified bundles; no durable Kaggle model-file claim",
+    "report": "results/tied_history_gpu_bag_002_preservation.json",
+    "proof": "../kaggle-tied-history-bag-result.png"
+  },
+  "latest_completed_valid_development_experiment": {
+    "version": "Kaggle tied-history-gpu-bag-002 recovery reproduction",
+    "scope": "Main day6 only; day5 skipped by predeclared primary gate; reused cohort",
+    "primary_history_adjusted_auc": 0.8174582055947577,
+    "primary_ordinary_auc": 0.8257031574656098,
+    "adjusted_gain_vs_v53": 0.0002891593597292852,
+    "adjusted_gain_vs_matched_gpu_control": 6.747011185592733e-05,
+    "promoted": false,
+    "eligible_for_review": false,
+    "minimum_effect_gate_passed": false,
+    "day5_run": false,
+    "local_model_files_preserved": true,
+    "independent_replay": "All five NumPy checkpoint replays pass below1e-6; exact probability mean and bag blend; saved AUCs recomputed",
+    "report": "results/tied_history_gpu_bag_002.json",
+    "audit": "results/tied_history_gpu_bag_002_audit.json",
+    "preservation": "results/tied_history_gpu_bag_002_preservation.json"
+  },
+  "validation_gate": {
+    "status": "fresh_labeled_holdout_missing",
+    "all_existing_dates_reused": true,
+    "minimum_adjusted_gain_each_selection_date": 0.0005,
+    "require_fresh_holdout": true,
+    "source": "results/github_tied_history_research.md",
+    "audit": "results/tied_history_gpu_bag_002_audit.json"
+  },
+  "official_score_discrepancy": {
+    "last_directly_confirmed": {
+      "version": "V35",
+      "auc": 0.816623
+    },
+    "workspace_agent_state_reports": 0.813,
+    "status": "Newer workspace statement is not independently confirmed here; no new official claim"
+  },
+  "latest_development_day6_result": {
+    "version": "Kaggle tied-history-gpu-bag-002 recovery reproduction",
+    "scope": "Main day6 only; day5 skipped by predeclared primary gate; reused cohort",
+    "primary_history_adjusted_auc": 0.8174582055947577,
+    "primary_ordinary_auc": 0.8257031574656098,
+    "adjusted_gain_vs_v53": 0.0002891593597292852,
+    "adjusted_gain_vs_matched_gpu_control": 6.747011185592733e-05,
+    "promoted": false,
+    "eligible_for_review": false,
+    "minimum_effect_gate_passed": false,
+    "day5_run": false,
+    "local_model_files_preserved": true,
+    "independent_replay": "All five NumPy checkpoint replays pass below1e-6; exact probability mean and bag blend; saved AUCs recomputed",
+    "report": "results/tied_history_gpu_bag_002.json",
+    "audit": "results/tied_history_gpu_bag_002_audit.json",
+    "preservation": "results/tied_history_gpu_bag_002_preservation.json"
+  },
+  "best_two_date_fixed_factor_blend": {
+    "version": "tied-history-full fixed 5% rank blend",
+    "day6_adjusted_auc": 0.8173907383647875,
+    "day5_adjusted_auc": 0.8113809780747044,
+    "promoted": false,
+    "eligible_for_review": false,
+    "reason": "Both reused cohorts improve but gains are below +0.0005; no fresh holdout"
+  },
+  "gpu_session_status": "stopped"
 }

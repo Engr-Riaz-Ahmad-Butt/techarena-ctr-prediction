@@ -1,0 +1,32 @@
+{
+  "status": "completed_rejected_below_minimum_gain",
+  "seeds": [
+    7201,
+    7202,
+    7203,
+    7204,
+    7205
+  ],
+  "steps_per_seed": 2000,
+  "matched_control": 7201,
+  "blend_weight": 0.05,
+  "averaging": "Mean of all five probability arrays; no seed selection",
+  "minimum_adjusted_gain_primary": 0.0005,
+  "day5_condition": "Only run if day6 gain meets threshold, is positive versus matched GPU control, and ordinary AUC does not regress",
+  "gpu_fallback": "Refuse CPU fallback",
+  "fresh_holdout": false,
+  "source_sha256": "02b53689d03e493f76845f29837150cc9d5d2372be6910b5b44145f5468298e1",
+  "preflight": "results/tied_history_gpu_bag_preflight.json",
+  "tests": "Fused loss/gradient equivalence and prefix/future-label invariance passed",
+  "browser_observation": "Kaggle session waiting queue position5; GPU runtime not yet allocated",
+  "official_score_changed": false,
+  "target_achieved": false,
+  "previous_goal_turn_classification": "progress: both-date factors and matched-control trees completed and audited, then pushed as5fde4b2",
+  "queue_position": null,
+  "day5_run": false,
+  "report": "results/tied_history_gpu_bag_002.json",
+  "audit": "results/tied_history_gpu_bag_002_audit.json",
+  "preservation": "results/tied_history_gpu_bag_002_preservation.json",
+  "gpu_session": "stopped",
+  "local_models_preserved": true
+}

@@ -1,0 +1,71 @@
+{
+  "day": 6,
+  "all_prepared_arrays_exactly_match_audited_cpu_run": true,
+  "arrays": {
+    "fit_h": {
+      "shape": [
+        588873,
+        100
+      ],
+      "dtype": "int32",
+      "raw_sha256": "91735dca1e65c475254bb60ed09cd8802f45bb9ca152104c6a277cd9e0d9ed59",
+      "exact_cpu_equivalence": true
+    },
+    "fit_i": {
+      "shape": [
+        588873,
+        10
+      ],
+      "dtype": "int32",
+      "raw_sha256": "a4fcee5ec2b954efb27dc3a6581f85fb0994d3b4494891d1859b6c65a5a4e64d",
+      "exact_cpu_equivalence": true
+    },
+    "fit_y": {
+      "shape": [
+        588873,
+        10
+      ],
+      "dtype": "float32",
+      "raw_sha256": "c3526f5dc44e90e58c25d18c16415a30ef1b144bfb21c8fd0d388535c993cacc",
+      "exact_cpu_equivalence": true
+    },
+    "aux_h": {
+      "shape": [
+        945342,
+        100
+      ],
+      "dtype": "int32",
+      "raw_sha256": "30ff4574d87fa0a88572401b851b68b84f9b4266cfbd017173542174c2dfa868",
+      "exact_cpu_equivalence": true
+    },
+    "aux_target": {
+      "shape": [
+        945342
+      ],
+      "dtype": "int32",
+      "raw_sha256": "ca8539e97c620ebcadcfb609876788f8615d19fd813ef604266872e0bea6844e",
+      "exact_cpu_equivalence": true
+    },
+    "val_h": {
+      "shape": [
+        35138,
+        100
+      ],
+      "dtype": "int32",
+      "raw_sha256": "652d5c750a633e140f14d20a07e004c433ba145a29a3265f3d75a8bbcd4e25f2",
+      "exact_cpu_equivalence": true
+    },
+    "val_i": {
+      "shape": [
+        35138,
+        10
+      ],
+      "dtype": "int32",
+      "raw_sha256": "a6fe85b78545ee78477ae90dc02562761a34b0c5100f15ccef2ddf8c98c13019",
+      "exact_cpu_equivalence": true
+    }
+  },
+  "elapsed_seconds": 33.82799999997951,
+  "gpu_used": false,
+  "target_achieved": false
+}

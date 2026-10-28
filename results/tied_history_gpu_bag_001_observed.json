@@ -1,0 +1,48 @@
+{
+  "evidence": "Kaggle rendered output; original working files missing after session reset",
+  "summary": {
+    "reports": [
+      {
+        "day": 6,
+        "baseline": {
+          "ordinary_auc": 0.8254233318844955,
+          "adjusted_auc": 0.8171690462350284
+        },
+        "control": {
+          "ordinary_auc": 0.8256605105949023,
+          "adjusted_auc": 0.8173907354829018
+        },
+        "bag": {
+          "ordinary_auc": 0.8257031574656097,
+          "adjusted_auc": 0.8174582055947577
+        },
+        "raw_control": {
+          "ordinary_auc": 0.7661169669344735,
+          "adjusted_auc": 0.7568110856206264
+        },
+        "raw_bag": {
+          "ordinary_auc": 0.7825589859284416,
+          "adjusted_auc": 0.7736762182752466
+        },
+        "all_five_checkpoint_replays": "exact_all_rows",
+        "promoted": false,
+        "adjusted_gain": 0.0002891593597292852,
+        "adjusted_gain_vs_control": 0.00006747011185592733,
+        "development_gate": false
+      }
+    ],
+    "day5_run": false,
+    "target_achieved": false,
+    "local_adjusted_target_reached": false,
+    "promoted": false,
+    "csv_ready": false,
+    "official_auc": null,
+    "fresh_holdout": false,
+    "elapsed_seconds": 125.63922523099995
+  },
+  "original_zip_sha256": "67fe80ad2bd0e005ab082eb72e1d7e9a7891b0dd682573d0c1171fd8d302fcef",
+  "original_zip_expected_bytes": 51500560,
+  "verified_partial_bytes": 8388608,
+  "independent_local_replay": false,
+  "recovery_needed": true
+}

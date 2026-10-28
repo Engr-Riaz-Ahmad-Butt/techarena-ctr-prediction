@@ -170,3 +170,68 @@ on Kaggle GPU, comparing against its matched single-seed GPU control. Do not
 launch several long local CPU seed jobs or select lucky seeds on day6. These
 development ideas do not remove the fresh-holdout promotion requirement or prove
 the 0.83 target.
+
+## Fixed five-seed GPU experiment
+
+Completed on a verified Tesla T4 with PyTorch2.11.0+cu128. Seeds7201–7205,
+2,000 steps each, the same 32-factor objective and a frozen 5% rank blend.
+The efficient embedding lookup/fused regularizer matched the earlier duplicate-
+safe loss and gradients in double-precision CPU tests. Prefix/future-label tests
+passed. All seven prepared day6 arrays matched the audited CPU arrays exactly;
+the same raw-array SHA256 constants were checked in Kaggle before fitting.
+
+| Reused day6 metric | V53 | Matched single GPU seed | Five-seed mean |
+| --- | ---: | ---: | ---: |
+| Ordinary AUC | 0.8254233319 | 0.8256605106 | 0.8257031575 |
+| History-adjusted AUC | 0.8171690462 | 0.8173907355 | 0.8174582056 |
+| Standalone factor ordinary AUC | — | 0.7661169669 | 0.7825589859 |
+
+No seed was selected on validation scores. Averaging improved the raw factor,
+but adjusted gain over V53 was only +0.0002891594, and over the matched seed
+only +0.0000674701. The predeclared +0.0005 primary gate failed, so no day5
+five-seed run, promotion or CSV export occurred. The 0.83 goal remains unmet.
+
+All five checkpoint predictions replayed exactly on GPU. Local independent
+NumPy replay of all five recovered models passed on every validation row with
+maximum probability errors below 2.27e-7. All five probability arrays, their
+fixed mean, the bag blend, baseline row/label identity, history-distribution
+weights and reported AUCs were independently checked. One numerical limitation
+is explicit: the stored single-control blend differs from this environment's
+float64 reconstruction by at most 3.73e-9; its cause was not independently
+established. It is not labeled bit-exact. The bag blend is exact, and all saved
+score metrics match the report within1e-12. This small discrepancy does not
+change the failed primary gate.
+
+### Output preservation and recovery
+
+The first run took125.64 seconds. Browser file-download attempts failed, and an
+interactive-session reset subsequently removed the working directory (zero
+models remained). Its rendered summary was preserved as observed evidence.
+Recovery reran the same frozen recipe in121.37 seconds and produced identical
+reported metrics. This was recovery from proven file loss, not a lucky-seed or
+score-selection retry. The first8MB incomplete archive was renamed `.partial`.
+
+The recovered audit ZIP (17,545,524 bytes) and model-only ZIP (30,719,036 bytes)
+were exported through rendered notebook text in bounded parts. Per-part and
+whole-file SHA256 checks passed, as did all five checkpoint file hashes against
+the cloud evidence. Models and arrays are now under
+`artifacts/tied_history_gpu_bag_002/`, excluded from Git. Full provenance is in
+`results/tied_history_gpu_bag_002_preservation.json`. Normal downloads should not
+be retried in long timeout loops; preserve compact evidence first.
+
+Kaggle Quick Save version9, "Fixed five-seed GPU audit", completed with visible
+cell outputs. Durable model-file storage in that saved version is not claimed;
+the local verified bundles provide preservation. The idle GPU session was then
+explicitly stopped and "Session stopped" observed. Total allocated GPU session
+hours were not independently tallied. A proof image is saved beside the project
+as `kaggle-tied-history-bag-result.png`.
+
+The standalone three-cell notebook now builds compact audit and model bundles
+and avoids the broken absolute `FileLink` download path. Use Save & Run All only
+on that standalone notebook, not the older draft containing rejected trials.
+
+Further seed averaging has limited complementary value at this point. A larger
+untested step is to construct per-day factor features strictly before each
+training day and train a pointwise tree on all prior-date rows, rather than only
+the day5 first-event meta cohort. This must preserve temporal OOF boundaries,
+predeclared settings, matched controls and the fresh-holdout promotion rule.

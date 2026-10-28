@@ -1,0 +1,129 @@
+{
+  "summary.json": {
+    "reports": [
+      {
+        "day": 6,
+        "baseline": {
+          "ordinary_auc": 0.8254233318844955,
+          "adjusted_auc": 0.8171690462350284
+        },
+        "control": {
+          "ordinary_auc": 0.8256605105949023,
+          "adjusted_auc": 0.8173907354829018
+        },
+        "bag": {
+          "ordinary_auc": 0.8257031574656097,
+          "adjusted_auc": 0.8174582055947577
+        },
+        "raw_control": {
+          "ordinary_auc": 0.7661169669344735,
+          "adjusted_auc": 0.7568110856206264
+        },
+        "raw_bag": {
+          "ordinary_auc": 0.7825589859284416,
+          "adjusted_auc": 0.7736762182752466
+        },
+        "all_five_checkpoint_replays": "exact_all_rows",
+        "promoted": false,
+        "adjusted_gain": 0.0002891593597292852,
+        "adjusted_gain_vs_control": 0.00006747011185592733,
+        "development_gate": false
+      }
+    ],
+    "day5_run": false,
+    "target_achieved": false,
+    "local_adjusted_target_reached": false,
+    "promoted": false,
+    "csv_ready": false,
+    "official_auc": null,
+    "fresh_holdout": false,
+    "elapsed_seconds": 121.36910457699992
+  },
+  "frozen.json": {
+    "recipe": {
+      "seeds": [
+        7201,
+        7202,
+        7203,
+        7204,
+        7205
+      ],
+      "steps": 2000,
+      "batch_size": 1024,
+      "auxiliary_batch_size": 512,
+      "auxiliary_weight": 0.1,
+      "dimensions": 32,
+      "learning_rate": 0.01,
+      "sampled_vector_regularization": 0.002,
+      "negatives": 9,
+      "context_limit": 100,
+      "blend_weight": 0.05,
+      "minimum_primary_adjusted_gain": 0.0005,
+      "cpu_threads": 2
+    },
+    "gpu": {
+      "cuda_available": true,
+      "name": "Tesla T4",
+      "torch_version": "2.11.0+cu128",
+      "memory_bytes": 15636037632,
+      "nvidia_smi": "Tesla T4, 580.178.04\nTesla T4, 580.178.04\n"
+    },
+    "source_sha256": "02b53689d03e493f76845f29837150cc9d5d2372be6910b5b44145f5468298e1",
+    "inputs": {
+      "events.npz": "3e2d628a35a9e69c6c75b0a98da28ee9dab96857209b2d16def26ce7d5c8249e",
+      "val5.npz": "6f30b7c3b825a3481006b83f02b81d617b113fb40d4898f34f504b6b9473fd3d",
+      "val6.npz": "963b8f1c8ff1edbeb88955cc087ddeccf8a4784472d488b1270b2eb6deff5d8d"
+    },
+    "fresh_holdout": false,
+    "official_auc": null,
+    "note": "Fixed five seeds, matched single-seed GPU control; no seed selection or per-seed validation scoring"
+  },
+  "day6/report.json": {
+    "day": 6,
+    "baseline": {
+      "ordinary_auc": 0.8254233318844955,
+      "adjusted_auc": 0.8171690462350284
+    },
+    "control": {
+      "ordinary_auc": 0.8256605105949023,
+      "adjusted_auc": 0.8173907354829018
+    },
+    "bag": {
+      "ordinary_auc": 0.8257031574656097,
+      "adjusted_auc": 0.8174582055947577
+    },
+    "raw_control": {
+      "ordinary_auc": 0.7661169669344735,
+      "adjusted_auc": 0.7568110856206264
+    },
+    "raw_bag": {
+      "ordinary_auc": 0.7825589859284416,
+      "adjusted_auc": 0.7736762182752466
+    },
+    "all_five_checkpoint_replays": "exact_all_rows",
+    "promoted": false,
+    "adjusted_gain": 0.0002891593597292852,
+    "adjusted_gain_vs_control": 0.00006747011185592733,
+    "development_gate": false
+  },
+  "day6/prepared_array_hashes.json": {
+    "fit_h": "91735dca1e65c475254bb60ed09cd8802f45bb9ca152104c6a277cd9e0d9ed59",
+    "fit_i": "a4fcee5ec2b954efb27dc3a6581f85fb0994d3b4494891d1859b6c65a5a4e64d",
+    "fit_y": "c3526f5dc44e90e58c25d18c16415a30ef1b144bfb21c8fd0d388535c993cacc",
+    "aux_h": "30ff4574d87fa0a88572401b851b68b84f9b4266cfbd017173542174c2dfa868",
+    "aux_target": "ca8539e97c620ebcadcfb609876788f8615d19fd813ef604266872e0bea6844e",
+    "val_h": "652d5c750a633e140f14d20a07e004c433ba145a29a3265f3d75a8bbcd4e25f2",
+    "val_i": "a6fe85b78545ee78477ae90dc02562761a34b0c5100f15ccef2ddf8c98c13019"
+  },
+  "model_sha256": {
+    "seed7201.pt": "5206b777b60d3d78394ebf454814749c7a97973263e540e6942a521326f1f8d1",
+    "seed7202.pt": "dc3cd77e8ffb62ec2061665bd017e53592b019d77928cc91013b472d07a230a3",
+    "seed7203.pt": "f26a5fc32168554b6138203a18be0e1b6b170cc56e8ca1a5cee37c4be7d06f5c",
+    "seed7204.pt": "4e484a2f0a43e4bf14cb64b8bd851c7fbecf5e04c91829383224b03aae3a8fd5",
+    "seed7205.pt": "0b2c83449a25157154f0b519e231ba57fe00dbb8bba4c0e66cf584be23dff4dd"
+  },
+  "audit_zip": {
+    "bytes": 17545524,
+    "sha256": "086e685c054f8496881ef924a57b037ee269139365337ad0e77351f97e6fc17c"
+  }
+}

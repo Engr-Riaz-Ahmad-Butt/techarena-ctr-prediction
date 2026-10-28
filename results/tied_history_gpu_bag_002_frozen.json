@@ -1,0 +1,39 @@
+{
+  "recipe": {
+    "seeds": [
+      7201,
+      7202,
+      7203,
+      7204,
+      7205
+    ],
+    "steps": 2000,
+    "batch_size": 1024,
+    "auxiliary_batch_size": 512,
+    "auxiliary_weight": 0.1,
+    "dimensions": 32,
+    "learning_rate": 0.01,
+    "sampled_vector_regularization": 0.002,
+    "negatives": 9,
+    "context_limit": 100,
+    "blend_weight": 0.05,
+    "minimum_primary_adjusted_gain": 0.0005,
+    "cpu_threads": 2
+  },
+  "gpu": {
+    "cuda_available": true,
+    "name": "Tesla T4",
+    "torch_version": "2.11.0+cu128",
+    "memory_bytes": 15636037632,
+    "nvidia_smi": "Tesla T4, 580.178.04\nTesla T4, 580.178.04\n"
+  },
+  "source_sha256": "02b53689d03e493f76845f29837150cc9d5d2372be6910b5b44145f5468298e1",
+  "inputs": {
+    "events.npz": "3e2d628a35a9e69c6c75b0a98da28ee9dab96857209b2d16def26ce7d5c8249e",
+    "val5.npz": "6f30b7c3b825a3481006b83f02b81d617b113fb40d4898f34f504b6b9473fd3d",
+    "val6.npz": "963b8f1c8ff1edbeb88955cc087ddeccf8a4784472d488b1270b2eb6deff5d8d"
+  },
+  "fresh_holdout": false,
+  "official_auc": null,
+  "note": "Fixed five seeds, matched single-seed GPU control; no seed selection or per-seed validation scoring"
+}

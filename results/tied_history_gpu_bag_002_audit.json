@@ -1,0 +1,61 @@
+{
+  "all_five_probability_arrays": "PASS",
+  "fixed_mean_and_bag_blend": "exact",
+  "blend_maximum_errors": {
+    "bag": 0.0,
+    "control": 3.725201258575339e-09
+  },
+  "control_blend_scope": "Within 1e-8; not bit-exact across environments; cause not independently established",
+  "independent_history_weights": "PASS",
+  "saved_metrics": "PASS",
+  "baseline_event_label_identity": "PASS",
+  "metrics": {
+    "baseline": {
+      "ordinary_auc": 0.8254233318844953,
+      "adjusted_auc": 0.8171690462350286
+    },
+    "control": {
+      "ordinary_auc": 0.8256605105949023,
+      "adjusted_auc": 0.817390735482902
+    },
+    "bag": {
+      "ordinary_auc": 0.8257031574656098,
+      "adjusted_auc": 0.8174582055947577
+    },
+    "raw_control": {
+      "ordinary_auc": 0.7661169669344735,
+      "adjusted_auc": 0.7568110856206263
+    },
+    "raw_bag": {
+      "ordinary_auc": 0.7825589859284416,
+      "adjusted_auc": 0.7736762182752466
+    }
+  },
+  "model_replay": {
+    "7201": {
+      "status": "PASS",
+      "maximum_probability_error": 2.268039351882578e-07
+    },
+    "7202": {
+      "status": "PASS",
+      "maximum_probability_error": 2.072457568891295e-07
+    },
+    "7203": {
+      "status": "PASS",
+      "maximum_probability_error": 1.9623776259525272e-07
+    },
+    "7204": {
+      "status": "PASS",
+      "maximum_probability_error": 2.1692777252280138e-07
+    },
+    "7205": {
+      "status": "PASS",
+      "maximum_probability_error": 2.105155060827535e-07
+    }
+  },
+  "fresh_holdout": false,
+  "promoted": false,
+  "target_achieved": false,
+  "executed_source_sha256_matches_local": true,
+  "source_sha256": "02b53689d03e493f76845f29837150cc9d5d2372be6910b5b44145f5468298e1"
+}
