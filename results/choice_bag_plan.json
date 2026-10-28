@@ -1,0 +1,16 @@
+{
+  "experiment": "ctr-choice-bag-001",
+  "seeds": [
+    6802,
+    6803,
+    6804
+  ],
+  "epochs": 8,
+  "averaging": "Equal raw probability mean; fixed10% rank blend with V53",
+  "fit": "Preceding three dates; original causal features and history weights",
+  "selection": "Positive ordinary gain and positive adjusted lower interval versus V53 and existing single6802 on day6, then unchanged day5.",
+  "reuse": "Existing6802 checkpoint only after manifest, recipe, checksum and exact prediction replay checks",
+  "target": 0.83,
+  "target_achieved": false,
+  "limitations": "Reused development dates; intervals exclude fitting and repeated-selection uncertainty."
+}

@@ -21,7 +21,7 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": false,
+  "training_running": true,
   "last_completed_experiment": {
     "version": "ctr-choice-xgb-ensemble-001",
     "primary_history_adjusted_auc": 0.8173193042301217,
@@ -33,7 +33,7 @@
     "reason": "Gain interval versus the neural expert crosses zero on both dates; versus tree also crosses zero on day6.",
     "report": "results/kaggle_choice_xgb_ensemble_001_observed.json"
   },
-  "next_modeling_action": "No active training. Test a preregistered three-seed probability bag of the successful eight-epoch setwise numeric model to address fit variance; keep both-date gates versus V53 and the existing single-seed model.",
+  "next_modeling_action": "Score equal three-seed probability bag versus V53 and seed6802. Confirm unchanged on day5 only after a positive day6 gate.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -79,7 +79,18 @@
     "saved_model_and_feature_replay": "not covered",
     "goal_0_83_met": false
   },
-  "current_training": null,
+  "current_training": {
+    "version": "ctr-choice-bag-001",
+    "stage": "launched",
+    "device": "Kaggle CUDA GPU0",
+    "seeds": [
+      6802,
+      6803,
+      6804
+    ],
+    "epochs_per_seed": 8,
+    "csv_ready": false
+  },
   "latest_verified_local_result": {
     "version": "Kaggle ctr-tabular-choice-003-setwise",
     "scope": "Main day6 and unchanged day5, fixed 10% blend with V53",
