@@ -1,0 +1,27 @@
+{
+  "status": "exploratory_bounded_pilot",
+  "fit_events": 40000,
+  "full_fit_events": 588873,
+  "epochs": 8,
+  "losses": [
+    0.23850093886852264,
+    0.23457516791820526,
+    0.2343076619386673,
+    0.23427433986663818,
+    0.23426649372577668,
+    0.23426461098194123,
+    0.2342521599292755,
+    0.2342493620634079
+  ],
+  "ordinary_auc": 0.5049471963895874,
+  "v53_ordinary_auc_same_rows": 0.8254233318844953,
+  "checkpoint_replay": "exact_first_100_events",
+  "elapsed_seconds": 86.18799999984913,
+  "auxiliary_training": false,
+  "full_recipe_implemented": false,
+  "promoted": false,
+  "fresh_holdout": false,
+  "official_auc": null,
+  "target_achieved": false,
+  "source_sha256": "704e9ffd12f0ef2326efcfcd772ac85f17f1586b6918baf1b76b73e1fa69b36e"
+}
