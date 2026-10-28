@@ -1,0 +1,30 @@
+{
+  "experiment": "ctr-tabular-choice-004-32epochs",
+  "source": "Observed completed Kaggle GPU cell output",
+  "reports": [
+    {
+      "ordinary_auc": 0.8253053254945617,
+      "baseline_ordinary_auc": 0.8254233318844955,
+      "history_adjusted_auc": 0.816923968683786,
+      "baseline_history_adjusted_auc": 0.8171690462350284,
+      "ordinary_gain": -0.00011800638993375578,
+      "adjusted_gain": -0.0002450775512423675,
+      "adjusted_gain_interval": [
+        -0.0004459055615334723,
+        -0.000044249540951262764
+      ],
+      "positive_gate": false,
+      "day": 6,
+      "raw_auc": 0.8004939048112616,
+      "saved_model_replay_max_error": 0,
+      "saved_checkpoint_replay": "PASS",
+      "model_sha256": "63594d942ed2eebd0e1ec5d68e459ec51cb78e844369a725816b5d3269bc2cf8",
+      "rows": 351380,
+      "elapsed_seconds": 41.3,
+      "csv_ready": false,
+      "official_auc": null
+    }
+  ],
+  "promoted": false,
+  "target_achieved": false
+}

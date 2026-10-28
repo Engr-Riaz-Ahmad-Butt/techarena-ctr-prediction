@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": [
+    "exact fixed blend",
+    "four alignment guards",
+    "finite probability guard"
+  ],
+  "fitting": false
+}
