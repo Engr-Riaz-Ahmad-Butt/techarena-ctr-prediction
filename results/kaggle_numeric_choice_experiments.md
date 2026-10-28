@@ -45,3 +45,5 @@ forecasts. The last confirmed competition result remains V35 = 0.816623.
 ## Fixed ensemble result
 
 The reproduced XGBoost metrics exactly match the prior main003 results. The fixed80/10/10 ensemble scores 0.8173193042301217 adjusted on day6 and 0.8112273931434458 on day5. Reloading both saved experts reproduces all predictions exactly. It improves versus V53, but gain intervals versus the neural-only blend cross zero on both dates; the day6 interval versus the tree-only blend also crosses zero. It is not promoted under its declared stricter rule. The best eligible candidate remains neural setwise003: adjusted0.817295085401266, ordinary0.8255597973402244. No0.83 target attainment or new official result.
+
+Kaggle Version6 (Numeric choice and fixed ensemble results) was saved with outputs. The UI explicitly confirmed Quick version complete. The results ZIP includes both neural checkpoints and their recipes in addition to the reproduced XGBoost checkpoints and prediction files. Code and local reports are committed under Riaz Ahmad Butt. No fitting remains active.

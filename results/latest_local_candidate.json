@@ -92,5 +92,14 @@
     "minimum_upload_threshold_met": false,
     "report": "results/kaggle_tabular_choice_003_observed.json",
     "saved_checkpoint_replay": "PASS, exact on both dates"
+  },
+  "kaggle_output_preservation": {
+    "notebook": "riazahmadbutt/notebook8d08622ead",
+    "version": 6,
+    "title": "Numeric choice and fixed ensemble results",
+    "mode": "Quick Save with output for this version",
+    "status": "Quick version complete observed",
+    "training_running": false,
+    "proof": "../kaggle-numeric-choice-result.png"
   }
 }
