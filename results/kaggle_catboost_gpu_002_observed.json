@@ -1,0 +1,30 @@
+{
+  "experiment": "ctr-catboost-gpu-002-weighted",
+  "source": "Observed completed Kaggle GPU cell output",
+  "reports": [
+    {
+      "ordinary_auc": 0.8251479487525559,
+      "baseline_ordinary_auc": 0.8254233318844955,
+      "history_adjusted_auc": 0.8169401522144927,
+      "baseline_history_adjusted_auc": 0.8171690462350284,
+      "ordinary_gain": -0.0002753831319395328,
+      "adjusted_gain": -0.00022889402053571928,
+      "adjusted_gain_interval": [
+        -0.0004062461543068124,
+        -0.00005154188676462614
+      ],
+      "positive_gate": false,
+      "day": 6,
+      "raw_auc": 0.8204408208589642,
+      "rows": 351380,
+      "saved_model_replay_max_error": 0,
+      "saved_checkpoint_replay": "PASS",
+      "model_sha256": "c4c4cc86d817df0b16ad5787a6b7f878b504ad831c51f4a5db15d10d1ce71432",
+      "elapsed_seconds": 209.1,
+      "official_auc": null,
+      "csv_ready": false
+    }
+  ],
+  "promoted": false,
+  "target_achieved": false
+}
