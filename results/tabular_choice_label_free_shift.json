@@ -1,0 +1,267 @@
+{
+  "reports": [
+    {
+      "day": 5,
+      "training_rows": 60000,
+      "validation_rows": 20000,
+      "fitting_constant_columns": [
+        5
+      ],
+      "most_shifted": [
+        {
+          "column": 5,
+          "training_mean": 0.0,
+          "training_std": 0.0,
+          "validation_mean": 1.0,
+          "standardized_mean_shift": 100.0,
+          "fitting_constant": true
+        },
+        {
+          "column": 283,
+          "training_mean": -0.15009380416814574,
+          "training_std": 0.1155558480244815,
+          "validation_mean": -0.49063636088539353,
+          "standardized_mean_shift": 2.9469954358787698,
+          "fitting_constant": false
+        },
+        {
+          "column": 289,
+          "training_mean": -0.3106102488123448,
+          "training_std": 0.24753204310848823,
+          "validation_mean": -0.7038649060931129,
+          "standardized_mean_shift": 1.5887020215334815,
+          "fitting_constant": false
+        },
+        {
+          "column": 272,
+          "training_mean": 0.0277263407019355,
+          "training_std": 0.1448729301383448,
+          "validation_mean": -0.18841965608717873,
+          "standardized_mean_shift": 1.491969525174289,
+          "fitting_constant": false
+        },
+        {
+          "column": 285,
+          "training_mean": -0.5414377835015954,
+          "training_std": 0.4649657714989052,
+          "validation_mean": -1.2106333800621563,
+          "standardized_mean_shift": 1.4392362569039912,
+          "fitting_constant": false
+        },
+        {
+          "column": 260,
+          "training_mean": 2.6194027089059353,
+          "training_std": 0.7939646535557242,
+          "validation_mean": 1.684403552532196,
+          "standardized_mean_shift": 1.1776332260969051,
+          "fitting_constant": false
+        },
+        {
+          "column": 157,
+          "training_mean": 3.97903304532154e-05,
+          "training_std": 0.003735710230497397,
+          "validation_mean": 0.010968627423849452,
+          "standardized_mean_shift": 1.0928837093396238,
+          "fitting_constant": false
+        },
+        {
+          "column": 141,
+          "training_mean": 2.798969134115172e-05,
+          "training_std": 0.002796917627643423,
+          "validation_mean": 0.010799168144149517,
+          "standardized_mean_shift": 1.0771178452808365,
+          "fitting_constant": false
+        },
+        {
+          "column": 261,
+          "training_mean": 1.5080913687229156,
+          "training_std": 0.8269089828642868,
+          "validation_mean": 0.6943872329115868,
+          "standardized_mean_shift": 0.9840310755759135,
+          "fitting_constant": false
+        },
+        {
+          "column": 273,
+          "training_mean": -0.05584895866356819,
+          "training_std": 0.45777329919428517,
+          "validation_mean": -0.49084446604857224,
+          "standardized_mean_shift": 0.9502422009991152,
+          "fitting_constant": false
+        },
+        {
+          "column": 111,
+          "training_mean": 0.8184771727833076,
+          "training_std": 0.23358026544447244,
+          "validation_mean": 0.6253207560327341,
+          "standardized_mean_shift": 0.8269380822177863,
+          "fitting_constant": false
+        },
+        {
+          "column": 3,
+          "training_mean": 4.242660738440355,
+          "training_std": 0.7267422974038653,
+          "validation_mean": 4.78409280885458,
+          "standardized_mean_shift": 0.7450124650077169,
+          "fitting_constant": false
+        },
+        {
+          "column": 307,
+          "training_mean": 4.242660738440355,
+          "training_std": 0.7267422974038653,
+          "validation_mean": 4.78409280885458,
+          "standardized_mean_shift": 0.7450124650077169,
+          "fitting_constant": false
+        },
+        {
+          "column": 264,
+          "training_mean": -0.08170106148579713,
+          "training_std": 0.4240582332764593,
+          "validation_mean": -0.3572728618739406,
+          "standardized_mean_shift": 0.6498442401623834,
+          "fitting_constant": false
+        },
+        {
+          "column": 12,
+          "training_mean": 0.6255426273322887,
+          "training_std": 0.26007327155368637,
+          "validation_mean": 0.47878944456606987,
+          "standardized_mean_shift": 0.5642762975584167,
+          "fitting_constant": false
+        }
+      ],
+      "shift_over_three_sd_columns": [
+        5
+      ]
+    },
+    {
+      "day": 6,
+      "training_rows": 60000,
+      "validation_rows": 20000,
+      "fitting_constant_columns": [],
+      "most_shifted": [
+        {
+          "column": 5,
+          "training_mean": 0.3333333333333333,
+          "training_std": 0.47140452079125195,
+          "validation_mean": 1.0,
+          "standardized_mean_shift": 1.4142135623724343,
+          "fitting_constant": false
+        },
+        {
+          "column": 111,
+          "training_mean": 0.7679049629842012,
+          "training_std": 0.24511778325813782,
+          "validation_mean": 0.589469513678347,
+          "standardized_mean_shift": 0.7279579920072168,
+          "fitting_constant": false
+        },
+        {
+          "column": 289,
+          "training_mean": -0.41353342992437464,
+          "training_std": 0.36694343497931337,
+          "validation_mean": -0.6371592415247156,
+          "standardized_mean_shift": 0.6094285665935077,
+          "fitting_constant": false
+        },
+        {
+          "column": 307,
+          "training_mean": 4.543062028666338,
+          "training_std": 0.6981553462657957,
+          "validation_mean": 4.963960434103012,
+          "standardized_mean_shift": 0.6028721368215862,
+          "fitting_constant": false
+        },
+        {
+          "column": 3,
+          "training_mean": 4.543062028666338,
+          "training_std": 0.6981553462657957,
+          "validation_mean": 4.963960434103012,
+          "standardized_mean_shift": 0.6028721368215862,
+          "fitting_constant": false
+        },
+        {
+          "column": 285,
+          "training_mean": -0.711092265646906,
+          "training_std": 0.6701341549614531,
+          "validation_mean": -1.0860813484775442,
+          "standardized_mean_shift": 0.5595731542025463,
+          "fitting_constant": false
+        },
+        {
+          "column": 12,
+          "training_mean": 0.6248675115970885,
+          "training_std": 0.26049632093173347,
+          "validation_mean": 0.4791393402918766,
+          "standardized_mean_shift": 0.5594250651371078,
+          "fitting_constant": false
+        },
+        {
+          "column": 261,
+          "training_mean": 1.3094614559074242,
+          "training_std": 0.862503125998043,
+          "validation_mean": 0.8317299803972245,
+          "standardized_mean_shift": 0.5538895583217675,
+          "fitting_constant": false
+        },
+        {
+          "column": 4,
+          "training_mean": 2.0003,
+          "training_std": 1.0007663280372379,
+          "validation_mean": 1.45715,
+          "standardized_mean_shift": 0.5427340876518679,
+          "fitting_constant": false
+        },
+        {
+          "column": 283,
+          "training_mean": -0.2628434318631934,
+          "training_std": 0.2938521792380895,
+          "validation_mean": -0.4211822567922478,
+          "standardized_mean_shift": 0.5388383551879757,
+          "fitting_constant": false
+        },
+        {
+          "column": 97,
+          "training_mean": 0.3001982506625199,
+          "training_std": 0.11325195801937014,
+          "validation_mean": 0.24559324256307447,
+          "standardized_mean_shift": 0.4821550907764972,
+          "fitting_constant": false
+        },
+        {
+          "column": 260,
+          "training_mean": 2.3484158698777358,
+          "training_std": 0.9211061721554601,
+          "validation_mean": 1.9191617380619048,
+          "standardized_mean_shift": 0.46602025346474757,
+          "fitting_constant": false
+        },
+        {
+          "column": 6,
+          "training_mean": 17.243316666666665,
+          "training_std": 4.9988445664708685,
+          "validation_mean": 15.2851,
+          "standardized_mean_shift": 0.3917338578200973,
+          "fitting_constant": false
+        },
+        {
+          "column": 306,
+          "training_mean": 2.8352806077798207,
+          "training_std": 0.4411643072269075,
+          "validation_mean": 2.675985514366627,
+          "standardized_mean_shift": 0.36107883344982916,
+          "fitting_constant": false
+        },
+        {
+          "column": 137,
+          "training_mean": 3.136028457393249,
+          "training_std": 0.7877019595795813,
+          "validation_mean": 2.8838548677563667,
+          "standardized_mean_shift": 0.3201383296944882,
+          "fitting_constant": false
+        }
+      ],
+      "shift_over_three_sd_columns": []
+    }
+  ],
+  "scope": "No click labels read. Deterministic samples, descriptive covariate drift only; not score evidence."
+}

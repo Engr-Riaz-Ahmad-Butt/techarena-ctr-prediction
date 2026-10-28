@@ -4,6 +4,7 @@
   "checks": [
     "candidate permutation symmetry",
     "outside probability and mass",
+    "unseen values in fitting-constant features have zero effect",
     "one full optimizer epoch",
     "fitting-only normalization",
     "saved checkpoint replay",

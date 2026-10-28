@@ -1,0 +1,52 @@
+{
+  "experiment": "ctr-tabular-choice-001",
+  "source": "Observed completed Kaggle GPU cell output",
+  "reports": [
+    {
+      "ordinary_auc": 0.825636370142272,
+      "baseline_ordinary_auc": 0.8254233318844955,
+      "history_adjusted_auc": 0.8173902129782777,
+      "baseline_history_adjusted_auc": 0.8171690462350284,
+      "ordinary_gain": 0.00021303825777652108,
+      "adjusted_gain": 0.00022116674324934582,
+      "adjusted_gain_interval": [
+        0.00013051740034422248,
+        0.00031181608615446916
+      ],
+      "positive_gate": true,
+      "day": 6,
+      "raw_auc": 0.8197134848951442,
+      "saved_model_replay_max_error": 0,
+      "saved_checkpoint_replay": "PASS",
+      "model_sha256": "f31f9d83cb8a77190e9455d11b8980f0597c4d29d48a23ed4b4ca65efe01de9a",
+      "rows": 351380,
+      "elapsed_seconds": 15.5,
+      "csv_ready": false,
+      "official_auc": null
+    },
+    {
+      "ordinary_auc": 0.8177846776338784,
+      "baseline_ordinary_auc": 0.8180913840683514,
+      "history_adjusted_auc": 0.8106230394053368,
+      "baseline_history_adjusted_auc": 0.8109113853236557,
+      "ordinary_gain": -0.00030670643447294754,
+      "adjusted_gain": -0.00028834591831894407,
+      "adjusted_gain_interval": [
+        -0.0004785661784004974,
+        -0.00009812565823739077
+      ],
+      "positive_gate": false,
+      "day": 5,
+      "raw_auc": 0.774630045936856,
+      "saved_model_replay_max_error": 0,
+      "saved_checkpoint_replay": "PASS",
+      "model_sha256": "12fdd0877789138b5fd72b9e84002fbad9db849ee0710b0e6ed72d4d9318acbd",
+      "rows": 352300,
+      "elapsed_seconds": 15.1,
+      "csv_ready": false,
+      "official_auc": null
+    }
+  ],
+  "promoted": false,
+  "target_achieved": false
+}
