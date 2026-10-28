@@ -12,5 +12,16 @@
   "reuse": "Existing6802 checkpoint only after manifest, recipe, checksum and exact prediction replay checks",
   "target": 0.83,
   "target_achieved": false,
-  "limitations": "Reused development dates; intervals exclude fitting and repeated-selection uncertainty."
+  "limitations": "Reused development dates; intervals exclude fitting and repeated-selection uncertainty.",
+  "result": {
+    "primary_adjusted": 0.817312196736003,
+    "versus_single_adjusted_gain": 1.711133473691895e-05,
+    "versus_single_interval": [
+      -2.4558230728611805e-05,
+      5.87809002024497e-05
+    ],
+    "promoted": false,
+    "confirmation_run": false,
+    "checkpoint_replay": "PASS, all three seeds exact"
+  }
 }

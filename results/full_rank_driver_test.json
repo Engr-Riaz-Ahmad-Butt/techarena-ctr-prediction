@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic CPU integration; not a production GPU score",
+  "checks": [
+    "query groups and group weights accepted by XGBoost",
+    "strict pre-cutoff fitting metadata",
+    "ranker and neural checkpoint replay",
+    "event click mass conserved",
+    "candidate permutation and score-shift invariance",
+    "zero mass",
+    "production recipe restored"
+  ]
+}

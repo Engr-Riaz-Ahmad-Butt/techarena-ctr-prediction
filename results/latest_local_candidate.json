@@ -23,17 +23,16 @@
   "confirmed_official_auc": 0.816623,
   "training_running": true,
   "last_completed_experiment": {
-    "version": "ctr-choice-xgb-ensemble-001",
-    "primary_history_adjusted_auc": 0.8173193042301217,
-    "primary_ordinary_auc": 0.8255623461075058,
-    "confirmation_history_adjusted_auc": 0.8112273931434458,
-    "eligible_for_review": false,
+    "version": "ctr-choice-bag-001",
+    "primary_history_adjusted_auc": 0.817312196736003,
+    "primary_ordinary_auc": 0.8255596726822716,
     "promoted": false,
-    "saved_checkpoint_replay": "PASS, both experts exact",
-    "reason": "Gain interval versus the neural expert crosses zero on both dates; versus tree also crosses zero on day6.",
-    "report": "results/kaggle_choice_xgb_ensemble_001_observed.json"
+    "eligible_for_review": false,
+    "reason": "Gain interval versus single6802 crosses zero and ordinary AUC slightly declined.",
+    "saved_checkpoint_replay": "PASS, all three seeds exact",
+    "report": "results/kaggle_choice_bag_001_observed.json"
   },
-  "next_modeling_action": "Score equal three-seed probability bag versus V53 and seed6802. Confirm unchanged on day5 only after a positive day6 gate.",
+  "next_modeling_action": "Evaluate the full three-date grouped ranker with fixed neural event-click mass and unchanged day5 after a positive day6 gain gate.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -80,15 +79,11 @@
     "goal_0_83_met": false
   },
   "current_training": {
-    "version": "ctr-choice-bag-001",
+    "version": "ctr-full-rank-001",
     "stage": "launched",
     "device": "Kaggle CUDA GPU0",
-    "seeds": [
-      6802,
-      6803,
-      6804
-    ],
-    "epochs_per_seed": 8,
+    "rounds": 600,
+    "depth": 6,
     "csv_ready": false
   },
   "latest_verified_local_result": {
