@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "reports": [
+    {
+      "day": 5,
+      "rows": 2934030,
+      "recipe": {
+        "target_history_share": [
+          0.012561627533576678,
+          0.12206501822844712,
+          0.20091048187517563,
+          0.2723889759908716,
+          0.39207389637154405
+        ],
+        "training_history_share": [
+          0.003043595327927799,
+          0.038765793124133016,
+          0.08959349427238304,
+          0.19034570198668727,
+          0.6782514152888689
+        ],
+        "weight_min": 0.5780657529830933,
+        "weight_max": 4.127233028411865,
+        "alignment": "exact chronological labels; strictly pre-cutoff events",
+        "population": "unlabeled evaluation history distribution reconstructed from fixed weights"
+      },
+      "incorrect_labels_rejected": true
+    },
+    {
+      "day": 6,
+      "rows": 2937590,
+      "recipe": {
+        "target_history_share": [
+          0.012561627533576678,
+          0.12206501822844712,
+          0.20091048187517563,
+          0.2723889759908716,
+          0.39207389637154405
+        ],
+        "training_history_share": [
+          0.0025667298704039705,
+          0.03518870911189104,
+          0.08323149248193247,
+          0.1820539966435071,
+          0.6969590718922655
+        ],
+        "weight_min": 0.5625494122505188,
+        "weight_max": 4.894020080566406,
+        "alignment": "exact chronological labels; strictly pre-cutoff events",
+        "population": "unlabeled evaluation history distribution reconstructed from fixed weights"
+      },
+      "incorrect_labels_rejected": true
+    }
+  ]
+}

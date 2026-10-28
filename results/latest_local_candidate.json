@@ -21,19 +21,17 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": false,
+  "training_running": true,
   "last_completed_experiment": {
-    "version": "Kaggle ctr-neural-002-aux64",
-    "scope": "Same main day6 cohort; 64-dimensional joint embeddings with warm auxiliary clicks",
+    "version": "Kaggle ctr-catboost-gpu-001",
     "promoted": false,
-    "eligible_for_review": false,
-    "primary_history_adjusted_auc": 0.8149403388523853,
-    "primary_ordinary_auc": 0.8229931805683433,
+    "primary_history_adjusted_auc": 0.8169346173966197,
+    "primary_ordinary_auc": 0.8251990196897508,
     "saved_checkpoint_replay": "PASS",
-    "reason": "Gate failed; substantial validation deterioration after overfitting.",
-    "report": "results/kaggle_neural_002_observed.json"
+    "report": "results/kaggle_catboost_gpu_001_observed.json",
+    "reason": "Both metrics declined; gate failed."
   },
-  "next_modeling_action": "Run prepared regularized neural notebook on Kaggle once browser access is restored or user runs it; compare both dates before promotion. Target 0.83 unmet.",
+  "next_modeling_action": "Evaluate predeclared history-weighted GPU trial, then unchanged day5 only if day6 gate passes.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -45,10 +43,12 @@
     "best_recent_candidate_still": "ctr-main-003-interactions",
     "last_neural_adjusted_auc": 0.8149403388523853,
     "next_experiment": "ctr-neural-003-regularized",
-    "next_experiment_status": "prepared_not_started",
+    "next_experiment_status": "completed_rejected",
     "training_running": false,
-    "browser_action_blocker": "Automatic approval review failed because browser tool usage limit was reached; no workaround attempted.",
-    "source_notebook": "kaggle/TechArena_CTR_Neural_Regularized.ipynb"
+    "browser_action_blocker": null,
+    "source_notebook": "kaggle/TechArena_CTR_Neural_Regularized.ipynb",
+    "access_recovered_utc": "2026-10-28T03:28:08Z",
+    "followup_disabled_after_completion": true
   },
   "best_recent_candidate": {
     "version": "Kaggle ctr-main-003-interactions",
@@ -76,5 +76,14 @@
     "promoted": false,
     "saved_model_and_feature_replay": "not covered",
     "goal_0_83_met": false
+  },
+  "current_training": {
+    "version": "ctr-catboost-gpu-002-weighted",
+    "device": "Kaggle CUDA GPU 0",
+    "stage": "launched",
+    "iterations": 1600,
+    "depth": 8,
+    "blend_weight": 0.25,
+    "csv_ready": false
   }
 }

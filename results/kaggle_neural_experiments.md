@@ -83,3 +83,7 @@ regularized fitting function: sampled anchor loss, auxiliary objective, gradient
 update, temporal exclusion, metrics, checkpoint writing, reload and exact prediction
 replay all pass. The six-epoch production recipe is restored after this isolated
 fixture test. No production GPU run or new competition score is implied.
+
+## Access recovered and production regularized trial completed
+
+On 2026-10-28 authorized browser access recovered. The prepared regularized trial ran on Kaggle GPU and was rejected: adjusted AUC 0.8170778958654134, ordinary 0.8253223099529823, exact saved checkpoint replay PASS. The interval for adjusted gain was entirely negative. No day5 run or CSV export followed. Kaggle Version 3 preserves outputs. The access-recovery follow-up was disabled after completion. Earlier statements above about the prepared trial not having run describe the prior state.
