@@ -1,0 +1,27 @@
+{
+  "recipe": {
+    "iterations": 300,
+    "depth": 4,
+    "learning_rate": 0.03,
+    "l2_leaf_reg": 50,
+    "random_strength": 0,
+    "random_seed": 7301,
+    "thread_count": 2,
+    "loss_function": "Logloss",
+    "allow_writing_files": false,
+    "verbose": false
+  },
+  "blend": 0.1,
+  "seed": 7301,
+  "folds": 2,
+  "inputs": {
+    "artifacts\\tied_history_full_002_day5\\model.pt": "ea47c3e0aaa8762c888e1b5c4fab9ad47f212a92c93576d8ce0ca2efc6a0f79b",
+    "artifacts\\tied_history_full_002_day5\\predictions.npz": "c322387549865033ae0c39f2bc190700319fd526c35cae1e9bec526bf4974232",
+    "artifacts\\tied_history_full_002_day5\\frozen.json": "51ed094d3aca0415cdefd78bf43379c7c011c5fe25b9fa7c804f0013b6be4fa5",
+    "artifacts\\tied_history_full_001\\model.pt": "480e1f8d4d3bd120e3400cd8fcdf8045d2d48f003558ca8ad04935bf6099ac60",
+    "artifacts\\tied_history_full_001\\predictions.npz": "f743622a759a8a0e2efa044c3e430a752007cf3633de81fb96ec6980b67161c6",
+    "artifacts\\tied_history_full_001\\frozen.json": "51e2728cdf004d6b5f356a3f38662ca285f1bc8b3e4752f523d9cc38965635a4"
+  },
+  "source_sha256": "fb12f05a0b16b324c8592c3f21428a2d4b449429702f80eddea50a6b2da2b145",
+  "selection": "No parameter selection; compare treatment with baseline and matched control on both reused cohorts."
+}

@@ -105,8 +105,68 @@ Reports: `results/tied_history_full_001.json`, `_audit.json`, `_frozen.json`.
 The original executed runner is preserved as
 `results/source_snapshots/tied_history_full_001.py`. The current runner's day5
 cohort assertion was subsequently corrected to match V53's existing daily
-horizon; day6 behavior is unchanged and no day5 result is claimed.
+horizon; day6 behavior is unchanged. No day5 result was available at that stage.
 
 The 0.83 objective remains unachieved. A further development candidate would
 need temporal out-of-fold factor features for a tree learner, not tree fitting
 on in-sample factor predictions. The fresh-holdout promotion gate still applies.
+
+## Day5 factors and matched tree stack
+
+The previous goal turn made concrete progress: full-prefix auxiliary fitting and
+its independent audit completed. This turn completed the same frozen factor
+recipe on day5, followed by a fixed matched-control tree experiment. No training
+remains active after completion.
+
+Day5 used 490,420 fitting events and 880,465 auxiliary clicks before its cutoff.
+Fixed 5% rank blend: ordinary AUC 0.8185102941, adjusted AUC 0.8113809781,
+adjusted gain +0.0004695928 versus V53. Recorded wall time 1,248.83 seconds.
+All-row checkpoint replay and independent NumPy replay passed (maximum
+probability error 2.016e-7), as did 24 raw-history context oracles and hashes.
+Together with day6, this fixed blend improves both observed cohorts, but fails
+the +0.0005-per-cohort gate and remains exploratory.
+
+Tree settings were frozen before fitting in `results/tied_history_stack_plan.json`:
+300 trees, depth4, learning rate0.03, L2=50, two user folds, seed7301, 10% rank
+blend. Control uses seven fixed-parent/history/time features; treatment adds 13
+factor features. Factor features are invariant to orthogonal rotations of each
+date's independently trained item table; unit checks cover this, candidate
+permutations and empty histories. Actual day6 feature alignment also passed.
+
+| Reused cohort / adjusted AUC | V53 | Matched control | Factor treatment |
+| --- | ---: | ---: | ---: |
+| Day5 conditional meta-user-crossfit | 0.8109113853 | 0.8109285750 | 0.8111045913 |
+| Day6 future scoring | 0.8171690462 | 0.8172286522 | 0.8174056264 |
+
+Treatment day6 ordinary AUC is 0.8256658662. Adjusted gain over control is
+approximately +0.000177 on each cohort, but the gain over V53 is below +0.0005.
+The tree treatment adds only +0.000014888 adjusted AUC over the simpler fixed
+factor blend on day6 and is worse than that blend on day5; it is not a decisive
+replacement. V53 remains the accepted baseline. No CSV was exported.
+
+All six saved CatBoost models replayed exactly on all their scored rows; an
+independent saved-output audit recomputed every reported metric and checked
+input hashes, the frozen plan/source hash, and baseline event/label identity.
+Runtime for both tree arms, feature preparation and scoring was 71.86 seconds.
+The day5 meta crossfit conditions on previously frozen parent OOF arrays; parent
+ancestors were not retrained inside each meta fold. This is not fully nested CV
+or another untouched temporal validation fold. Both dates were already reused.
+
+## Cloud reuse evidence
+
+`results/kaggle_tied_history_input_compatibility.json` verifies the existing
+81.9MB neural bundle against all 686,824 original events: users, ten candidates,
+histories, bucket, day type, timestamp, target labels, and both validation cohorts'
+indices/labels/baseline scores match exactly. Every valid original integer
+history timestamp is recovered exactly by rounding timestamp minus stored
+float32 age in days times86400. This was checked against the actual raw arrays;
+maximum recovered timestamp error is zero seconds. It does not add new labeled
+dates. A GPU implementation can reuse the already uploaded bundle rather than
+upload another raw CSV. Browser inspection confirmed the notebook is available;
+no new remote runtime was started and no new GPU hours are claimed.
+
+Next high-value development direction is a predeclared multi-seed factor average
+on Kaggle GPU, comparing against its matched single-seed GPU control. Do not
+launch several long local CPU seed jobs or select lucky seeds on day6. These
+development ideas do not remove the fresh-holdout promotion requirement or prove
+the 0.83 target.

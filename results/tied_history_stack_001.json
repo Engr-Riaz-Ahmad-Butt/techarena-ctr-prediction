@@ -1,0 +1,46 @@
+{
+  "reports": [
+    {
+      "day": 5,
+      "baseline": {
+        "ordinary_auc": 0.8180913840683512,
+        "adjusted_auc": 0.8109113853236557
+      },
+      "control": {
+        "ordinary_auc": 0.8181085297392846,
+        "adjusted_auc": 0.8109285749994101
+      },
+      "treatment": {
+        "ordinary_auc": 0.8182857489217874,
+        "adjusted_auc": 0.8111045913007865
+      },
+      "adjusted_gain": 0.0001932059771307948,
+      "adjusted_gain_vs_control": 0.00017601630137642488
+    },
+    {
+      "day": 6,
+      "baseline": {
+        "ordinary_auc": 0.8254233318844953,
+        "adjusted_auc": 0.8171690462350286
+      },
+      "control": {
+        "ordinary_auc": 0.8254767498300413,
+        "adjusted_auc": 0.817228652208698
+      },
+      "treatment": {
+        "ordinary_auc": 0.8256658661789326,
+        "adjusted_auc": 0.8174056263738972
+      },
+      "adjusted_gain": 0.00023658013886862506,
+      "adjusted_gain_vs_control": 0.00017697416519923959
+    }
+  ],
+  "checkpoint_replay": "exact_all_rows_all_six_models",
+  "promoted": false,
+  "target_achieved": false,
+  "fresh_holdout": false,
+  "csv_ready": false,
+  "ordinary_scope": "Day5 conditional meta-user-crossfit on frozen parent OOF arrays, not nested parent CV; day6 future; both reused",
+  "development_gain_gate": false,
+  "elapsed_seconds": 71.85999999986961
+}

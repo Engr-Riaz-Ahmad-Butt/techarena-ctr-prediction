@@ -1,0 +1,25 @@
+{
+  "uploaded_bundle": "kaggle_upload/neural_bundle/events.npz",
+  "events": 686824,
+  "all_valid_history_timestamps_exactly_recovered": true,
+  "maximum_timestamp_error_seconds": 0,
+  "all_labels_match_existing_source": true,
+  "additional_labeled_period": false,
+  "new_raw_csv_upload_required_for_same_inputs": false,
+  "array_checks": {
+    "users": "exact_all_values",
+    "items": "exact_all_values",
+    "hist": "exact_all_values",
+    "bucket": "exact_all_values",
+    "kind": "exact_all_values",
+    "timestamp": "exact_all_values",
+    "val5": "exact_indices_labels_baseline",
+    "val6": "exact_indices_labels_baseline"
+  },
+  "training_shape": [
+    6868240,
+    7
+  ],
+  "training_dtype": "int32",
+  "history_timestamp_dtype": "int32"
+}

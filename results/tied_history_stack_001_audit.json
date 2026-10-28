@@ -1,0 +1,35 @@
+{
+  "frozen_plan_source_and_input_hashes": "PASS",
+  "all_saved_metrics_recomputed": "PASS",
+  "baseline_event_label_identity": "PASS",
+  "models": {
+    "control_fold0.cbm": "679ab38e15dfb4a13a0ab7797407cd8c70b2f51852aa29db6691b51f3141f77f",
+    "control_fold1.cbm": "84a91145b5a6532fd93cd2e68eda94dee1ae1dd7379edfa7a7e03ce4a7854313",
+    "control_full.cbm": "c28a65720956306d1ee2d761a27bac2f547773712220a4f28bf1147e62e54eb4",
+    "treatment_fold0.cbm": "287b125b86325f241226adb852de307b5ccce8cf9f30612bc32ac03d03aaf1ff",
+    "treatment_fold1.cbm": "48556b49ac3d4fde446cb2350d489fb2010626f87e7756213e3745de92a75d7f",
+    "treatment_full.cbm": "bacb5f229f458fcd9be770075ac39e7ef3f44f40759a6a2c3d58b33d8f1be110"
+  },
+  "reports": [
+    {
+      "day": 5,
+      "saved_metric_replay": "PASS",
+      "treatment": {
+        "ordinary_auc": 0.8182857489217874,
+        "adjusted_auc": 0.8111045913007865
+      }
+    },
+    {
+      "day": 6,
+      "saved_metric_replay": "PASS",
+      "treatment": {
+        "ordinary_auc": 0.8256658661789326,
+        "adjusted_auc": 0.8174056263738972
+      }
+    }
+  ],
+  "parent_crossfit_scope": "Conditional fixed-parent OOF arrays; not nested ancestry validation",
+  "fresh_holdout": false,
+  "promoted": false,
+  "goal_achieved": false
+}

@@ -1,0 +1,16 @@
+{
+  "numpy_equation_replay": "PASS",
+  "maximum_probability_error": 2.015138486632928e-07,
+  "frozen_inputs_and_source_hashes": "PASS",
+  "full_blend_and_metric_replay": "PASS",
+  "raw_fit_context_samples": 24,
+  "raw_fit_context_oracle": "PASS",
+  "auxiliary_causality_independently_rebuilt": false,
+  "validation_status": "reused exploratory",
+  "promoted": false,
+  "target_achieved": false,
+  "blend": {
+    "ordinary_auc": 0.8185102940690876,
+    "adjusted_auc": 0.8113809780747044
+  }
+}

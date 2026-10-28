@@ -1,0 +1,25 @@
+{
+  "status": "frozen_before_stack_fitting",
+  "recipe": {
+    "iterations": 300,
+    "depth": 4,
+    "learning_rate": 0.03,
+    "l2_leaf_reg": 50,
+    "random_strength": 0,
+    "random_seed": 7301,
+    "thread_count": 2
+  },
+  "blend": 0.1,
+  "arms": [
+    "matched_control",
+    "factor_treatment"
+  ],
+  "minimum_adjusted_gain_each_cohort": 0.0005,
+  "require_positive_gain_vs_control": true,
+  "source_sha256": "fb12f05a0b16b324c8592c3f21428a2d4b449429702f80eddea50a6b2da2b145",
+  "day5_scope": "Conditional meta-user-crossfit over fixed V53 parent OOF arrays, not fully nested ancestor cross-validation",
+  "day6_scope": "Fit tree on day5 labels only; predict future day6",
+  "fresh_holdout": false,
+  "promotion_allowed": false,
+  "previous_goal_turn": "progress: full-prefix factor run completed with independent replay and pushed reports; target remains unmet"
+}
