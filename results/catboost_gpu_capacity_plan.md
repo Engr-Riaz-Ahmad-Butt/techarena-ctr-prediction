@@ -36,3 +36,7 @@ Source: `kaggle/catboost_gpu_runner.py`; portable notebook:
 ## Weighted follow-up frozen before launch
 
 GPU001 completed and failed the day6 gain gate (adjusted 0.8169346174; exact saved-model replay PASS). It was preserved in Kaggle Version 4. GPU002 keeps all 1600-tree parameters and 25% blend fixed, changing only fitting weights. These match the unlabeled evaluation history distribution using the existing private supplemental bundle. Per-event chronology and every one-hot click label must align with feature-day labels before fitting. No validation labels are optimized or used for stopping. Both dates remain reused development checks, not independent proof of generalization.
+
+## Weighted result
+
+GPU002 completed: ordinary 0.8251479487525559, history-adjusted 0.8169401522144927. Gain interval [-0.0004062461543068124, -0.00005154188676462614]. Exact checkpoint replay PASS. Rejected; day5 skipped according to the frozen gate. Neither GPU trial replaces the stronger 0.8172634369364146 adjusted candidate. No training remains active and no CSV was exported. The 0.83 target remains unmet.
