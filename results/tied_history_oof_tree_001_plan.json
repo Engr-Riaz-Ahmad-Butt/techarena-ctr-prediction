@@ -1,0 +1,23 @@
+{
+  "experiment": "tied-history-oof-tree-001",
+  "status": "kaggle_committed_version_running",
+  "kaggle_version": 10,
+  "kaggle_script_version_id": 363217115,
+  "url": "https://www.kaggle.com/code/riazahmadbutt/notebook8d08622ead?scriptVersionId=363217115",
+  "observed_status": "Running for 92.8s; Accelerator GPU T4 x2; Output 0 B",
+  "training_completion_verified": false,
+  "new_auc": null,
+  "prior_adjusted_auc": 0.8174582055947577,
+  "prior_ordinary_auc": 0.8257031574656098,
+  "fresh_holdout": false,
+  "promoted": false,
+  "csv_ready": false,
+  "source_sha256": {
+    "kaggle/tied_history_gpu_bag.py": "02b53689d03e493f76845f29837150cc9d5d2372be6910b5b44145f5468298e1",
+    "kaggle/tied_history_oof_tree.py": "1cbd6cf658889e5daff13741d0757f8219cc280ffa83369488145f20c797ae1b",
+    "kaggle/test_tied_history_oof_tree.py": "2fadf76998196b7febfd2cec9804b176dff41f97974bbc0975b7df6512f91451",
+    "kaggle/TechArena_CTR_Full_Row_Factor_Tree_GPU.ipynb": "3f8e9abc25a4b8c394b351245669754a71c30be1e698bdfdca0a6eba852fc04d"
+  },
+  "checks": "Three CPU unit tests pass; full cached labels match days3/4/5; first-event ids match days5/6; 100-context future-label invariance checks pass days3/4/5/6",
+  "next_action": "Poll the same Kaggle version363217115; do not restart on observation timeout. Audit resulting predictions and checkpoint replays before reporting a new score."
+}
