@@ -1,0 +1,41 @@
+{
+  "experiment": "ctr-choice-bag-001",
+  "source": "Observed completed Kaggle GPU cell output",
+  "reports": [
+    {
+      "ordinary_auc": 0.8255596726822716,
+      "baseline_ordinary_auc": 0.8254233318844955,
+      "history_adjusted_auc": 0.817312196736003,
+      "baseline_history_adjusted_auc": 0.8171690462350284,
+      "ordinary_gain": 0.0001363407977761355,
+      "adjusted_gain": 0.00014315050097457593,
+      "adjusted_gain_interval": [
+        0.00005259785047006075,
+        0.00023370315147909113
+      ],
+      "positive_gate": true,
+      "day": 6,
+      "versus_single": {
+        "ordinary_auc": 0.8255596726822716,
+        "baseline_ordinary_auc": 0.8255597973402244,
+        "history_adjusted_auc": 0.817312196736003,
+        "baseline_history_adjusted_auc": 0.817295085401266,
+        "ordinary_gain": -1.2465795284910541e-7,
+        "adjusted_gain": 0.00001711133473691895,
+        "adjusted_gain_interval": [
+          -0.000024558230728611805,
+          0.0000587809002024497
+        ],
+        "positive_gate": false
+      },
+      "raw_auc": 0.8187980455391737,
+      "saved_checkpoint_replay": "PASS, all three seeds exact",
+      "rows": 351380,
+      "csv_ready": false,
+      "official_auc": null
+    }
+  ],
+  "promoted": false,
+  "eligible_for_review": false,
+  "target_achieved": false
+}

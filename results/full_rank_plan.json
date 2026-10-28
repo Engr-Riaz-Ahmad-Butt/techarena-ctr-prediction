@@ -1,0 +1,20 @@
+{
+  "experiment": "ctr-full-rank-001",
+  "hypothesis": "The prior354-feature ranker used only30k sampled clicked queries. A GPU ranker over the full preceding three days may learn stronger within-event preferences; retain the successful causal neural event-click mass.",
+  "objective": "XGBoost rank:pairwise",
+  "rounds": 600,
+  "depth": 6,
+  "eta": 0.05,
+  "min_child_weight": 50,
+  "reg_lambda": 10,
+  "reg_alpha": 0.1,
+  "seed": 6901,
+  "group_size": 10,
+  "query_weights": "Existing label-free evaluation history importance weights",
+  "global_probability": "softmax(rank scores over ten candidates) times fixed neural003 event-click probability",
+  "blend": "90% V53 rank plus10% hybrid rank",
+  "selection": "Fixed recipe before scoring, no grid or early stopping. Positive ordinary and adjusted lower gain interval versus V53 and neural003 on day6, then unchanged day5.",
+  "target": 0.83,
+  "target_achieved": false,
+  "limitations": "Reused development dates. No-click groups have no ranking contrast and are handled through neural event mass. No official score forecast."
+}
