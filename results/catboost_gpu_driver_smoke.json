@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic CPU integration only; actual Kaggle GPU run untested here",
+  "checks": [
+    "3-day feature/label alignment",
+    "fixed rank blend and metrics",
+    "saved model replay",
+    "scratch input cleanup",
+    "failed gate skips confirmation",
+    "strict temporal cutoff rejection",
+    "production parameters restored"
+  ]
+}

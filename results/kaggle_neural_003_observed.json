@@ -1,0 +1,25 @@
+{
+  "source": "Kaggle CUDA notebook visible output on 2026-10-28",
+  "promoted": false,
+  "report": {
+    "ordinary_auc": 0.8253223099529823,
+    "baseline_ordinary_auc": 0.8254233318844955,
+    "history_adjusted_auc": 0.8170778958654134,
+    "baseline_history_adjusted_auc": 0.8171690462350284,
+    "ordinary_gain": -0.00010102193151317884,
+    "adjusted_gain": -0.00009115036961504508,
+    "adjusted_gain_interval": [
+      -0.00014157248867474901,
+      -0.00004072825055534114
+    ],
+    "positive_gate": false,
+    "day": 6,
+    "raw_auc": 0.7816533811774677,
+    "initial_raw_auc": 0.777720318308142,
+    "initial_replay_error": 2.980232238769531e-7,
+    "model_sha256": "d449c8bd4315471b3b5129f43c41c3ae5c1e736ccba9e8b5bee3ee7072b59806",
+    "official_auc": null,
+    "csv_ready": false,
+    "saved_checkpoint_replay": "PASS"
+  }
+}
