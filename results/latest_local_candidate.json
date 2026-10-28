@@ -23,23 +23,20 @@
   "confirmed_official_auc": 0.816623,
   "training_running": false,
   "last_completed_experiment": {
-    "version": "Kaggle tied-history-gpu-bag-002 recovery reproduction",
-    "scope": "Main day6 only; day5 skipped by predeclared primary gate; reused cohort",
-    "primary_history_adjusted_auc": 0.8174582055947577,
-    "primary_ordinary_auc": 0.8257031574656098,
-    "adjusted_gain_vs_v53": 0.0002891593597292852,
-    "adjusted_gain_vs_matched_gpu_control": 6.747011185592733e-05,
+    "version": "Kaggle tied-history-oof-tree-001",
+    "scope": "Main day6 reused cohort; day5 skipped by fixed minimum-effect gate",
+    "primary_history_adjusted_auc": 0.8176035430514209,
+    "primary_ordinary_auc": 0.8258500131309925,
+    "adjusted_gain_vs_v53": 0.0004344968163925156,
+    "gain_vs_control": 0.0004335298442824653,
     "promoted": false,
-    "eligible_for_review": false,
-    "minimum_effect_gate_passed": false,
-    "day5_run": false,
-    "local_model_files_preserved": true,
-    "independent_replay": "All five NumPy checkpoint replays pass below1e-6; exact probability mean and bag blend; saved AUCs recomputed",
-    "report": "results/tied_history_gpu_bag_002.json",
-    "audit": "results/tied_history_gpu_bag_002_audit.json",
-    "preservation": "results/tied_history_gpu_bag_002_preservation.json"
+    "official_auc": null,
+    "independent_auc_recomputation": false,
+    "checkpoint_replay": "20 factor models and both trees exact all scored rows in GPU job",
+    "report": "results/tied_history_oof_tree_001_observed.json",
+    "script_version_id": 363217115
   },
-  "next_modeling_action": "No training is active. Five-seed averaging adds only a small complementary gain. Prefer causal per-day factor features plus pointwise trees on all prior-date fitting rows, not more lucky-seed or bare blend-weight sweeps. Preserve compact evidence and model bundles immediately and use a clean standalone notebook. Fresh labeled holdout remains required for promotion.",
+  "next_modeling_action": "Independently audit committed prediction files from Kaggle version363217115. Full-row factor features improved adjusted AUC to0.817604, but gain0.000434 is below0.0005 and0.83 remains unmet. No duplicate job or new CSV.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -154,21 +151,18 @@
     "status": "Newer workspace statement is not independently confirmed here; no new official claim"
   },
   "latest_development_day6_result": {
-    "version": "Kaggle tied-history-gpu-bag-002 recovery reproduction",
-    "scope": "Main day6 only; day5 skipped by predeclared primary gate; reused cohort",
-    "primary_history_adjusted_auc": 0.8174582055947577,
-    "primary_ordinary_auc": 0.8257031574656098,
-    "adjusted_gain_vs_v53": 0.0002891593597292852,
-    "adjusted_gain_vs_matched_gpu_control": 6.747011185592733e-05,
+    "version": "Kaggle tied-history-oof-tree-001",
+    "scope": "Main day6 reused cohort; day5 skipped by fixed minimum-effect gate",
+    "primary_history_adjusted_auc": 0.8176035430514209,
+    "primary_ordinary_auc": 0.8258500131309925,
+    "adjusted_gain_vs_v53": 0.0004344968163925156,
+    "gain_vs_control": 0.0004335298442824653,
     "promoted": false,
-    "eligible_for_review": false,
-    "minimum_effect_gate_passed": false,
-    "day5_run": false,
-    "local_model_files_preserved": true,
-    "independent_replay": "All five NumPy checkpoint replays pass below1e-6; exact probability mean and bag blend; saved AUCs recomputed",
-    "report": "results/tied_history_gpu_bag_002.json",
-    "audit": "results/tied_history_gpu_bag_002_audit.json",
-    "preservation": "results/tied_history_gpu_bag_002_preservation.json"
+    "official_auc": null,
+    "independent_auc_recomputation": false,
+    "checkpoint_replay": "20 factor models and both trees exact all scored rows in GPU job",
+    "report": "results/tied_history_oof_tree_001_observed.json",
+    "script_version_id": 363217115
   },
   "best_two_date_fixed_factor_blend": {
     "version": "tied-history-full fixed 5% rank blend",
@@ -178,5 +172,5 @@
     "eligible_for_review": false,
     "reason": "Both reused cohorts improve but gains are below +0.0005; no fresh holdout"
   },
-  "gpu_session_status": "stopped"
+  "gpu_session_status": "committed run completed; interactive session not started"
 }

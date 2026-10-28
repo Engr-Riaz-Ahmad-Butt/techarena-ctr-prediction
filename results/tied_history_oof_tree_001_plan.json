@@ -1,11 +1,11 @@
 {
   "experiment": "tied-history-oof-tree-001",
-  "status": "kaggle_committed_version_running",
+  "status": "completed_primary_gate_failed",
   "kaggle_version": 10,
   "kaggle_script_version_id": 363217115,
   "url": "https://www.kaggle.com/code/riazahmadbutt/notebook8d08622ead?scriptVersionId=363217115",
   "observed_status": "Running for 92.8s; Accelerator GPU T4 x2; Output 0 B",
-  "training_completion_verified": false,
+  "training_completion_verified": true,
   "new_auc": null,
   "prior_adjusted_auc": 0.8174582055947577,
   "prior_ordinary_auc": 0.8257031574656098,
@@ -19,5 +19,59 @@
     "kaggle/TechArena_CTR_Full_Row_Factor_Tree_GPU.ipynb": "3f8e9abc25a4b8c394b351245669754a71c30be1e698bdfdca0a6eba852fc04d"
   },
   "checks": "Three CPU unit tests pass; full cached labels match days3/4/5; first-event ids match days5/6; 100-context future-label invariance checks pass days3/4/5/6",
-  "next_action": "Poll the same Kaggle version363217115; do not restart on observation timeout. Audit resulting predictions and checkpoint replays before reporting a new score."
+  "next_action": "Poll the same Kaggle version363217115; do not restart on observation timeout. Audit resulting predictions and checkpoint replays before reporting a new score.",
+  "summary": {
+    "reports": [
+      {
+        "day": 6,
+        "fitting_days": [
+          3,
+          4,
+          5
+        ],
+        "fitting_rows": 2937590,
+        "baseline": {
+          "ordinary_auc": 0.8254233318844955,
+          "adjusted_auc": 0.8171690462350284
+        },
+        "control": {
+          "ordinary_auc": 0.8253948835341313,
+          "adjusted_auc": 0.8171700132071384
+        },
+        "treatment": {
+          "ordinary_auc": 0.8258500131309925,
+          "adjusted_auc": 0.8176035430514209
+        },
+        "adjusted_gain": 0.0004344968163925156,
+        "gain_vs_control": 0.0004335298442824653,
+        "ordinary_nonregression": true,
+        "development_gate": false
+      }
+    ],
+    "day5_run": false,
+    "promoted": false,
+    "csv_ready": false,
+    "fresh_holdout": false,
+    "official_auc": null,
+    "target_achieved": false,
+    "elapsed_seconds": 830.6510466130001
+  },
+  "independent_auc_recomputation": false,
+  "durable_kaggle_outputs_verified": {
+    "summary_json": true,
+    "factors_folders": [
+      3,
+      4,
+      5,
+      6
+    ],
+    "tree_files": [
+      "control.ubj",
+      "treatment.ubj",
+      "predictions.npz",
+      "report.json",
+      "validation_extra.npy"
+    ],
+    "scope": "Committed Kaggle Output file listing observed; local binary download and independent AUC recomputation remain pending"
+  }
 }
