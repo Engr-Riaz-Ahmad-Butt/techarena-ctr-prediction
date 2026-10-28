@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic CPU integration; not production score",
+  "checks": [
+    "three distinct seeds fitted",
+    "equal probability averaging",
+    "all checkpoints replay",
+    "verified seed6802 cache reuse",
+    "failed gate skips day5",
+    "non-finite rejection"
+  ]
+}
