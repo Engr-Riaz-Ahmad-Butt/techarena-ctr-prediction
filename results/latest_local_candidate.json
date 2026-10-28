@@ -21,7 +21,7 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": false,
+  "training_running": true,
   "last_completed_experiment": {
     "version": "Kaggle ctr-catboost-gpu-002-weighted",
     "promoted": false,
@@ -31,7 +31,7 @@
     "report": "results/kaggle_catboost_gpu_002_observed.json",
     "reason": "History weighting did not improve either metric over V53; negative gain interval."
   },
-  "next_modeling_action": "No run active. Both GPU capacity trials rejected; retain ctr-main-003-interactions. A new feature or modeling hypothesis is needed; increasing capacity or history weighting alone failed.",
+  "next_modeling_action": "Evaluate numeric event-choice model; unchanged confirmation only after positive day6 gate.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -77,5 +77,11 @@
     "saved_model_and_feature_replay": "not covered",
     "goal_0_83_met": false
   },
-  "current_training": null
+  "current_training": {
+    "version": "ctr-tabular-choice-001",
+    "device": "Kaggle CUDA GPU 0",
+    "stage": "launched",
+    "epochs": 8,
+    "csv_ready": false
+  }
 }

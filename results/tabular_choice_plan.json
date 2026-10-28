@@ -1,0 +1,21 @@
+{
+  "experiment": "ctr-tabular-choice-001",
+  "hypothesis": "A permutation-equivariant numeric network can learn smooth interactions among all 354 causal features and candidate competition, complementing trees and 16-dimensional embedding experts.",
+  "epochs": 8,
+  "batch_size": 1024,
+  "learning_rate": 0.0005,
+  "weight_decay": 0.005,
+  "dropout": 0.15,
+  "seed": 6802,
+  "blend_weight": 0.1,
+  "hidden": 128,
+  "representation": 64,
+  "fit_dates": "validation day minus 3 through minus 1",
+  "normalization": "training rows only",
+  "loss": "weighted 11-option event cross entropy",
+  "selection": "Fixed recipe before scoring. Positive ordinary gain and positive adjusted gain lower interval on day6, then unchanged day5.",
+  "target": 0.83,
+  "target_achieved": false,
+  "csv_ready": false,
+  "limitations": "Both dates reused; confidence intervals omit repeated-selection uncertainty; official result unknown."
+}
