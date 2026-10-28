@@ -25,6 +25,10 @@ def main():
     assert torch.allclose(a[:, perm], b[:, :10], atol=1e-7)
     assert torch.allclose(a[:, 10], b[:, 10], atol=1e-7)
     assert torch.allclose(a.sum(1), torch.ones(6)) and (a[:, :10].sum(1) < 1).all()
+    constant_model = choice.ChoiceNet(torch.zeros(354), torch.cat([torch.zeros(1), torch.ones(353)]), choice.RECIPE).eval()
+    changed = x.clone(); changed[:, :, 0] = 10000
+    with torch.no_grad():
+        assert torch.equal(constant_model(x), constant_model(changed))
     saved = dict(choice.RECIPE)
     try:
         choice.RECIPE['epochs'] = 1
@@ -65,6 +69,7 @@ def main():
         choice.RECIPE.clear(); choice.RECIPE.update(saved)
     report = dict(status='PASS', scope='Synthetic CPU test; not production GPU score',
                   checks=['candidate permutation symmetry', 'outside probability and mass',
+                          'unseen values in fitting-constant features have zero effect',
                           'one full optimizer epoch', 'fitting-only normalization',
                           'saved checkpoint replay', 'held-out timestamp rejection'])
     destination = Path(__file__).resolve().parents[1]/'results/tabular_choice_driver_test.json'

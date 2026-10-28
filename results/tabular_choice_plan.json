@@ -17,5 +17,19 @@
   "target": 0.83,
   "target_achieved": false,
   "csv_ready": false,
-  "limitations": "Both dates reused; confidence intervals omit repeated-selection uncertainty; official result unknown."
+  "limitations": "Both dates reused; confidence intervals omit repeated-selection uncertainty; official result unknown.",
+  "completed_001": "Day6 improved to 0.8173902129782777 but day5 failed at 0.8106230394053368; not eligible.",
+  "followup_002": {
+    "change": "Mask features constant on the fitting dates before both fitting and prediction. No other parameter change.",
+    "reason": "Unseen values in fitting-constant dimensions had arbitrary unlearned weights; day5 weekday-only fitting excludes weekend support.",
+    "target_achieved": false,
+    "selection": "Same two-date gain gates; correction not a promise of improvement."
+  },
+  "completed_002": "Masking retains day6 0.8173902129782777 and improves day5 to 0.8106762436649096, still below V53.",
+  "followup_003": {
+    "change": "Apply per-event feature standardization only to varying candidate columns; preserve fitting-standardized shared columns.",
+    "motivation": "Label-free sampled context drift: warm-context column283 shifts 2.947 fitting standard deviations on day5; day6 shift is 0.539. Test sensitivity to absolute contrast scale.",
+    "unchanged": "All network, optimizer, epoch and blending settings",
+    "limitations": "Exploratory reused dates; no claim that drift caused the scoring gap"
+  }
 }

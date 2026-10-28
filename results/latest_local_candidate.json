@@ -23,13 +23,12 @@
   "confirmed_official_auc": 0.816623,
   "training_running": true,
   "last_completed_experiment": {
-    "version": "Kaggle ctr-catboost-gpu-002-weighted",
+    "version": "ctr-tabular-choice-002-masked",
+    "primary_history_adjusted_auc": 0.8173902129782777,
+    "confirmation_history_adjusted_auc": 0.8106762436649096,
     "promoted": false,
-    "primary_history_adjusted_auc": 0.8169401522144927,
-    "primary_ordinary_auc": 0.8251479487525559,
-    "saved_checkpoint_replay": "PASS",
-    "report": "results/kaggle_catboost_gpu_002_observed.json",
-    "reason": "History weighting did not improve either metric over V53; negative gain interval."
+    "reason": "Day5 gain gate failed",
+    "report": "results/kaggle_tabular_choice_002_observed.json"
   },
   "next_modeling_action": "Evaluate numeric event-choice model; unchanged confirmation only after positive day6 gate.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
@@ -78,7 +77,7 @@
     "goal_0_83_met": false
   },
   "current_training": {
-    "version": "ctr-tabular-choice-001",
+    "version": "ctr-tabular-choice-003-setwise",
     "device": "Kaggle CUDA GPU 0",
     "stage": "launched",
     "epochs": 8,

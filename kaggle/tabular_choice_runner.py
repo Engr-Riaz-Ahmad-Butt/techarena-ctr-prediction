@@ -29,7 +29,8 @@ class ChoiceNet(nn.Module):
     def __init__(self, mean, scale, recipe):
         super().__init__()
         self.register_buffer('mean', mean.clone())
-        self.register_buffer('scale', scale.clone())
+        self.register_buffer('scale', scale.clone().clamp_min(.01))
+        self.register_buffer('active', (scale > 1e-8).float())
         hidden, dim = recipe['hidden'], recipe['representation']
         self.encoder = nn.Sequential(nn.Linear(len(mean), hidden), nn.ReLU(),
                                      nn.Linear(hidden, dim), nn.ReLU())
@@ -41,7 +42,7 @@ class ChoiceNet(nn.Module):
         nn.init.zeros_(self.outside[-1].bias)
 
     def forward(self, x):
-        x = ((x-self.mean)/self.scale).clamp(-10, 10)
+        x = (((x-self.mean)/self.scale)*self.active).clamp(-10, 10)
         z = self.encoder(x)
         avg, peak = z.mean(1), z.max(1).values
         context = torch.cat([avg, peak], -1)
@@ -87,7 +88,7 @@ def fit(root, neural_root, output, manifest, day, h, weighting, device):
         end = min(off+50000, len(y))
         x[off:end] = torch.as_tensor(features.block(off, end), device=device)
     variance, mean = torch.var_mean(x, dim=0, unbiased=False)
-    scale = variance.sqrt().clamp_min(.01)
+    scale = variance.sqrt()
     assert torch.isfinite(mean).all() and torch.isfinite(scale).all()
     x = x.reshape(-1, 10, 354)
     target = torch.as_tensor(target, device=device, dtype=torch.long)
@@ -100,6 +101,8 @@ def fit(root, neural_root, output, manifest, day, h, weighting, device):
                   weighting=weight_recipe, source_sha256=h.digest(Path(__file__)),
                   manifest_sha256=h.digest(root/'bundle_manifest.json'),
                   torch_version=torch.__version__,
+                  constant_columns=int((scale <= 1e-8).sum()),
+                  constant_feature_policy='Zero at fitting and inference; no learned signal from invariant fitting columns',
                   selection='Fixed epochs and blend before scoring; no validation optimization')
     (output/'recipe.json').write_text(json.dumps(recipe, indent=2))
     for epoch in range(RECIPE['epochs']):
