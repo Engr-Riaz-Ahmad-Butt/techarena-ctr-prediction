@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "scope": "Synthetic core model only; production training not tested",
+  "checks": [
+    "zero-initialized parent equivalence",
+    "frozen parent unchanged after optimizer updates",
+    "nonzero attention gradients",
+    "candidate and history permutation invariance",
+    "empty history fallback",
+    "bounded residual",
+    "checkpoint state replay"
+  ]
+}

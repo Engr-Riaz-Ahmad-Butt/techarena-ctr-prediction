@@ -21,18 +21,18 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": true,
+  "training_running": false,
   "last_completed_experiment": {
-    "version": "ctr-choice-bag-001",
-    "primary_history_adjusted_auc": 0.817312196736003,
-    "primary_ordinary_auc": 0.8255596726822716,
+    "version": "ctr-full-rank-001",
+    "primary_history_adjusted_auc": 0.8172449660208158,
+    "primary_ordinary_auc": 0.8254564872836735,
     "promoted": false,
     "eligible_for_review": false,
-    "reason": "Gain interval versus single6802 crosses zero and ordinary AUC slightly declined.",
-    "saved_checkpoint_replay": "PASS, all three seeds exact",
-    "report": "results/kaggle_choice_bag_001_observed.json"
+    "saved_checkpoint_replay": "PASS, ranker and neural exact",
+    "reason": "Both baseline gain interval and single-model comparison fail. No day5 confirmation run.",
+    "report": "results/kaggle_full_rank_001_observed.json"
   },
-  "next_modeling_action": "Evaluate the full three-date grouped ranker with fixed neural event-click mass and unchanged day5 after a positive day6 gain gate.",
+  "next_modeling_action": "Implement and integrate the tested bounded history-attention residual over frozen numeric neural003. Core invariants pass; production fitting is not implemented or running yet.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -78,14 +78,7 @@
     "saved_model_and_feature_replay": "not covered",
     "goal_0_83_met": false
   },
-  "current_training": {
-    "version": "ctr-full-rank-001",
-    "stage": "launched",
-    "device": "Kaggle CUDA GPU0",
-    "rounds": 600,
-    "depth": 6,
-    "csv_ready": false
-  },
+  "current_training": null,
   "latest_verified_local_result": {
     "version": "Kaggle ctr-tabular-choice-003-setwise",
     "scope": "Main day6 and unchanged day5, fixed 10% blend with V53",

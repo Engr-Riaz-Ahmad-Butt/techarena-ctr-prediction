@@ -47,3 +47,11 @@ forecasts. The last confirmed competition result remains V35 = 0.816623.
 The reproduced XGBoost metrics exactly match the prior main003 results. The fixed80/10/10 ensemble scores 0.8173193042301217 adjusted on day6 and 0.8112273931434458 on day5. Reloading both saved experts reproduces all predictions exactly. It improves versus V53, but gain intervals versus the neural-only blend cross zero on both dates; the day6 interval versus the tree-only blend also crosses zero. It is not promoted under its declared stricter rule. The best eligible candidate remains neural setwise003: adjusted0.817295085401266, ordinary0.8255597973402244. No0.83 target attainment or new official result.
 
 Kaggle Version6 (Numeric choice and fixed ensemble results) was saved with outputs. The UI explicitly confirmed Quick version complete. The results ZIP includes both neural checkpoints and their recipes in addition to the reproduced XGBoost checkpoints and prediction files. Code and local reports are committed under Riaz Ahmad Butt. No fitting remains active.
+
+## Follow-up variance and full-data ranking tests
+
+A fixed6802/6803/6804 equal probability bag scores day6 adjusted0.817312196736003. Its conditional gain interval versus neural003 crosses zero and ordinary AUC slightly declines; rejected before day5. All three saved checkpoints replay exactly.
+
+A full293,759-query GPU pairwise ranker (rather than the earlier30k sampled queries),600 depth6 rounds, history query weights and frozen neural003 event-click mass scores day6 adjusted0.8172449660208158. Its gain interval versus V53 crosses zero, and its point estimate is below neural003. Rejected before day5. Both the ranker and neural checkpoint replay exactly. The full-data ranking test does not support a benefit from adding ranking training data under this fixed recipe.
+
+A new bounded history-attention residual prototype passes frozen-parent equivalence, attention-gradient, candidate/history permutation, empty-history fallback, residual-bound and checkpoint-state tests. Its production training driver is not yet implemented; it has no production score. Neither follow-up attains0.83, and the best eligible local candidate stays neural003 at0.817295085401266.
