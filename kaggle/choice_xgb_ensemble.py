@@ -5,6 +5,7 @@ saved neural and tree prediction before combining. No blend search.
 """
 import importlib.util
 import json
+import shutil
 from pathlib import Path
 import numpy as np
 import torch
@@ -70,6 +71,8 @@ def run(root, neural_root, output, neural_source, weighting_source, neural_outpu
         ndir = neural_output/f'day{day}'
         nr = json.loads((ndir/'report.json').read_text())
         assert h.digest(ndir/'model.pt') == nr['model_sha256']
+        shutil.copy2(ndir/'model.pt', output/f'neural_day{day}.pt')
+        shutil.copy2(ndir/'recipe.json', output/f'neural_day{day}_recipe.json')
         with np.load(ndir/'predictions.npz') as z:
             nn = {k:z[k].copy() for k in z.files}
         state = torch.load(ndir/'model.pt', map_location='cuda', weights_only=True)

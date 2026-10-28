@@ -50,5 +50,21 @@
     "selection": "No blend search. Require positive ordinary and adjusted lower gain interval versus V53 and both component blends on both dates.",
     "reason": "Different inductive biases may carry complementary ranking signal.",
     "target_achieved": false
-  }
+  },
+  "completed_ensemble_001": {
+    "day6_adjusted": 0.8173193042301217,
+    "day5_adjusted": 0.8112273931434458,
+    "model_replay": "PASS, exact both experts on both dates",
+    "promoted": false,
+    "reason": "Insufficient conditional evidence of gain versus existing single expert blends."
+  },
+  "goal_turn_progress": {
+    "classification": "progress",
+    "prior_eligible_adjusted": 0.8172634369364146,
+    "new_eligible_adjusted": 0.817295085401266,
+    "new_method": "354-feature setwise numeric neural event choice",
+    "target": 0.83,
+    "target_achieved": false
+  },
+  "next_hypothesis": "Fixed three-seed probability bag of eight-epoch setwise model; no epoch or blend search. Not started."
 }
