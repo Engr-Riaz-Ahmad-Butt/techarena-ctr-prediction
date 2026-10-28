@@ -1,0 +1,97 @@
+{
+  "experiment": "ctr-choice-xgb-ensemble-001",
+  "source": "Observed completed Kaggle GPU cell output",
+  "reports": [
+    {
+      "ordinary_auc": 0.8255623461075058,
+      "baseline_ordinary_auc": 0.8254233318844955,
+      "history_adjusted_auc": 0.8173193042301217,
+      "baseline_history_adjusted_auc": 0.8171690462350284,
+      "ordinary_gain": 0.0001390142230103253,
+      "adjusted_gain": 0.00015025799509327253,
+      "adjusted_gain_interval": [
+        0.000005188902348614359,
+        0.0002953270878379307
+      ],
+      "positive_gate": true,
+      "day": 6,
+      "versus_tree": {
+        "ordinary_auc": 0.8255623461075058,
+        "baseline_ordinary_auc": 0.8254950475978616,
+        "history_adjusted_auc": 0.8173193042301217,
+        "baseline_history_adjusted_auc": 0.8172634369364146,
+        "ordinary_gain": 0.00006729850964415363,
+        "adjusted_gain": 0.00005586729370710142,
+        "adjusted_gain_interval": [
+          -0.00004254900122010289,
+          0.00015428358863430573
+        ],
+        "positive_gate": false
+      },
+      "versus_neural": {
+        "ordinary_auc": 0.8255623461075058,
+        "baseline_ordinary_auc": 0.8255597973402244,
+        "history_adjusted_auc": 0.8173193042301217,
+        "baseline_history_adjusted_auc": 0.817295085401266,
+        "ordinary_gain": 0.0000025487672813406803,
+        "adjusted_gain": 0.00002421882885561555,
+        "adjusted_gain_interval": [
+          -0.00004703984148977373,
+          0.00009547749920100483
+        ],
+        "positive_gate": false
+      },
+      "rows": 351380,
+      "saved_checkpoint_replay": "PASS, both experts exact",
+      "csv_ready": false,
+      "official_auc": null
+    },
+    {
+      "ordinary_auc": 0.8183523816801322,
+      "baseline_ordinary_auc": 0.8180913840683514,
+      "history_adjusted_auc": 0.8112273931434458,
+      "baseline_history_adjusted_auc": 0.8109113853236557,
+      "ordinary_gain": 0.00026099761178088876,
+      "adjusted_gain": 0.0003160078197901317,
+      "adjusted_gain_interval": [
+        0.00016735414340856815,
+        0.00046466149617169526
+      ],
+      "positive_gate": true,
+      "day": 5,
+      "versus_tree": {
+        "ordinary_auc": 0.8183523816801322,
+        "baseline_ordinary_auc": 0.8181984074982497,
+        "history_adjusted_auc": 0.8112273931434458,
+        "baseline_history_adjusted_auc": 0.81104388145966,
+        "ordinary_gain": 0.00015397418188256573,
+        "adjusted_gain": 0.00018351168378583083,
+        "adjusted_gain_interval": [
+          0.0000814225510878494,
+          0.00028560081648381226
+        ],
+        "positive_gate": true
+      },
+      "versus_neural": {
+        "ordinary_auc": 0.8183523816801322,
+        "baseline_ordinary_auc": 0.8183112405829527,
+        "history_adjusted_auc": 0.8112273931434458,
+        "baseline_history_adjusted_auc": 0.8111621397001886,
+        "ordinary_gain": 0.00004114109717956449,
+        "adjusted_gain": 0.00006525344325725158,
+        "adjusted_gain_interval": [
+          -0.00000796718563011161,
+          0.00013847407214461475
+        ],
+        "positive_gate": false
+      },
+      "rows": 352300,
+      "saved_checkpoint_replay": "PASS, both experts exact",
+      "csv_ready": false,
+      "official_auc": null
+    }
+  ],
+  "eligible_for_review": false,
+  "promoted": false,
+  "target_achieved": false
+}

@@ -21,15 +21,19 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": true,
+  "training_running": false,
   "last_completed_experiment": {
-    "version": "ctr-tabular-choice-004-32epochs",
-    "primary_history_adjusted_auc": 0.816923968683786,
+    "version": "ctr-choice-xgb-ensemble-001",
+    "primary_history_adjusted_auc": 0.8173193042301217,
+    "primary_ordinary_auc": 0.8255623461075058,
+    "confirmation_history_adjusted_auc": 0.8112273931434458,
+    "eligible_for_review": false,
     "promoted": false,
-    "reason": "Longer training worsened day6; fixed gate rejected",
-    "report": "results/kaggle_tabular_choice_004_observed.json"
+    "saved_checkpoint_replay": "PASS, both experts exact",
+    "reason": "Gain interval versus the neural expert crosses zero on both dates; versus tree also crosses zero on day6.",
+    "report": "results/kaggle_choice_xgb_ensemble_001_observed.json"
   },
-  "next_modeling_action": "Evaluate numeric event-choice model; unchanged confirmation only after positive day6 gate.",
+  "next_modeling_action": "No active training. Test a preregistered three-seed probability bag of the successful eight-epoch setwise numeric model to address fit variance; keep both-date gates versus V53 and the existing single-seed model.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -75,11 +79,18 @@
     "saved_model_and_feature_replay": "not covered",
     "goal_0_83_met": false
   },
-  "current_training": {
-    "version": "ctr-choice-xgb-ensemble-001",
-    "stage": "prepared_for_launch",
-    "device": "Kaggle CUDA GPU0",
-    "xgboost_rounds": 1000,
-    "csv_ready": false
+  "current_training": null,
+  "latest_verified_local_result": {
+    "version": "Kaggle ctr-tabular-choice-003-setwise",
+    "scope": "Main day6 and unchanged day5, fixed 10% blend with V53",
+    "promoted": false,
+    "eligible_for_review": true,
+    "primary_history_adjusted_auc": 0.817295085401266,
+    "primary_ordinary_auc": 0.8255597973402244,
+    "confirmation_history_adjusted_auc": 0.8111621397001886,
+    "both_date_gates_passed": true,
+    "minimum_upload_threshold_met": false,
+    "report": "results/kaggle_tabular_choice_003_observed.json",
+    "saved_checkpoint_replay": "PASS, exact on both dates"
   }
 }
