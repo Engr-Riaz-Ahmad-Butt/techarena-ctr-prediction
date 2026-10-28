@@ -16,5 +16,17 @@
   "selection": "Fixed recipe before scoring, no grid or early stopping. Positive ordinary and adjusted lower gain interval versus V53 and neural003 on day6, then unchanged day5.",
   "target": 0.83,
   "target_achieved": false,
-  "limitations": "Reused development dates. No-click groups have no ranking contrast and are handled through neural event mass. No official score forecast."
+  "limitations": "Reused development dates. No-click groups have no ranking contrast and are handled through neural event mass. No official score forecast.",
+  "result": {
+    "primary_adjusted": 0.8172449660208158,
+    "primary_ordinary": 0.8254564872836735,
+    "baseline_gain_interval": [
+      -2.6218670648410245e-05,
+      0.00017805824222312918
+    ],
+    "versus_single_adjusted_gain": -5.011938045029751e-05,
+    "promoted": false,
+    "confirmation_run": false,
+    "checkpoint_replay": "PASS, ranker and neural exact"
+  }
 }

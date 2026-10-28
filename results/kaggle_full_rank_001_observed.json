@@ -1,0 +1,42 @@
+{
+  "experiment": "ctr-full-rank-001",
+  "source": "Observed completed Kaggle GPU cell output",
+  "reports": [
+    {
+      "ordinary_auc": 0.8254564872836735,
+      "baseline_ordinary_auc": 0.8254233318844955,
+      "history_adjusted_auc": 0.8172449660208158,
+      "baseline_history_adjusted_auc": 0.8171690462350284,
+      "ordinary_gain": 0.0000331553991780309,
+      "adjusted_gain": 0.00007591978578735947,
+      "adjusted_gain_interval": [
+        -0.000026218670648410245,
+        0.00017805824222312918
+      ],
+      "positive_gate": false,
+      "day": 6,
+      "versus_single": {
+        "ordinary_auc": 0.8254564872836735,
+        "baseline_ordinary_auc": 0.8255597973402244,
+        "history_adjusted_auc": 0.8172449660208158,
+        "baseline_history_adjusted_auc": 0.817295085401266,
+        "ordinary_gain": -0.00010331005655095371,
+        "adjusted_gain": -0.00005011938045029751,
+        "adjusted_gain_interval": [
+          -0.00015859872009492903,
+          0.000058359959194334
+        ],
+        "positive_gate": false
+      },
+      "raw_auc": 0.8155031331351067,
+      "saved_checkpoint_replay": "PASS, ranker and neural exact",
+      "rows": 351380,
+      "model_sha256": "3ffe0592efceb6fbd846278461787cd4d058d830a028c18cc3ceacc8c2367b54",
+      "csv_ready": false,
+      "official_auc": null
+    }
+  ],
+  "eligible_for_review": false,
+  "promoted": false,
+  "target_achieved": false
+}
