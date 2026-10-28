@@ -31,5 +31,24 @@
     "motivation": "Label-free sampled context drift: warm-context column283 shifts 2.947 fitting standard deviations on day5; day6 shift is 0.539. Test sensitivity to absolute contrast scale.",
     "unchanged": "All network, optimizer, epoch and blending settings",
     "limitations": "Exploratory reused dates; no claim that drift caused the scoring gap"
+  },
+  "completed_003": "Both dates passed: adjusted day6 0.817295085401266 and day5 0.8111621397001886, exact checkpoint replay. No 0.83 target attainment.",
+  "followup_004": {
+    "change": "Increase fixed epochs from 8 to 32; all other settings unchanged.",
+    "reason": "Training loss still decreases each epoch at epoch8; successful setwise representation may be undertrained. No ID embeddings are added.",
+    "selection": "Fixed32 epochs; no heldout early stopping; same two-date gates."
+  },
+  "completed_004": "Fixed32 epochs reduced adjusted day6 to0.816923968683786; rejected with exact replay. Keep eight-epoch setwise model.",
+  "ensemble_001": {
+    "weights": {
+      "V53": 0.8,
+      "xgboost": 0.1,
+      "setwise_neural": 0.1
+    },
+    "xgboost": "Previously frozen depth8, eta.035, child100, lambda15, alpha.5,1000rounds, seed6001",
+    "neural": "Eight-epoch setwise003; fixed after rejected32-epoch trial",
+    "selection": "No blend search. Require positive ordinary and adjusted lower gain interval versus V53 and both component blends on both dates.",
+    "reason": "Different inductive biases may carry complementary ranking signal.",
+    "target_achieved": false
   }
 }
