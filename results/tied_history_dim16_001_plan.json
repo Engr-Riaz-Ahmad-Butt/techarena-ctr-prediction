@@ -1,6 +1,6 @@
 {
   "experiment": "tied-history-dim16-001",
-  "status": "running",
+  "status": "completed_pilot_gate_failed",
   "script_version_id": 363378820,
   "notebook_version": 3,
   "url": "https://www.kaggle.com/code/riazahmadbutt/notebook6f18a9f4d2?scriptVersionId=363378820",
@@ -23,5 +23,104 @@
   "promoted": false,
   "source_sha256": "4e432aa388ea28a6a9e748289f73d322984a9d599f9acaa7b700916c2037e4a9",
   "local_numpy_replay_test": "passed empty and duplicate histories",
-  "note": "Only dimension changes; no per-seed validation selection; preserved32D control."
+  "note": "Only dimension changes; no per-seed validation selection; preserved32D control.",
+  "report": {
+    "baseline": {
+      "ordinary_auc": 0.8254233318844955,
+      "adjusted_auc": 0.8171690462350284
+    },
+    "raw16": {
+      "ordinary_auc": 0.7843680152467208,
+      "adjusted_auc": 0.7756350755219843
+    },
+    "raw32": {
+      "ordinary_auc": 0.7825589859284416,
+      "adjusted_auc": 0.7736762182752466
+    },
+    "blend16": {
+      "ordinary_auc": 0.8257557515906186,
+      "adjusted_auc": 0.817513395470884
+    },
+    "blend32": {
+      "ordinary_auc": 0.8257031574656097,
+      "adjusted_auc": 0.8174582055947577
+    },
+    "numpy_replay_max_errors": [
+      2.135018270510436e-07,
+      2.3963345330280106e-07,
+      2.0730073879704491e-07,
+      2.5399614544951987e-07,
+      2.2796629306487404e-07
+    ],
+    "frozen_dimensions": 16,
+    "training_steps_per_seed": 2000,
+    "seed_count": 5,
+    "fresh_holdout": false,
+    "promoted": false,
+    "csv_ready": false,
+    "official_auc": null,
+    "target_achieved": false,
+    "raw_adjusted_gain": 0.001958857246737722,
+    "blend_adjusted_gain": 5.518987612629367e-05,
+    "full_oof_worth_testing": false,
+    "history_segments": {
+      "0": {
+        "events": 198,
+        "raw16": {
+          "ordinary_auc": 0.48004703115814223,
+          "adjusted_auc": 0.48004703115815484
+        },
+        "raw32": {
+          "ordinary_auc": 0.4803644914756026,
+          "adjusted_auc": 0.48036449147561516
+        }
+      },
+      "1": {
+        "events": 2357,
+        "raw16": {
+          "ordinary_auc": 0.7179127813389584,
+          "adjusted_auc": 0.7179127813389434
+        },
+        "raw32": {
+          "ordinary_auc": 0.7176762661533105,
+          "adjusted_auc": 0.7176762661532955
+        }
+      },
+      "2": {
+        "events": 5089,
+        "raw16": {
+          "ordinary_auc": 0.7602171247183497,
+          "adjusted_auc": 0.7602171247185529
+        },
+        "raw32": {
+          "ordinary_auc": 0.7563860734431036,
+          "adjusted_auc": 0.7563860734433064
+        }
+      },
+      "3": {
+        "events": 9533,
+        "raw16": {
+          "ordinary_auc": 0.7835450831073403,
+          "adjusted_auc": 0.7835450831072109
+        },
+        "raw32": {
+          "ordinary_auc": 0.7809767459885212,
+          "adjusted_auc": 0.7809767459883882
+        }
+      },
+      "4": {
+        "events": 17961,
+        "raw16": {
+          "ordinary_auc": 0.8034823746427483,
+          "adjusted_auc": 0.8034823746424179
+        },
+        "raw32": {
+          "ordinary_auc": 0.802418731408039,
+          "adjusted_auc": 0.802418731407709
+        }
+      }
+    },
+    "elapsed_seconds": 120.43843908000002
+  },
+  "checkpoint_replay": "All5 Torch exact and independent NumPy replay errors below2.54e-7"
 }
