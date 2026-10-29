@@ -1,0 +1,27 @@
+{
+  "experiment": "tied-history-dim16-001",
+  "status": "running",
+  "script_version_id": 363378820,
+  "notebook_version": 3,
+  "url": "https://www.kaggle.com/code/riazahmadbutt/notebook6f18a9f4d2?scriptVersionId=363378820",
+  "dimensions": 16,
+  "comparison_dimensions": 32,
+  "seeds": [
+    7201,
+    7202,
+    7203,
+    7204,
+    7205
+  ],
+  "steps": 2000,
+  "full_oof_gate": {
+    "raw_adjusted_auc_gain": 0.002,
+    "fixed_blend_gain_positive": true
+  },
+  "new_auc": null,
+  "fresh_holdout": false,
+  "promoted": false,
+  "source_sha256": "4e432aa388ea28a6a9e748289f73d322984a9d599f9acaa7b700916c2037e4a9",
+  "local_numpy_replay_test": "passed empty and duplicate histories",
+  "note": "Only dimension changes; no per-seed validation selection; preserved32D control."
+}
