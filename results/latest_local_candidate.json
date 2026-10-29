@@ -21,7 +21,7 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": false,
+  "training_running": true,
   "last_completed_experiment": {
     "version": "tied-history-dim8-001",
     "script_version_id": 363380203,
@@ -34,7 +34,7 @@
     "csv_ready": false,
     "report": "results/tied_history_dim8_001_observed.json"
   },
-  "next_modeling_action": "Stop dimension-only full-pipeline trials:16D small raw gain failed gate;8D regressed. Strongest observed tree score remains0.817609 adjusted (LightGBM, independent score audit pending); latest independently scored tree remains0.817604. Next evaluate a distinct sparse-history item-item co-occurrence signal using strict prefix click logs, with popularity normalization and frozen validation; no repeated bare blend or dimension sweep.",
+  "next_modeling_action": "Monitor existing Kaggle version363382875; CPU graph learner in allocated T4 environment. No duplicate job. Audit predictions and matched control before reporting gain.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -82,7 +82,26 @@
     "saved_model_and_feature_replay": "not covered",
     "goal_0_83_met": false
   },
-  "current_training": null,
+  "current_training": {
+    "experiment": "full-cooccurrence-001",
+    "status": "running",
+    "script_version_id": 363382875,
+    "notebook_version": 5,
+    "source_sha256": "1e7b720cea3e1aa1b5f3f83c1059ad99ac3d33184f65c440e1b5e28bbf7b9c83",
+    "meta_fit_day": 5,
+    "validation_day": 6,
+    "model_iterations": 200,
+    "blend": 0.1,
+    "comparison": "Matched residual trees with/without12 full-prefix graph features",
+    "previous_cooccurrence": "V21 used first-user20-click histories plus history-to-label counts; no gain. Current graph uses all unique prefix clicks and consistent user-frequency denominators.",
+    "requested_accelerator": "none selected in save dialog",
+    "observed_accelerator": "GPU T4 x2",
+    "computation": "CPU sparse graph and sklearn histogram trees; allocation mismatch is recorded",
+    "new_auc": null,
+    "fresh_holdout": false,
+    "promoted": false,
+    "local_tests": "Binary-profile normalization, set-intersection oracle, and heldout-target invariance passed"
+  },
   "latest_verified_local_result": {
     "version": "Kaggle tied-history-oof-tree-001",
     "scope": "Main day6 reused cohort; day5 skipped by fixed minimum-effect gate",
