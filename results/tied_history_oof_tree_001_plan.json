@@ -1,12 +1,15 @@
 {
   "experiment": "tied-history-oof-tree-001",
-  "status": "completed_primary_gate_failed",
+  "status": "completed_independently_audited_primary_gate_failed",
   "kaggle_version": 10,
   "kaggle_script_version_id": 363217115,
   "url": "https://www.kaggle.com/code/riazahmadbutt/notebook8d08622ead?scriptVersionId=363217115",
   "observed_status": "Running for 92.8s; Accelerator GPU T4 x2; Output 0 B",
   "training_completion_verified": true,
-  "new_auc": null,
+  "new_auc": {
+    "ordinary": 0.8258500131309925,
+    "adjusted": 0.8176035430523417
+  },
   "prior_adjusted_auc": 0.8174582055947577,
   "prior_ordinary_auc": 0.8257031574656098,
   "fresh_holdout": false,
@@ -19,7 +22,7 @@
     "kaggle/TechArena_CTR_Full_Row_Factor_Tree_GPU.ipynb": "3f8e9abc25a4b8c394b351245669754a71c30be1e698bdfdca0a6eba852fc04d"
   },
   "checks": "Three CPU unit tests pass; full cached labels match days3/4/5; first-event ids match days5/6; 100-context future-label invariance checks pass days3/4/5/6",
-  "next_action": "Poll the same Kaggle version363217115; do not restart on observation timeout. Audit resulting predictions and checkpoint replays before reporting a new score.",
+  "next_action": "Fixed LightGBM comparison using preserved factors is running as Kaggle version363375368; no factor refit.",
   "summary": {
     "reports": [
       {
@@ -56,7 +59,7 @@
     "target_achieved": false,
     "elapsed_seconds": 830.6510466130001
   },
-  "independent_auc_recomputation": false,
+  "independent_auc_recomputation": true,
   "durable_kaggle_outputs_verified": {
     "summary_json": true,
     "factors_folders": [
@@ -73,5 +76,6 @@
       "validation_extra.npy"
     ],
     "scope": "Committed Kaggle Output file listing observed; local binary download and independent AUC recomputation remain pending"
-  }
+  },
+  "independent_audit": "results/tied_history_oof_tree_001_independent_audit.json"
 }
