@@ -1,0 +1,51 @@
+{
+  "experiment": "tied-history-lgbm-001",
+  "status": "completed_primary_gate_failed",
+  "script_version_id": 363375368,
+  "notebook_version": 2,
+  "gpu_execution_verified": true,
+  "factor_retraining": false,
+  "source_sha256": "2e4317658716c1e5c9474caadcc37614c19a8136ce9fef0278ee2630d2ce7edc",
+  "new_auc": null,
+  "prior_verified_adjusted_auc": 0.8176035430523417,
+  "prior_verified_ordinary_auc": 0.8258500131309925,
+  "official_auc": null,
+  "fresh_holdout": false,
+  "promoted": false,
+  "report": {
+    "baseline": {
+      "ordinary_auc": 0.8254233318844955,
+      "adjusted_auc": 0.8171690462350284
+    },
+    "control_raw": {
+      "ordinary_auc": 0.8201662992110481,
+      "adjusted_auc": 0.8115673617328121
+    },
+    "control": {
+      "ordinary_auc": 0.825361096930399,
+      "adjusted_auc": 0.8171125758871487
+    },
+    "treatment_raw": {
+      "ordinary_auc": 0.8238993424250554,
+      "adjusted_auc": 0.8153600073504133
+    },
+    "treatment": {
+      "ordinary_auc": 0.8258509016344737,
+      "adjusted_auc": 0.8176091380448665
+    },
+    "factor_retraining": false,
+    "training_rows": 2937590,
+    "elapsed_seconds": 554.9800379769999,
+    "fresh_holdout": false,
+    "promoted": false,
+    "csv_ready": false,
+    "official_auc": null,
+    "target_achieved": false,
+    "adjusted_gain": 0.0004400918098380613,
+    "gain_vs_control": 0.0004965621577177615,
+    "development_gate": false
+  },
+  "independent_auc_recomputation": false,
+  "checkpoint_replay": "Both saved LightGBM models matched all validation predictions in job",
+  "next_action": "Audit saved arrays; do not expand tree-only tuning. Factor representation remains the higher-value next target."
+}

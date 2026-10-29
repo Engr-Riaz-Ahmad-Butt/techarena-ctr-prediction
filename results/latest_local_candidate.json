@@ -21,22 +21,21 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": true,
+  "training_running": false,
   "last_completed_experiment": {
-    "version": "Kaggle tied-history-oof-tree-001",
-    "scope": "Main day6 reused cohort; day5 skipped by fixed minimum-effect gate",
-    "primary_history_adjusted_auc": 0.8176035430514209,
-    "primary_ordinary_auc": 0.8258500131309925,
-    "adjusted_gain_vs_v53": 0.0004344968163925156,
-    "gain_vs_control": 0.0004335298442824653,
-    "promoted": false,
-    "official_auc": null,
+    "version": "Kaggle tied-history-lgbm-001",
+    "script_version_id": 363375368,
+    "primary_history_adjusted_auc": 0.8176091380448665,
+    "primary_ordinary_auc": 0.8258509016344737,
+    "adjusted_gain_vs_v53": 0.0004400918098380613,
+    "adjusted_gain_vs_previous_xgb": 5.594993445545704e-06,
     "independent_auc_recomputation": false,
-    "checkpoint_replay": "20 factor models and both trees exact all scored rows in GPU job",
-    "report": "results/tied_history_oof_tree_001_observed.json",
-    "script_version_id": 363217115
+    "checkpoint_replay": "Both saved LightGBM models exact all validation rows in job",
+    "promoted": false,
+    "csv_ready": false,
+    "report": "results/tied_history_lgbm_001_observed.json"
   },
-  "next_modeling_action": "Monitor the existing LightGBM version2; do not start a duplicate. Audit models/predictions after completion.",
+  "next_modeling_action": "Independently audit LightGBM saved predictions. Tree-only change yielded only+0.000005595 adjusted AUC over prior full-row XGBoost; no meaningful gain. Prefer a predeclared lower-dimensional shared-item factor pilot against the existing32-dimensional bag before another full OOF fit. No training active and no CSV exported.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -84,14 +83,7 @@
     "saved_model_and_feature_replay": "not covered",
     "goal_0_83_met": false
   },
-  "current_training": {
-    "experiment": "tied-history-lgbm-001",
-    "notebook": "riazahmadbutt/notebook6f18a9f4d2",
-    "version": 2,
-    "status": "Running verified in Kaggle active event panel",
-    "factor_retraining": false,
-    "new_auc": null
-  },
+  "current_training": null,
   "latest_verified_local_result": {
     "version": "Kaggle tied-history-oof-tree-001",
     "scope": "Main day6 reused cohort; day5 skipped by fixed minimum-effect gate",
@@ -178,5 +170,5 @@
     "eligible_for_review": false,
     "reason": "Both reused cohorts improve but gains are below +0.0005; no fresh holdout"
   },
-  "gpu_session_status": "committed run completed; interactive session not started"
+  "gpu_session_status": "committed LightGBM run completed; interactive session not started"
 }
