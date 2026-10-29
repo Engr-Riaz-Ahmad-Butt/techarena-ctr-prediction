@@ -1,0 +1,102 @@
+{
+  "script_version_id": 363380203,
+  "source": "Committed Kaggle logs; five independent NumPy checkpoint replays",
+  "report": {
+    "baseline": {
+      "ordinary_auc": 0.8254233318844955,
+      "adjusted_auc": 0.8171690462350284
+    },
+    "raw8": {
+      "ordinary_auc": 0.7767919380647696,
+      "adjusted_auc": 0.7682987638318443
+    },
+    "raw32": {
+      "ordinary_auc": 0.7825589859284416,
+      "adjusted_auc": 0.7736762182752466
+    },
+    "blend8": {
+      "ordinary_auc": 0.8257104395506225,
+      "adjusted_auc": 0.8174650768484326
+    },
+    "blend32": {
+      "ordinary_auc": 0.8257031574656097,
+      "adjusted_auc": 0.8174582055947577
+    },
+    "numpy_replay_max_errors": [
+      2.488404972078584e-7,
+      2.261135314540752e-7,
+      2.314559671701133e-7,
+      2.049368010847985e-7,
+      2.2496113410985785e-7
+    ],
+    "frozen_dimensions": 8,
+    "training_steps_per_seed": 2000,
+    "seed_count": 5,
+    "fresh_holdout": false,
+    "promoted": false,
+    "csv_ready": false,
+    "official_auc": null,
+    "target_achieved": false,
+    "raw_adjusted_gain": -0.005377454443402319,
+    "blend_adjusted_gain": 0.000006871253674933797,
+    "full_oof_worth_testing": false,
+    "history_segments": {
+      "0": {
+        "events": 198,
+        "raw8": {
+          "ordinary_auc": 0.4773133450911229,
+          "adjusted_auc": 0.4773133450911353
+        },
+        "raw32": {
+          "ordinary_auc": 0.4803644914756026,
+          "adjusted_auc": 0.48036449147561516
+        }
+      },
+      "1": {
+        "events": 2357,
+        "raw8": {
+          "ordinary_auc": 0.7149656474635975,
+          "adjusted_auc": 0.7149656474635825
+        },
+        "raw32": {
+          "ordinary_auc": 0.7176762661533105,
+          "adjusted_auc": 0.7176762661532955
+        }
+      },
+      "2": {
+        "events": 5089,
+        "raw8": {
+          "ordinary_auc": 0.7518803383710764,
+          "adjusted_auc": 0.7518803383712833
+        },
+        "raw32": {
+          "ordinary_auc": 0.7563860734431036,
+          "adjusted_auc": 0.7563860734433064
+        }
+      },
+      "3": {
+        "events": 9533,
+        "raw8": {
+          "ordinary_auc": 0.7756975779032784,
+          "adjusted_auc": 0.7756975779031414
+        },
+        "raw32": {
+          "ordinary_auc": 0.7809767459885212,
+          "adjusted_auc": 0.7809767459883882
+        }
+      },
+      "4": {
+        "events": 17961,
+        "raw8": {
+          "ordinary_auc": 0.7956574635829069,
+          "adjusted_auc": 0.7956574635825628
+        },
+        "raw32": {
+          "ordinary_auc": 0.802418731408039,
+          "adjusted_auc": 0.802418731407709
+        }
+      }
+    },
+    "elapsed_seconds": 113.58408831899999
+  }
+}

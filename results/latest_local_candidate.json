@@ -21,19 +21,20 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": true,
+  "training_running": false,
   "last_completed_experiment": {
-    "version": "tied-history-dim16-001",
+    "version": "tied-history-dim8-001",
+    "script_version_id": 363380203,
     "scope": "Fixed5% factor blend; not full tree pipeline",
-    "primary_history_adjusted_auc": 0.817513395470884,
-    "primary_ordinary_auc": 0.8257557515906186,
-    "raw_adjusted_gain_vs_32D": 0.001958857246737722,
+    "primary_history_adjusted_auc": 0.8174650768484326,
+    "primary_ordinary_auc": 0.8257104395506225,
+    "raw_adjusted_gain_vs_32D": -0.005377454443402319,
     "full_oof_worth_testing": false,
     "promoted": false,
     "csv_ready": false,
-    "report": "results/tied_history_dim16_001_observed.json"
+    "report": "results/tied_history_dim8_001_observed.json"
   },
-  "next_modeling_action": "Monitor existing8D pilot version363380203; no duplicate fits or16D full OOF fit.",
+  "next_modeling_action": "Stop dimension-only full-pipeline trials:16D small raw gain failed gate;8D regressed. Strongest observed tree score remains0.817609 adjusted (LightGBM, independent score audit pending); latest independently scored tree remains0.817604. Next evaluate a distinct sparse-history item-item co-occurrence signal using strict prefix click logs, with popularity normalization and frozen validation; no repeated bare blend or dimension sweep.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -81,29 +82,7 @@
     "saved_model_and_feature_replay": "not covered",
     "goal_0_83_met": false
   },
-  "current_training": {
-    "experiment": "tied-history-dim8-001",
-    "status": "running",
-    "script_version_id": 363380203,
-    "notebook_version": 4,
-    "dimensions": 8,
-    "comparison_dimensions": 32,
-    "seeds": [
-      7201,
-      7202,
-      7203,
-      7204,
-      7205
-    ],
-    "steps": 2000,
-    "raw_adjusted_gain_gate": 0.002,
-    "fixed_blend_gain_must_be_positive": true,
-    "new_auc": null,
-    "fresh_holdout": false,
-    "promoted": false,
-    "source_sha256": "638975532ac23d6b5ecd35007b2c6e21254af8d73cc032f1e15be7b94aee79e3",
-    "rationale": "Label-free32D spectrum: top8 directions account for58\u201360% energy across five checkpoints;16D raw adjusted improvement0.001959 was below frozen gate, so no16D OOF fit."
-  },
+  "current_training": null,
   "latest_verified_local_result": {
     "version": "Kaggle tied-history-oof-tree-001",
     "scope": "Main day6 reused cohort; day5 skipped by fixed minimum-effect gate",
@@ -190,5 +169,5 @@
     "eligible_for_review": false,
     "reason": "Both reused cohorts improve but gains are below +0.0005; no fresh holdout"
   },
-  "gpu_session_status": "committed LightGBM run completed; interactive session not started"
+  "gpu_session_status": "Both dimension pilots completed as committed Kaggle runs; no interactive training started"
 }
