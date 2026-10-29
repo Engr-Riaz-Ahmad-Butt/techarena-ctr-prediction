@@ -21,7 +21,7 @@
   "latest_exported_version": "V39",
   "confirmed_official_version": "V35",
   "confirmed_official_auc": 0.816623,
-  "training_running": false,
+  "training_running": true,
   "last_completed_experiment": {
     "version": "Kaggle tied-history-oof-tree-001",
     "scope": "Main day6 reused cohort; day5 skipped by fixed minimum-effect gate",
@@ -36,7 +36,7 @@
     "report": "results/tied_history_oof_tree_001_observed.json",
     "script_version_id": 363217115
   },
-  "next_modeling_action": "Independently audit committed prediction files from Kaggle version363217115. Full-row factor features improved adjusted AUC to0.817604, but gain0.000434 is below0.0005 and0.83 remains unmet. No duplicate job or new CSV.",
+  "next_modeling_action": "Monitor the existing LightGBM version2; do not start a duplicate. Audit models/predictions after completion.",
   "note": "Local diagnostic only. Previously reused dates and calendar mismatch limit certainty. Official score requires competition scoring; no official gain claimed.",
   "prior_requested_score": 0.834786,
   "neural_followup": {
@@ -84,23 +84,28 @@
     "saved_model_and_feature_replay": "not covered",
     "goal_0_83_met": false
   },
-  "current_training": null,
+  "current_training": {
+    "experiment": "tied-history-lgbm-001",
+    "notebook": "riazahmadbutt/notebook6f18a9f4d2",
+    "version": 2,
+    "status": "Running verified in Kaggle active event panel",
+    "factor_retraining": false,
+    "new_auc": null
+  },
   "latest_verified_local_result": {
-    "version": "Kaggle tied-history-gpu-bag-002 recovery reproduction",
-    "scope": "Main day6 only; day5 skipped by predeclared primary gate; reused cohort",
-    "primary_history_adjusted_auc": 0.8174582055947577,
-    "primary_ordinary_auc": 0.8257031574656098,
-    "adjusted_gain_vs_v53": 0.0002891593597292852,
-    "adjusted_gain_vs_matched_gpu_control": 6.747011185592733e-05,
+    "version": "Kaggle tied-history-oof-tree-001",
+    "scope": "Main day6 reused cohort; day5 skipped by fixed minimum-effect gate",
+    "primary_history_adjusted_auc": 0.8176035430514209,
+    "primary_ordinary_auc": 0.8258500131309925,
+    "adjusted_gain_vs_v53": 0.0004344968163925156,
+    "gain_vs_control": 0.0004335298442824653,
     "promoted": false,
-    "eligible_for_review": false,
-    "minimum_effect_gate_passed": false,
-    "day5_run": false,
-    "local_model_files_preserved": true,
-    "independent_replay": "All five NumPy checkpoint replays pass below1e-6; exact probability mean and bag blend; saved AUCs recomputed",
-    "report": "results/tied_history_gpu_bag_002.json",
-    "audit": "results/tied_history_gpu_bag_002_audit.json",
-    "preservation": "results/tied_history_gpu_bag_002_preservation.json"
+    "official_auc": null,
+    "independent_auc_recomputation": true,
+    "checkpoint_replay": "20 factor models and both trees exact all scored rows in GPU job",
+    "report": "results/tied_history_oof_tree_001_observed.json",
+    "script_version_id": 363217115,
+    "independent_audit": "results/tied_history_oof_tree_001_independent_audit.json"
   },
   "kaggle_output_preservation": {
     "notebook": "riazahmadbutt/notebook8d08622ead",
@@ -159,10 +164,11 @@
     "gain_vs_control": 0.0004335298442824653,
     "promoted": false,
     "official_auc": null,
-    "independent_auc_recomputation": false,
+    "independent_auc_recomputation": true,
     "checkpoint_replay": "20 factor models and both trees exact all scored rows in GPU job",
     "report": "results/tied_history_oof_tree_001_observed.json",
-    "script_version_id": 363217115
+    "script_version_id": 363217115,
+    "independent_audit": "results/tied_history_oof_tree_001_independent_audit.json"
   },
   "best_two_date_fixed_factor_blend": {
     "version": "tied-history-full fixed 5% rank blend",
