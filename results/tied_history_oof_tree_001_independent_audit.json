@@ -1,0 +1,35 @@
+{
+  "source_prediction_sha256": "3ad63970946c7eb4b0e5f51efa9ad4a761a90bee93ab0d79cbb22c24449198ff",
+  "new_training": false,
+  "fresh_holdout": false,
+  "official_score": null,
+  "metrics": {
+    "baseline": {
+      "ordinary_auc": 0.8254233318844955,
+      "adjusted_auc": 0.8171690462358696
+    },
+    "control": {
+      "ordinary_auc": 0.8253948835341313,
+      "adjusted_auc": 0.8171700132080603
+    },
+    "treatment": {
+      "ordinary_auc": 0.8258500131309925,
+      "adjusted_auc": 0.8176035430523417
+    },
+    "control_raw": {
+      "ordinary_auc": 0.8200956292735118,
+      "adjusted_auc": 0.8116423830504171
+    },
+    "treatment_raw": {
+      "ordinary_auc": 0.8236507490854538,
+      "adjusted_auc": 0.8149647203910054
+    }
+  },
+  "blend_replays": {
+    "control": 0,
+    "treatment": 0
+  },
+  "segments": {},
+  "audit_script_version_id": 363222478,
+  "source": "Saved committed predictions independently audited on Kaggle CPU; weighted pair-count AUC and sklearn agree within1e-12"
+}
