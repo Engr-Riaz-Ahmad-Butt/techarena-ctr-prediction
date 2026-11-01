@@ -10,7 +10,7 @@ The later V56 identity-feature variant was rejected on a separate weekday benchm
 
 Matched [candidate-set](results/v58_slate_summary.md) and [pairwise-ranking](results/v59_pairwise_summary.md) residual experiments also failed their frozen promotion gates. Their selected point estimates were around 0.817200 adjusted AUC, with gain intervals containing zero. They do not replace V53, reach 0.82, or establish an official improvement.
 
-A [new full-data weekday ensemble experiment](results/v60_weekday_plan.md) is in progress. It tests a fixed XGBoost expert on all days2/3 fitting rows and a previously used first-future-event weekday cohort. It is a different complete predictor, not V53 replay; no V60 score or promotion is claimed while fitting is incomplete.
+The [full-data weekday ensemble experiment](results/v60_weekday_plan.md) completed and passed an independent implementation audit. On its previously reused future-event weekday holdout it gained 0.000797 ordinary AUC and 0.000803 history/calendar-adjusted AUC; this is a separate predictor, not a V53 replay or official score. V53 remains the main candidate, the requested target is unmet, and no submission or promotion is claimed. Checkpoints, predictions, metrics and audit are saved under `artifacts/v60_weekday/`.
 
 ## Historical V20 baseline notes
 

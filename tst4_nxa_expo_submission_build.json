@@ -1,0 +1,30 @@
+{
+  "output": "C:\\Users\\engrr\\Documents\\ChatGPT\\Task\\techarena-ctr-prediction\\submission_v40_candidate.csv",
+  "recipe": "rank",
+  "weight": 1.0,
+  "candidate": "artifacts\\nxa_expo_eval_pred_v39.npy",
+  "candidate_sha256": "8e215c45ea298b20a340ff8b01ec48cd5ee3f2fafe263d0369d7f4813a97bb8e",
+  "v39_sha256": "3dc047ef8eed321713421d3491569d15c66ce3fc0b44f5614342f4b5b8abf3f4",
+  "rows": 529390,
+  "sha256": "59304dc065349462bdf0df94a51e8a9d3c92de883f3b988ea647456415785738",
+  "verify": {
+    "readback_rows": 529390,
+    "order_equals_evaluation_csv": true,
+    "order_equals_submission_v39": true,
+    "nan_count": 0,
+    "all_in_0_1": true,
+    "readback_matches_written_to_1e12": true,
+    "spearman_vs_submission_v39": 0.9987245698107936,
+    "events": 52939,
+    "events_top_candidate_changed": 3522,
+    "share_events_top_candidate_changed": 0.06652940176429475,
+    "events_with_tied_top_new": 0,
+    "events_with_tied_top_v39": 0
+  },
+  "check_returncode": 0,
+  "check_stdout": "{\n  \"file\": \"C:\\\\Users\\\\engrr\\\\Documents\\\\ChatGPT\\\\Task\\\\techarena-ctr-prediction\\\\submission_v40_candidate.csv\",\n  \"rows\": 529390,\n  \"missing\": 0,\n  \"unknown\": 0,\n  \"duplicates\": 0,\n  \"invalid_probabilities\": 0,\n  \"minimum\": 1.88896297821459e-06,\n  \"maximum\": 0.999998111037022,\n  \"mean\": 0.500000000000004,\n  \"sha256\": \"59304dc065349462bdf0df94a51e8a9d3c92de883f3b988ea647456415785738\"\n}\n",
+  "check_stderr": "",
+  "prediction_min": 1.88896297821459e-06,
+  "prediction_max": 0.9999981110370217,
+  "prediction_mean": 0.5
+}

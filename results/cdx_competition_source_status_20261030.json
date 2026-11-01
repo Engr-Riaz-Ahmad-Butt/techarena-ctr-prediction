@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-30",
+  "status": "actual_ctr_page_url_and_instructions_not_yet_available",
+  "user_supplied_description": {
+    "title": "Predict click-through rates",
+    "data": "Synthetic recommendation impressions, ten candidates per event, at most one click, up to twenty earlier clicks including warm-up",
+    "metric": "global ROC AUC",
+    "runtime_statement": "A solid baseline can train in under fifteen minutes on a laptop; this is not a runtime guarantee for V53's full historical dependency chain"
+  },
+  "user_supplied_screenshots": {
+    "source": "Three screenshots received in this conversation, not a live leaderboard fetch",
+    "visible_links": ["INSTRUCTIONS", "TRAINING DATA", "EVALUATION DATA", "EXAMPLE SUBMISSION", "STARTER SOLUTION", "VIEW LEADERBOARD"],
+    "leaderboard_top_team": "free lunch",
+    "leaderboard_top_score": 0.832869,
+    "address_bar_visible": false,
+    "actual_link_destinations_visible": false,
+    "instructions_contents_visible": false,
+    "starter_contents_visible": false
+  },
+  "unrelated_public_pages_checked": [
+    {"url": "https://techarena-uk.hydro.ac/", "observed_challenge": "Career Survival Agent", "applies_to_ctr": false},
+    {"url": "https://techarena-uk-2025.algotester.com/", "observed_challenge": "Cangjie systems programming challenge", "applies_to_ctr": false},
+    {"url": "https://techarena.algotester.com/en", "observed_challenge": "UK 2025 systems programming contest with non-AUC scores", "applies_to_ctr": false}
+  ],
+  "rules_status": {
+    "external_data": "unknown",
+    "shared_external_code": "unknown",
+    "evaluation_file_statistics": "unknown",
+    "negative_sampling_details": "unknown",
+    "no_permission_inferred_from_description_or_screenshots": true
+  },
+  "baseline_dependency_check": {
+    "method": "Read existing inventory and actual V53/v49/crossfit feature source; no models fitted",
+    "final_head": "Fixed standardized logistic expert head, C0.01, 25 percent contribution in rank space",
+    "expert_channels": "Six explicit score sources plus the mean of three FastDIN seed scores, on top of V39 parent and history/propensity features",
+    "full_horizon_rebuild_exists": false,
+    "runtime_pilot_started": false,
+    "simplified_horizon_is_not_full_V53": true
+  },
+  "requested_information": "No further information required to work on supplied data; user clarified the task is already provided. Stop repeatedly requesting the URL. Rules not shown remain unknown.",
+  "model_changes": false,
+  "holdout_scored": false,
+  "evaluation_scored": false,
+  "submission_created": false,
+  "official_score_ledger_changed": false,
+  "agent_created_unrelated_tabs_closed": true,
+  "user_notebook_tab_preserved": true
+}

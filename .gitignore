@@ -17,3 +17,6 @@ __pycache__/
 .env
 .env.*
 catboost_info/
+kaggle.json
+*.token
+

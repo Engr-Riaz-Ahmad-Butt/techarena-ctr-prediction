@@ -1,0 +1,65 @@
+[
+  {
+    "experiment_id": "repo_audit_01",
+    "date": "2026-10-27",
+    "hypothesis": "Audit repository structure, baseline, and validation rules before modifying code.",
+    "model_changes": "Read V53 baseline, v51_v55_progress, v56_weekday_summary, and v61_weekday_causal. Preserve baseline and document invalid same-cohort scoring.",
+    "data_split": "repo audit only; no model fitting.",
+    "training_status": "complete",
+    "validation_score": null,
+    "v53_baseline_score": 0.8171690462350286,
+    "difference_from_baseline": null,
+    "leakage_checks": [
+      "same-cohort replay detected in v61",
+      "reused-date risk documented in repo",
+      "target is not a valid score unless future unseen benchmark is used"
+    ],
+    "decision": "accepted",
+    "reason": "The repo clearly states that reused weekend dates and same-cohort scoring are invalid."
+  },
+  {
+    "experiment_id": "v61_weekday_causal_probe",
+    "date": "2026-10-27",
+    "hypothesis": "Add weekday-aware causal features to V53 to improve under the same holdout.",
+    "model_changes": "Added user/item weekday propensity and recency terms to the V53 feature stack.",
+    "data_split": "same V53 day5/day6 cohorts, same event labels and timestamps.",
+    "training_status": "complete",
+    "validation_score": {
+      "day5": 0.8338399744982914,
+      "day6": 0.8429499681339886
+    },
+    "v53_baseline_score": {
+      "day5": 0.8180913840683512,
+      "day6": 0.8254233318844953
+    },
+    "difference_from_baseline": {
+      "day5": 0.015748590429940146,
+      "day6": 0.017526636249493244
+    },
+    "leakage_checks": [
+      "same_events: true",
+      "same_labels: true",
+      "candidate_valid_under_protocol: false"
+    ],
+    "decision": "rejected",
+    "reason": "The candidate scored on the same retained labels and cohort used for V53 replay; therefore it is not a valid future benchmark and cannot support an improvement claim."
+  },
+  {
+    "experiment_id": "v62_valid_benchmark_frozen",
+    "date": "2026-10-27",
+    "hypothesis": "Freeze the repository's accepted benchmark and reject any score not measured on a genuinely unseen cohort.",
+    "model_changes": "No model changes; benchmark-only audit.",
+    "data_split": "repo's day5 user-crossfit + day6 future-date protocol; benchmark is recorded and frozen.",
+    "training_status": "complete",
+    "validation_score": null,
+    "v53_baseline_score": null,
+    "difference_from_baseline": null,
+    "leakage_checks": [
+      "benchmark frozen",
+      "no score claim beyond project protocol",
+      "candidate must be unseen to count"
+    ],
+    "decision": "accepted",
+    "reason": "This is the valid benchmark definition. No future improvement is accepted without it."
+  }
+]

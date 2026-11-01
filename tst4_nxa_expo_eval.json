@@ -1,0 +1,353 @@
+{
+  "name": "nxa_expo",
+  "day6_file": "artifacts\\nxa_expo_day6.npz",
+  "day5_file": "artifacts\\nxa_expo_day5.npz",
+  "day6": {
+    "checks": {
+      "rows": 351380,
+      "y_equals_v53": true,
+      "events_equal_v53": true,
+      "baseline_equals_v53_pred": true,
+      "pred_finite": true,
+      "pred_identical_to_v53": false,
+      "rows_per_event_10": true
+    },
+    "full_day": {
+      "rows": 351380,
+      "events": 35138,
+      "plain": {
+        "v53": 0.8254233318844955,
+        "candidate": 0.8259946652094893,
+        "gain": 0.0005713333249938168,
+        "paired95": [
+          0.0003779776241912697,
+          0.0007604488254202291
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8171690462358694,
+        "candidate": 0.8178103386723166,
+        "gain": 0.0006412924364471717,
+        "paired95": [
+          0.0004355167487833822,
+          0.0008370817778184603
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      }
+    },
+    "selection_cohort": {
+      "rows": 244220,
+      "events": 24422,
+      "plain": {
+        "v53": 0.8255267090309614,
+        "candidate": 0.8260472681135943,
+        "gain": 0.000520559082632932,
+        "paired95": [
+          0.00031969172200497776,
+          0.0007421714011332624
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_selection_file_weights": {
+        "v53": 0.8175275258801845,
+        "candidate": 0.8181089054457308,
+        "gain": 0.0005813795655462695,
+        "paired95": [
+          0.00035877136662137434,
+          0.0008308064513685237
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8172300021401046,
+        "candidate": 0.8178137513990166,
+        "gain": 0.0005837492589120252,
+        "paired95": [
+          0.0003603482649098183,
+          0.0008333809642368378
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_3bin_mix": {
+        "v53": 0.8200379621275946,
+        "candidate": 0.8205954105651683,
+        "gain": 0.0005574484375736599,
+        "paired95": [
+          0.0003406005764261644,
+          0.0007919783331895552
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      }
+    },
+    "v39_comparison_key": "pred_v39",
+    "vs_v39_full_day": {
+      "plain": {
+        "v53": 0.824957808393509,
+        "candidate": 0.8255154191772935,
+        "gain": 0.000557610783784579,
+        "paired95": [
+          0.0003656471249816551,
+          0.0007462858808959721
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.816661487885959,
+        "candidate": 0.8172832501192346,
+        "gain": 0.0006217622332755912,
+        "paired95": [
+          0.00041588790793375686,
+          0.0008177272798657265
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      }
+    },
+    "vs_v39_selection_cohort": {
+      "plain": {
+        "v53": 0.8250449242409253,
+        "candidate": 0.8255556517847538,
+        "gain": 0.0005107275438284153,
+        "paired95": [
+          0.0003132787292943806,
+          0.0007373950476148638
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_selection_file_weights": {
+        "v53": 0.8169935471896955,
+        "candidate": 0.8175612693042604,
+        "gain": 0.0005677221145649058,
+        "paired95": [
+          0.0003454605824230239,
+          0.0008176770532097227
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      }
+    }
+  },
+  "day5": {
+    "checks": {
+      "rows": 352300,
+      "y_equals_v53": true,
+      "events_equal_v53": true,
+      "baseline_equals_v53_pred": true,
+      "pred_finite": true,
+      "pred_identical_to_v53": false,
+      "rows_per_event_10": true
+    },
+    "full_day": {
+      "rows": 352300,
+      "events": 35230,
+      "plain": {
+        "v53": 0.8180913840683512,
+        "candidate": 0.8185385453468343,
+        "gain": 0.00044716127848309917,
+        "paired95": [
+          0.00026636039834035397,
+          0.0006310933671744678
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8109113853226371,
+        "candidate": 0.8113977196978025,
+        "gain": 0.00048633437516543143,
+        "paired95": [
+          0.00029984579960769253,
+          0.0006851226533411025
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    },
+    "selection_cohort": {
+      "rows": 352300,
+      "events": 35230,
+      "plain": {
+        "v53": 0.8180913840683512,
+        "candidate": 0.8185385453468343,
+        "gain": 0.00044716127848309917,
+        "paired95": [
+          0.00026636039834035397,
+          0.0006310933671744678
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_selection_file_weights": {
+        "v53": 0.8109113853226371,
+        "candidate": 0.8113977196978025,
+        "gain": 0.00048633437516543143,
+        "paired95": [
+          0.00029984579960769253,
+          0.0006851226533411025
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8109113853226371,
+        "candidate": 0.8113977196978025,
+        "gain": 0.00048633437516543143,
+        "paired95": [
+          0.00029984579960769253,
+          0.0006851226533411025
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_3bin_mix": {
+        "v53": 0.8131191349375491,
+        "candidate": 0.8135883727778457,
+        "gain": 0.0004692378402966213,
+        "paired95": [
+          0.0002875925323901768,
+          0.000661223138274014
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    },
+    "v39_comparison_key": "pred_v39",
+    "vs_v39_full_day": {
+      "plain": {
+        "v53": 0.8176714755819893,
+        "candidate": 0.8181109443528781,
+        "gain": 0.00043946877088885117,
+        "paired95": [
+          0.00025745525478737264,
+          0.0006238020485772433
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8105265996201868,
+        "candidate": 0.8110009807833498,
+        "gain": 0.0004743811631630068,
+        "paired95": [
+          0.00028769848810068224,
+          0.0006768295314306754
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    },
+    "vs_v39_selection_cohort": {
+      "plain": {
+        "v53": 0.8176714755819893,
+        "candidate": 0.8181109443528781,
+        "gain": 0.00043946877088885117,
+        "paired95": [
+          0.00025745525478737264,
+          0.0006238020485772433
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_selection_file_weights": {
+        "v53": 0.8105265996201868,
+        "candidate": 0.8110009807833498,
+        "gain": 0.0004743811631630068,
+        "paired95": [
+          0.00028769848810068224,
+          0.0006768295314306754
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    }
+  },
+  "v53_reference_reproduced": {
+    "day6_adjusted": 0.8171690462358694,
+    "day6_expected": 0.8171690462350286,
+    "day5_adjusted": 0.8109113853226371,
+    "day5_expected": 0.8109113853236557,
+    "match": true
+  },
+  "verdict": {
+    "metric": "adjusted AUC, project weighted_auc code (5 history bins to evaluation mix), full day 6 / day 5",
+    "day6_gain": 0.0006412924364471717,
+    "day5_gain": 0.00048633437516543143,
+    "day6_paired95": [
+      0.0004355167487833822,
+      0.0008370817778184603
+    ],
+    "day5_paired95": [
+      0.00029984579960769253,
+      0.0006851226533411025
+    ],
+    "day6_selection_gain": 0.0005813795655462695,
+    "day6_selection_paired95": [
+      0.00035877136662137434,
+      0.0008308064513685237
+    ],
+    "day6_gain_vs_v39": 0.0006217622332755912,
+    "day5_gain_vs_v39": 0.0004743811631630068,
+    "day6_paired95_vs_v39": [
+      0.00041588790793375686,
+      0.0008177272798657265
+    ],
+    "day5_paired95_vs_v39": [
+      0.00028769848810068224,
+      0.0006768295314306754
+    ],
+    "accepted": false,
+    "screen_pass": true,
+    "leakage_alert_gain_over_0p01": false,
+    "status": "SCREEN PASS ONLY"
+  },
+  "elapsed_seconds": 1497.6719999999987
+}

@@ -1,0 +1,39 @@
+{
+  "experiment": "ctr-history-attention-001",
+  "platform": "Kaggle",
+  "notebook_url": "https://www.kaggle.com/code/riazahmadbutt/notebook8d08622ead",
+  "code_dataset_url": "https://www.kaggle.com/datasets/riazahmadbutt/techarena-history-attention-code",
+  "published_code_dataset_version": 3,
+  "run_device": "Tesla T4",
+  "run_source": "Dataset version 2 with the missing validation-root argument hotfixed in the Kaggle working directory; the fix is included in dataset version 3.",
+  "day6": {
+    "fit_events": 293759,
+    "validation_events": 35138,
+    "ordinary_auc": 0.8255141397786777,
+    "baseline_ordinary_auc": 0.8254233318844955,
+    "history_adjusted_auc": 0.8172557854289246,
+    "baseline_history_adjusted_auc": 0.8171690462350284,
+    "ordinary_gain": 0.00009080789418225432,
+    "adjusted_gain": 0.00008673919389623475,
+    "positive_gain_gate": false,
+    "raw_auc": 0.8158347030929306,
+    "parent_raw_auc": 0.81742421603375,
+    "checkpoint_replay": "PASS",
+    "vs_parent_blend": {
+      "ordinary_auc": 0.8255141397786777,
+      "baseline_ordinary_auc": 0.825559796453222,
+      "ordinary_gain": -0.00004565667454425881,
+      "history_adjusted_auc": 0.8172557854289246,
+      "baseline_history_adjusted_auc": 0.8172950850130789,
+      "adjusted_gain": -0.00003929958415427315,
+      "positive_gain_gate": false
+    }
+  },
+  "day5_confirmation_run": false,
+  "eligible_for_review": false,
+  "official_auc": null,
+  "official_target_auc": 0.82,
+  "official_target_achieved": null,
+  "submission_created": false,
+  "note": "The day-6 candidate did not clear the confidence gate and underperformed its frozen setwise parent blend, so the predeclared rule stopped before day 5. These reused local validation metrics do not establish or predict official leaderboard AUC."
+}

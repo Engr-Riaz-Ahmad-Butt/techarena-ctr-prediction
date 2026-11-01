@@ -1,0 +1,45 @@
+{
+  "name": "nxa_h1",
+  "holdout_events": 10716,
+  "holdout_rows": 107160,
+  "vs_v53_adjusted": {
+    "v53": 0.8163754011404034,
+    "candidate": 0.8173491269267177,
+    "gain": 0.0009737257863142723,
+    "paired95": [
+      0.00041693473682567485,
+      0.001568409917057678
+    ],
+    "excludes_zero": true,
+    "replicates": 1000,
+    "seed": 3,
+    "events": 10716
+  },
+  "vs_v53_plain": {
+    "v53": 0.8252049128382003,
+    "candidate": 0.826015657404896,
+    "gain": 0.0008107445666957203,
+    "paired95": [
+      0.00031377244713132467,
+      0.0013081654490022742
+    ],
+    "excludes_zero": true,
+    "replicates": 1000,
+    "seed": 3,
+    "events": 10716
+  },
+  "vs_v39_adjusted": {
+    "v53": 0.8159304833223999,
+    "candidate": 0.8168581958723522,
+    "gain": 0.0009277125499522754,
+    "paired95": [
+      0.00036761345264296476,
+      0.0015069851594655514
+    ],
+    "excludes_zero": true,
+    "replicates": 1000,
+    "seed": 3,
+    "events": 10716
+  },
+  "holdout_passed": true
+}

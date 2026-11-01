@@ -1,0 +1,250 @@
+{
+  "exp_name": "lgb_leaves31_lr0.04_n400_slate0_s42",
+  "params": {
+    "objective": "binary",
+    "metric": "auc",
+    "boosting_type": "gbdt",
+    "num_leaves": 31,
+    "learning_rate": 0.04,
+    "min_child_samples": 100,
+    "feature_fraction": 0.8,
+    "bagging_fraction": 0.8,
+    "bagging_freq": 1,
+    "random_state": 42,
+    "n_jobs": 16,
+    "verbose": -1
+  },
+  "n_estimators": 400,
+  "use_slate": false,
+  "runtime_seconds": 26.64,
+  "standalone": {
+    "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_standalone",
+    "blend_weight": null,
+    "selection_day5": {
+      "ordinary_auc": 0.8141794499710096,
+      "adjusted_auc": 0.8057424371627065,
+      "baseline_adjusted_auc": 0.8109113853236557,
+      "gain": -0.0051689481609491494
+    },
+    "selection_day6": {
+      "ordinary_auc": 0.823264617253825,
+      "adjusted_auc": 0.8141205873776522,
+      "baseline_adjusted_auc": 0.8175275258796006,
+      "gain": -0.0034069385019483978
+    },
+    "selection_gate_passed": false,
+    "fresh_holdout": null,
+    "accepted": false
+  },
+  "best_blend": {
+    "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.05",
+    "blend_weight": 0.05,
+    "selection_day5": {
+      "ordinary_auc": 0.8181107225652429,
+      "adjusted_auc": 0.81092041994618,
+      "baseline_adjusted_auc": 0.8109113853236557,
+      "gain": 9.03462252432874e-06
+    },
+    "selection_day6": {
+      "ordinary_auc": 0.8255407348944952,
+      "adjusted_auc": 0.8175285249497832,
+      "baseline_adjusted_auc": 0.8175275258796006,
+      "gain": 9.990701825834947e-07
+    },
+    "selection_gate_passed": false,
+    "fresh_holdout": null,
+    "accepted": false
+  },
+  "blend_reports": {
+    "0.02": {
+      "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.02",
+      "blend_weight": 0.02,
+      "selection_day5": {
+        "ordinary_auc": 0.8181013131891777,
+        "adjusted_auc": 0.8109178484874112,
+        "baseline_adjusted_auc": 0.8109113853236557,
+        "gain": 6.463163755521251e-06
+      },
+      "selection_day6": {
+        "ordinary_auc": 0.8255339433126733,
+        "adjusted_auc": 0.817530195811317,
+        "baseline_adjusted_auc": 0.8175275258796006,
+        "gain": 2.669931716381413e-06
+      },
+      "selection_gate_passed": false,
+      "fresh_holdout": null,
+      "accepted": false
+    },
+    "0.05": {
+      "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.05",
+      "blend_weight": 0.05,
+      "selection_day5": {
+        "ordinary_auc": 0.8181107225652429,
+        "adjusted_auc": 0.81092041994618,
+        "baseline_adjusted_auc": 0.8109113853236557,
+        "gain": 9.03462252432874e-06
+      },
+      "selection_day6": {
+        "ordinary_auc": 0.8255407348944952,
+        "adjusted_auc": 0.8175285249497832,
+        "baseline_adjusted_auc": 0.8175275258796006,
+        "gain": 9.990701825834947e-07
+      },
+      "selection_gate_passed": false,
+      "fresh_holdout": null,
+      "accepted": false
+    },
+    "0.08": {
+      "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.08",
+      "blend_weight": 0.08,
+      "selection_day5": {
+        "ordinary_auc": 0.8181120667327291,
+        "adjusted_auc": 0.8109129942050789,
+        "baseline_adjusted_auc": 0.8109113853236557,
+        "gain": 1.6088814231984827e-06
+      },
+      "selection_day6": {
+        "ordinary_auc": 0.8255426657806378,
+        "adjusted_auc": 0.8175209054097644,
+        "baseline_adjusted_auc": 0.8175275258796006,
+        "gain": -6.6204698362382075e-06
+      },
+      "selection_gate_passed": false,
+      "fresh_holdout": null,
+      "accepted": false
+    },
+    "0.1": {
+      "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.1",
+      "blend_weight": 0.1,
+      "selection_day5": {
+        "ordinary_auc": 0.8181085140573306,
+        "adjusted_auc": 0.810902619684864,
+        "baseline_adjusted_auc": 0.8109113853236557,
+        "gain": -8.765638791707886e-06
+      },
+      "selection_day6": {
+        "ordinary_auc": 0.8255416996341983,
+        "adjusted_auc": 0.8175125294082074,
+        "baseline_adjusted_auc": 0.8175275258796006,
+        "gain": -1.4996471393247113e-05
+      },
+      "selection_gate_passed": false,
+      "fresh_holdout": null,
+      "accepted": false
+    },
+    "0.12": {
+      "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.12",
+      "blend_weight": 0.12,
+      "selection_day5": {
+        "ordinary_auc": 0.81810204718609,
+        "adjusted_auc": 0.810888185586903,
+        "baseline_adjusted_auc": 0.8109113853236557,
+        "gain": -2.319973675268816e-05
+      },
+      "selection_day6": {
+        "ordinary_auc": 0.8255393471492087,
+        "adjusted_auc": 0.8175025771654636,
+        "baseline_adjusted_auc": 0.8175275258796006,
+        "gain": -2.494871413705191e-05
+      },
+      "selection_gate_passed": false,
+      "fresh_holdout": null,
+      "accepted": false
+    },
+    "0.15": {
+      "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.15",
+      "blend_weight": 0.15,
+      "selection_day5": {
+        "ordinary_auc": 0.8180860317020409,
+        "adjusted_auc": 0.8108581456156354,
+        "baseline_adjusted_auc": 0.8109113853236557,
+        "gain": -5.3239708020291765e-05
+      },
+      "selection_day6": {
+        "ordinary_auc": 0.8255300365248286,
+        "adjusted_auc": 0.8174798122827822,
+        "baseline_adjusted_auc": 0.8175275258796006,
+        "gain": -4.771359681843279e-05
+      },
+      "selection_gate_passed": false,
+      "fresh_holdout": null,
+      "accepted": false
+    },
+    "0.2": {
+      "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.2",
+      "blend_weight": 0.2,
+      "selection_day5": {
+        "ordinary_auc": 0.8180418914141858,
+        "adjusted_auc": 0.8107870158967975,
+        "baseline_adjusted_auc": 0.8109113853236557,
+        "gain": -0.0001243694268582285
+      },
+      "selection_day6": {
+        "ordinary_auc": 0.8255043873625603,
+        "adjusted_auc": 0.8174280444375355,
+        "baseline_adjusted_auc": 0.8175275258796006,
+        "gain": -9.948144206517462e-05
+      },
+      "selection_gate_passed": false,
+      "fresh_holdout": null,
+      "accepted": false
+    },
+    "0.25": {
+      "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.25",
+      "blend_weight": 0.25,
+      "selection_day5": {
+        "ordinary_auc": 0.8179759990341546,
+        "adjusted_auc": 0.8106891027086763,
+        "baseline_adjusted_auc": 0.8109113853236557,
+        "gain": -0.0002222826149793633
+      },
+      "selection_day6": {
+        "ordinary_auc": 0.8254658187347994,
+        "adjusted_auc": 0.8173584516253194,
+        "baseline_adjusted_auc": 0.8175275258796006,
+        "gain": -0.000169074254281254
+      },
+      "selection_gate_passed": false,
+      "fresh_holdout": null,
+      "accepted": false
+    },
+    "0.3": {
+      "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.3",
+      "blend_weight": 0.3,
+      "selection_day5": {
+        "ordinary_auc": 0.8178877344119476,
+        "adjusted_auc": 0.8105631373556237,
+        "baseline_adjusted_auc": 0.8109113853236557,
+        "gain": -0.00034824796803201163
+      },
+      "selection_day6": {
+        "ordinary_auc": 0.8254143793146195,
+        "adjusted_auc": 0.817271701315364,
+        "baseline_adjusted_auc": 0.8175275258796006,
+        "gain": -0.000255824564236673
+      },
+      "selection_gate_passed": false,
+      "fresh_holdout": null,
+      "accepted": false
+    },
+    "0.4": {
+      "model_name": "lgb_leaves31_lr0.04_n400_slate0_s42_blend_0.4",
+      "blend_weight": 0.4,
+      "selection_day5": {
+        "ordinary_auc": 0.8176437635326439,
+        "adjusted_auc": 0.8102274938447829,
+        "baseline_adjusted_auc": 0.8109113853236557,
+        "gain": -0.0006838914788728223
+      },
+      "selection_day6": {
+        "ordinary_auc": 0.8252713834519357,
+        "adjusted_auc": 0.8170439664533528,
+        "baseline_adjusted_auc": 0.8175275258796006,
+        "gain": -0.0004835594262478926
+      },
+      "selection_gate_passed": false,
+      "fresh_holdout": null,
+      "accepted": false
+    }
+  }
+}

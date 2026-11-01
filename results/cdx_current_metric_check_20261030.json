@@ -1,0 +1,60 @@
+{
+  "status": "readonly_metric_reconciliation",
+  "scores": [
+    {
+      "day": 5,
+      "model": "V53_parent",
+      "events": 35230,
+      "ordinary_auc": 0.8180913840683512,
+      "existing_5bin_auc": 0.8109113853236557,
+      "supplied_3bin_auc": 0.8131191349404947
+    },
+    {
+      "day": 5,
+      "model": "latest_head_V53_parent",
+      "events": 35230,
+      "ordinary_auc": 0.8185956485007998,
+      "existing_5bin_auc": 0.8114308859896312,
+      "supplied_3bin_auc": 0.8136334946325829
+    },
+    {
+      "day": 5,
+      "model": "latest_head_V39_parent",
+      "events": 35230,
+      "ordinary_auc": 0.8181490463416812,
+      "existing_5bin_auc": 0.8110171677580235,
+      "supplied_3bin_auc": 0.8132180484800045
+    },
+    {
+      "day": 6,
+      "model": "V53_parent",
+      "events": 24422,
+      "ordinary_auc": 0.8255267090309614,
+      "existing_5bin_auc": 0.8175275258796006,
+      "supplied_3bin_auc": 0.8200379621286851
+    },
+    {
+      "day": 6,
+      "model": "latest_head_V53_parent",
+      "events": 24422,
+      "ordinary_auc": 0.8262689058768664,
+      "existing_5bin_auc": 0.8183305782317438,
+      "supplied_3bin_auc": 0.8208064990742561
+    },
+    {
+      "day": 6,
+      "model": "latest_head_V39_parent",
+      "events": 24422,
+      "ordinary_auc": 0.8257568848390787,
+      "existing_5bin_auc": 0.8177688562818386,
+      "supplied_3bin_auc": 0.8202403971044749
+    }
+  ],
+  "note": "Different history weighting definitions give different AUCs. Crossing0.82 under another weighting is NOT an improvement or an official score. Rows are allowed selection events; not the full-day cohort used for0.818023.",
+  "full_day_outcomes_loaded": false,
+  "holdout_scored": false,
+  "evaluation_read": false,
+  "model_fitted": false,
+  "submission_created": false,
+  "official_score_ledger_changed": false
+}

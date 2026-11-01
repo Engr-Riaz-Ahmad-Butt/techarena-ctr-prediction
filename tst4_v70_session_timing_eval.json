@@ -1,0 +1,224 @@
+{
+  "name": "v70_session_timing",
+  "day6_file": "artifacts\\v70_session_timing_day6.npz",
+  "day5_file": "artifacts\\v70_session_timing_day5.npz",
+  "day6": {
+    "checks": {
+      "rows": 351380,
+      "y_equals_v53": true,
+      "events_equal_v53": true,
+      "baseline_equals_v53_pred": true,
+      "pred_finite": true,
+      "pred_identical_to_v53": false,
+      "rows_per_event_10": true
+    },
+    "full_day": {
+      "rows": 351380,
+      "events": 35138,
+      "plain": {
+        "v53": 0.8254233318844955,
+        "candidate": 0.8254470987044225,
+        "gain": 2.3766819926995808e-05,
+        "paired95": [
+          1.3803285668306798e-05,
+          3.340327750632477e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8171690462358694,
+        "candidate": 0.8171912752365657,
+        "gain": 2.2229000696261103e-05,
+        "paired95": [
+          1.1912026701418888e-05,
+          3.2659414447278044e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      }
+    },
+    "selection_cohort": {
+      "rows": 244220,
+      "events": 24422,
+      "plain": {
+        "v53": 0.8255267090309614,
+        "candidate": 0.8255492950250992,
+        "gain": 2.258599413784701e-05,
+        "paired95": [
+          1.1255296163639738e-05,
+          3.443382024998776e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_selection_file_weights": {
+        "v53": 0.8175275258801845,
+        "candidate": 0.8175511270789351,
+        "gain": 2.3601198750555774e-05,
+        "paired95": [
+          1.170775488400222e-05,
+          3.648323120800101e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8172300021401046,
+        "candidate": 0.8172536987906439,
+        "gain": 2.3696650539362096e-05,
+        "paired95": [
+          1.1623294161638987e-05,
+          3.659597783918777e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_3bin_mix": {
+        "v53": 0.8200379621275946,
+        "candidate": 0.8200610652534548,
+        "gain": 2.310312586017993e-05,
+        "paired95": [
+          1.0735892757177124e-05,
+          3.583681360996016e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      }
+    }
+  },
+  "day5": {
+    "checks": {
+      "rows": 352300,
+      "y_equals_v53": true,
+      "events_equal_v53": true,
+      "baseline_equals_v53_pred": true,
+      "pred_finite": true,
+      "pred_identical_to_v53": false,
+      "rows_per_event_10": true
+    },
+    "full_day": {
+      "rows": 352300,
+      "events": 35230,
+      "plain": {
+        "v53": 0.8180913840683512,
+        "candidate": 0.8181073005727946,
+        "gain": 1.5916504443325152e-05,
+        "paired95": [
+          5.1130947683497576e-06,
+          2.733973059008965e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8109113853226371,
+        "candidate": 0.8109250080106536,
+        "gain": 1.3622688016523554e-05,
+        "paired95": [
+          1.2757994854811772e-06,
+          2.6082605428409675e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    },
+    "selection_cohort": {
+      "rows": 352300,
+      "events": 35230,
+      "plain": {
+        "v53": 0.8180913840683512,
+        "candidate": 0.8181073005727946,
+        "gain": 1.5916504443325152e-05,
+        "paired95": [
+          5.1130947683497576e-06,
+          2.733973059008965e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_selection_file_weights": {
+        "v53": 0.8109113853226371,
+        "candidate": 0.8109250080106536,
+        "gain": 1.3622688016523554e-05,
+        "paired95": [
+          1.2757994854811772e-06,
+          2.6082605428409675e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8109113853226371,
+        "candidate": 0.8109250080106536,
+        "gain": 1.3622688016523554e-05,
+        "paired95": [
+          1.2757994854811772e-06,
+          2.6082605428409675e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_3bin_mix": {
+        "v53": 0.8131191349375491,
+        "candidate": 0.8131334104211349,
+        "gain": 1.427548358579056e-05,
+        "paired95": [
+          2.156326465097003e-06,
+          2.66239657307904e-05
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    }
+  },
+  "v53_reference_reproduced": {
+    "day6_adjusted": 0.8171690462358694,
+    "day6_expected": 0.8171690462350286,
+    "day5_adjusted": 0.8109113853226371,
+    "day5_expected": 0.8109113853236557,
+    "match": true
+  },
+  "verdict": {
+    "metric": "adjusted AUC, project weighted_auc code (5 history bins to evaluation mix), full day 6 / day 5",
+    "day6_gain": 2.2229000696261103e-05,
+    "day5_gain": 1.3622688016523554e-05,
+    "day6_paired95": [
+      1.1912026701418888e-05,
+      3.2659414447278044e-05
+    ],
+    "day5_paired95": [
+      1.2757994854811772e-06,
+      2.6082605428409675e-05
+    ],
+    "accepted": false,
+    "screen_pass": false,
+    "leakage_alert_gain_over_0p01": false,
+    "status": "NOT ACCEPTED"
+  },
+  "elapsed_seconds": 792.5159999999996
+}

@@ -1,0 +1,75 @@
+{
+  "files_consistent": {
+    "day5_y_events": true,
+    "day6_y_events": true,
+    "baseline_is_v53": true,
+    "raw_is_e3_expert": true
+  },
+  "a_day6_head_v53": {
+    "intercept_implied": -3.3057031787097877,
+    "max_dev_from_constant": 8.881784197001252e-16,
+    "alt_if_standardised_on_day6_max_dev": 1.617099012474199e-06
+  },
+  "b_day5_crossfit_v53": {
+    "fold_rows": [
+      176150,
+      176150
+    ],
+    "fold_users_disjoint": true,
+    "fold_a_affine_max_resid": 1.4210854715202004e-14,
+    "fold_b_affine_max_resid": 1.9539925233402755e-14,
+    "joint_affine_max_resid": 0.057208312262302385,
+    "fold_a_coef": [
+      -3.301115416780144,
+      0.6790251873093028,
+      0.07732305667180107
+    ],
+    "fold_b_coef": [
+      -3.2968783538062225,
+      0.6743459656379558,
+      0.10765572970729367
+    ]
+  },
+  "c_eval_head_v39": {
+    "max_abs_diff_rank_vs_saved": 0.0,
+    "saved_min": 1.88896297821459e-06,
+    "saved_max": 0.9999981110370217,
+    "alt_if_standardised_on_day5_max_abs_diff": 3.7779259565162704e-06
+  },
+  "d_v39_parent": {
+    "day6_affine_max_resid": 4.618527782440651e-14,
+    "day6_coef": [
+      -3.300329468327746,
+      0.6776329303684249,
+      0.09140485214134525
+    ],
+    "day5_fold_a_resid": 4.085620730620576e-14,
+    "day5_fold_b_resid": 2.7533531010703882e-14
+  },
+  "time": {
+    "day6_head_label_rows_ts_max": 1737849540,
+    "day6_cutoff": 1737849600,
+    "day6_head_labels_before_cutoff": true,
+    "eval_head_label_rows_ts_max": 1737935940,
+    "eval_cutoff": 1737936000,
+    "eval_head_labels_before_cutoff": true,
+    "day5_scored_min": 1737763200,
+    "day6_scored_min": 1737849600,
+    "eval_scored_min": 1737936000,
+    "scored_at_or_after_cutoff": true,
+    "day5_note": "day-5 predictions use same-day labels of OTHER users (2-fold user cross-fit) - the V53 convention, not a chronological fold"
+  },
+  "provenance": {
+    "nxa_h1.py": "21:36:09",
+    "nxa_h1_final.py": "21:37:21",
+    "artifacts/nxa_h1_selection.json": "21:36:43",
+    "artifacts/nxa_h1_frozen.json": "21:37:02",
+    "artifacts/nxa_h1_day5.npz": "21:37:48",
+    "artifacts/nxa_h1_day6.npz": "21:37:48",
+    "artifacts/nxa_h1_eval_pred_v39.npy": "21:37:50",
+    "artifacts/nxa_exposure2_day5_features.npz": "20:37:15",
+    "artifacts/nxa_exposure2_day6_features.npz": "20:33:47",
+    "artifacts/nxa_exposure2_day7_features.npz": "20:44:27"
+  },
+  "elapsed_seconds": 4.312000000001717
+}

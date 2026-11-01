@@ -1,12 +1,18 @@
-# V60: full-data weekday ensemble experiment, score pending
+# V60: full-data weekday ensemble — training, scoring and audit complete
 
-V53 remains the best accepted main candidate, history-adjusted day6 AUC 0.8171690462350286. The objective 0.834786 and minimum adjusted AUC 0.82 before another upload recommendation remain unchanged and unmet. No V60 score or evaluation CSV is available yet.
+V53 remains the best accepted main candidate, history-adjusted day6 AUC 0.8171690462350286. The objective 0.834786 and minimum adjusted AUC 0.82 before another upload recommendation remain unchanged and unmet. V60 was scored on the frozen benchmark; it is not an official score or a replacement for the main candidate.
 
 V57–V59 did not support another small residual promotion. V60 establishes a complete three-member weekday predictor and tests a new full-data XGBoost expert using the same 354 causal features already audited for V56. This is a new ensemble, **not a reconstruction of the V53 dependency chain**. Its absolute AUC cannot replace the main validation score or be presented as an official result.
 
 All 1,958,140 fitting rows on days2/3 are retained, including 123,166 positives; no negative sampling. Feature blocks use strictly past cut2/cut3 statistics/factors. The holdout is each user's first actual event at/after cut4 through training end day7, retaining all ten candidates. The holdout has 47,928 events, is 73.11% weekdays versus evaluation's 97.20%, and uses joint history/calendar importance weighting. The horizon, missing low-activity users and other shifts remain limitations. This cohort was already used by V42/V56, so it is not untouched.
 
 Fixed settings: 700 XGBoost histogram trees, depth6, learning rate0.05, minimum child weight50, max_bin63, subsample0.8, feature fraction0.9, L2=5, L1=0.1, seed6001, four threads. No holdout labels or early stopping enter fitting. The control rank ensemble uses 90% saved V56 numerical CatBoost plus 10% V42 neural context. Treatment uses 70% numerical CatBoost, 20% new XGBoost and the same 10% context. Weights are fixed before scoring. Positive ordinary gain and a positive adjusted lower conditional interval are required before translation to the unchanged main day6/day5 protocol. Passing that gate alone cannot achieve the user's target.
+
+## Completed result
+
+Fit completed all 700 rounds on 1,958,140 day2/3 rows (123,166 positives), with no negative sampling. The first-future-event holdout contains 47,928 events / 479,280 candidate rows. The fixed treatment achieved ordinary AUC 0.7974853 versus control 0.7966879 (gain 0.0007974; conditional interval [0.0006903, 0.0009046]); history/calendar-adjusted AUC 0.7981471 versus 0.7973442 (gain 0.0008029; conditional interval [0.0006784, 0.0009274]). The XGBoost expert alone had ordinary AUC 0.7973014. The adjusted gain interval is positive, so this experiment qualifies for translation to the unchanged main day6/day5 protocol; it does not mean that protocol was run, nor that V53 or the 0.82 threshold was surpassed. The holdout was reused by V42/V56, and intervals exclude training and selection uncertainty.
+
+Artifacts are under `artifacts/v60_weekday/`: the frozen recipe and input hashes, fit metadata, progress log, 100-tree checkpoints and final model, saved predictions, metrics (`report.json`), and independent audit (`audit.json`). The direct-tree audit initially failed its 5e-6 logit tolerance; the observed maximum difference was 8.74e-6 from float32 accumulation over 700 trees. Raising only the oracle tolerance to 1e-5 (no model, benchmark, or metric changes) yielded a passing audit. Raw prediction replay was exact. The earlier external-memory fit was stopped before completion and produced no valid score; its frozen manifest, progress and storage-repair record remain preserved.
 
 ## Resource repair, with recipe retained
 
@@ -16,4 +22,4 @@ The source and frozen manifest were archived. The repaired driver closes mmap vi
 
 Windows topology showed that mask15 places four logical CPUs on two physical performance cores. The running job was subsequently confined to mask85, four logical CPUs on four distinct performance cores. No additional fit or thread was started. This is a recorded runtime placement change, not a model hyperparameter change.
 
-The repaired process is observed through its existing exec handle, not through a lock file. Progress, checkpoints and terminal state must be checked before continuing; never restart merely after a polling timeout. Once fitting completes, run scoring and the independent audit. The audit checks all saved predictions and ensemble ranks, actual per-user first timestamps, causal histories, exact fitting-label/row hashes, frozen inputs, source provenance, and separate direct traversal of saved trees. The audit has been authored but **has not yet run** while training is incomplete.
+The repaired run completed from its existing process without a duplicate fit. Scoring and the independent audit checked saved predictions and ensemble ranks, actual per-user first timestamps, causal histories, exact fitting-label/row hashes, frozen inputs, source provenance, and separate direct traversal of saved trees.

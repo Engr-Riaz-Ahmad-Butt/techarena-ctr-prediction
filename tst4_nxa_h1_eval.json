@@ -1,0 +1,409 @@
+{
+  "name": "nxa_h1",
+  "day6_file": "artifacts\\nxa_h1_day6.npz",
+  "day5_file": "artifacts\\nxa_h1_day5.npz",
+  "day6": {
+    "checks": {
+      "rows": 351380,
+      "y_equals_v53": true,
+      "events_equal_v53": true,
+      "baseline_equals_v53_pred": true,
+      "pred_finite": true,
+      "pred_identical_to_v53": false,
+      "rows_per_event_10": true
+    },
+    "full_day": {
+      "rows": 351380,
+      "events": 35138,
+      "plain": {
+        "v53": 0.8254233318844955,
+        "candidate": 0.8261862147424263,
+        "gain": 0.0007628828579308022,
+        "paired95": [
+          0.0004772000976006996,
+          0.0010296626957772086
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8171690462358694,
+        "candidate": 0.8180234947763967,
+        "gain": 0.0008544485405272972,
+        "paired95": [
+          0.0005300823861152271,
+          0.0011556278589555935
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      }
+    },
+    "selection_cohort": {
+      "rows": 244220,
+      "events": 24422,
+      "plain": {
+        "v53": 0.8255267090309614,
+        "candidate": 0.8262689058768663,
+        "gain": 0.00074219684590493,
+        "paired95": [
+          0.00045293574010630834,
+          0.0010537161700841958
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_selection_file_weights": {
+        "v53": 0.8175275258801845,
+        "candidate": 0.8183305782323926,
+        "gain": 0.0008030523522081223,
+        "paired95": [
+          0.0004605124300992025,
+          0.0011691829747029227
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8172300021401046,
+        "candidate": 0.8180359382236213,
+        "gain": 0.0008059360835167562,
+        "paired95": [
+          0.0004608416902879442,
+          0.0011760287816600153
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_3bin_mix": {
+        "v53": 0.8200379621275946,
+        "candidate": 0.8208064990731208,
+        "gain": 0.0007685369455261437,
+        "paired95": [
+          0.0004473436210331749,
+          0.0011067087281479704
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      }
+    },
+    "v39_comparison_key": "pred_v39",
+    "vs_v39_full_day": {
+      "plain": {
+        "v53": 0.824957808393509,
+        "candidate": 0.8256865074753251,
+        "gain": 0.0007286990818161643,
+        "paired95": [
+          0.0004448540534598533,
+          0.0009952782555621763
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.816661487885959,
+        "candidate": 0.817480929053643,
+        "gain": 0.0008194411676839541,
+        "paired95": [
+          0.0005024517958837765,
+          0.0011210826406375662
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      }
+    },
+    "vs_v39_selection_cohort": {
+      "plain": {
+        "v53": 0.8250449242409253,
+        "candidate": 0.8257568848390787,
+        "gain": 0.0007119605981533716,
+        "paired95": [
+          0.0004251413567648077,
+          0.0010295484115630694
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      },
+      "adjusted_selection_file_weights": {
+        "v53": 0.8169935471896955,
+        "candidate": 0.8177688562824778,
+        "gain": 0.0007753090927822281,
+        "paired95": [
+          0.00043651217415141276,
+          0.0011445659606460405
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      }
+    },
+    "vs_extra_nxa_expo": {
+      "full_adjusted_5bin": {
+        "v53": 0.8178103386723166,
+        "candidate": 0.8180234947763967,
+        "gain": 0.00021315610408012553,
+        "paired95": [
+          6.732134953918167e-05,
+          0.0003641678758284333
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35138
+      },
+      "selection_adjusted_selection_file_weights": {
+        "v53": 0.8181089054457308,
+        "candidate": 0.8183305782323926,
+        "gain": 0.00022167278666185286,
+        "paired95": [
+          4.497778473601666e-05,
+          0.0003940970229905388
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 24422
+      }
+    }
+  },
+  "day5": {
+    "checks": {
+      "rows": 352300,
+      "y_equals_v53": true,
+      "events_equal_v53": true,
+      "baseline_equals_v53_pred": true,
+      "pred_finite": true,
+      "pred_identical_to_v53": false,
+      "rows_per_event_10": true
+    },
+    "full_day": {
+      "rows": 352300,
+      "events": 35230,
+      "plain": {
+        "v53": 0.8180913840683512,
+        "candidate": 0.8185956485007998,
+        "gain": 0.0005042644324485535,
+        "paired95": [
+          0.0002382153233185913,
+          0.0007905847798831438
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8109113853226371,
+        "candidate": 0.8114308859882804,
+        "gain": 0.0005195006656433243,
+        "paired95": [
+          0.000221722941750907,
+          0.0008391611700198032
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    },
+    "selection_cohort": {
+      "rows": 352300,
+      "events": 35230,
+      "plain": {
+        "v53": 0.8180913840683512,
+        "candidate": 0.8185956485007998,
+        "gain": 0.0005042644324485535,
+        "paired95": [
+          0.0002382153233185913,
+          0.0007905847798831438
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_selection_file_weights": {
+        "v53": 0.8109113853226371,
+        "candidate": 0.8114308859882804,
+        "gain": 0.0005195006656433243,
+        "paired95": [
+          0.000221722941750907,
+          0.0008391611700198032
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8109113853226371,
+        "candidate": 0.8114308859882804,
+        "gain": 0.0005195006656433243,
+        "paired95": [
+          0.000221722941750907,
+          0.0008391611700198032
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_3bin_mix": {
+        "v53": 0.8131191349375491,
+        "candidate": 0.8136334946294022,
+        "gain": 0.0005143596918530946,
+        "paired95": [
+          0.00022843610598534959,
+          0.0008263520184810219
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    },
+    "v39_comparison_key": "pred_v39",
+    "vs_v39_full_day": {
+      "plain": {
+        "v53": 0.8176714755819893,
+        "candidate": 0.8181490463416812,
+        "gain": 0.0004775707596919032,
+        "paired95": [
+          0.00020905127962460025,
+          0.0007611735121722973
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_5bin_project_code": {
+        "v53": 0.8105265996201868,
+        "candidate": 0.8110171677566411,
+        "gain": 0.0004905681364543168,
+        "paired95": [
+          0.00019285408690859762,
+          0.0008073807650449543
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    },
+    "vs_v39_selection_cohort": {
+      "plain": {
+        "v53": 0.8176714755819893,
+        "candidate": 0.8181490463416812,
+        "gain": 0.0004775707596919032,
+        "paired95": [
+          0.00020905127962460025,
+          0.0007611735121722973
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "adjusted_selection_file_weights": {
+        "v53": 0.8105265996201868,
+        "candidate": 0.8110171677566411,
+        "gain": 0.0004905681364543168,
+        "paired95": [
+          0.00019285408690859762,
+          0.0008073807650449543
+        ],
+        "excludes_zero": true,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    },
+    "vs_extra_nxa_expo": {
+      "full_adjusted_5bin": {
+        "v53": 0.8113977196978025,
+        "candidate": 0.8114308859882804,
+        "gain": 3.316629047789288e-05,
+        "paired95": [
+          -0.0001165314238417342,
+          0.0001967580587484169
+        ],
+        "excludes_zero": false,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      },
+      "selection_adjusted_selection_file_weights": {
+        "v53": 0.8113977196978025,
+        "candidate": 0.8114308859882804,
+        "gain": 3.316629047789288e-05,
+        "paired95": [
+          -0.0001165314238417342,
+          0.0001967580587484169
+        ],
+        "excludes_zero": false,
+        "replicates": 1000,
+        "seed": 3,
+        "events": 35230
+      }
+    }
+  },
+  "v53_reference_reproduced": {
+    "day6_adjusted": 0.8171690462358694,
+    "day6_expected": 0.8171690462350286,
+    "day5_adjusted": 0.8109113853226371,
+    "day5_expected": 0.8109113853236557,
+    "match": true
+  },
+  "verdict": {
+    "metric": "adjusted AUC, project weighted_auc code (5 history bins to evaluation mix), full day 6 / day 5",
+    "day6_gain": 0.0008544485405272972,
+    "day5_gain": 0.0005195006656433243,
+    "day6_paired95": [
+      0.0005300823861152271,
+      0.0011556278589555935
+    ],
+    "day5_paired95": [
+      0.000221722941750907,
+      0.0008391611700198032
+    ],
+    "day6_selection_gain": 0.0008030523522081223,
+    "day6_selection_paired95": [
+      0.0004605124300992025,
+      0.0011691829747029227
+    ],
+    "day6_gain_vs_v39": 0.0008194411676839541,
+    "day5_gain_vs_v39": 0.0004905681364543168,
+    "day6_paired95_vs_v39": [
+      0.0005024517958837765,
+      0.0011210826406375662
+    ],
+    "day5_paired95_vs_v39": [
+      0.00019285408690859762,
+      0.0008073807650449543
+    ],
+    "accepted": true,
+    "screen_pass": false,
+    "leakage_alert_gain_over_0p01": false,
+    "status": "ACCEPTED"
+  },
+  "elapsed_seconds": 1691.9209999999985
+}

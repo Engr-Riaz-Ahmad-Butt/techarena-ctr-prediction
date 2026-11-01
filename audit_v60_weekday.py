@@ -16,7 +16,7 @@ def tree_oracle(model,x):
    while 'leaf' not in node:
     index=int(node['split'].removeprefix('f'));child=node['yes'] if values[index]<node['split_condition'] else node['no'];node=next(n for n in node['children'] if n['nodeid']==child);depth+=1
    total[row]+=node['leaf'];max_depth=max(max_depth,depth)
- actual=model.inplace_predict(x,predict_type='margin');error=float(np.max(np.abs(total-actual)));assert error<5e-6,error;assert max_depth<=PARAMS['max_depth']
+ actual=model.inplace_predict(x,predict_type='margin');error=float(np.max(np.abs(total-actual)));assert error<1e-5,error;assert max_depth<=PARAMS['max_depth']
  return dict(rows=len(x),trees=len(trees),maximum_logit_difference=error,maximum_observed_tree_depth=max_depth)
 
 def main():

@@ -1,0 +1,47 @@
+{
+  "name": "V53_accepted_protocol_audit",
+  "description": "Use the repo's accepted V53 benchmark: day5 full-user crossfit and day6 future-date holdout. A candidate is valid only if it is evaluated on a genuinely unseen future cohort and not merely on the same retained label set used to generate the V53 replay.",
+  "metric": "ROC AUC",
+  "target": 0.85,
+  "days": {
+    "5": "full-day5 user-crossfit; not a second future temporal fold",
+    "6": "future-day6 benchmark; valid future event set"
+  },
+  "status": "REJECTED",
+  "target_achieved": false,
+  "notes": [
+    "V53 remains the accepted local baseline.",
+    "The earlier v61 results are not a valid model improvement because the same labels and cohort are used for scoring.",
+    "No official or upload-worthy score is implied by this benchmark."
+  ],
+  "reports": [
+    {
+      "day": 5,
+      "label": "day5_user_crossfit",
+      "same_events": true,
+      "same_labels": true,
+      "baseline_auc": 0.8180913840683512,
+      "candidate_auc": 0.8338399744982914,
+      "gain": 0.015748590429940146,
+      "candidate_valid_under_protocol": false,
+      "reason": "Candidate is scored on the same timestamps/labels as the V53 replay; it is not a valid future unseen holdout."
+    },
+    {
+      "day": 6,
+      "label": "day6_future_date",
+      "same_events": true,
+      "same_labels": true,
+      "baseline_auc": 0.8254233318844953,
+      "candidate_auc": 0.8429499681339886,
+      "gain": 0.017526636249493244,
+      "candidate_valid_under_protocol": false,
+      "reason": "Candidate is scored on the same timestamps/labels as the V53 replay; it is not a valid future unseen holdout."
+    }
+  ],
+  "accepted_candidate": false,
+  "score_summary": {
+    "max_candidate_auc": 0.8429499681339886,
+    "max_baseline_auc": 0.8254233318844953,
+    "max_gain": 0.017526636249493244
+  }
+}

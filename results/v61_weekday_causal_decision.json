@@ -1,0 +1,60 @@
+﻿{
+  "candidate": "V61 weekday-causal extension",
+  "decision": "REJECT",
+  "recorded_at": "2026-10-27",
+  "promotion": false,
+  "score_supported": false,
+  "official_auc": null,
+  "comparison_protocol": "V53 frozen protocol: full-day5 user-crossfit gate, then fit on day5 and evaluate the future day6 cohort; compare paired rows against V53/V50 reference under the recorded history weights.",
+  "audit": {
+    "cohort_alignment": {
+      "day5_rows": 352300,
+      "day6_rows": 351380,
+      "labels_match_v53": true,
+      "event_ids_match_v53": true,
+      "candidate_baseline_is_v53_final_prediction": false
+    },
+    "critical_findings": [
+      "V61 fits CatBoost on the complete scored cohort (model.fit(x_aug, z['y'])) and predicts that same matrix (predict_proba(x_aug)) on both days. These are training-set AUCs, not held-out estimates; target labels directly participate in model fitting.",
+      "The field named v53_auc is computed from z['pred'], the underlying prior prediction, not the final V53 predictor. On the aligned rows it reproduces 0.8176714756 (day5) and 0.8249578084 (day6), while final V53 is 0.8180913841 and 0.8254233319.",
+      "The candidate has no V61 frozen manifest binding parameters, source code, input hashes, fit rows, or prediction artifacts, and no independent out-of-sample replay. Existing report labels both outputs as probe and itself says a strict benchmark is still required.",
+      "Day5/day6 validation dates and cohorts have been repeatedly reused in prior experiments. Any apparent result on these dates is not an untouched confirmation; V53's own intervals condition on fitted models and do not account for repeated selection or calendar shift."
+    ],
+    "candidate_probe_recomputed_auc": {
+      "day5_in_sample": 0.8338399744982914,
+      "day6_in_sample": 0.8429499681339886
+    },
+    "invalid_naive_difference_vs_final_v53": {
+      "day5": 0.015748590429940146,
+      "day6": 0.017526636249493244,
+      "use_for_promotion": false
+    },
+    "leakage_boundary": "The added context feature aggregates rows strictly before each day cutoff, but that does not cure fitting and scoring on the same target cohort."
+  },
+  "v53_reference_same_frozen_protocol": {
+    "day5": {
+      "protocol": "full-day5 user crossfit",
+      "ordinary_auc": 0.8180913840683512,
+      "history_adjusted_auc": 0.8109113853236557,
+      "gain_vs_v50_adjusted": 0.00012198115042483249,
+      "paired_event_interval_for_adjusted_gain": [
+        0.0000808083356485495,
+        0.00016318004015800913
+      ]
+    },
+    "day6": {
+      "protocol": "fit on day5; future day6 cohort",
+      "ordinary_auc": 0.8254233318844953,
+      "history_adjusted_auc": 0.8171690462350286,
+      "gain_vs_v50_adjusted": 0.00017489381955348993,
+      "paired_event_interval_for_adjusted_gain": [
+        0.0001353958836392749,
+        0.00021418370183168834
+      ]
+    },
+    "official_auc": null,
+    "minimum_adjusted_auc_for_upload_recommendation": 0.82,
+    "target_adjusted_auc": 0.834786
+  },
+  "next_step": "Do not promote or report the V61 probe AUC as benchmark performance. A future test must freeze its recipe and source/input hashes before scoring, use user-disjoint crossfit for the day5 gate, then train only on day5 labels for day6, verify exact event/label alignment and strict pre-cutoff feature timestamps, and disclose date reuse."
+}

@@ -1,0 +1,17 @@
+"""Review already-saved results only. No fitting, prediction or label scoring."""
+from pathlib import Path
+import json,hashlib
+import numpy as np
+B=Path(__file__).resolve().parent;A=B/'artifacts'
+def load(name):return json.loads((A/name).read_text())
+seq1=load('nx_seq_screen_day6_log.json')['log'][-1];seq2=load('nx_seq_screen2_day6_log.json')['log'][-1]
+knn=load('nx_userknn_screen2_day6_report.json');exposure=load('nx_exposure_screen_day6_report.json');mass=load('nx_event_mass_combine_report.json')
+def best(r):
+    trial=[(v,k,c) for k,values in r['features'].items() for c,v in values.items() if c.startswith('blend') and c.endswith('gain')];g,f,w=max(trial);return dict(gain=g,feature=f,blend=w,baseline=r['v53_adjusted'],candidate=r['v53_adjusted']+g)
+# Inspect event IDs only. Do not load or evaluate reserved labels.
+events=np.load(A/'v53_causal_propensity_day6.npz')['events'][::10];allowed=np.load(A/'selection_day6.npz')['events'][::10]
+protected=json.loads((A/'v54_horizon/protected_before.json').read_text());mismatches=[name for name,s in protected.items() if hashlib.sha256((B/name).read_bytes()).hexdigest()!=s['sha256']]
+r=dict(date='2026-10-29',scope='Latest local nx changes and saved Kaggle measurement',sequence=dict(previous_standalone=seq1['raw_adjusted'],latest_standalone=seq2['raw_adjusted'],v53=seq2['v53_adjusted'],latest_best_blend=seq2['v53_adjusted']+seq2['best_v53_gain'],gain=seq2['best_v53_gain']),user_neighbours=best(knn),exposure=best(exposure),event_mass=dict(day5=mass['5']['temps']['1.0'],day6=mass['6']['temps']['1.0']),cohort=dict(full_day6_events=len(events),allowed_selection_events=len(allowed),outside_allowed=int((~np.isin(events,allowed)).sum()),matches_frozen_horizon=False),kaggle_saved_measurement=dict(version='1 of1',weighted_event_auc=.6274872184566841,new_saved_run_visible=False),warm_sequence_saved_outputs=[str(p.name) for p in A.glob('nx_seqw*')],protected=dict(checked=len(protected),mismatches=mismatches),models_fitted=False,holdout_labels_opened=False,holdout_scored=False,conclusion='No confirmed improvement to V53. Latest sequence and user-neighbour blends lose. Exposure has a small unconfirmed one-day signal. Existing reported cohorts do not meet the frozen horizon/selection protocol.')
+out=B/'results/latest_changes_review_20261029.json';out.write_text(json.dumps(r,indent=2),encoding='utf-8')
+with (B/'results_log.md').open('a',encoding='utf-8') as f:f.write('\n## 2026-10-29 — Review of user latest local changes (no new experiment)\n\n- Read existing nx results and source. Sequence screen2 standalone adjusted AUC0.651924 versus0.583275 before, but best V53 blend0.816741 versus0.817169 baseline (-0.000427673).\n- Latest user-neighbour screen2 best blend0.817115 (-0.000054112); event mass t1 loses0.000679625/0.000140364 on days5/6. Exposure best existing day6 gain+0.000332051 only; no two-day confirmation and below+0.0005.\n- Metadata-only cohort check: latest nx scorers use full day6,35,138 events, including10,716 outside allowed24,422 selection events. Not the frozen multi-day test-like validation. Do not call these clean confirmation under the agreed protocol. No reserved labels opened/scored in this review.\n- Open Kaggle measurement is still saved version1, AUC0.627487.29 protected checks unchanged. No models fitted, predictions generated, or submissions created. Details:results/latest_changes_review_20261029.json.\n')
+print(json.dumps(r,indent=2))

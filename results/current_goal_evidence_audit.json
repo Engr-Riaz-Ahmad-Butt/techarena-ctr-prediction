@@ -1,0 +1,72 @@
+{
+  "objective": "improve score upto0.83",
+  "audited_utc": "2026-10-28T09:26:53Z",
+  "target_achieved": false,
+  "previous_goal_turn_classification": "progress",
+  "classification_basis": "Completed modeling trials supplied negative evidence; current authoritative records also contain later attention, transfer and ALS runs. No improvement claim is based on an unexecuted plan.",
+  "available_labeled_source": {
+    "path": "artifacts/train.npy",
+    "events": 686824,
+    "first_timestamp": 1737331200,
+    "last_timestamp": 1737935940,
+    "utc_dates": [
+      "2025-01-20",
+      "2025-01-21",
+      "2025-01-22",
+      "2025-01-23",
+      "2025-01-24",
+      "2025-01-25",
+      "2025-01-26"
+    ]
+  },
+  "latest_reviews": [
+    {
+      "experiment": "ctr-history-attention-001",
+      "status": "completed_rejected",
+      "adjusted_auc": 0.8172557854289246,
+      "versus_parent_adjusted_gain": -3.929958415427315e-05,
+      "source": "results/history_attention_001_kaggle_observed.json"
+    },
+    {
+      "experiment": "ctr-v60-transfer-001",
+      "status": "completed_rejected",
+      "adjusted_auc": 0.8171162346366924,
+      "source": "results/v60_transfer_001_kaggle_observed.json"
+    },
+    {
+      "experiment": "V68 fixed ALS",
+      "status": "excluded_from_valid_comparison",
+      "reason": "Initializer checkpoint was selected upstream using day6 AUC; raw predictions and model were not retained in saved output.",
+      "source": "results/v68_fixed_als_exploratory.md"
+    }
+  ],
+  "accepted_baseline": {
+    "version": "V53",
+    "adjusted_auc": 0.8171690462350286
+  },
+  "highest_recent_two_date_diagnostic": {
+    "version": "ctr-tabular-choice-003-setwise",
+    "adjusted_auc": 0.817295085401266,
+    "confirmation_adjusted_auc": 0.8111621397001886,
+    "status": "exploratory_not_promoted",
+    "reason": "Reused dates and gains below the workspace minimum-effect/fresh-holdout rule."
+  },
+  "requirements": {
+    "score_at_least_point83": "NOT_MET",
+    "untouched_labeled_temporal_holdout": "MISSING",
+    "new_official_result": "MISSING",
+    "persistent_replayable_latest_ALS_outputs": "MISSING",
+    "no_validation_selected_initializer": "V68_FAILS",
+    "active_training": "NONE; current Kaggle editor says off"
+  },
+  "sources_sha256": {
+    "results/history_attention_001_kaggle_observed.json": "dd0316fa2d03a8549ef066986c7c5162e62cb59bb906127ea19593c181219e23",
+    "results/v60_transfer_001_kaggle_observed.json": "eb2cb115d5df3287c5522d96d6faac4fd248034d46ffb61d6353c3bfcec82334",
+    "results/v68_fixed_als_exploratory.md": "05c6cc26f88ea89b03698ad89cefecfa0b58ff476d9d195d6b6d83aba144fd99",
+    "agent_plan.md": "78e67c05c52677014289113877f0bfb46c676344f3ea8d15688f5b44394c7ffa",
+    "imp15_als.py": "8b3c67049e9daa3413010690ec3eb73e9698ce8a032176cdf9b7cc913b6e4e9f",
+    "artifacts/imp15_als_trials_day6.json": "08a922ff15eac7d5ab6ee681efbc114c3bb1b9116425fceaf18db3fd27c5c943"
+  },
+  "next_required_input": "New authorized labeled future first-event-per-user cohort, complete ten candidates per event, frozen before candidate selection.",
+  "note": "Historical observed metrics are not independently recomputed here. No new fit, parameter search, model promotion or CSV export was performed. The goal remains unmet."
+}

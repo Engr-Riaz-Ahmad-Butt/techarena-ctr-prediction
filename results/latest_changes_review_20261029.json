@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-29",
+  "scope": "Latest local nx changes and saved Kaggle measurement",
+  "sequence": {
+    "previous_standalone": 0.5832745656163847,
+    "latest_standalone": 0.65192380646703,
+    "v53": 0.8171690462350286,
+    "latest_best_blend": 0.8167413727678877,
+    "gain": -0.0004276734671408988
+  },
+  "user_neighbours": {
+    "gain": -5.411211951089623e-05,
+    "feature": "knn_recent",
+    "blend": "blend0.02_adjusted_gain",
+    "baseline": 0.8171690462350286,
+    "candidate": 0.8171149341155177
+  },
+  "exposure": {
+    "gain": 0.00033205059065566367,
+    "feature": "+expo_typ",
+    "blend": "blend0.05_adjusted_gain",
+    "baseline": 0.8171690462350286,
+    "candidate": 0.8175010968256843
+  },
+  "event_mass": {
+    "day5": {
+      "control_v53mass_only": 0.8101446725823616,
+      "with_event_model": 0.810231760677103,
+      "gain_vs_v53": -0.0006796246465526901,
+      "gain_vs_control": 8.708809474144985e-05,
+      "plain": 0.8178069718736076
+    },
+    "day6": {
+      "control_v53mass_only": 0.8171679472479381,
+      "with_event_model": 0.8170286826139381,
+      "gain_vs_v53": -0.00014036362109048905,
+      "gain_vs_control": -0.00013926463399993594,
+      "plain": 0.8254752352393273
+    }
+  },
+  "cohort": {
+    "full_day6_events": 35138,
+    "allowed_selection_events": 24422,
+    "outside_allowed": 10716,
+    "matches_frozen_horizon": false
+  },
+  "kaggle_saved_measurement": {
+    "version": "1 of1",
+    "weighted_event_auc": 0.6274872184566841,
+    "new_saved_run_visible": false
+  },
+  "warm_sequence_saved_outputs": [],
+  "protected": {
+    "checked": 29,
+    "mismatches": []
+  },
+  "models_fitted": false,
+  "holdout_labels_opened": false,
+  "holdout_scored": false,
+  "conclusion": "No confirmed improvement to V53. Latest sequence and user-neighbour blends lose. Exposure has a small unconfirmed one-day signal. Existing reported cohorts do not meet the frozen horizon/selection protocol."
+}

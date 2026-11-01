@@ -1,0 +1,51 @@
+{
+  "experiment": "V64 weekday-interaction correction",
+  "independent_recheck": true,
+  "source_run": "artifacts/v64_weekday_interaction_report.json",
+  "source_prediction_artifact": "artifacts/v64_weekday_interaction_day6.npz",
+  "benchmark": {
+    "day": 6,
+    "events": 35138,
+    "rows": 351380,
+    "protocol": "first future event per user after day6 cutoff",
+    "cohort_status": "reused development cohort; not a fresh holdout",
+    "event_id_overlap_with_day5_fit": 0,
+    "day5_day6_user_overlap": 26404
+  },
+  "comparator_audit": {
+    "required_comparator": "artifacts/v53_causal_propensity_day6.npz pred (final V53)",
+    "original_report_comparator": "z6['pred'] from an upstream feature source",
+    "original_report_comparator_matches_final_v53": false,
+    "original_reported_v53_ordinary_auc": 0.824957808393509,
+    "actual_final_v53_ordinary_auc": 0.8254233318844953,
+    "note": "The original V64 script scored its blend against the upstream z6 pred array, not the saved final V53 prediction. The original report is preserved; these metrics recompute the saved candidate raw prediction as a 25% rank correction to final V53."
+  },
+  "recomputed_metrics": {
+    "v64_candidate_raw_ordinary_auc": 0.8245628325019586,
+    "v53_final_ordinary_auc": 0.8254233318844953,
+    "v64_blended_with_final_v53_ordinary_auc": 0.825577897988819,
+    "ordinary_gain_vs_final_v53": 0.00015456610432362794,
+    "v53_final_evaluation_history_adjusted_auc": 0.8171690462350286,
+    "v64_blended_with_final_v53_evaluation_history_adjusted_auc": 0.8173013788694089,
+    "history_adjusted_gain_vs_final_v53": 0.0001323326343802833,
+    "blend": "rank(0.75 * rank(final_V53) + 0.25 * rank(candidate_raw))",
+    "history_weights": "Rebuilt using evaluation history-length proportions; applied consistently to final V53 and candidate."
+  },
+  "leakage_and_integrity": {
+    "candidate_and_v53_event_keys_match": true,
+    "candidate_and_v53_labels_match": true,
+    "candidate_fit_day": 5,
+    "candidate_scored_day": 6,
+    "day6_used_as_fit_target": false,
+    "training_timestamps_precede_validation_timestamps": true,
+    "fresh_holdout": false,
+    "saved_model_replay_audit": "not performed in this independent recheck"
+  },
+  "decision": "rejected_as_noise_and_not_promotable",
+  "decision_reason": "Corrected adjusted gain +0.000132 is below the required +0.0005, only day6 was evaluated, day5/day6 are reused, and no fresh holdout exists.",
+  "target_0_85_achieved": false,
+  "official_score": null,
+  "runtime_seconds_training_reported": 174.406,
+  "device": "local CPU",
+  "verified_gpu_hours": 0.0
+}
