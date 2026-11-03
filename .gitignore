@@ -1,5 +1,11 @@
 data/
+cache/
+processed/
+preprocessed/
 artifacts/
+models/
+checkpoints/
+submissions/
 packages/
 mf_packages/
 .venv/
@@ -9,6 +15,15 @@ __pycache__/
 *.npy
 *.npz
 *.pkl
+*.pickle
+*.joblib
+*.parquet
+*.feather
+*.arrow
+*.pt
+*.pth
+*.ckpt
+*.safetensors
 *.cbm
 *.csv
 *.zip
